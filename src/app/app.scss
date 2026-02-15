@@ -1,0 +1,6 @@
+// Ensure the app-root takes full height and uses flex layout for sticky footer
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

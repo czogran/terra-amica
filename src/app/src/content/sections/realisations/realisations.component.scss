@@ -1,0 +1,183 @@
+@use '../../../design-system/breakpoints' as bp;
+
+.realisations-section {
+  background: var(--bs-surface-subtle);
+  padding: 2rem 1.5rem 3.5rem;
+}
+
+.realisations-grid {
+  width: min(100%, 84rem);
+  margin-inline: auto;
+}
+
+.realisations-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.realisations-item {
+  min-width: 0;
+}
+
+.realisations-card {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--bs-border-muted);
+  border-radius: 0.75rem;
+  background: var(--bs-surface-card);
+  box-shadow: var(--bs-box-shadow-sm);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      130deg,
+      rgb(var(--bs-surface-overlay-rgb) / 0.16) 0%,
+      rgb(var(--bs-success-rgb) / 0.08) 35%,
+      transparent 65%
+    );
+    opacity: 0;
+    transition: opacity 180ms ease;
+  }
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-3px);
+    border-color: rgb(var(--bs-success-rgb) / 0.35);
+    box-shadow: var(--bs-box-shadow-lg);
+
+    &::after {
+      opacity: 1;
+    }
+
+    .realisations-card-thumb img {
+      transform: scale(1.03);
+      filter: saturate(1.06) brightness(1.03);
+    }
+  }
+}
+
+.realisations-card-thumb {
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--bs-border-muted);
+  overflow: hidden;
+}
+
+.realisations-card-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.realisations-card-content {
+  padding: 1rem 1rem 1.1rem;
+}
+
+.realisations-card-content h3 {
+  margin: 0;
+  color: var(--bs-heading-color);
+  font-size: 1.65rem;
+  font-size: clamp(1.1rem, 1.5vw, 1.55rem);
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.realisations-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+  color: var(--bs-text-muted);
+  font-size: 0.96rem;
+}
+
+.realisations-card-icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 1.6px solid var(--bs-success);
+  border-radius: 2px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.realisations-card-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0.14rem;
+  border: 1px solid var(--bs-success);
+  border-radius: 1px;
+}
+
+.realisations-card-separator {
+  color: var(--bs-text-soft);
+}
+
+.realisations-card-footer {
+  margin-top: 0.95rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--bs-border-muted);
+}
+
+.realisations-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.55rem 1rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: var(--bs-success-bg-subtle);
+  color: var(--bs-success-text-emphasis);
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.realisations-card-cta::after {
+  content: '›';
+  margin-left: 0.45rem;
+  font-size: 1rem;
+}
+
+.realisations-card-cta:hover {
+  background: var(--bs-secondary-bg-subtle);
+  transform: translateY(-1px);
+}
+
+.realisations-card-cta:focus-visible {
+  outline: 3px solid var(--bs-focus-ring-color);
+  outline-offset: 3px;
+}
+
+@media (max-width: (bp.breakpoint(lg) - 32px)) {
+  .realisations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: (bp.breakpoint(md) - 128px)) {
+  .realisations-section {
+    padding-inline: 1rem;
+  }
+
+  .realisations-grid {
+    grid-template-columns: 1fr;
+  }
+}

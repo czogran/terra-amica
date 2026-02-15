@@ -1,0 +1,50 @@
+@use '../../../design-system/breakpoints' as bp;
+
+.research-section {
+  .research-content {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .research-highlight {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .research-paragraph,
+  .research-caption {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .research-caption {
+    font-size: 0.95rem;
+  }
+
+  .research-media {
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .research-grid {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .research-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: bp.breakpoint(md)) {
+    .research-grid--two {
+      grid-template-columns: 1fr;
+    }
+  }
+}

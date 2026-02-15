@@ -1,0 +1,38 @@
+<app-section-header
+  [title]="'menu.references' | translate"
+  [subtitle]="'references.intro' | translate"
+/>
+<section aria-labelledby="references-title" class="references-section">
+  <div class="references-list" role="list">
+    @for (reference of references(); track $index) {
+      <button
+        class="reference-card reference-card-button"
+        role="listitem"
+        type="button"
+        aria-haspopup="dialog"
+        aria-label="Expand reference image"
+        (click)="openPopup(reference)"
+      >
+        <img
+          [ngSrc]="'assets/references/' + reference.files[0]"
+          class="card-img-top reference-card-image"
+          alt="Reference image"
+          width="210"
+          height="297"
+        />
+        <div class="card-body">
+          <p class="card-text small text-muted mb-0">{{ reference.titleKey | translate }}</p>
+        </div>
+      </button>
+    }
+  </div>
+
+  @if (popupReference(); as popup) {
+    <app-reference-popup
+      [reference]="popup"
+      (close)="closePopup()"
+      (next)="nextReference()"
+      (previous)="prevReference()"
+    />
+  }
+</section>

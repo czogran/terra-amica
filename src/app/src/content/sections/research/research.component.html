@@ -1,0 +1,65 @@
+<app-section-header
+  [title]="'menu.research' | translate"
+  [subtitle]="'research.intro' | translate"
+/>
+<section class="research-section" aria-labelledby="research-title">
+  <div class="container py-4 research-content">
+    <p id="research-title" class="research-highlight">
+      {{ 'research.highlight' | translate }}
+    </p>
+    <figure class="research-media research-media--single">
+      <img
+        ngSrc="assets/research/grant-parp.png"
+        [alt]="'research.imageGrantAlt' | translate"
+        width="736"
+        height="525"
+      />
+    </figure>
+
+    <p class="research-paragraph">
+      {{ 'research.paragraph2' | translate }}
+    </p>
+
+    <p class="research-caption">{{ 'research.captionRdf' | translate }}</p>
+    <figure class="research-media research-media--single">
+      <img
+        ngSrc="assets/research/rdf-before.png"
+        [alt]="'research.imageRdfAlt' | translate"
+        width="566"
+        height="269"
+      />
+    </figure>
+
+    <p class="research-caption">{{ 'research.captionWpc' | translate }}</p>
+    <div class="research-grid research-grid--two">
+      <figure class="research-media">
+        <img
+          ngSrc="assets/research/wpc-1.png"
+          [alt]="'research.imageWpc1Alt' | translate"
+          width="560"
+          height="327"
+        />
+      </figure>
+      <figure class="research-media">
+        <img
+          ngSrc="assets/research/wpc-2.png"
+          [alt]="'research.imageWpc2Alt' | translate"
+          width="560"
+          height="327"
+        />
+      </figure>
+    </div>
+    <figure class="research-media research-media--single">
+      <img
+        ngSrc="assets/research/wpc-3.png"
+        [alt]="'research.imageWpc3Alt' | translate"
+        width="1024"
+        height="459"
+      />
+    </figure>
+
+    <p class="research-paragraph research-paragraph--last">
+      {{ 'research.final' | translate }}
+    </p>
+  </div>
+</section>

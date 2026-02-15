@@ -1,0 +1,72 @@
+[
+  {
+    "id": "debowa-kloda",
+    "files": ["debowa-kloda.png"],
+    "title": {
+      "pl": "Dębowa Kłoda",
+      "en": "Dębowa Kłoda",
+      "de": "Dębowa Kłoda"
+    },
+    "description": {
+      "pl": "Opis referencji Dębowa Kłoda.",
+      "en": "Reference description for Dębowa Kłoda.",
+      "de": "Beschreibung der Referenz Dębowa Kłoda."
+    }
+  },
+  {
+    "id": "gmina-brok",
+    "files": ["gmina-brok1.png", "gmina-brok2.png"],
+    "title": {
+      "pl": "Gmina Brok",
+      "en": "Gmina Brok",
+      "de": "Gmina Brok"
+    },
+    "description": {
+      "pl": "Opis referencji Gmina Brok 1.pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1 eferencji Gmina Brok 1pis referencjmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1 eferencji Gmina Brok 1pis referencjmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1 eferencji Gmina Brok 1pis referencjmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1 eferencji Gmina Brok 1pis referencjmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1 eferencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1pis referencji Gmina Brok 1 XYZ",
+      "en": "Reference description for Gmina Brok 1.",
+      "de": "Beschreibung der Referenz Gmina Brok 1."
+    }
+  },
+  {
+    "id": "ostroleka",
+    "files": ["ostroleka.png"],
+    "title": {
+      "pl": "Ostrołęka",
+      "en": "Ostrołęka",
+      "de": "Ostrołęka"
+    },
+    "description": {
+      "pl": "Opis referencji Gmina Brok 2.",
+      "en": "Reference description for Gmina Brok 2.",
+      "de": "Beschreibung der Referenz Gmina Brok 2."
+    }
+  },
+  {
+    "id": "ostroleka-towarzystwo-budowlane",
+    "files": ["ostroleka-towarzystwo-budowlane.png"],
+    "title": {
+      "pl": "Ostrołęka Towarzystwo Budowlane",
+      "en": "Ostrołęka Towarzystwo Budowlane",
+      "de": "Ostrołęka Towarzystwo Budowlane"
+    },
+    "description": {
+      "pl": "Opis referencji Gmina Brok 3.",
+      "en": "Reference description for Gmina Brok 3.",
+      "de": "Beschreibung der Referenz Gmina Brok 3."
+    }
+  },
+  {
+    "id": "pruszkow",
+    "files": ["pruszkow.png"],
+    "title": {
+      "pl": "Pruszków",
+      "en": "Pruszków",
+      "de": "Pruszków"
+    },
+    "description": {
+      "pl": "Opis referencji Gmina Brok 4.",
+      "en": "Reference description for Gmina Brok 4.",
+      "de": "Beschreibung der Referenz Gmina Brok 4."
+    }
+  }
+]

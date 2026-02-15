@@ -1,0 +1,95 @@
+// Offer CTA card styles
+.about-offer-cta {
+  background: var(--bs-light);
+  box-shadow: var(--bs-box-shadow);
+  max-width: 1200px;
+}
+
+.about-offer-cta-text {
+  font-size: 1.1rem;
+  color: var(--bs-body-color);
+}
+.about-section {
+  // background: linear-gradient(180deg, var(--bs-body-bg) 0%, #fff 100%);
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--bs-heading-color);
+}
+
+.title-divider {
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-secondary));
+  border-radius: var(--bs-border-radius-sm);
+  margin-top: 12px;
+}
+
+.section-intro {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2rem;
+  color: var(--bs-body-color);
+}
+
+/* Text */
+
+.about-text {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--bs-body-color);
+}
+
+/* Feature Cards */
+
+.feature-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: var(--bs-bg-subtle);
+  padding: 22px;
+  border-radius: var(--bs-border-radius-xl);
+  margin-bottom: 18px;
+  box-shadow: var(--bs-box-shadow);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--bs-box-shadow-lg);
+}
+
+.icon-circle {
+  min-width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-success));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-light-bg-subtle);
+  font-size: 22px;
+}
+
+.icon-circle.light {
+  background: linear-gradient(135deg, var(--bs-secondary), var(--bs-warning));
+  color: var(--bs-primary);
+}
+
+/* Animation */
+
+.feature-card-animation {
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,826 @@
+[
+  {
+    "id": "10-powiat-policki",
+    "slug": "rekultywacja-powiat-policki",
+    "region": "Zachodniopomorskie",
+    "years": "2024–2027",
+    "area": "ok. 4,4 ha",
+    "category": "reclamation",
+    "status": "in-progress",
+    "cover": "realisations/10-powiat-policki/9.jpg",
+    "images": [
+      "realisations/10-powiat-policki/20230731_184224.jpg",
+      "realisations/10-powiat-policki/20230801_120134.jpg",
+      "realisations/10-powiat-policki/20240123_155156.jpg",
+      "realisations/10-powiat-policki/20240123_155234.jpg",
+      "realisations/10-powiat-policki/20240123_155349.jpg",
+      "realisations/10-powiat-policki/20240123_155429.jpg",
+      "realisations/10-powiat-policki/9.jpg",
+      "realisations/10-powiat-policki/10.jpg",
+      "realisations/10-powiat-policki/11.jpg",
+      "realisations/10-powiat-policki/12.jpg",
+      "realisations/10-powiat-policki/17.jpg",
+      "realisations/10-powiat-policki/18.jpg",
+      "realisations/10-powiat-policki/19.jpg",
+      "realisations/10-powiat-policki/20.jpg",
+      "realisations/10-powiat-policki/21.jpg",
+      "realisations/10-powiat-policki/22.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Policki",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie polickim w województwie zachodniopomorskim. Planowane zakończenie: czerwiec 2027.",
+        "description": "Projekt obejmuje rekultywację jednego z większych składowisk w regionie zachodniopomorskim o powierzchni ok. 4,4 ha. Prace rozpoczęto w 2024 roku. W toku są roboty kształtujące kwaterę, budowa studni odgazowujących oraz wykonanie wielowarstwowej okrywy rekultywacyjnej. Planowane zakończenie prac: czerwiec 2027.",
+        "scope": [
+          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
+          "odspajanie odpadów i formowanie wierzchowiny",
+          "wykonanie studni odgazowujących",
+          "wykonanie okrywy rekultywacyjnej"
+        ],
+        "effects": [
+          "postępująca stabilizacja bryły składowiska",
+          "ograniczenie emisji biogazu przez studnie odgazowujące",
+          "przygotowanie terenu pod finalną warstwę glebotwórczą"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Policki",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie polickim w województwie zachodniopomorskim. Planowane zakończenie: czerwiec 2027.",
+        "description": "Projekt obejmuje rekultywację jednego z większych składowisk w regionie zachodniopomorskim o powierzchni ok. 4,4 ha. Prace rozpoczęto w 2024 roku. W toku są roboty kształtujące kwaterę, budowa studni odgazowujących oraz wykonanie wielowarstwowej okrywy rekultywacyjnej. Planowane zakończenie prac: czerwiec 2027.",
+        "scope": [
+          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
+          "odspajanie odpadów i formowanie wierzchowiny",
+          "wykonanie studni odgazowujących",
+          "wykonanie okrywy rekultywacyjnej"
+        ],
+        "effects": [
+          "postępująca stabilizacja bryły składowiska",
+          "ograniczenie emisji biogazu przez studnie odgazowujące",
+          "przygotowanie terenu pod finalną warstwę glebotwórczą"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Policki",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie polickim w województwie zachodniopomorskim. Planowane zakończenie: czerwiec 2027.",
+        "description": "Projekt obejmuje rekultywację jednego z większych składowisk w regionie zachodniopomorskim o powierzchni ok. 4,4 ha. Prace rozpoczęto w 2024 roku. W toku są roboty kształtujące kwaterę, budowa studni odgazowujących oraz wykonanie wielowarstwowej okrywy rekultywacyjnej. Planowane zakończenie prac: czerwiec 2027.",
+        "scope": [
+          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
+          "odspajanie odpadów i formowanie wierzchowiny",
+          "wykonanie studni odgazowujących",
+          "wykonanie okrywy rekultywacyjnej"
+        ],
+        "effects": [
+          "postępująca stabilizacja bryły składowiska",
+          "ograniczenie emisji biogazu przez studnie odgazowujące",
+          "przygotowanie terenu pod finalną warstwę glebotwórczą"
+        ]
+      }
+    }
+  },
+  {
+    "id": "11-powiat-wieruszowski",
+    "slug": "rekultywacja-powiat-wieruszowski",
+    "region": "Łódź",
+    "years": "2025–2026",
+    "area": "ok. 1,0 ha",
+    "category": "reclamation",
+    "status": "in-progress",
+    "cover": "realisations/11-powiat-wieruszowski/31.jpg",
+    "images": [
+      "realisations/11-powiat-wieruszowski/31.jpg",
+      "realisations/11-powiat-wieruszowski/32.jpg",
+      "realisations/11-powiat-wieruszowski/33.jpg",
+      "realisations/11-powiat-wieruszowski/34.jpg",
+      "realisations/11-powiat-wieruszowski/35.jpg",
+      "realisations/11-powiat-wieruszowski/36.jpg",
+      "realisations/11-powiat-wieruszowski/37.jpg",
+      "realisations/11-powiat-wieruszowski/38.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie wieruszowskim w województwie łódzkim. Planowane zakończenie: grudzień 2026.",
+        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,0 ha w powiecie wieruszowskim. Prace rozpoczęto w 2025 roku i obejmują wykonanie warstwy wyrównawczej, izolację wierzchowiny oraz warstwy glebotwórczej. Planowane zakończenie: grudzień 2026.",
+        "scope": [
+          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
+          "warstwa wyrównawcza",
+          "izolacja wierzchowiny",
+          "warstwa glebotwórcza"
+        ],
+        "effects": [
+          "przywrócenie walorów krajobrazowych terenu",
+          "uszczelnienie wierzchowiny składowiska",
+          "przygotowanie podłoża pod obsiew trawami"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie wieruszowskim w województwie łódzkim. Planowane zakończenie: grudzień 2026.",
+        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,0 ha w powiecie wieruszowskim. Prace rozpoczęto w 2025 roku i obejmują wykonanie warstwy wyrównawczej, izolację wierzchowiny oraz warstwy glebotwórczej. Planowane zakończenie: grudzień 2026.",
+        "scope": [
+          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
+          "warstwa wyrównawcza",
+          "izolacja wierzchowiny",
+          "warstwa glebotwórcza"
+        ],
+        "effects": [
+          "przywrócenie walorów krajobrazowych terenu",
+          "uszczelnienie wierzchowiny składowiska",
+          "przygotowanie podłoża pod obsiew trawami"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie wieruszowskim w województwie łódzkim. Planowane zakończenie: grudzień 2026.",
+        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,0 ha w powiecie wieruszowskim. Prace rozpoczęto w 2025 roku i obejmują wykonanie warstwy wyrównawczej, izolację wierzchowiny oraz warstwy glebotwórczej. Planowane zakończenie: grudzień 2026.",
+        "scope": [
+          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
+          "warstwa wyrównawcza",
+          "izolacja wierzchowiny",
+          "warstwa glebotwórcza"
+        ],
+        "effects": [
+          "przywrócenie walorów krajobrazowych terenu",
+          "uszczelnienie wierzchowiny składowiska",
+          "przygotowanie podłoża pod obsiew trawami"
+        ]
+      }
+    }
+  },
+  {
+    "id": "12-powiat-losicki",
+    "slug": "rekultywacja-powiat-losicki",
+    "region": "Mazowieckie",
+    "years": "2025",
+    "area": "ok. 1,6 ha",
+    "category": "reclamation",
+    "status": "in-progress",
+    "cover": "realisations/12-powiat-losicki/39.jpg",
+    "images": [
+      "realisations/12-powiat-losicki/39.jpg",
+      "realisations/12-powiat-losicki/40.jpg",
+      "realisations/12-powiat-losicki/41.jpg",
+      "realisations/12-powiat-losicki/42.jpg",
+      "realisations/12-powiat-losicki/43.jpg",
+      "realisations/12-powiat-losicki/44.jpg",
+      "realisations/12-powiat-losicki/45.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Łosicki",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
+        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
+        "scope": [
+          "odspojenie odpadów i kształtowanie kwatery",
+          "wykonanie okrywy rekultywacyjnej"
+        ],
+        "effects": [
+          "ukształtowanie bryły składowiska",
+          "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Łosicki",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
+        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
+        "scope": [
+          "odspojenie odpadów i kształtowanie kwatery",
+          "wykonanie okrywy rekultywacyjnej"
+        ],
+        "effects": [
+          "ukształtowanie bryły składowiska",
+          "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Łosicki",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
+        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
+        "scope": [
+          "odspojenie odpadów i kształtowanie kwatery",
+          "wykonanie okrywy rekultywacyjnej"
+        ],
+        "effects": [
+          "ukształtowanie bryły składowiska",
+          "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
+        ]
+      }
+    }
+  },
+  {
+    "id": "09-projekt-najnowszy-2025",
+    "slug": "rekultywacja-2025",
+    "region": "Polska",
+    "years": "2024–2025",
+    "area": "—",
+    "category": "reclamation",
+    "cover": "realisations/09-projekt-najnowszy-2025/1.jpg",
+    "images": [
+      "realisations/09-projekt-najnowszy-2025/1.jpg",
+      "realisations/09-projekt-najnowszy-2025/3.jpg",
+      "realisations/09-projekt-najnowszy-2025/4.jpg",
+      "realisations/09-projekt-najnowszy-2025/5.jpg",
+      "realisations/09-projekt-najnowszy-2025/6.jpg",
+      "realisations/09-projekt-najnowszy-2025/7.jpg",
+      "realisations/09-projekt-najnowszy-2025/8.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – 2025",
+        "lead": "Najnowsza zakończona realizacja rekultywacji składowiska odpadów.",
+        "description": "Najnowszy projekt rekultywacyjny zakończony w 2025 roku. Prace obejmowały pełny zakres działań od formowania kwatery, przez warstwy techniczne i glebotwórcze, po obsiew trawami.",
+        "scope": [
+          "kompleksowe prace rekultywacyjne",
+          "warstwy techniczne i glebotwórcze",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "skutecznie zrekultywowane składowisko",
+          "przygotowanie terenu do dalszego zagospodarowania"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – 2025",
+        "lead": "Najnowsza zakończona realizacja rekultywacji składowiska odpadów.",
+        "description": "Najnowszy projekt rekultywacyjny zakończony w 2025 roku. Prace obejmowały pełny zakres działań od formowania kwatery, przez warstwy techniczne i glebotwórcze, po obsiew trawami.",
+        "scope": [
+          "kompleksowe prace rekultywacyjne",
+          "warstwy techniczne i glebotwórcze",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "skutecznie zrekultywowane składowisko",
+          "przygotowanie terenu do dalszego zagospodarowania"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – 2025",
+        "lead": "Najnowsza zakończona realizacja rekultywacji składowiska odpadów.",
+        "description": "Najnowszy projekt rekultywacyjny zakończony w 2025 roku. Prace obejmowały pełny zakres działań od formowania kwatery, przez warstwy techniczne i glebotwórcze, po obsiew trawami.",
+        "scope": [
+          "kompleksowe prace rekultywacyjne",
+          "warstwy techniczne i glebotwórcze",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "skutecznie zrekultywowane składowisko",
+          "przygotowanie terenu do dalszego zagospodarowania"
+        ]
+      }
+    }
+  },
+  {
+    "id": "07-projekt-swidnik",
+    "slug": "rekultywacja-lodzkie-swidnik",
+    "region": "Łódzkie",
+    "years": "2023–2024",
+    "area": "—",
+    "category": "reclamation",
+    "cover": "realisations/07-projekt-swidnik/9.3.jpg",
+    "images": [
+      "realisations/07-projekt-swidnik/9.3.jpg",
+      "realisations/07-projekt-swidnik/9.4.jpg",
+      "realisations/07-projekt-swidnik/9.5.jpg",
+      "realisations/07-projekt-swidnik/9.6.jpg",
+      "realisations/07-projekt-swidnik/10.2.jpg",
+      "realisations/07-projekt-swidnik/10.3.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Łódzkie (II)",
+        "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
+        "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
+        "scope": [
+          "formowanie okrywy rekultywacyjnej",
+          "prace wykończeniowe",
+          "odbiór etapów"
+        ],
+        "effects": [
+          "gotowość do użytkowania terenu",
+          "czytelna dokumentacja powykonawcza"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Łódzkie (II)",
+        "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
+        "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
+        "scope": [
+          "formowanie okrywy rekultywacyjnej",
+          "prace wykończeniowe",
+          "odbiór etapów"
+        ],
+        "effects": [
+          "gotowość do użytkowania terenu",
+          "czytelna dokumentacja powykonawcza"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Łódzkie (II)",
+        "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
+        "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
+        "scope": [
+          "formowanie okrywy rekultywacyjnej",
+          "prace wykończeniowe",
+          "odbiór etapów"
+        ],
+        "effects": [
+          "gotowość do użytkowania terenu",
+          "czytelna dokumentacja powykonawcza"
+        ]
+      }
+    }
+  },
+  {
+    "id": "08-projekt-lukowskie",
+    "slug": "rekultywacja-lukowskie",
+    "region": "Lubelskie",
+    "years": "2023–2024",
+    "area": "—",
+    "category": "reclamation",
+    "cover": "realisations/08-projekt-lukowskie/11.1_01.jpg",
+    "images": [
+      "realisations/08-projekt-lukowskie/11.1_01.jpg",
+      "realisations/08-projekt-lukowskie/11.4_01.jpg",
+      "realisations/08-projekt-lukowskie/11.5_01.jpg",
+      "realisations/08-projekt-lukowskie/11.6.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Łukowskie",
+        "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
+        "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
+        "scope": [
+          "prace przygotowawcze",
+          "formowanie kwatery",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "teren zrekultywowany",
+          "pokrywa roślinna zabezpieczająca obiekt"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Łukowskie",
+        "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
+        "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
+        "scope": [
+          "prace przygotowawcze",
+          "formowanie kwatery",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "teren zrekultywowany",
+          "pokrywa roślinna zabezpieczająca obiekt"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Łukowskie",
+        "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
+        "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
+        "scope": [
+          "prace przygotowawcze",
+          "formowanie kwatery",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "teren zrekultywowany",
+          "pokrywa roślinna zabezpieczająca obiekt"
+        ]
+      }
+    }
+  },
+  {
+    "id": "04-powiat-parczewski-2022",
+    "slug": "rekultywacja-powiat-parczewski-2022",
+    "region": "Lubelskie",
+    "years": "2022–2024",
+    "area": "ok. 1,5 ha",
+    "category": "reclamation",
+    "cover": "realisations/04-powiat-parczewski-2022/4.1.jpg",
+    "images": [
+      "realisations/04-powiat-parczewski-2022/2.2.jpg",
+      "realisations/04-powiat-parczewski-2022/2.3.jpg",
+      "realisations/04-powiat-parczewski-2022/2.6_01.jpg",
+      "realisations/04-powiat-parczewski-2022/2.7_01.jpg",
+      "realisations/04-powiat-parczewski-2022/3.1.jpg",
+      "realisations/04-powiat-parczewski-2022/3.2.jpg",
+      "realisations/04-powiat-parczewski-2022/4.1.jpg",
+      "realisations/04-powiat-parczewski-2022/4.2.jpg",
+      "realisations/04-powiat-parczewski-2022/4.3.jpg",
+      "realisations/04-powiat-parczewski-2022/4.4.jpg",
+      "realisations/04-powiat-parczewski-2022/5.1.jpg",
+      "realisations/04-powiat-parczewski-2022/5.3.jpg",
+      "realisations/04-powiat-parczewski-2022/5.8.jpg",
+      "realisations/04-powiat-parczewski-2022/5.10.jpg",
+      "realisations/04-powiat-parczewski-2022/6.1_01.jpg",
+      "realisations/04-powiat-parczewski-2022/6.2_01.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Parczewski (II etap)",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji.",
+        "description": "Projekt obejmował kompleksowe prace rekultywacyjne na kwaterze o powierzchni 1,5 ha. Przeprowadzono odspajanie odpadów, formowanie kwatery, ułożenie warstwy technicznej i izolacyjnej, warstwy glebotwórczej, końcowe kształtowanie wierzchowiny oraz obsiew trawami i nasadzenia.",
+        "scope": [
+          "odspajanie odpadów i formowanie kwatery pod rekultywację",
+          "wykonanie warstwy technicznej",
+          "izolacja kwatery",
+          "wykonanie warstwy glebotwórczej",
+          "końcowe formowanie wierzchowiny",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "zrekultywowana kwatera o powierzchni 1,5 ha",
+          "pełna izolacja składowiska",
+          "pokrywa roślinna zabezpieczająca teren",
+          "gotowość do dalszego monitorowania"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Parczewski (II etap)",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji.",
+        "description": "Projekt obejmował kompleksowe prace rekultywacyjne na kwaterze o powierzchni 1,5 ha. Przeprowadzono odspajanie odpadów, formowanie kwatery, ułożenie warstwy technicznej i izolacyjnej, warstwy glebotwórczej, końcowe kształtowanie wierzchowiny oraz obsiew trawami i nasadzenia.",
+        "scope": [
+          "odspajanie odpadów i formowanie kwatery pod rekultywację",
+          "wykonanie warstwy technicznej",
+          "izolacja kwatery",
+          "wykonanie warstwy glebotwórczej",
+          "końcowe formowanie wierzchowiny",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "zrekultywowana kwatera o powierzchni 1,5 ha",
+          "pełna izolacja składowiska",
+          "pokrywa roślinna zabezpieczająca teren",
+          "gotowość do dalszego monitorowania"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Parczewski (II etap)",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji.",
+        "description": "Projekt obejmował kompleksowe prace rekultywacyjne na kwaterze o powierzchni 1,5 ha. Przeprowadzono odspajanie odpadów, formowanie kwatery, ułożenie warstwy technicznej i izolacyjnej, warstwy glebotwórczej, końcowe kształtowanie wierzchowiny oraz obsiew trawami i nasadzenia.",
+        "scope": [
+          "odspajanie odpadów i formowanie kwatery pod rekultywację",
+          "wykonanie warstwy technicznej",
+          "izolacja kwatery",
+          "wykonanie warstwy glebotwórczej",
+          "końcowe formowanie wierzchowiny",
+          "obsiew trawami i nasadzenia"
+        ],
+        "effects": [
+          "zrekultywowana kwatera o powierzchni 1,5 ha",
+          "pełna izolacja składowiska",
+          "pokrywa roślinna zabezpieczająca teren",
+          "gotowość do dalszego monitorowania"
+        ]
+      }
+    }
+  },
+  {
+    "id": "03-powiat-radomski",
+    "slug": "rekultywacja-powiat-radomski",
+    "region": "Mazowieckie",
+    "years": "2022–2023",
+    "area": "ok. 0,9 ha",
+    "category": "reclamation",
+    "cover": "realisations/03-powiat-radomski/1.1.jpg",
+    "images": [
+      "realisations/03-powiat-radomski/1.1.jpg",
+      "realisations/03-powiat-radomski/1.2.jpg",
+      "realisations/03-powiat-radomski/20240129_082506.jpg",
+      "realisations/03-powiat-radomski/20240129_083128.jpg",
+      "realisations/03-powiat-radomski/20240129_083626.jpg",
+      "realisations/03-powiat-radomski/20240129_083709_01.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Radomski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim.",
+        "description": "Prace obejmowały formowanie kwatery, wykonanie warstwy technicznej i glebotwórczej oraz końcowe ukształtowanie okrywy rekultywacyjnej. Zdjęcia z odbioru wykonane w styczniu 2024.",
+        "scope": [
+          "formowanie bryły kwatery",
+          "wykonanie warstwy technicznej izolującej",
+          "wykonanie warstwy glebotwórczej",
+          "końcowe formowanie okrywy rekultywacyjnej",
+          "dokumentacja powykonawcza"
+        ],
+        "effects": [
+          "kwatera gotowa do odbioru w styczniu 2024",
+          "prawidłowe ukształtowanie wierzchowiny i skarp",
+          "warstwa glebotwórcza umożliwiająca wegetację",
+          "zgodność z projektem technicznym"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Radomski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim.",
+        "description": "Prace obejmowały formowanie kwatery, wykonanie warstwy technicznej i glebotwórczej oraz końcowe ukształtowanie okrywy rekultywacyjnej. Zdjęcia z odbioru wykonane w styczniu 2024.",
+        "scope": [
+          "formowanie bryły kwatery",
+          "wykonanie warstwy technicznej izolującej",
+          "wykonanie warstwy glebotwórczej",
+          "końcowe formowanie okrywy rekultywacyjnej",
+          "dokumentacja powykonawcza"
+        ],
+        "effects": [
+          "kwatera gotowa do odbioru w styczniu 2024",
+          "prawidłowe ukształtowanie wierzchowiny i skarp",
+          "warstwa glebotwórcza umożliwiająca wegetację",
+          "zgodność z projektem technicznym"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Radomski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim.",
+        "description": "Prace obejmowały formowanie kwatery, wykonanie warstwy technicznej i glebotwórczej oraz końcowe ukształtowanie okrywy rekultywacyjnej. Zdjęcia z odbioru wykonane w styczniu 2024.",
+        "scope": [
+          "formowanie bryły kwatery",
+          "wykonanie warstwy technicznej izolującej",
+          "wykonanie warstwy glebotwórczej",
+          "końcowe formowanie okrywy rekultywacyjnej",
+          "dokumentacja powykonawcza"
+        ],
+        "effects": [
+          "kwatera gotowa do odbioru w styczniu 2024",
+          "prawidłowe ukształtowanie wierzchowiny i skarp",
+          "warstwa glebotwórcza umożliwiająca wegetację",
+          "zgodność z projektem technicznym"
+        ]
+      }
+    }
+  },
+  {
+    "id": "05-projekt-parczewski-3",
+    "slug": "rekultywacja-lubelskie-3",
+    "region": "Lubelskie",
+    "years": "2022–2023",
+    "area": "—",
+    "category": "reclamation",
+    "cover": "realisations/05-projekt-parczewski-3/7.1.jpg",
+    "images": [
+      "realisations/05-projekt-parczewski-3/7.1.jpg",
+      "realisations/05-projekt-parczewski-3/7.2.jpg",
+      "realisations/05-projekt-parczewski-3/7.3.jpg",
+      "realisations/05-projekt-parczewski-3/7.5.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Lubelskie",
+        "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
+        "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
+        "scope": [
+          "formowanie kwatery",
+          "prace rekultywacyjne",
+          "nadzór realizacyjny"
+        ],
+        "effects": [
+          "prawidłowe ukształtowanie kwatery",
+          "zabezpieczenie środowiskowe terenu"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Lubelskie",
+        "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
+        "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
+        "scope": [
+          "formowanie kwatery",
+          "prace rekultywacyjne",
+          "nadzór realizacyjny"
+        ],
+        "effects": [
+          "prawidłowe ukształtowanie kwatery",
+          "zabezpieczenie środowiskowe terenu"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Lubelskie",
+        "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
+        "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
+        "scope": [
+          "formowanie kwatery",
+          "prace rekultywacyjne",
+          "nadzór realizacyjny"
+        ],
+        "effects": [
+          "prawidłowe ukształtowanie kwatery",
+          "zabezpieczenie środowiskowe terenu"
+        ]
+      }
+    }
+  },
+  {
+    "id": "06-projekt-radomsko",
+    "slug": "rekultywacja-lodzkie-radomsko",
+    "region": "Łódzkie",
+    "years": "2022–2023",
+    "area": "—",
+    "category": "reclamation",
+    "cover": "realisations/06-projekt-radomsko/8.1.jpg",
+    "images": [
+      "realisations/06-projekt-radomsko/8.1.jpg",
+      "realisations/06-projekt-radomsko/8.2.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Łódzkie",
+        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
+        "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
+        "scope": [
+          "prace ziemne i modelujące",
+          "okrywa rekultywacyjna",
+          "obsiew trawami"
+        ],
+        "effects": [
+          "stabilizacja składowiska",
+          "pokrywa roślinna"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Łódzkie",
+        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
+        "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
+        "scope": [
+          "prace ziemne i modelujące",
+          "okrywa rekultywacyjna",
+          "obsiew trawami"
+        ],
+        "effects": [
+          "stabilizacja składowiska",
+          "pokrywa roślinna"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Łódzkie",
+        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
+        "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
+        "scope": [
+          "prace ziemne i modelujące",
+          "okrywa rekultywacyjna",
+          "obsiew trawami"
+        ],
+        "effects": [
+          "stabilizacja składowiska",
+          "pokrywa roślinna"
+        ]
+      }
+    }
+  },
+  {
+    "id": "02-powiat-parczewski-2021",
+    "slug": "rekultywacja-powiat-parczewski-2021",
+    "region": "Lubelskie",
+    "years": "2021–2023",
+    "area": "ok. 1,2 ha",
+    "category": "reclamation",
+    "cover": "realisations/02-powiat-parczewski-2021/5.jpg",
+    "images": [
+      "realisations/02-powiat-parczewski-2021/1.jpg",
+      "realisations/02-powiat-parczewski-2021/2.jpg",
+      "realisations/02-powiat-parczewski-2021/3.jpg",
+      "realisations/02-powiat-parczewski-2021/3-1.jpg",
+      "realisations/02-powiat-parczewski-2021/4.jpg",
+      "realisations/02-powiat-parczewski-2021/4-1.jpg",
+      "realisations/02-powiat-parczewski-2021/5.jpg",
+      "realisations/02-powiat-parczewski-2021/6.jpg",
+      "realisations/02-powiat-parczewski-2021/7.jpg",
+      "realisations/02-powiat-parczewski-2021/8.jpg",
+      "realisations/02-powiat-parczewski-2021/9.jpg",
+      "realisations/02-powiat-parczewski-2021/10.jpg",
+      "realisations/02-powiat-parczewski-2021/11.jpg",
+      "realisations/02-powiat-parczewski-2021/13.jpg",
+      "realisations/02-powiat-parczewski-2021/Obraz3_2.jpg",
+      "realisations/02-powiat-parczewski-2021/skalowane2.jpg",
+      "realisations/02-powiat-parczewski-2021/skalowanie2_2.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Parczewski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim.",
+        "description": "Zakończona rekultywacja składowiska obejmująca końcowe formowanie okrywy rekultywacyjnej, obsiew trawami i nasadzenie drzew oraz monitoring stanu kwatery po trzech miesiącach od obsiewu i nasadzeń.",
+        "scope": [
+          "przygotowanie dokumentacji technicznej",
+          "formowanie okrywy rekultywacyjnej",
+          "obsiew trawami i nasadzenia drzew",
+          "monitoring stanu kwatery po rekultywacji",
+          "nadzór środowiskowy"
+        ],
+        "effects": [
+          "skuteczna stabilizacja kwatery o powierzchni 1,2 ha",
+          "pokrywa roślinna po 3 miesiącach od nasadzeń",
+          "redukcja oddziaływania odorowego",
+          "poprawa estetyki terenu i jego otoczenia"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Parczewski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim.",
+        "description": "Zakończona rekultywacja składowiska obejmująca końcowe formowanie okrywy rekultywacyjnej, obsiew trawami i nasadzenie drzew oraz monitoring stanu kwatery po trzech miesiącach od obsiewu i nasadzeń.",
+        "scope": [
+          "przygotowanie dokumentacji technicznej",
+          "formowanie okrywy rekultywacyjnej",
+          "obsiew trawami i nasadzenia drzew",
+          "monitoring stanu kwatery po rekultywacji",
+          "nadzór środowiskowy"
+        ],
+        "effects": [
+          "skuteczna stabilizacja kwatery o powierzchni 1,2 ha",
+          "pokrywa roślinna po 3 miesiącach od nasadzeń",
+          "redukcja oddziaływania odorowego",
+          "poprawa estetyki terenu i jego otoczenia"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Parczewski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim.",
+        "description": "Zakończona rekultywacja składowiska obejmująca końcowe formowanie okrywy rekultywacyjnej, obsiew trawami i nasadzenie drzew oraz monitoring stanu kwatery po trzech miesiącach od obsiewu i nasadzeń.",
+        "scope": [
+          "przygotowanie dokumentacji technicznej",
+          "formowanie okrywy rekultywacyjnej",
+          "obsiew trawami i nasadzenia drzew",
+          "monitoring stanu kwatery po rekultywacji",
+          "nadzór środowiskowy"
+        ],
+        "effects": [
+          "skuteczna stabilizacja kwatery o powierzchni 1,2 ha",
+          "pokrywa roślinna po 3 miesiącach od nasadzeń",
+          "redukcja oddziaływania odorowego",
+          "poprawa estetyki terenu i jego otoczenia"
+        ]
+      }
+    }
+  },
+  {
+    "id": "01-powiat-ostrowski",
+    "slug": "rekultywacja-powiat-ostrowski",
+    "region": "Mazowieckie",
+    "years": "2021–2022",
+    "area": "ok. 0,6 ha",
+    "category": "reclamation",
+    "cover": "realisations/01-powiat-ostrowski/20220222_152922.jpg",
+    "images": [
+      "realisations/01-powiat-ostrowski/20220218_114037.jpg",
+      "realisations/01-powiat-ostrowski/20220222_083716.jpg",
+      "realisations/01-powiat-ostrowski/20220222_152922.jpg",
+      "realisations/01-powiat-ostrowski/20220222_154209.jpg",
+      "realisations/01-powiat-ostrowski/Obraz1_2-1.jpg",
+      "realisations/01-powiat-ostrowski/Obraz2.jpg",
+      "realisations/01-powiat-ostrowski/Obraz4.jpg",
+      "realisations/01-powiat-ostrowski/Obraz5.jpg"
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Ostrowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim.",
+        "description": "Spółka zakończyła rekultywację składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim. Prace obejmowały etapowanie prac rekultywacyjnych od stanu przed rekultywacją w lutym 2021, przez prace wykończeniowe w lutym 2022, po wysiew traw i ostateczne ukształtowanie terenu.",
+        "scope": [
+          "analiza stanu wyjściowego składowiska",
+          "projekt techniczny rekultywacji",
+          "koordynacja prac ziemnych i modelujących",
+          "wysiew traw i prace wykończeniowe",
+          "nadzór nad realizacją inwestycji"
+        ],
+        "effects": [
+          "stabilizacja skarp i wierzchowiny składowiska",
+          "pokrywa roślinna po 3 miesiącach od wysiewu",
+          "przywrócenie walorów krajobrazowych terenu",
+          "zgodność z wymaganiami środowiskowymi"
+        ]
+      },
+      "en": {
+        "title": "Rekultywacja składowiska – Powiat Ostrowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim.",
+        "description": "Spółka zakończyła rekultywację składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim. Prace obejmowały etapowanie prac rekultywacyjnych od stanu przed rekultywacją w lutym 2021, przez prace wykończeniowe w lutym 2022, po wysiew traw i ostateczne ukształtowanie terenu.",
+        "scope": [
+          "analiza stanu wyjściowego składowiska",
+          "projekt techniczny rekultywacji",
+          "koordynacja prac ziemnych i modelujących",
+          "wysiew traw i prace wykończeniowe",
+          "nadzór nad realizacją inwestycji"
+        ],
+        "effects": [
+          "stabilizacja skarp i wierzchowiny składowiska",
+          "pokrywa roślinna po 3 miesiącach od wysiewu",
+          "przywrócenie walorów krajobrazowych terenu",
+          "zgodność z wymaganiami środowiskowymi"
+        ]
+      },
+      "de": {
+        "title": "Rekultywacja składowiska – Powiat Ostrowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim.",
+        "description": "Spółka zakończyła rekultywację składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim. Prace obejmowały etapowanie prac rekultywacyjnych od stanu przed rekultywacją w lutym 2021, przez prace wykończeniowe w lutym 2022, po wysiew traw i ostateczne ukształtowanie terenu.",
+        "scope": [
+          "analiza stanu wyjściowego składowiska",
+          "projekt techniczny rekultywacji",
+          "koordynacja prac ziemnych i modelujących",
+          "wysiew traw i prace wykończeniowe",
+          "nadzór nad realizacją inwestycji"
+        ],
+        "effects": [
+          "stabilizacja skarp i wierzchowiny składowiska",
+          "pokrywa roślinna po 3 miesiącach od wysiewu",
+          "przywrócenie walorów krajobrazowych terenu",
+          "zgodność z wymaganiami środowiskowymi"
+        ]
+      }
+    }
+  }
+]

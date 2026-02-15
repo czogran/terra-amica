@@ -1,0 +1,44 @@
+<app-section-header [title]="'offer.title' | translate" [subtitle]="'offer.subtitle' | translate" />
+
+<section class="services">
+  <div class="grid">
+    @for (service of services; track service.title) {
+      <div class="card">
+        <div class="icon">{{ service.icon }}</div>
+        <div class="title">{{ service.title }}</div>
+      </div>
+    }
+  </div>
+</section>
+
+<section class="specialization">
+  <h2>{{ 'offer.specialization.title' | translate }}</h2>
+  <p>
+    {{ 'offer.specialization.text' | translate }}
+  </p>
+
+  <ul>
+    @for (benefit of benefits; track benefit) {
+      <li> {{ benefit }}</li>
+    }
+  </ul>
+</section>
+
+<section class="clients">
+  <h2>{{ 'offer.clients.title' | translate }}</h2>
+  <ul>
+    @for (client of clients; track client) {
+      <li>{{ client }}</li>
+    }
+  </ul>
+  <p class="note">{{ 'offer.clients.note' | translate }}</p>
+</section>
+
+<section class="process">
+  <h2>{{ 'offer.process.title' | translate }}</h2>
+  <ol>
+    @for (step of processSteps; track step) {
+      <li>{{ step }}</li>
+    }
+  </ol>
+</section>

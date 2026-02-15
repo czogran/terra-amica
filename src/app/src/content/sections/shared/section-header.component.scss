@@ -1,0 +1,112 @@
+.realizacje-section {
+  background: linear-gradient(180deg, #f7f9f7, #ffffff);
+  position: relative;
+}
+
+/* container holding shapes */
+.eco-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* base shape style */
+.shape {
+  position: absolute;
+  opacity: 0.15;
+  animation: floatShape linear infinite;
+}
+
+/* 🌿 Leaf shape */
+.shape-leaf {
+  width: 70px;
+  height: 70px;
+  background: #2f7d32;
+  border-radius: 70% 0 70% 0;
+  transform: rotate(45deg);
+}
+
+/* 🌿 Circle eco bubble */
+.shape-circle {
+  width: 60px;
+  height: 60px;
+  background: #8bc34a;
+  border-radius: 50%;
+}
+
+/* size variations */
+.small { width: 40px; height: 40px; }
+.large { width: 100px; height: 100px; }
+
+/* positions */
+.shape:nth-child(1) { left: 10%; animation-duration: 18s; top: 80%; }
+.shape:nth-child(2) { left: 25%; animation-duration: 22s; top: 90%; }
+.shape:nth-child(3) { left: 50%; animation-duration: 16s; top: 85%; }
+.shape:nth-child(4) { left: 70%; animation-duration: 25s; top: 95%; }
+.shape:nth-child(5) { left: 85%; animation-duration: 20s; top: 88%; }
+
+/* floating animation */
+@keyframes floatShape {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-120px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-240px) rotate(360deg);
+  }
+}
+
+/* typography */
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2f7d32;
+}
+
+.title-divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #2f7d32, #8bc34a);
+  border-radius: 4px;
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+
+
+.hero {
+  text-align: center;
+  padding: 32px 10px;
+  background: var(--bs-light);
+  border-bottom: 2px solid var(--bs-primary-border-subtle);
+}
+
+// .hero h1 {
+//   font-size: 2.2rem;
+//   font-weight: 700;
+//   color: var(--bs-heading-color);
+//   margin-bottom: 0.75rem;
+// }
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  //   font-size: 1.15rem;
+  color: var(--bs-body-color);
+}
+
+.title-divider {
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-secondary));
+  border-radius: var(--bs-border-radius-sm);
+  margin-top: 12px;
+}

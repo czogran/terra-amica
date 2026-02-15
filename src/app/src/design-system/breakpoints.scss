@@ -1,0 +1,81 @@
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+$breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+  xxl: $breakpoint-xxl,
+);
+
+@function breakpoint($name) {
+  @if not map-has-key($breakpoints, $name) {
+    @error "Unknown breakpoint `#{$name}`.";
+  }
+
+  @return map-get($breakpoints, $name);
+}
+
+@function breakpoint-next($name) {
+  $keys: map-keys($breakpoints);
+  $index: index($keys, $name);
+
+  @if $index == null {
+    @error "Unknown breakpoint `#{$name}`.";
+  }
+
+  @if $index == length($keys) {
+    @return null;
+  }
+
+  @return nth($keys, $index + 1);
+}
+
+@mixin media-up($name) {
+  $min: breakpoint($name);
+
+  @if $min == 0 {
+    @content;
+  } @else {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+}
+
+@mixin media-down($name) {
+  $next: breakpoint-next($name);
+
+  @if $next == null {
+    @content;
+  } @else {
+    $max: breakpoint($next) - 0.02px;
+
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+}
+
+@mixin media-between($lower, $upper) {
+  $min: breakpoint($lower);
+  $next-upper: breakpoint-next($upper);
+
+  @if $next-upper == null {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    $max: breakpoint($next-upper) - 0.02px;
+
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+}

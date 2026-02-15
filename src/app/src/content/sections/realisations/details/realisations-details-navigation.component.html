@@ -1,0 +1,19 @@
+<button type="button" class="realisations-details__nav" (click)="openPreviousDetails()">
+  <span class="realisations-details__nav-icon" aria-hidden="true">‹</span>
+  <span class="realisations-details__nav-label">
+    {{ 'realisations.details.navigation.previous' | translate }}
+  </span>
+</button>
+
+<button type="button" class="realisations-details__back" (click)="closeDetails()">
+  <span class="realisations-details__nav-label">
+    {{ 'realisations.details.navigation.back' | translate }}
+  </span>
+</button>
+
+<button type="button" class="realisations-details__nav" (click)="openNextDetails()">
+  <span class="realisations-details__nav-label">
+    {{ 'realisations.details.navigation.next' | translate }}
+  </span>
+  <span class="realisations-details__nav-icon" aria-hidden="true">›</span>
+</button>

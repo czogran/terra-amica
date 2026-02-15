@@ -1,0 +1,30 @@
+.privacy-policy-section {
+  padding: 2rem;
+}
+
+.ta-download-btn {
+  border-radius: var(--bs-border-radius-lg);
+  padding: 0.375rem 0.75rem;
+  font-weight: 600;
+
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+
+.ta-download-btn:hover {
+  background-color: var(--bs-link-hover-color);
+  border-color: var(--bs-link-hover-color);
+  color: var(--bs-light);
+}
+
+.ta-download-btn:active {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+  color: var(--bs-light);
+}
+
+.ta-download-btn:focus-visible {
+  outline: var(--bs-focus-ring-width) solid var(--bs-focus-ring-color);
+  outline-offset: 2px;
+}

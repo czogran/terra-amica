@@ -1,0 +1,69 @@
+<header class="px-3 py-2 d-flex align-items-center justify-content-between">
+  <a class="brand-link" href="/" aria-label="Terra Amica">
+    <span class="brand-logo-wrap" aria-hidden="true">
+      <img
+        class="brand-logo brand-logo--light"
+        ngSrc="assets/logo/terra-amica-logo-light.png"
+        alt="Terra Amica"
+        width="1024"
+        height="459"
+        priority
+      />
+      <img
+        class="brand-logo brand-logo--dark"
+        ngSrc="assets/logo/terra-amica-logo-dark.png"
+        alt="Terra Amica"
+        width="1024"
+        height="459"
+        priority
+      />
+    </span>
+  </a>
+  <div class="d-flex align-items-center gap-3 w-100">
+    <app-header-contact class="ms-auto d-none d-lg-flex" />
+    <div class="d-lg-none mx-auto position-relative">
+      <div class="dropdown">
+        <button
+          class="btn btn-link p-0"
+          type="button"
+          id="menuDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          aria-label="Menu"
+        >
+          <i class="bi bi-list menu-icon" aria-hidden="true"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+          @for (item of menuItems; track item.key) {
+            <li>
+              <a
+                class="dropdown-item"
+                [attr.aria-current]="activeMenuItemKey === item.key ? 'page' : null"
+                (click)="onNavClick(item)"
+                >{{ item.key | translate }}</a
+              >
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+    <app-header-settings class="ms-1" />
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg px-3 border-top d-none d-lg-block mb-1">
+  <div class="navbar-collapse">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+      @for (item of menuItems; track item.key) {
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [attr.aria-current]="activeMenuItemKey === item.key ? 'page' : null"
+            (click)="onNavClick(item)"
+            >{{ item.key | translate }}</a
+          >
+        </li>
+      }
+    </ul>
+  </div>
+</nav>

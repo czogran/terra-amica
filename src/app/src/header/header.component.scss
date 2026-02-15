@@ -1,0 +1,230 @@
+@use '../design-system/breakpoints' as bp;
+
+// .navbar {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 18px 40px;
+//   background: #fff;
+//   border-bottom: 1px solid #eee;
+// }
+
+// nav a {
+//   // margin: 0 18px;
+//   // font-weight: 500;
+//   // color: #333;
+//   // text-decoration: none;
+//   position: relative;
+// }
+
+// nav a::after {
+//   content: '';
+//   position: absolute;
+//   bottom: -3px;
+//   left: 0;
+//   width: 0%;
+//   height: 2px;
+//   background: #1fa54a;
+//   transition: 0.3s;
+// }
+
+// nav a:hover::after {
+//   width: 100%;
+// }
+
+// .contact-btn {
+//   background: linear-gradient(135deg, #1fa54a, #3dbb63);
+//   color: white;
+//   padding: 10px 18px;
+//   border-radius: 8px;
+// }
+
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background: var(--bs-body-bg);
+}
+
+.logo-placeholder {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-logo-wrap {
+  position: relative;
+  display: inline-flex;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  isolation: isolate;
+  animation: logo-float 4s ease-in-out infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg,
+      transparent 35%,
+      rgba(255, 255, 255, 0.38) 50%,
+      transparent 65%
+    );
+    transform: translateX(-120%);
+    animation: none;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 0.8rem rgba(var(--bs-success-rgb), 0.25);
+    opacity: 0;
+    animation: none;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+  }
+}
+
+.brand-link:hover .brand-logo-wrap::before,
+.brand-link:focus-visible .brand-logo-wrap::before {
+  animation: logo-shine 1.2s ease-in-out forwards;
+}
+
+.brand-link:hover .brand-logo-wrap::after,
+.brand-link:focus-visible .brand-logo-wrap::after {
+  opacity: 0.7;
+  animation: logo-glow 1.8s ease-in-out infinite;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(60px, 8vw, 100px);
+  height: auto;
+  opacity: 0;
+  transform-origin: center;
+  filter: blur(10px) saturate(0.7);
+  animation: logo-load-in 1s cubic-bezier(0.22, 1, 0.36, 1) 0.08s forwards;
+}
+
+.brand-logo--dark {
+  display: none;
+}
+
+:host-context(html[data-bs-theme='dark']) {
+  .brand-logo--light {
+    display: none;
+  }
+
+  .brand-logo--dark {
+    display: block;
+  }
+}
+
+@include bp.media-down(md) {
+  .brand-logo {
+    width: clamp(50px, 14vw, 80px);
+  }
+}
+
+@keyframes logo-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes logo-load-in {
+  0% {
+    opacity: 0;
+    transform: translateY(0.8rem) scale(0.72) rotate(-8deg);
+    filter: blur(14px) brightness(1.25) saturate(0.55);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(-0.18rem) scale(1.06) rotate(1.5deg);
+    filter: blur(1.5px) brightness(1.08) saturate(1.08);
+  }
+  70% {
+    transform: translateY(0.08rem) scale(0.985) rotate(-0.7deg);
+    filter: blur(0.3px) brightness(1.02) saturate(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    filter: blur(0) brightness(1) saturate(1);
+  }
+}
+
+@keyframes logo-shine {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes logo-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+}
+.navbar-brand span.bg-secondary {
+  min-width: 40px;
+  min-height: 40px;
+  background: var(--bs-light);
+  color: var(--bs-light);
+}
+
+.nav-item {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: var(--bs-light) !important;
+  width: 100%;
+  text-align: center;
+  border-radius: var(--bs-border-radius-sm);
+
+  &.active,
+  &[aria-current='page'] {
+    font-weight: 800;
+    background: rgba(var(--bs-secondary-rgb), 0.15);
+  }
+  &:hover {
+    background: rgba(var(--bs-secondary-rgb), 0.3);
+    text-shadow: #d5e4e6 1px 0 10px;
+  }
+}
+
+nav.navbar {
+  border-bottom: 2px solid var(--bs-secondary);
+  background: var(--bs-primary);
+  color: var(--bs-light);
+  margin-bottom: 1.5rem;
+}

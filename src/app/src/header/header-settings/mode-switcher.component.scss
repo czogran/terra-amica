@@ -1,0 +1,14 @@
+.btn.btn-link {
+  border-radius: var(--bs-border-radius);
+}
+
+.btn.btn-link:has(.bi-moon):hover {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.08);
+  text-decoration: none;
+  outline: none;
+}
+.btn.btn-link:has(.bi-sun):hover {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.15);
+}

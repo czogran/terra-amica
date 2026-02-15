@@ -1,0 +1,78 @@
+@use '../../../design-system/breakpoints' as bp;
+
+.references-section {
+  padding: 2rem;
+}
+
+.references-list {
+  width: min(100%, 74rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@include bp.media-up(sm) {
+  .references-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include bp.media-up(md) {
+  .references-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@include bp.media-up(lg) {
+  .references-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.reference-card {
+  max-width: 19rem;
+  width: 100%;
+  max-height: 100%;
+  margin-inline: auto;
+  border: 1px solid var(--bs-light-border-subtle);
+  border-radius: var(--bs-border-radius);
+  background: var(--bs-body-bg);
+  box-shadow: var(--bs-box-shadow-sm);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+
+  &:hover,
+  &:focus-within {
+    // transform: translateY(-3px);
+    box-shadow: var(--bs-box-shadow-lg);
+  }
+}
+
+.reference-card-button {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: start;
+  flex-direction: column;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.reference-card-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 210 / 297;
+  max-height: 24rem;
+  object-fit: contain;
+  display: block;
+}
+
+.reference-card .card-body {
+  padding: 0.65rem 0.75rem;
+}

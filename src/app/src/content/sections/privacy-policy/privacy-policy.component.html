@@ -1,0 +1,33 @@
+<app-section-header
+  [title]="'menu.privacy-policy' | translate"
+  [subtitle]="'privacy-policy.intro' | translate"
+/>
+<section class="privacy-policy-section" aria-label="Informacje">
+  <div class="d-flex flex-column gap-3">
+    @for (document of documentsWithMarkdown(); track document.id) {
+      <article class="card">
+        <div
+          class="card-header bg-transparent d-flex align-items-start justify-content-between gap-2"
+        >
+          <h3 class="mb-0">{{ document.titleKey || '' | translate }}</h3>
+          <a
+            class="btn btn-primary btn-sm ta-download-btn"
+            [href]="'/assets/privacy-policy/' + document.pdf"
+            download
+            [attr.aria-label]="document.downloadAriaKey || '' | translate"
+          >
+            {{ 'privacy.download-pdf' | translate }}
+          </a>
+        </div>
+
+        <div class="card-body">
+          @if (document.markdownHtml) {
+            <div [innerHTML]="document.markdownHtml"></div>
+          } @else {
+            <p>{{ 'privacy.loading-message' | translate }}</p>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>

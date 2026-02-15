@@ -1,0 +1,40 @@
+[
+  {
+    "id": "contractors",
+    "titleKey": "privacy.contractors.title",
+    "downloadAriaKey": "privacy.contractors.download-aria",
+    "versions": {
+      "pl": {
+        "pdf": "klauzula-informacyjna-kontrahenci.pdf",
+        "markdown": "klauzula-informacyjna.md"
+      },
+      "en": {
+        "pdf": "klauzula-informacyjna-kontrahenci.pdf",
+        "markdown": "klauzula-informacyjna.md"
+      },
+      "de": {
+        "pdf": "klauzula-informacyjna-kontrahenci.pdf",
+        "markdown": "klauzula-informacyjna.md"
+      }
+    }
+  },
+  {
+    "id": "monitoring",
+    "titleKey": "privacy.monitoring.title",
+    "downloadAriaKey": "privacy.monitoring.download-aria",
+    "versions": {
+      "pl": {
+        "pdf": "monitoring.pdf",
+        "markdown": "monitoring.md"
+      },
+      "en": {
+        "pdf": "monitoring.pdf",
+        "markdown": "monitoring.md"
+      },
+      "de": {
+        "pdf": "monitoring.pdf",
+        "markdown": "monitoring.md"
+      }
+    }
+  }
+]

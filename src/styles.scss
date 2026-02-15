@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@use './app/src/design-system/theme.scss';
+
+// @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+/* Add any additional global styles below */
+
+// Typography styles for headings and paragraphs
+h1,
+h2,
+h3,
+p {
+  font-family: var(--bs-body-font-family);
+  color: var(--bs-body-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}

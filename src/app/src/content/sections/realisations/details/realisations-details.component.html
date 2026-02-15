@@ -1,0 +1,56 @@
+@if (card(); as card) {
+  <article class="realisations-details" aria-labelledby="realisations-details-title">
+    <div class="realisations-details__hero">
+      <div class="realisations-details__image">
+        @if (carouselInputs(); as carouselInputs) {
+          <ng-container
+            *ngComponentOutlet="carouselComponent; inputs: carouselInputs"
+          ></ng-container>
+        }
+      </div>
+
+      <div class="realisations-details__panel">
+        <app-realisations-details-navigation [cards]="cards()" [currentSlug]="selectedSlug()" />
+
+        <h2 id="realisations-details-title">{{ card.translation.title }}</h2>
+        <p class="realisations-details__lead">{{ card.translation.lead }}</p>
+
+        <app-realisations-details-meta
+          [region]="card.region"
+          [years]="card.years"
+          [area]="card.area"
+        />
+      </div>
+    </div>
+
+    <div class="realisations-details__content">
+      <section
+        class="realisations-details__block"
+        aria-labelledby="realisations-project-description"
+      >
+        <h3 id="realisations-project-description">
+          {{ 'realisations.details.description' | translate }}
+        </h3>
+        <p>{{ card.translation.description }}</p>
+      </section>
+
+      <section class="realisations-details__block" aria-labelledby="realisations-project-scope">
+        <h3 id="realisations-project-scope">{{ 'realisations.details.scope' | translate }}</h3>
+        <ul>
+          @for (scopeItem of card.translation.scope; track scopeItem) {
+            <li>{{ scopeItem }}</li>
+          }
+        </ul>
+      </section>
+
+      <section class="realisations-details__block" aria-labelledby="realisations-project-effects">
+        <h3 id="realisations-project-effects">{{ 'realisations.details.effects' | translate }}</h3>
+        <ul>
+          @for (effect of card.translation.effects; track effect) {
+            <li>{{ effect }}</li>
+          }
+        </ul>
+      </section>
+    </div>
+  </article>
+}

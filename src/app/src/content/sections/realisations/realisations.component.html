@@ -1,0 +1,36 @@
+<section class="realisations-section" aria-labelledby="realisations-list-title">
+  <ul
+    id="realisations-list"
+    class="realisations-grid"
+    [attr.aria-label]="'realisations.list.aria-label' | translate"
+  >
+    @for (card of cards(); track card.id) {
+      <li class="realisations-item">
+        <article class="realisations-card" aria-label="{{ card.translation.title }}">
+          <div class="realisations-card-thumb">
+            <img
+              [ngSrc]="assetUrl(card.cover)"
+              [alt]="card.translation.title"
+              width="800"
+              height="450"
+            />
+          </div>
+          <div class="realisations-card-content">
+            <h3>{{ card.translation.title }}</h3>
+            <p class="realisations-card-meta">
+              <span class="realisations-card-icon" aria-hidden="true"></span>
+              <span>{{ card.region }}</span>
+              <span class="realisations-card-separator">|</span>
+              <span>{{ card.years }}</span>
+            </p>
+            <div class="realisations-card-footer">
+              <button type="button" class="realisations-card-cta" (click)="openDetails(card.slug)">
+                {{ 'realisations.list.cta' | translate }}
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+    }
+  </ul>
+</section>

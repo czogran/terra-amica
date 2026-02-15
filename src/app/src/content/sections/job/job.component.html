@@ -1,0 +1,63 @@
+<app-section-header [title]="'menu.jobs' | translate" [subtitle]="'job.intro' | translate" />
+<section class="job-section">
+  <div class="d-flex flex-wrap gap-4 align-items-start mt-3">
+    @if (loading()) {
+      <div
+        class="job-tile card h-100 flex-grow-1 flex-shrink-1 skeleton-tile"
+        style="min-width: 220px; max-width: 350px; width: 100%"
+      >
+        <div class="card-body">
+          <div class="skeleton skeleton-title mb-2"></div>
+          <div class="skeleton skeleton-text mb-1"></div>
+          <div class="skeleton skeleton-text"></div>
+        </div>
+      </div>
+    } @else {
+      @for (job of jobs(); track job.title) {
+        <div
+          class="job-tile card h-100 flex-grow-1 flex-shrink-1"
+          style="min-width: 220px; max-width: 350px; width: 100%"
+          (click)="openJob(job)"
+        >
+          <div class="card-body">
+            <h5 class="card-title">{{ job.title }}</h5>
+            <p class="card-text text-truncate" style="max-height: 3.5em; overflow: hidden">
+              {{ job.description }}
+            </p>
+          </div>
+        </div>
+      }
+    }
+  </div>
+
+  @if (selectedJob()) {
+    <div
+      class="modal fade show d-block"
+      tabindex="-1"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="job-modal-title"
+      style="background: rgba(0, 0, 0, 0.5)"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="job-modal-title">{{ selectedJob()?.title }}</h5>
+            <button
+              type="button"
+              class="btn-close"
+              aria-label="Close"
+              (click)="closeJob()"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>{{ selectedJob()?.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+  <footer class="text-center mt-4">
+    <h5>{{ 'job.invite' | translate }}</h5>
+  </footer>
+</section>
