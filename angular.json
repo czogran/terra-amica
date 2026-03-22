@@ -24,6 +24,7 @@
               "base": "dist/terra-amica",
               "browser": ""
             },
+            "baseHref": "terra-amica",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
