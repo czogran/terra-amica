@@ -20,11 +20,11 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-             "outputPath": {
+            "outputPath": {
               "base": "dist/terra-amica",
               "browser": ""
             },
-            "baseHref": "terra-amica",
+            "baseHref": "/",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
