@@ -9,7 +9,6 @@ import {
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NgOptimizedImage } from '@angular/common';
 import { Router } from '@angular/router';
-import { SectionHeaderComponent } from '../shared/section-header.component';
 import { LangChangeEvent, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import {
   RealisationItem,
@@ -27,7 +26,7 @@ type RealisationCardViewModel = RealisationItem & {
   selector: 'app-realisations',
   templateUrl: './realisations.component.html',
   styleUrls: ['./realisations.component.scss'],
-  imports: [SectionHeaderComponent, TranslatePipe, NgOptimizedImage],
+  imports: [TranslatePipe, NgOptimizedImage],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RealisationsComponent {
