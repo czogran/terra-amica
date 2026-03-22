@@ -35,12 +35,12 @@ jobs:
         run: npx ng build --base-href /terra-amica/
 
       - name: Copy index.html to 404.html for client-side routing
-        run: cp dist/terra-amica/browser/index.html dist/terra-amica/browser/404.html
+        run: cp dist/terra-amica/index.html dist/terra-amica/404.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/terra-amica/browser
+          path: dist/terra-amica
 
   deploy:
     needs: build
