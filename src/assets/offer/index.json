@@ -1,0 +1,185 @@
+{
+  "pl": {
+    "services": [
+      {
+        "icon": "recycle",
+        "title": "Przetwarzanie odpadów",
+        "description": "Kompleksowe przetwarzanie i recykling odpadów zgodnie z normami środowiskowymi."
+      },
+      {
+        "icon": "tree",
+        "title": "Rekultywacja składowisk odpadów",
+        "description": "Przywracanie terenów składowisk do stanu przyjaznego środowisku."
+      },
+      {
+        "icon": "globe2",
+        "title": "Rekultywacja terenów zdegradowanych",
+        "description": "Odbudowa i zagospodarowanie terenów zdegradowanych przez działalność człowieka."
+      },
+      {
+        "icon": "file-earmark-text",
+        "title": "Analizy dokumentacji i audyty środowiskowe",
+        "description": "Szczegółowe analizy i audyty dokumentacji środowiskowej."
+      },
+      {
+        "icon": "person-workspace",
+        "title": "Inwestor zastępczy",
+        "description": "Reprezentowanie inwestora w procesie realizacji inwestycji."
+      },
+      {
+        "icon": "building",
+        "title": "Procedury i decyzje środowiskowe",
+        "description": "Wsparcie w uzyskiwaniu decyzji i pozwoleń środowiskowych."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Rekultywacja składowisk odpadów",
+        "text": "Specjalizujemy się w rekultywacji składowisk odpadów innych niż niebezpieczne i obojętne, wykorzystując rozwiązania bezpieczne dla środowiska oraz umożliwiające odzysk odpadów.",
+        "items": [
+          "odzysk odpadów",
+          "ochrona środowiska",
+          "obniżenie kosztów gospodarki odpadami",
+          "zapobieganie przepełnieniu składowisk"
+        ]
+      },
+      {
+        "title": "Dla kogo",
+        "items": ["gmin", "przedsiębiorstw komunalnych", "właścicieli zamkniętych składowisk"],
+        "note": "Rekultywacje realizujemy także jako inwestor zastępczy."
+      },
+      {
+        "title": "Proces realizacji inwestycji",
+        "items": [
+          "koncepcja i analizy",
+          "decyzje administracyjne",
+          "realizacja inwestycji",
+          "pozwolenie na użytkowanie",
+          "uruchomienie instalacji"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "services": [
+      {
+        "icon": "recycle",
+        "title": "Waste processing",
+        "description": "Comprehensive waste processing and recycling in accordance with environmental standards."
+      },
+      {
+        "icon": "tree",
+        "title": "Landfill reclamation",
+        "description": "Restoring landfill areas to an environmentally friendly state."
+      },
+      {
+        "icon": "globe2",
+        "title": "Degraded land reclamation",
+        "description": "Restoration and development of land degraded by human activity."
+      },
+      {
+        "icon": "file-earmark-text",
+        "title": "Documentation analysis and environmental audits",
+        "description": "Detailed analysis and audits of environmental documentation."
+      },
+      {
+        "icon": "person-workspace",
+        "title": "Substitute investor",
+        "description": "Representing the investor in the investment implementation process."
+      },
+      {
+        "icon": "building",
+        "title": "Environmental procedures and decisions",
+        "description": "Support in obtaining environmental decisions and permits."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Landfill reclamation",
+        "text": "We specialize in the reclamation of landfills for non-hazardous and inert waste, using environmentally safe solutions and enabling waste recovery.",
+        "items": [
+          "waste recovery",
+          "environmental protection",
+          "cost reduction in waste management",
+          "preventing landfill overflow"
+        ]
+      },
+      {
+        "title": "For whom",
+        "items": ["municipalities", "municipal enterprises", "owners of closed landfills"],
+        "note": "We also carry out reclamation as a substitute investor at the owner's expense."
+      },
+      {
+        "title": "Investment implementation process",
+        "items": [
+          "concept and analysis",
+          "administrative decisions",
+          "investment implementation",
+          "occupancy permit",
+          "facility launch"
+        ]
+      }
+    ]
+  },
+  "de": {
+    "services": [
+      {
+        "icon": "recycle",
+        "title": "Abfallverarbeitung",
+        "description": "Umfassende Verarbeitung und Recycling von Abfällen gemäß Umweltstandards."
+      },
+      {
+        "icon": "tree",
+        "title": "Deponierekultivierung",
+        "description": "Wiederherstellung von Deponieflächen in einen umweltfreundlichen Zustand."
+      },
+      {
+        "icon": "globe2",
+        "title": "Rekultivierung degradierter Flächen",
+        "description": "Wiederherstellung und Entwicklung von durch menschliche Aktivitäten degradierten Flächen."
+      },
+      {
+        "icon": "file-earmark-text",
+        "title": "Dokumentationsanalyse und Umweltaudits",
+        "description": "Detaillierte Analyse und Audits von Umweltdokumentationen."
+      },
+      {
+        "icon": "person-workspace",
+        "title": "Stellvertretender Investor",
+        "description": "Vertretung des Investors im Investitionsprozess."
+      },
+      {
+        "icon": "building",
+        "title": "Umweltverfahren und -entscheidungen",
+        "description": "Unterstützung bei der Erlangung von Umweltentscheidungen und -genehmigungen."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Deponierekultivierung",
+        "text": "Wir sind auf die Rekultivierung von Deponien für nicht gefährliche und inerte Abfälle spezialisiert und verwenden umweltfreundliche Lösungen, die eine Abfallverwertung ermöglichen.",
+        "items": [
+          "Abfallverwertung",
+          "Umweltschutz",
+          "Kostensenkung in der Abfallwirtschaft",
+          "Vermeidung von Deponieüberfüllung"
+        ]
+      },
+      {
+        "title": "Für wen",
+        "items": ["Gemeinden", "kommunale Unternehmen", "Eigentümer geschlossener Deponien"],
+        "note": "Wir führen Rekultivierungen auch als stellvertretender Investor auf Kosten des Eigentümers durch."
+      },
+      {
+        "title": "Ablauf der Investitionsumsetzung",
+        "items": [
+          "Konzept und Analyse",
+          "Verwaltungsentscheidungen",
+          "Investitionsumsetzung",
+          "Nutzungsgenehmigung",
+          "Inbetriebnahme der Anlage"
+        ]
+      }
+    ]
+  }
+}

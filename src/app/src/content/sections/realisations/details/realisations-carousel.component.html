@@ -1,104 +1,84 @@
 <div
-  #carouselEl
-  id="realisationsDetailsCarousel"
-  class="carousel slide h-100"
-  data-bs-ride="carousel"
-  data-bs-interval="3000"
-  data-bs-pause="hover"
+  class="realisations-details__carousel-shell"
+  [class.realisations-details__carousel-shell--fullscreen]="isFullscreenOpen()"
+  [class.realisations-details__carousel-shell--minimising]="isFullscreenMinimising()"
 >
-  @if (images().length > 1) {
-    <ol class="carousel-indicators">
-      @for (image of images(); track image; let i = $index) {
-        <li
-          data-target="#realisationsDetailsCarousel"
-          [attr.data-slide-to]="i"
-          data-bs-target="#realisationsDetailsCarousel"
-          [attr.data-bs-slide-to]="i"
-          [class.active]="i === 0"
-          [attr.aria-current]="i === 0 ? 'true' : null"
-          [attr.aria-label]="'Slide ' + (i + 1)"
-        ></li>
-      }
-    </ol>
-  }
+  <div
+    #carouselEl
+    id="realisationsDetailsCarousel"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval="3000"
+    data-bs-pause="hover"
+  >
+    @if (images().length > 1) {
+      <ol class="carousel-indicators">
+        @for (image of images(); track image; let i = $index) {
+          <li
+            data-target="#realisationsDetailsCarousel"
+            [attr.data-slide-to]="i"
+            data-bs-target="#realisationsDetailsCarousel"
+            [attr.data-bs-slide-to]="i"
+            [class.active]="i === activeIndex()"
+            [attr.aria-current]="i === activeIndex() ? 'true' : null"
+            [attr.aria-label]="'Slide ' + (i + 1)"
+          ></li>
+        }
+      </ol>
+    }
 
-  <div class="carousel-inner h-100">
-    @for (image of images(); track image; let i = $index) {
-      <div class="carousel-item h-100" [class.active]="i === 0">
-        <img
-          [ngSrc]="image"
-          [alt]="alt()"
-          width="1600"
-          height="900"
-          [priority]="i === 0"
-          class="d-block w-100 realisations-details__carousel-image"
-        />
-      </div>
+    <div class="carousel-inner h-100">
+      @for (image of images(); track image; let i = $index) {
+        <div class="carousel-item h-100" [class.active]="i === activeIndex()">
+          <img
+            [ngSrc]="image"
+            [alt]="alt()"
+            width="1600"
+            height="900"
+            [priority]="i === 0"
+            class="d-block w-100 realisations-details__carousel-image"
+          />
+        </div>
+      }
+    </div>
+
+    <button
+      #fullscreenCloseButton
+      type="button"
+      class="realisations-details__carousel-action"
+      [class.realisations-details__carousel-action--fullscreen]="isFullscreenOpen()"
+      (click)="isFullscreenActive() ? closeFullscreen() : openFullscreen()"
+      [attr.aria-label]="
+        isFullscreenActive()
+          ? ('realisations.details.carousel.close-fullscreen' | translate)
+          : ('realisations.details.carousel.open-fullscreen' | translate)
+      "
+    >
+      <span aria-hidden="true">{{ isFullscreenActive() ? '⤡' : '⤢' }}</span>
+    </button>
+
+    @if (images().length > 1) {
+      <a
+        class="carousel-control-prev"
+        href="#realisationsDetailsCarousel"
+        role="button"
+        data-slide="prev"
+        data-bs-target="#realisationsDetailsCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#realisationsDetailsCarousel"
+        role="button"
+        data-slide="next"
+        data-bs-target="#realisationsDetailsCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
     }
   </div>
-
-  <button
-    type="button"
-    class="realisations-details__carousel-action"
-    (click)="openFullscreen(activeImage())"
-    [attr.aria-label]="'realisations.details.carousel.open-fullscreen' | translate"
-  >
-    <span aria-hidden="true">⤢</span>
-  </button>
-
-  @if (images().length > 1) {
-    <a
-      class="carousel-control-prev"
-      href="#realisationsDetailsCarousel"
-      role="button"
-      data-slide="prev"
-      data-bs-target="#realisationsDetailsCarousel"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only visually-hidden">Previous</span>
-    </a>
-    <a
-      class="carousel-control-next"
-      href="#realisationsDetailsCarousel"
-      role="button"
-      data-slide="next"
-      data-bs-target="#realisationsDetailsCarousel"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
-  }
 </div>
-
-@if (fullscreenImage(); as fullscreenImage) {
-  <div
-    class="modal fade show d-block realisations-details__image-modal"
-    tabindex="-1"
-    role="dialog"
-    aria-modal="true"
-    [attr.aria-label]="'realisations.details.carousel.dialog' | translate"
-    (click)="closeFullscreen()"
-  >
-    <div
-      class="modal-content realisations-details__image-modal-content"
-      (click)="$event.stopPropagation()"
-    >
-      <button
-        #fullscreenCloseButton
-        type="button"
-        class="btn-close realisations-details__image-modal-close"
-        (click)="closeFullscreen()"
-        [attr.aria-label]="'realisations.details.carousel.close-fullscreen' | translate"
-      ></button>
-
-      <img
-        [ngSrc]="fullscreenImage"
-        [alt]="alt()"
-        width="1600"
-        height="900"
-        class="realisations-details__fullscreen-image"
-      />
-    </div>
-  </div>
-}

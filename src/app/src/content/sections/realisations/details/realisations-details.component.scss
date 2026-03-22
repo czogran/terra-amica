@@ -1,6 +1,7 @@
 @use '../../../../design-system/breakpoints' as bp;
 :host {
-  padding-top: 2rem;
+  margin: 1rem;
+  display: block;
 }
 
 .realisations-details {
@@ -27,14 +28,9 @@
 .realisations-details__panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   padding: 2rem;
-  // background: linear-gradient(
-  //   180deg,
-  //   var(--bs-surface-panel-start) 0%,
-  //   var(--bs-surface-panel-end) 100%
-  // );
 }
 
 .realisations-details__eyebrow {

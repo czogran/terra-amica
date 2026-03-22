@@ -36,15 +36,41 @@
 }
 
 /* size variations */
-.small { width: 40px; height: 40px; }
-.large { width: 100px; height: 100px; }
+.small {
+  width: 40px;
+  height: 40px;
+}
+.large {
+  width: 100px;
+  height: 100px;
+}
 
 /* positions */
-.shape:nth-child(1) { left: 10%; animation-duration: 18s; top: 80%; }
-.shape:nth-child(2) { left: 25%; animation-duration: 22s; top: 90%; }
-.shape:nth-child(3) { left: 50%; animation-duration: 16s; top: 85%; }
-.shape:nth-child(4) { left: 70%; animation-duration: 25s; top: 95%; }
-.shape:nth-child(5) { left: 85%; animation-duration: 20s; top: 88%; }
+.shape:nth-child(1) {
+  left: 10%;
+  animation-duration: 18s;
+  top: 80%;
+}
+.shape:nth-child(2) {
+  left: 25%;
+  animation-duration: 22s;
+  top: 90%;
+}
+.shape:nth-child(3) {
+  left: 50%;
+  animation-duration: 16s;
+  top: 85%;
+}
+.shape:nth-child(4) {
+  left: 70%;
+  animation-duration: 25s;
+  top: 95%;
+}
+.shape:nth-child(5) {
+  left: 85%;
+  animation-duration: 20s;
+  top: 88%;
+}
 
 /* floating animation */
 @keyframes floatShape {
@@ -80,8 +106,6 @@
   color: #444;
 }
 
-
-
 .hero {
   text-align: center;
   padding: 32px 10px;
@@ -89,17 +113,9 @@
   border-bottom: 2px solid var(--bs-primary-border-subtle);
 }
 
-// .hero h1 {
-//   font-size: 2.2rem;
-//   font-weight: 700;
-//   color: var(--bs-heading-color);
-//   margin-bottom: 0.75rem;
-// }
-
 .hero p {
   max-width: 700px;
   margin: auto;
-  //   font-size: 1.15rem;
   color: var(--bs-body-color);
 }
 

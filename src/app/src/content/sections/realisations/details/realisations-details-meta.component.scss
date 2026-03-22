@@ -1,4 +1,4 @@
-@use '../../../../design-system/breakpoints' as bp;
+@use 'design-system/breakpoints' as bp;
 
 .realisations-details__meta {
   display: grid;
@@ -10,7 +10,6 @@
 .realisations-details__meta div {
   padding: 1rem;
   border-radius: var(--bs-border-radius-lg);
-  // background: rgb(var(--bs-surface-overlay-rgb) / 0.72);
   border: 1px solid var(--bs-border-subtle-alt);
   box-shadow: var(--bs-box-shadow-sm);
   background: linear-gradient(

@@ -1,0 +1,63 @@
+{
+  "title": "Zakres naszej działalności",
+  "subtitle": "Kompleksowe usługi w zakresie gospodarki odpadami, rekultywacji oraz przygotowania inwestycji środowiskowych.",
+  "services": [
+    {
+      "icon": "recycle",
+      "title": "Przetwarzanie odpadów",
+      "description": "Kompleksowe przetwarzanie i recykling odpadów zgodnie z normami środowiskowymi."
+    },
+    {
+      "icon": "tree",
+      "title": "Rekultywacja składowisk odpadów",
+      "description": "Przywracanie terenów składowisk do stanu przyjaznego środowisku."
+    },
+    {
+      "icon": "globe2",
+      "title": "Rekultywacja terenów zdegradowanych",
+      "description": "Odbudowa i zagospodarowanie terenów zdegradowanych przez działalność człowieka."
+    },
+    {
+      "icon": "file-earmark-text",
+      "title": "Analizy dokumentacji i audyty środowiskowe",
+      "description": "Szczegółowe analizy i audyty dokumentacji środowiskowej."
+    },
+    {
+      "icon": "person-workspace",
+      "title": "Inwestor zastępczy",
+      "description": "Reprezentowanie inwestora w procesie realizacji inwestycji."
+    },
+    {
+      "icon": "scale",
+      "title": "Procedury i decyzje środowiskowe",
+      "description": "Wsparcie w uzyskiwaniu decyzji i pozwoleń środowiskowych."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Rekultywacja składowisk odpadów",
+      "text": "Specjalizujemy się w rekultywacji składowisk odpadów innych niż niebezpieczne i obojętne, wykorzystując rozwiązania bezpieczne dla środowiska oraz umożliwiające odzysk odpadów.",
+      "items": [
+        "odzysk odpadów",
+        "ochrona środowiska",
+        "obniżenie kosztów gospodarki odpadami",
+        "zapobieganie przepełnieniu składowisk"
+      ]
+    },
+    {
+      "title": "Dla kogo",
+      "items": ["gmin", "przedsiębiorstw komunalnych", "właścicieli zamkniętych składowisk"],
+      "note": "Rekultywacje realizujemy także jako inwestor zastępczy."
+    },
+    {
+      "title": "Proces realizacji inwestycji",
+      "items": [
+        "koncepcja i analizy",
+        "decyzje administracyjne",
+        "realizacja inwestycji",
+        "pozwolenie na użytkowanie",
+        "uruchomienie instalacji"
+      ]
+    }
+  ]
+}

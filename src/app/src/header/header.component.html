@@ -1,10 +1,10 @@
 <header class="px-3 py-2 d-flex align-items-center justify-content-between">
-  <a class="brand-link" href="/" aria-label="Terra Amica">
+  <a class="brand-link" href="/" [attr.aria-label]="'app.title' | translate">
     <span class="brand-logo-wrap" aria-hidden="true">
       <img
         class="brand-logo brand-logo--light"
         ngSrc="assets/logo/terra-amica-logo-light.png"
-        alt="Terra Amica"
+        [attr.alt]="'app.title' | translate"
         width="1024"
         height="459"
         priority
@@ -12,7 +12,7 @@
       <img
         class="brand-logo brand-logo--dark"
         ngSrc="assets/logo/terra-amica-logo-dark.png"
-        alt="Terra Amica"
+        [attr.alt]="'app.title' | translate"
         width="1024"
         height="459"
         priority
@@ -29,7 +29,7 @@
           id="menuDropdown"
           data-bs-toggle="dropdown"
           aria-expanded="false"
-          aria-label="Menu"
+          [attr.aria-label]="'header.menu.aria-label' | translate"
         >
           <i class="bi bi-list menu-icon" aria-hidden="true"></i>
         </button>

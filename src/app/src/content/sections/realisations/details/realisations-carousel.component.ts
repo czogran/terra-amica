@@ -1,11 +1,12 @@
+import { effect } from '@angular/core';
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
+  computed,
   ElementRef,
   OnDestroy,
   ViewChild,
-  computed,
   input,
   signal,
 } from '@angular/core';
@@ -24,6 +25,15 @@ import { TranslatePipe } from '@ngx-translate/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RealisationsCarouselComponent implements AfterViewInit, OnDestroy {
+  constructor() {
+    effect(() => {
+      // Reset to first image when images input changes
+      this.images();
+      this.activeIndex.set(0);
+    });
+  }
+  private static readonly fullscreenAnimationMs = 240;
+
   @ViewChild('fullscreenCloseButton')
   fullscreenCloseButton?: ElementRef<HTMLButtonElement>;
 
@@ -34,34 +44,41 @@ export class RealisationsCarouselComponent implements AfterViewInit, OnDestroy {
   alt = input.required<string>();
 
   protected readonly activeIndex = signal(0);
-  protected readonly activeImage = computed(
-    () => this.images()[this.activeIndex()] ?? this.images()[0] ?? '',
+  protected readonly isFullscreenOpen = signal(false);
+  protected readonly isFullscreenMinimising = signal(false);
+  protected readonly isFullscreenActive = computed(
+    () => this.isFullscreenOpen() || this.isFullscreenMinimising(),
   );
 
-  protected readonly fullscreenImage = signal<string | null>(null);
   private previousFocusedElement: HTMLElement | null = null;
-  private readonly slidListener = (event: Event): void => {
-    const carousel = event as CustomEvent<{ to: number }>;
-    if (typeof carousel.detail?.to === 'number') {
-      this.activeIndex.set(carousel.detail.to);
+  private closeAnimationTimer: ReturnType<typeof setTimeout> | null = null;
+  private readonly mainSlidListener = (event: Event): void => {
+    const index = this.readSlideIndex(event);
+    if (index !== null) {
+      this.activeIndex.set(index);
     }
   };
 
   ngAfterViewInit(): void {
-    this.carouselEl?.nativeElement.addEventListener('slid.bs.carousel', this.slidListener);
+    this.carouselEl?.nativeElement.addEventListener('slid.bs.carousel', this.mainSlidListener);
   }
 
   ngOnDestroy(): void {
-    this.carouselEl?.nativeElement.removeEventListener('slid.bs.carousel', this.slidListener);
+    this.carouselEl?.nativeElement.removeEventListener('slid.bs.carousel', this.mainSlidListener);
+    this.clearCloseAnimationTimer();
   }
 
-  openFullscreen(image: string): void {
-    this.popupOpen();
+  openFullscreen(): void {
+    if (this.isFullscreenActive()) {
+      return;
+    }
 
+    this.clearCloseAnimationTimer();
     this.previousFocusedElement =
       document.activeElement instanceof HTMLElement ? document.activeElement : null;
 
-    this.fullscreenImage.set(image);
+    this.popupOpen();
+    this.isFullscreenOpen.set(true);
 
     requestAnimationFrame(() => {
       this.fullscreenCloseButton?.nativeElement.focus();
@@ -69,17 +86,36 @@ export class RealisationsCarouselComponent implements AfterViewInit, OnDestroy {
   }
 
   closeFullscreen(): void {
-    if (!this.fullscreenImage()) {
+    if (!this.isFullscreenOpen()) {
       return;
     }
 
-    this.popupClose();
-    this.fullscreenImage.set(null);
+    this.isFullscreenOpen.set(false);
+    this.isFullscreenMinimising.set(true);
+    this.clearCloseAnimationTimer();
 
-    requestAnimationFrame(() => {
-      this.previousFocusedElement?.focus();
-      this.previousFocusedElement = null;
-    });
+    this.closeAnimationTimer = setTimeout(() => {
+      this.popupClose();
+      this.isFullscreenMinimising.set(false);
+
+      requestAnimationFrame(() => {
+        this.previousFocusedElement?.focus();
+        this.previousFocusedElement = null;
+      });
+    }, RealisationsCarouselComponent.fullscreenAnimationMs);
+  }
+
+  private clearCloseAnimationTimer(): void {
+    if (this.closeAnimationTimer !== null) {
+      clearTimeout(this.closeAnimationTimer);
+      this.closeAnimationTimer = null;
+    }
+  }
+
+  private readSlideIndex(event: Event): number | null {
+    const slideEvent = event as Event & { to?: number; detail?: { to?: number } };
+    const index = slideEvent.to ?? slideEvent.detail?.to;
+    return typeof index === 'number' ? index : null;
   }
 
   popupOpen(): void {

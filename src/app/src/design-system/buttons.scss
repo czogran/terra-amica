@@ -1,0 +1,36 @@
+@mixin pill-button-base(
+  $min-height: 2.75rem,
+  $padding-y: 0.7rem,
+  $padding-x: 1rem,
+  $gap: 0.65rem,
+  $background: var(--bs-surface-subtle),
+  $text-color: var(--bs-body-color),
+  $border-color: var(--bs-border-muted)
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+  flex: 1 1 0;
+  min-height: $min-height;
+  padding: $padding-y $padding-x;
+  border: 1px solid $border-color;
+  border-radius: var(--bs-border-radius-pill);
+  background: $background;
+  color: $text-color;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--bs-box-shadow-sm);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+
+  &:focus-visible {
+    outline: 3px solid var(--bs-focus-ring-color);
+    outline-offset: 3px;
+  }
+}

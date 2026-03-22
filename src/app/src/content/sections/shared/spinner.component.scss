@@ -1,0 +1,19 @@
+:host {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100vw;
+  height: 100vh;
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

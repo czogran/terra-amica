@@ -7,6 +7,7 @@ import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { STATE_PROVIDERS } from 'state';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { environment } from './../environments/environment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -16,7 +17,9 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     provideAnimations(),
     provideTranslateService({
-      loader: provideTranslateHttpLoader(),
+      loader: provideTranslateHttpLoader({
+        prefix: environment.href + 'assets/i18n/',
+      }),
       fallbackLang: 'en',
       lang: 'pl',
     }),

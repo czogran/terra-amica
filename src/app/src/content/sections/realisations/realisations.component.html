@@ -5,7 +5,7 @@
     [attr.aria-label]="'realisations.list.aria-label' | translate"
   >
     @for (card of cards(); track card.id) {
-      <li class="realisations-item">
+      <li class="realisations-item fade-in">
         <article class="realisations-card" aria-label="{{ card.translation.title }}">
           <div class="realisations-card-thumb">
             <img

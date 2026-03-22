@@ -1,0 +1,69 @@
+{
+  "title": "Scope of our activity",
+  "subtitle": "Comprehensive services in waste management, land reclamation, and preparation of environmental investments.",
+  "services": [
+    {
+      "icon": "recycle",
+      "title": "Waste processing",
+      "description": "Comprehensive waste processing and recycling in accordance with environmental standards."
+    },
+    {
+      "icon": "tree",
+      "title": "Landfill reclamation",
+      "description": "Restoring landfill areas to an environmentally friendly state."
+    },
+    {
+      "icon": "globe2",
+      "title": "Degraded land reclamation",
+      "description": "Restoration and development of land degraded by human activity."
+    },
+    {
+      "icon": "file-earmark-text",
+      "title": "Documentation analysis and environmental audits",
+      "description": "Detailed analysis and audits of environmental documentation."
+    },
+    {
+      "icon": "person-workspace",
+      "title": "Substitute investor",
+      "description": "Representing the investor in the investment implementation process."
+    },
+    {
+      "icon": "scale",
+      "title": "Environmental procedures and decisions",
+      "description": "Support in obtaining environmental decisions and permits."
+    }
+  ],
+  "sections": [
+    {
+      "type": "specialization",
+      "title": "Landfill reclamation",
+      "text": "We specialize in the reclamation of landfills for non-hazardous and inert waste, using environmentally safe solutions and enabling waste recovery."
+    },
+    {
+      "type": "benefits",
+      "items": [
+        "waste recovery",
+        "environmental protection",
+        "cost reduction in waste management",
+        "preventing landfill overflow"
+      ]
+    },
+    {
+      "type": "clients",
+      "title": "For whom",
+      "list": ["municipalities", "municipal enterprises", "owners of closed landfills"],
+      "note": "We also carry out reclamation as a substitute investor at the owner's expense."
+    },
+    {
+      "type": "process",
+      "title": "Investment implementation process",
+      "steps": [
+        "concept and analysis",
+        "administrative decisions",
+        "investment implementation",
+        "occupancy permit",
+        "facility launch"
+      ]
+    }
+  ]
+}

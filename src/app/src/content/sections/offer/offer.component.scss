@@ -1,31 +1,9 @@
-@use 'sass:color';
-
-:host {
-  display: block;
-  font-family: Inter, sans-serif;
-  color: var(--bs-body-color);
-  background: var(--bs-body-bg);
-}
-
-.hero {
-  text-align: center;
-  padding: 32px 10px;
-  background: var(--bs-light);
-
-  p {
-    max-width: 700px;
-    margin: auto;
-  }
-}
-
 .services {
   padding: 20px 10px;
 
-  .grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
   .card {
     background: var(--bs-light);
@@ -52,21 +30,18 @@
   }
 }
 
-.specialization,
-.clients,
-.process {
+.offer-section {
   padding: 20px 10px;
   max-width: 900px;
   margin: auto;
 
-  ul,
-  ol {
+  &__item {
     margin-top: 15px;
     padding-left: 20px;
     color: var(--bs-body-color);
   }
 
-  .note {
+  &__note {
     margin-top: 10px;
     font-style: italic;
     color: var(--bs-secondary);

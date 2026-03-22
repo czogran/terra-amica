@@ -1,0 +1,63 @@
+{
+  "title": "Unser Tätigkeitsbereich",
+  "subtitle": "Umfassende Dienstleistungen in der Abfallwirtschaft, Rekultivierung und Vorbereitung von Umweltinvestitionen.",
+  "services": [
+    {
+      "icon": "recycle",
+      "title": "Abfallverarbeitung",
+      "description": "Umfassende Verarbeitung und Recycling von Abfällen gemäß Umweltstandards."
+    },
+    {
+      "icon": "tree",
+      "title": "Deponierekultivierung",
+      "description": "Wiederherstellung von Deponieflächen in einen umweltfreundlichen Zustand."
+    },
+    {
+      "icon": "globe2",
+      "title": "Rekultivierung degradierter Flächen",
+      "description": "Wiederherstellung und Entwicklung von durch menschliche Aktivitäten degradierten Flächen."
+    },
+    {
+      "icon": "file-earmark-text",
+      "title": "Dokumentationsanalyse und Umweltaudits",
+      "description": "Detaillierte Analyse und Audits von Umweltdokumentationen."
+    },
+    {
+      "icon": "person-workspace",
+      "title": "Stellvertretender Investor",
+      "description": "Vertretung des Investors im Investitionsprozess."
+    },
+    {
+      "icon": "scale",
+      "title": "Umweltverfahren und -entscheidungen",
+      "description": "Unterstützung bei der Erlangung von Umweltentscheidungen und -genehmigungen."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Deponierekultivierung",
+      "text": "Wir sind auf die Rekultivierung von Deponien für nicht gefährliche und inerte Abfälle spezialisiert und verwenden umweltfreundliche Lösungen, die eine Abfallverwertung ermöglichen.",
+      "items": [
+        "Abfallverwertung",
+        "Umweltschutz",
+        "Kostensenkung in der Abfallwirtschaft",
+        "Vermeidung von Deponieüberfüllung"
+      ]
+    },
+    {
+      "title": "Für wen",
+      "items": ["Gemeinden", "kommunale Unternehmen", "Eigentümer geschlossener Deponien"],
+      "note": "Wir führen Rekultivierungen auch als stellvertretender Investor auf Kosten des Eigentümers durch."
+    },
+    {
+      "title": "Ablauf der Investitionsumsetzung",
+      "items": [
+        "Konzept und Analyse",
+        "Verwaltungsentscheidungen",
+        "Investitionsumsetzung",
+        "Nutzungsgenehmigung",
+        "Inbetriebnahme der Anlage"
+      ]
+    }
+  ]
+}

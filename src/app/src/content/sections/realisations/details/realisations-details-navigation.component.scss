@@ -1,4 +1,5 @@
-@use '../../../../design-system/breakpoints' as bp;
+@use 'design-system/breakpoints' as bp;
+@use 'design-system/buttons' as buttons;
 
 :host {
   display: flex;
@@ -10,27 +11,7 @@
 
 .realisations-details__nav,
 .realisations-details__back {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.65rem;
-  flex: 1 1 0;
-  min-height: 2.75rem;
-  padding: 0.7rem 1rem;
-  border: 1px solid var(--bs-border-muted);
-  border-radius: var(--bs-border-radius-pill);
-  background: var(--bs-surface-subtle);
-  color: var(--bs-body-color);
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: var(--bs-box-shadow-sm);
-  transition:
-    background-color 160ms ease,
-    border-color 160ms ease,
-    box-shadow 160ms ease,
-    transform 160ms ease;
+  @include buttons.pill-button-base();
 }
 
 .realisations-details__nav {
@@ -53,12 +34,6 @@
 .realisations-details__back:hover {
   background: var(--bs-surface-card);
   border-color: var(--bs-border-subtle-alt);
-}
-
-.realisations-details__nav:focus-visible,
-.realisations-details__back:focus-visible {
-  outline: 3px solid var(--bs-focus-ring-color);
-  outline-offset: 3px;
 }
 
 .realisations-details__nav-icon {

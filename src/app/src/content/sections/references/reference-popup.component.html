@@ -1,120 +1,93 @@
-<div
-  class="modal fade show d-block reference-popup-backdrop"
-  tabindex="-1"
-  role="dialog"
-  aria-modal="true"
-  aria-labelledby="reference-popup-title"
-  aria-describedby="reference-popup-caption"
->
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="reference-popup-title">
-          {{ reference().titleKey | translate }}
-        </h5>
-        <button type="button" class="btn-close" aria-label="Close" (click)="close.emit()"></button>
-      </div>
-      <div class="modal-body text-center">
-        <nav class="reference-popup-nav-top" aria-label="Top reference navigation">
-          <button
-            type="button"
-            class="btn btn-light btn-sm reference-nav-btn"
-            aria-label="Previous reference"
-            (click)="previous.emit()"
-          >
-            &#8592;
-          </button>
-          <button
-            type="button"
-            class="btn btn-light btn-sm reference-nav-btn"
-            aria-label="Next reference"
-            (click)="next.emit()"
-          >
-            &#8594;
-          </button>
-        </nav>
-        <nav
-          class="d-flex align-items-center justify-content-center mb-3 reference-popup-nav"
-          aria-label="Reference image navigation"
-        >
-          <button
-            type="button"
-            class="btn btn-light btn-sm reference-nav-btn reference-nav-btn-side"
-            aria-label="Previous reference"
-            (click)="previous.emit()"
-          >
-            &#8592;
-          </button>
-          <div
-            #imageWrapper
-            class="reference-img-wrapper"
-            [class.reference-img-wrapper--grabbing]="isImageDragging()"
-            (mousedown)="onImageDragStart($event)"
-            (mousemove)="onImageDragMove($event)"
-            (mouseleave)="onImageDragEnd()"
-          >
-            @for (file of reference().files; track file) {
-              <img
-                [ngSrc]="'assets/references/' + file"
-                alt="Reference image"
-                width="595"
-                height="842"
-                class="img-fluid reference-popup-img"
-                [style.width.%]="zoomLevel()"
-              />
-            }
-          </div>
-          <button
-            type="button"
-            class="btn btn-light btn-sm reference-nav-btn reference-nav-btn-side"
-            aria-label="Next reference"
-            (click)="next.emit()"
-          >
-            &#8594;
-          </button>
-        </nav>
-        <div class="reference-zoom-controls">
-          <button
-            type="button"
-            class="btn btn-sm btn-outline-secondary"
-            (click)="zoomOut()"
-            [disabled]="zoomLevel() === 100"
-            aria-label="Zoom out"
-          >
-            −
-          </button>
-          <span class="reference-zoom-level">{{ zoomLevel() }}%</span>
-          <button
-            type="button"
-            class="btn btn-sm btn-outline-secondary"
-            (click)="zoomIn()"
-            [disabled]="zoomLevel() === 300"
-            aria-label="Zoom in"
-          >
-            +
-          </button>
-          <button
-            type="button"
-            class="btn btn-sm btn-outline-secondary"
-            (click)="resetZoom()"
-            [disabled]="zoomLevel() === 100"
-            [attr.aria-label]="'reference.zoom.reset' | translate"
-          >
-            {{ 'reference.zoom.reset' | translate }}
-          </button>
-        </div>
-        <div
-          #popupCaption
-          id="reference-popup-caption"
-          class="popup-caption"
-          [class.popup-caption--overflowed]="isCaptionOverflowed()"
-          tabindex="0"
-        >
-          <span>
-            {{ reference().descriptionKey | translate }}
-          </span>
-        </div>
-      </div>
-    </div>
+<div class="fade-in reference-popup reference-popup--surface d-flex flex-column" role="document">
+  <div class="modal-header reference-popup__header flex-shrink-0">
+    <h5 class="modal-title" id="reference-popup-title">
+      {{ reference().titleKey | translate }}
+    </h5>
+    <button
+      type="button"
+      class="btn-close"
+      [attr.aria-label]="'common.close' | translate"
+      (click)="close.emit()"
+    ></button>
   </div>
+
+  <div class="d-flex overflow-hidden modal-body" style="min-height: 0">
+    <nav
+      class="reference-popup-nav-top flex-shrink-0"
+      [attr.aria-label]="'reference.popup.nav-top.aria-label' | translate"
+    >
+      <button
+        type="button"
+        class="btn btn-light btn-sm reference-nav-btn"
+        [attr.aria-label]="'reference.popup.previous-aria' | translate"
+        (click)="previous.emit()"
+      >
+        &#8592;
+      </button>
+      <button
+        type="button"
+        class="btn btn-light btn-sm reference-nav-btn"
+        [attr.aria-label]="'reference.popup.next-aria' | translate"
+        (click)="next.emit()"
+      >
+        &#8594;
+      </button>
+    </nav>
+    <button
+      type="button"
+      class="btn btn-light btn-sm reference-nav-btn reference-nav-btn-side"
+      [attr.aria-label]="'reference.popup.previous-aria' | translate"
+      (click)="previous.emit()"
+    >
+      &#8592;
+    </button>
+    <div
+      #imageWrapper
+      class="reference-img-wrapper"
+      [class.reference-img-wrapper--grabbing]="isImageDragging()"
+      (mousedown)="onImageDragStart($event)"
+      (mousemove)="onImageDragMove($event)"
+      (mouseleave)="onImageDragEnd()"
+    >
+      @for (file of reference().files; track file) {
+        <img
+          [ngSrc]="'assets/references/' + file"
+          [attr.alt]="'reference.image.alt' | translate"
+          width="595"
+          height="842"
+          class="img-fluid reference-popup-img"
+          [style.width.%]="zoomLevel()"
+        />
+      }
+    </div>
+    <button
+      type="button"
+      class="btn btn-light btn-sm reference-nav-btn reference-nav-btn-side"
+      [attr.aria-label]="'reference.popup.next-aria' | translate"
+      (click)="next.emit()"
+    >
+      &#8594;
+    </button>
+  </div>
+
+  <div
+    #popupCaption
+    id="reference-popup-caption"
+    class="popup-caption flex-grow-1"
+    [class.popup-caption--overflowed]="isCaptionOverflowed()"
+    tabindex="0"
+  >
+    <span>
+      {{ reference().descriptionKey | translate }}
+    </span>
+  </div>
+  <app-reference-zoom-controls
+    class="flex-shrink-0"
+    [zoomLevel]="zoomLevel()"
+    [minZoom]="100"
+    [maxZoom]="300"
+    (zoomInRequested)="zoomIn()"
+    (zoomOutRequested)="zoomOut()"
+    (resetRequested)="resetZoom()"
+  />
 </div>

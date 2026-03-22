@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './src/header/header.component';
 import { FooterComponent } from './src/footer/footer.component';
 import { StateService } from './src/state/state.service';
+import { SpinnerComponent } from "./src/content/sections/shared/spinner.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, SpinnerComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

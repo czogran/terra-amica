@@ -19,14 +19,14 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-geo-alt-fill contact-icon"></i>
             <div>
-              <div class="fw-bold">{{ 'ADDRESS' | translate }}</div>
+              <div class="fw-bold">{{ 'address' | translate }}</div>
               <div>{{ contactState.address() }}</div>
             </div>
           </div>
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-envelope-fill contact-icon"></i>
             <div>
-              <div class="fw-bold">{{ 'EMAIL' | translate }}</div>
+              <div class="fw-bold">{{ 'email' | translate }}</div>
               <div>
                 @let mail = contactState.email();
                 <a
@@ -46,7 +46,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
               name="email"
               type="email"
               class="form-control"
-              placeholder="Your email"
+              [attr.placeholder]="'footer.form.email.placeholder' | translate"
               required
             />
           </div>
@@ -55,7 +55,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
               name="message"
               class="form-control"
               rows="3"
-              placeholder="Your message"
+              [attr.placeholder]="'footer.form.message.placeholder' | translate"
               required
             ></textarea>
           </div>

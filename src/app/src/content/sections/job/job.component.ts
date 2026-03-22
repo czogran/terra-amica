@@ -1,18 +1,28 @@
-import { Component, computed, signal, inject, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  signal,
+  inject,
+  OnInit,
+} from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import { SectionHeaderComponent } from "../shared/section-header.component";
+import { SectionHeaderComponent } from '../shared/section-header.component';
+import { JobModalComponent } from './job-modal.component';
+import type { Job } from './job.types';
 
 @Component({
   selector: 'app-job',
-  imports: [TranslatePipe, SectionHeaderComponent],
+  imports: [TranslatePipe, SectionHeaderComponent, JobModalComponent],
   templateUrl: './job.component.html',
   styleUrls: ['./job.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class JobComponent implements OnInit {
   private translate = inject(TranslateService);
-  jobs = signal<{ title: string; description: string }[]>([]);
+  jobs = signal<Job[]>([]);
   lang = computed(() => this.translate.currentLang || this.translate.defaultLang || 'en');
-  selectedJob = signal<{ title: string; description: string } | null>(null);
+  selectedJob = signal<Job | null>(null);
   loading = signal(true);
 
   async ngOnInit() {
@@ -26,7 +36,7 @@ export class JobComponent implements OnInit {
       files = [];
     }
     const lang = this.lang();
-    const allJobs: { title: string; description: string }[] = [];
+    const allJobs: Job[] = [];
     for (const file of files) {
       try {
         const res = await fetch(`assets/jobs/${file}`);
@@ -41,7 +51,7 @@ export class JobComponent implements OnInit {
     this.loading.set(false);
   }
 
-  openJob(job: { title: string; description: string }) {
+  openJob(job: Job) {
     this.selectedJob.set(job);
   }
 

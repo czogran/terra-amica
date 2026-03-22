@@ -1,14 +1,23 @@
-<div class="realisations-details__meta" aria-label="Szczegóły realizacji">
+<div
+  class="realisations-details__meta"
+  [attr.aria-label]="'realisations.details.meta.aria' | translate"
+>
   <div>
-    <span class="realisations-details__label">Region</span>
+    <span class="realisations-details__label">{{
+      'realisations.details.meta.region' | translate
+    }}</span>
     <strong>{{ region() }}</strong>
   </div>
   <div>
-    <span class="realisations-details__label">Lata realizacji</span>
+    <span class="realisations-details__label">{{
+      'realisations.details.meta.years' | translate
+    }}</span>
     <strong>{{ years() }}</strong>
   </div>
   <div>
-    <span class="realisations-details__label">Powierzchnia</span>
+    <span class="realisations-details__label">{{
+      'realisations.details.meta.area' | translate
+    }}</span>
     <strong>{{ area() }}</strong>
   </div>
 </div>

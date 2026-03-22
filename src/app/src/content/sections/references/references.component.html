@@ -6,22 +6,22 @@
   <div class="references-list" role="list">
     @for (reference of references(); track $index) {
       <button
-        class="reference-card reference-card-button"
+        class="reference-card reference-card-button fade-in"
         role="listitem"
         type="button"
         aria-haspopup="dialog"
-        aria-label="Expand reference image"
+        [attr.aria-label]="'reference.image.expand-aria' | translate"
         (click)="openPopup(reference)"
       >
         <img
           [ngSrc]="'assets/references/' + reference.files[0]"
           class="card-img-top reference-card-image"
-          alt="Reference image"
+          [attr.alt]="'reference.image.alt' | translate"
           width="210"
           height="297"
         />
         <div class="card-body">
-          <p class="card-text small text-muted mb-0">{{ reference.titleKey | translate }}</p>
+          <p class="card-text text-muted mb-0">{{ reference.titleKey | translate }}</p>
         </div>
       </button>
     }

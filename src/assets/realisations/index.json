@@ -44,35 +44,35 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Policki",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie polickim w województwie zachodniopomorskim. Planowane zakończenie: czerwiec 2027.",
-        "description": "Projekt obejmuje rekultywację jednego z większych składowisk w regionie zachodniopomorskim o powierzchni ok. 4,4 ha. Prace rozpoczęto w 2024 roku. W toku są roboty kształtujące kwaterę, budowa studni odgazowujących oraz wykonanie wielowarstwowej okrywy rekultywacyjnej. Planowane zakończenie prac: czerwiec 2027.",
+        "title": "Landfill reclamation – Policki County",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Policki County, West Pomeranian Voivodeship. Planned completion: June 2027.",
+        "description": "The project includes reclamation of one of the larger landfills in the West Pomeranian region covering approx. 4.4 ha. Works began in 2024. In progress: cell shaping, construction of gas extraction wells, and installation of a multi-layer reclamation cover. Planned completion: June 2027.",
         "scope": [
-          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
-          "odspajanie odpadów i formowanie wierzchowiny",
-          "wykonanie studni odgazowujących",
-          "wykonanie okrywy rekultywacyjnej"
+          "pre-reclamation cell condition documentation",
+          "waste decompaction and cap shaping",
+          "construction of gas extraction wells",
+          "installation of reclamation cover"
         ],
         "effects": [
-          "postępująca stabilizacja bryły składowiska",
-          "ograniczenie emisji biogazu przez studnie odgazowujące",
-          "przygotowanie terenu pod finalną warstwę glebotwórczą"
+          "ongoing stabilization of the landfill body",
+          "reduction of biogas emission through gas extraction wells",
+          "preparation of the site for the final soil-forming layer"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Policki",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie polickim w województwie zachodniopomorskim. Planowane zakończenie: czerwiec 2027.",
-        "description": "Projekt obejmuje rekultywację jednego z większych składowisk w regionie zachodniopomorskim o powierzchni ok. 4,4 ha. Prace rozpoczęto w 2024 roku. W toku są roboty kształtujące kwaterę, budowa studni odgazowujących oraz wykonanie wielowarstwowej okrywy rekultywacyjnej. Planowane zakończenie prac: czerwiec 2027.",
+        "title": "Deponierekultivierung – Kreis Policki",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und neutral sichere Abfälle im Kreis Policki, Woiwodschaft Westpommern. Geplantes Ende: Juni 2027.",
+        "description": "Das Projekt umfasst die Rekultivierung einer der größten Deponien in der Region Westpommern mit einer Fläche von ca. 4,4 ha. Die Arbeiten begannen 2024. In Ausführung: Formung der Ablagerungszelle, Bau von Gasabsaugbrunnen und Anlage einer mehrschichtigen Rekultivierungsdecke. Geplantes Ende: Juni 2027.",
         "scope": [
-          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
-          "odspajanie odpadów i formowanie wierzchowiny",
-          "wykonanie studni odgazowujących",
-          "wykonanie okrywy rekultywacyjnej"
+          "Bestandsdokumentation der Zelle vor der Rekultivierung",
+          "Abfallauflockerung und Formung der Deckschicht",
+          "Bau von Gasabsaugbrunnen",
+          "Anlage der Rekultivierungsdecke"
         ],
         "effects": [
-          "postępująca stabilizacja bryły składowiska",
-          "ograniczenie emisji biogazu przez studnie odgazowujące",
-          "przygotowanie terenu pod finalną warstwę glebotwórczą"
+          "fortschreitende Stabilisierung des Deponiekörpers",
+          "Reduzierung der Biogasemissionen durch Gasabsaugbrunnen",
+          "Vorbereitung des Geländes für die finale bodenbildende Schicht"
         ]
       }
     }
@@ -114,35 +114,35 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie wieruszowskim w województwie łódzkim. Planowane zakończenie: grudzień 2026.",
-        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,0 ha w powiecie wieruszowskim. Prace rozpoczęto w 2025 roku i obejmują wykonanie warstwy wyrównawczej, izolację wierzchowiny oraz warstwy glebotwórczej. Planowane zakończenie: grudzień 2026.",
+        "title": "Landfill reclamation – Wieruszowski County",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Wieruszowski County, Łódź Voivodeship. Planned completion: December 2026.",
+        "description": "The reclamation project covers approx. 1.0 ha landfill in Wieruszowski County. Works started in 2025 and include leveling layer installation, cap isolation, and soil-forming layer construction. Planned completion: December 2026.",
         "scope": [
-          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
-          "warstwa wyrównawcza",
-          "izolacja wierzchowiny",
-          "warstwa glebotwórcza"
+          "pre-reclamation cell condition documentation",
+          "leveling layer",
+          "cap isolation",
+          "soil-forming layer"
         ],
         "effects": [
-          "przywrócenie walorów krajobrazowych terenu",
-          "uszczelnienie wierzchowiny składowiska",
-          "przygotowanie podłoża pod obsiew trawami"
+          "restoration of landscape values",
+          "sealing of the landfill cap",
+          "preparation of substrate for grass seeding"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie wieruszowskim w województwie łódzkim. Planowane zakończenie: grudzień 2026.",
-        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,0 ha w powiecie wieruszowskim. Prace rozpoczęto w 2025 roku i obejmują wykonanie warstwy wyrównawczej, izolację wierzchowiny oraz warstwy glebotwórczej. Planowane zakończenie: grudzień 2026.",
+        "title": "Deponierekultivierung – Kreis Wieruszowski",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und neutral sichere Abfälle im Kreis Wieruszowski, Woiwodschaft Łódź. Geplantes Ende: Dezember 2026.",
+        "description": "Das Rekultivierungsprojekt umfasst eine ca. 1,0 ha große Deponie im Kreis Wieruszowski. Die Arbeiten begannen 2025 und beinhalten die Anlage einer Ausgleichsschicht, Kappenisolierung und den Aufbau einer bodenbildenden Schicht. Geplantes Ende: Dezember 2026.",
         "scope": [
-          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
-          "warstwa wyrównawcza",
-          "izolacja wierzchowiny",
-          "warstwa glebotwórcza"
+          "Bestandsdokumentation der Zelle vor der Rekultivierung",
+          "Ausgleichsschicht",
+          "Kappenisolierung",
+          "bodenbildende Schicht"
         ],
         "effects": [
-          "przywrócenie walorów krajobrazowych terenu",
-          "uszczelnienie wierzchowiny składowiska",
-          "przygotowanie podłoża pod obsiew trawami"
+          "Wiederherstellung der Landschaftswerte",
+          "Versiegelung der Deponiekappe",
+          "Vorbereitung des Untergrunds für Rasenansaat"
         ]
       }
     }
@@ -170,39 +170,33 @@
         "title": "Rekultywacja składowiska – Powiat Łosicki",
         "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
         "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
-        "scope": [
-          "odspojenie odpadów i kształtowanie kwatery",
-          "wykonanie okrywy rekultywacyjnej"
-        ],
+        "scope": ["odspojenie odpadów i kształtowanie kwatery", "wykonanie okrywy rekultywacyjnej"],
         "effects": [
           "ukształtowanie bryły składowiska",
           "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Łosicki",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
-        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
-        "scope": [
-          "odspojenie odpadów i kształtowanie kwatery",
-          "wykonanie okrywy rekultywacyjnej"
-        ],
+        "title": "Landfill reclamation – Łosicki County",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Łosicki County, Masovian Voivodeship.",
+        "description": "The reclamation project covers approx. 1.6 ha landfill in Łosicki County. Works include waste decompaction, cell shaping, and reclamation cover installation.",
+        "scope": ["waste decompaction and cell shaping", "reclamation cover installation"],
         "effects": [
-          "ukształtowanie bryły składowiska",
-          "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
+          "shaping of the landfill body",
+          "preparation of the site for soil-forming layer and seeding"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Łosicki",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
-        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
+        "title": "Deponierekultivierung – Kreis Łosicki",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Łosicki, Woiwodschaft Masowien.",
+        "description": "Das Rekultivierungsprojekt umfasst eine ca. 1,6 ha große Deponie im Kreis Łosicki. Die Arbeiten umfassen Abfallauflockerung, Formung der Ablagerungszelle und die Anlage einer Rekultivierungsdecke.",
         "scope": [
-          "odspojenie odpadów i kształtowanie kwatery",
-          "wykonanie okrywy rekultywacyjnej"
+          "Abfallauflockerung und Formung der Ablagerungszelle",
+          "Anlage der Rekultivierungsdecke"
         ],
         "effects": [
-          "ukształtowanie bryły składowiska",
-          "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
+          "Formung des Deponiekörpers",
+          "Vorbereitung des Geländes für die bodenbildende Schicht und Einsaat"
         ]
       }
     }
@@ -240,32 +234,26 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – 2025",
-        "lead": "Najnowsza zakończona realizacja rekultywacji składowiska odpadów.",
-        "description": "Najnowszy projekt rekultywacyjny zakończony w 2025 roku. Prace obejmowały pełny zakres działań od formowania kwatery, przez warstwy techniczne i glebotwórcze, po obsiew trawami.",
+        "title": "Landfill reclamation – 2025",
+        "lead": "The latest completed landfill reclamation project.",
+        "description": "The latest reclamation project completed in 2025. Works included full scope from cell formation through technical and soil-forming layers to grass seeding.",
         "scope": [
-          "kompleksowe prace rekultywacyjne",
-          "warstwy techniczne i glebotwórcze",
-          "obsiew trawami i nasadzenia"
+          "comprehensive reclamation works",
+          "technical and soil-forming layers",
+          "grass seeding and planting"
         ],
-        "effects": [
-          "skutecznie zrekultywowane składowisko",
-          "przygotowanie terenu do dalszego zagospodarowania"
-        ]
+        "effects": ["successfully reclaimed landfill", "site prepared for further development"]
       },
       "de": {
-        "title": "Rekultywacja składowiska – 2025",
-        "lead": "Najnowsza zakończona realizacja rekultywacji składowiska odpadów.",
-        "description": "Najnowszy projekt rekultywacyjny zakończony w 2025 roku. Prace obejmowały pełny zakres działań od formowania kwatery, przez warstwy techniczne i glebotwórcze, po obsiew trawami.",
+        "title": "Deponierekultivierung – 2025",
+        "lead": "Das jüngste abgeschlossene Deponierekultivierungsprojekt.",
+        "description": "Das jüngste Rekultivierungsprojekt wurde 2025 abgeschlossen. Die Arbeiten umfassten den vollständigen Umfang von Zellformung über technische und bodenbildende Schichten bis zur Einsaat.",
         "scope": [
-          "kompleksowe prace rekultywacyjne",
-          "warstwy techniczne i glebotwórcze",
-          "obsiew trawami i nasadzenia"
+          "umfassende Rekultivierungsarbeiten",
+          "technische und bodenbildende Schichten",
+          "Einsaat und Bepflanzung"
         ],
-        "effects": [
-          "skutecznie zrekultywowane składowisko",
-          "przygotowanie terenu do dalszego zagospodarowania"
-        ]
+        "effects": ["erfolgreich rekultivierte Deponie", "Gelände für weitere Nutzung vorbereitet"]
       }
     }
   },
@@ -290,43 +278,26 @@
         "title": "Rekultywacja składowiska – Łódzkie (II)",
         "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
         "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
-        "scope": [
-          "formowanie okrywy rekultywacyjnej",
-          "prace wykończeniowe",
-          "odbiór etapów"
-        ],
-        "effects": [
-          "gotowość do użytkowania terenu",
-          "czytelna dokumentacja powykonawcza"
-        ]
+        "scope": ["formowanie okrywy rekultywacyjnej", "prace wykończeniowe", "odbiór etapów"],
+        "effects": ["gotowość do użytkowania terenu", "czytelna dokumentacja powykonawcza"]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Łódzkie (II)",
-        "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
-        "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
-        "scope": [
-          "formowanie okrywy rekultywacyjnej",
-          "prace wykończeniowe",
-          "odbiór etapów"
-        ],
-        "effects": [
-          "gotowość do użytkowania terenu",
-          "czytelna dokumentacja powykonawcza"
-        ]
+        "title": "Landfill reclamation – Łódzkie (II)",
+        "lead": "Landfill reclamation – another project in Łódź Voivodeship.",
+        "description": "Works included comprehensive reclamation of the landfill cell with finishing works.",
+        "scope": ["reclamation cover shaping", "finishing works", "stage acceptance"],
+        "effects": ["readiness for site use", "clear as-built documentation"]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Łódzkie (II)",
-        "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
-        "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
+        "title": "Deponierekultivierung – Łódzkie (II)",
+        "lead": "Deponierekultivierung – ein weiteres Projekt in der Woiwodschaft Łódź.",
+        "description": "Die Arbeiten umfassten die umfassende Rekultivierung der Deponiezelle einschließlich Ausführungsarbeiten.",
         "scope": [
-          "formowanie okrywy rekultywacyjnej",
-          "prace wykończeniowe",
-          "odbiór etapów"
+          "Formung der Rekultivierungsdecke",
+          "Ausführungsarbeiten",
+          "Abnahme der Bauabschnitte"
         ],
-        "effects": [
-          "gotowość do użytkowania terenu",
-          "czytelna dokumentacja powykonawcza"
-        ]
+        "effects": ["nutzungsbereites Gelände", "klare Bestandsdokumentation"]
       }
     }
   },
@@ -349,43 +320,22 @@
         "title": "Rekultywacja składowiska – Łukowskie",
         "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
         "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
-        "scope": [
-          "prace przygotowawcze",
-          "formowanie kwatery",
-          "obsiew trawami i nasadzenia"
-        ],
-        "effects": [
-          "teren zrekultywowany",
-          "pokrywa roślinna zabezpieczająca obiekt"
-        ]
+        "scope": ["prace przygotowawcze", "formowanie kwatery", "obsiew trawami i nasadzenia"],
+        "effects": ["teren zrekultywowany", "pokrywa roślinna zabezpieczająca obiekt"]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Łukowskie",
-        "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
-        "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
-        "scope": [
-          "prace przygotowawcze",
-          "formowanie kwatery",
-          "obsiew trawami i nasadzenia"
-        ],
-        "effects": [
-          "teren zrekultywowany",
-          "pokrywa roślinna zabezpieczająca obiekt"
-        ]
+        "title": "Landfill reclamation – Łukowskie",
+        "lead": "Landfill reclamation in Łuków County.",
+        "description": "Reclamation works at a municipal landfill including cell shaping and vegetation cover.",
+        "scope": ["preparatory works", "cell shaping", "grass seeding and planting"],
+        "effects": ["reclaimed area", "vegetation cover securing the site"]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Łukowskie",
-        "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
-        "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
-        "scope": [
-          "prace przygotowawcze",
-          "formowanie kwatery",
-          "obsiew trawami i nasadzenia"
-        ],
-        "effects": [
-          "teren zrekultywowany",
-          "pokrywa roślinna zabezpieczająca obiekt"
-        ]
+        "title": "Deponierekultivierung – Łukowskie",
+        "lead": "Deponierekultivierung im Kreis Łuków.",
+        "description": "Rekultivierungsarbeiten auf einem kommunalen Deponiegelände mit Zellformung und Vegetationsdecke.",
+        "scope": ["Vorbereitende Arbeiten", "Formung der Zelle", "Einsaat und Bepflanzung"],
+        "effects": ["rekultiviertes Gelände", "Vegetationsdecke sichert das Objekt"]
       }
     }
   },
@@ -436,41 +386,41 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Parczewski (II etap)",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji.",
-        "description": "Projekt obejmował kompleksowe prace rekultywacyjne na kwaterze o powierzchni 1,5 ha. Przeprowadzono odspajanie odpadów, formowanie kwatery, ułożenie warstwy technicznej i izolacyjnej, warstwy glebotwórczej, końcowe kształtowanie wierzchowiny oraz obsiew trawami i nasadzenia.",
+        "title": "Landfill reclamation – Parczewski County (phase II)",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Parczewski County – second phase of the investment.",
+        "description": "The project included comprehensive reclamation works on a 1.5 ha cell. Waste separation, cell shaping, technical and isolation layer installation, soil-forming layer, final cover shaping, and grass seeding and planting were performed.",
         "scope": [
-          "odspajanie odpadów i formowanie kwatery pod rekultywację",
-          "wykonanie warstwy technicznej",
-          "izolacja kwatery",
-          "wykonanie warstwy glebotwórczej",
-          "końcowe formowanie wierzchowiny",
-          "obsiew trawami i nasadzenia"
+          "waste separation and cell shaping for reclamation",
+          "technical layer installation",
+          "cell isolation",
+          "soil-forming layer installation",
+          "final cover shaping",
+          "grass seeding and planting"
         ],
         "effects": [
-          "zrekultywowana kwatera o powierzchni 1,5 ha",
-          "pełna izolacja składowiska",
-          "pokrywa roślinna zabezpieczająca teren",
-          "gotowość do dalszego monitorowania"
+          "1.5 ha reclaimed cell",
+          "full landfill isolation",
+          "vegetation cover securing the site",
+          "ready for further monitoring"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Parczewski (II etap)",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji.",
-        "description": "Projekt obejmował kompleksowe prace rekultywacyjne na kwaterze o powierzchni 1,5 ha. Przeprowadzono odspajanie odpadów, formowanie kwatery, ułożenie warstwy technicznej i izolacyjnej, warstwy glebotwórczej, końcowe kształtowanie wierzchowiny oraz obsiew trawami i nasadzenia.",
+        "title": "Deponierekultivierung – Kreis Parczewski (Phase II)",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Parczewski – zweite Phase der Investition.",
+        "description": "Das Projekt umfasste umfassende Rekultivierungsarbeiten auf einer 1,5 ha großen Zelle. Abfallauflockerung, Formung der Zelle, Anlage technischer und Isolationsschichten, bodenbildende Schicht, Abschlussformung der Deckschicht sowie Einsaat und Bepflanzung wurden durchgeführt.",
         "scope": [
-          "odspajanie odpadów i formowanie kwatery pod rekultywację",
-          "wykonanie warstwy technicznej",
-          "izolacja kwatery",
-          "wykonanie warstwy glebotwórczej",
-          "końcowe formowanie wierzchowiny",
-          "obsiew trawami i nasadzenia"
+          "Abfallauflockerung und Formung der Zelle zur Rekultivierung",
+          "Anlage der technischen Schicht",
+          "Isolierung der Zelle",
+          "Anlage der bodenbildenden Schicht",
+          "Abschlussformung der Deckschicht",
+          "Einsaat und Bepflanzung"
         ],
         "effects": [
-          "zrekultywowana kwatera o powierzchni 1,5 ha",
-          "pełna izolacja składowiska",
-          "pokrywa roślinna zabezpieczająca teren",
-          "gotowość do dalszego monitorowania"
+          "1,5 ha rekultivierte Zelle",
+          "vollständige Isolierung der Deponie",
+          "Vegetationsdecke sichert das Gelände",
+          "bereit für weitere Überwachung"
         ]
       }
     }
@@ -511,39 +461,39 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Radomski",
-        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim.",
-        "description": "Prace obejmowały formowanie kwatery, wykonanie warstwy technicznej i glebotwórczej oraz końcowe ukształtowanie okrywy rekultywacyjnej. Zdjęcia z odbioru wykonane w styczniu 2024.",
+        "title": "Landfill reclamation – Radomski County",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Radom County, Masovian Voivodeship.",
+        "description": "Works included cell shaping, technical and soil-forming layer installation, and final reclamation cover shaping. Acceptance photos taken in January 2024.",
         "scope": [
-          "formowanie bryły kwatery",
-          "wykonanie warstwy technicznej izolującej",
-          "wykonanie warstwy glebotwórczej",
-          "końcowe formowanie okrywy rekultywacyjnej",
-          "dokumentacja powykonawcza"
+          "cell body formation",
+          "installation of isolating technical layer",
+          "installation of soil-forming layer",
+          "final reclamation cover shaping",
+          "as-built documentation"
         ],
         "effects": [
-          "kwatera gotowa do odbioru w styczniu 2024",
-          "prawidłowe ukształtowanie wierzchowiny i skarp",
-          "warstwa glebotwórcza umożliwiająca wegetację",
-          "zgodność z projektem technicznym"
+          "cell ready for acceptance in January 2024",
+          "proper shaping of top and slopes",
+          "soil-forming layer enabling vegetation",
+          "compliance with technical design"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Radomski",
-        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim.",
-        "description": "Prace obejmowały formowanie kwatery, wykonanie warstwy technicznej i glebotwórczej oraz końcowe ukształtowanie okrywy rekultywacyjnej. Zdjęcia z odbioru wykonane w styczniu 2024.",
+        "title": "Deponierekultivierung – Kreis Radom",
+        "lead": "Rekultivierung einer Deponie im Kreis Radom, Woiwodschaft Masowien.",
+        "description": "Die Arbeiten umfassten Formung der Zelle, Anlage technischer und bodenbildender Schichten sowie die abschließende Gestaltung der Rekultivierungsdecke. Abnahmefotos aus Januar 2024.",
         "scope": [
-          "formowanie bryły kwatery",
-          "wykonanie warstwy technicznej izolującej",
-          "wykonanie warstwy glebotwórczej",
-          "końcowe formowanie okrywy rekultywacyjnej",
-          "dokumentacja powykonawcza"
+          "Formung des Zellenkörpers",
+          "Anlage einer isolierenden technischen Schicht",
+          "Anlage einer bodenbildenden Schicht",
+          "abschließende Gestaltung der Rekultivierungsdecke",
+          "Bestandsdokumentation"
         ],
         "effects": [
-          "kwatera gotowa do odbioru w styczniu 2024",
-          "prawidłowe ukształtowanie wierzchowiny i skarp",
-          "warstwa glebotwórcza umożliwiająca wegetację",
-          "zgodność z projektem technicznym"
+          "Zelle bereit zur Abnahme im Januar 2024",
+          "korrekte Formung der Ober- und Seitenkanten",
+          "bodenbildende Schicht ermöglicht Vegetation",
+          "Einhaltung des technischen Entwurfs"
         ]
       }
     }
@@ -567,43 +517,22 @@
         "title": "Rekultywacja składowiska – Lubelskie",
         "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
         "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
-        "scope": [
-          "formowanie kwatery",
-          "prace rekultywacyjne",
-          "nadzór realizacyjny"
-        ],
-        "effects": [
-          "prawidłowe ukształtowanie kwatery",
-          "zabezpieczenie środowiskowe terenu"
-        ]
+        "scope": ["formowanie kwatery", "prace rekultywacyjne", "nadzór realizacyjny"],
+        "effects": ["prawidłowe ukształtowanie kwatery", "zabezpieczenie środowiskowe terenu"]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Lubelskie",
-        "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
-        "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
-        "scope": [
-          "formowanie kwatery",
-          "prace rekultywacyjne",
-          "nadzór realizacyjny"
-        ],
-        "effects": [
-          "prawidłowe ukształtowanie kwatery",
-          "zabezpieczenie środowiskowe terenu"
-        ]
+        "title": "Landfill reclamation – Lubelskie",
+        "lead": "Another completed landfill reclamation in Lublin Voivodeship.",
+        "description": "Reclamation works including formation and securing of the municipal landfill cell.",
+        "scope": ["cell formation", "reclamation works", "execution supervision"],
+        "effects": ["proper cell shaping", "environmental protection of the area"]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Lubelskie",
-        "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
-        "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
-        "scope": [
-          "formowanie kwatery",
-          "prace rekultywacyjne",
-          "nadzór realizacyjny"
-        ],
-        "effects": [
-          "prawidłowe ukształtowanie kwatery",
-          "zabezpieczenie środowiskowe terenu"
-        ]
+        "title": "Deponierekultivierung – Lublin",
+        "lead": "Eine weitere abgeschlossene Deponierekultivierung in der Woiwodschaft Lublin.",
+        "description": "Rekultivierungsarbeiten einschließlich Formung und Sicherung der kommunalen Deponiezelle.",
+        "scope": ["Formung der Zelle", "Rekultivierungsarbeiten", "Ausführungsüberwachung"],
+        "effects": ["korrekte Zellformung", "Umweltschutz des Gebiets"]
       }
     }
   },
@@ -624,43 +553,22 @@
         "title": "Rekultywacja składowiska – Łódzkie",
         "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
         "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
-        "scope": [
-          "prace ziemne i modelujące",
-          "okrywa rekultywacyjna",
-          "obsiew trawami"
-        ],
-        "effects": [
-          "stabilizacja składowiska",
-          "pokrywa roślinna"
-        ]
+        "scope": ["prace ziemne i modelujące", "okrywa rekultywacyjna", "obsiew trawami"],
+        "effects": ["stabilizacja składowiska", "pokrywa roślinna"]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Łódzkie",
-        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
-        "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
-        "scope": [
-          "prace ziemne i modelujące",
-          "okrywa rekultywacyjna",
-          "obsiew trawami"
-        ],
-        "effects": [
-          "stabilizacja składowiska",
-          "pokrywa roślinna"
-        ]
+        "title": "Landfill reclamation – Łódzkie",
+        "lead": "Landfill reclamation in Łódź Voivodeship.",
+        "description": "Completed municipal landfill reclamation with grass seeding and post-reclamation monitoring.",
+        "scope": ["earthworks and modeling", "reclamation cover", "grass seeding"],
+        "effects": ["landfill stabilization", "vegetation cover"]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Łódzkie",
-        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
-        "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
-        "scope": [
-          "prace ziemne i modelujące",
-          "okrywa rekultywacyjna",
-          "obsiew trawami"
-        ],
-        "effects": [
-          "stabilizacja składowiska",
-          "pokrywa roślinna"
-        ]
+        "title": "Deponierekultivierung – Łódzkie",
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź.",
+        "description": "Abgeschlossene Rekultivierung einer kommunalen Deponie mit Einsaat und Nachsorgemonitoring.",
+        "scope": ["Erdarbeiten und Modellierung", "Rekultivierungsdecke", "Einsaat"],
+        "effects": ["Stabilisierung der Deponie", "Vegetationsdecke"]
       }
     }
   },
@@ -711,39 +619,39 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Parczewski",
-        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim.",
-        "description": "Zakończona rekultywacja składowiska obejmująca końcowe formowanie okrywy rekultywacyjnej, obsiew trawami i nasadzenie drzew oraz monitoring stanu kwatery po trzech miesiącach od obsiewu i nasadzeń.",
+        "title": "Landfill reclamation – Parczewski County",
+        "lead": "Landfill reclamation in Parczewski County, Lublin Voivodeship.",
+        "description": "Completed reclamation covering final cover shaping, grass seeding and tree planting, with cell monitoring three months after seeding and planting.",
         "scope": [
-          "przygotowanie dokumentacji technicznej",
-          "formowanie okrywy rekultywacyjnej",
-          "obsiew trawami i nasadzenia drzew",
-          "monitoring stanu kwatery po rekultywacji",
-          "nadzór środowiskowy"
+          "preparation of technical documentation",
+          "reclamation cover formation",
+          "grass seeding and tree planting",
+          "post-reclamation cell monitoring",
+          "environmental supervision"
         ],
         "effects": [
-          "skuteczna stabilizacja kwatery o powierzchni 1,2 ha",
-          "pokrywa roślinna po 3 miesiącach od nasadzeń",
-          "redukcja oddziaływania odorowego",
-          "poprawa estetyki terenu i jego otoczenia"
+          "effective stabilization of a 1.2 ha cell",
+          "vegetation cover three months after planting",
+          "odor impact reduction",
+          "improved aesthetics of the site and surroundings"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Parczewski",
-        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim.",
-        "description": "Zakończona rekultywacja składowiska obejmująca końcowe formowanie okrywy rekultywacyjnej, obsiew trawami i nasadzenie drzew oraz monitoring stanu kwatery po trzech miesiącach od obsiewu i nasadzeń.",
+        "title": "Deponierekultivierung – Kreis Parczewski",
+        "lead": "Rekultivierung einer Deponie im Kreis Parczewski, Woiwodschaft Lublin.",
+        "description": "Abgeschlossene Rekultivierung mit abschließender Formung der Rekultivierungsdecke, Einsaat, Baumpflanzung und Monitoring des Zellzustands drei Monate nach Einsaat und Pflanzung.",
         "scope": [
-          "przygotowanie dokumentacji technicznej",
-          "formowanie okrywy rekultywacyjnej",
-          "obsiew trawami i nasadzenia drzew",
-          "monitoring stanu kwatery po rekultywacji",
-          "nadzór środowiskowy"
+          "Erstellung der technischen Dokumentation",
+          "Formung der Rekultivierungsdecke",
+          "Einsaat und Baumpflanzung",
+          "Monitoring des Zellzustands nach der Rekultivierung",
+          "Umweltüberwachung"
         ],
         "effects": [
-          "skuteczna stabilizacja kwatery o powierzchni 1,2 ha",
-          "pokrywa roślinna po 3 miesiącach od nasadzeń",
-          "redukcja oddziaływania odorowego",
-          "poprawa estetyki terenu i jego otoczenia"
+          "effektive Stabilisierung der 1,2 ha großen Zelle",
+          "Vegetationsdecke drei Monate nach Pflanzung",
+          "Reduzierung der Geruchsbelastung",
+          "Verbesserung der Ästhetik des Geländes und seiner Umgebung"
         ]
       }
     }
@@ -786,39 +694,39 @@
         ]
       },
       "en": {
-        "title": "Rekultywacja składowiska – Powiat Ostrowski",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim.",
-        "description": "Spółka zakończyła rekultywację składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim. Prace obejmowały etapowanie prac rekultywacyjnych od stanu przed rekultywacją w lutym 2021, przez prace wykończeniowe w lutym 2022, po wysiew traw i ostateczne ukształtowanie terenu.",
+        "title": "Landfill reclamation – Ostrowski County",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Ostrowski County, Masovian Voivodeship.",
+        "description": "The company completed reclamation of the non-hazardous and inert waste landfill in Ostrowski County. Works included phased reclamation from pre-reclamation state in February 2021 through finishing works in February 2022, to grass seeding and final terrain shaping.",
         "scope": [
-          "analiza stanu wyjściowego składowiska",
-          "projekt techniczny rekultywacji",
-          "koordynacja prac ziemnych i modelujących",
-          "wysiew traw i prace wykończeniowe",
-          "nadzór nad realizacją inwestycji"
+          "initial landfill condition analysis",
+          "technical reclamation design",
+          "coordination of earthworks and modeling",
+          "grass seeding and finishing works",
+          "investment execution supervision"
         ],
         "effects": [
-          "stabilizacja skarp i wierzchowiny składowiska",
-          "pokrywa roślinna po 3 miesiącach od wysiewu",
-          "przywrócenie walorów krajobrazowych terenu",
-          "zgodność z wymaganiami środowiskowymi"
+          "stabilization of slopes and cap",
+          "vegetation cover 3 months after seeding",
+          "restoration of landscape values",
+          "compliance with environmental requirements"
         ]
       },
       "de": {
-        "title": "Rekultywacja składowiska – Powiat Ostrowski",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim.",
-        "description": "Spółka zakończyła rekultywację składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim. Prace obejmowały etapowanie prac rekultywacyjnych od stanu przed rekultywacją w lutym 2021, przez prace wykończeniowe w lutym 2022, po wysiew traw i ostateczne ukształtowanie terenu.",
+        "title": "Deponierekultivierung – Kreis Ostrowski",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Ostrowski, Woiwodschaft Masowien.",
+        "description": "Das Unternehmen schloss die Rekultivierung der Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Ostrowski ab. Die Arbeiten umfassten die Phasierung der Rekultivierungsarbeiten vom Zustand vor der Rekultivierung im Februar 2021 über die Ausführungsarbeiten im Februar 2022 bis zur Einsaat und der endgültigen Geländegestaltung.",
         "scope": [
-          "analiza stanu wyjściowego składowiska",
-          "projekt techniczny rekultywacji",
-          "koordynacja prac ziemnych i modelujących",
-          "wysiew traw i prace wykończeniowe",
-          "nadzór nad realizacją inwestycji"
+          "Analyse des Ausgangszustands der Deponie",
+          "technische Rekultivierungsplanung",
+          "Koordination von Erdarbeiten und Modellierung",
+          "Einsaat und Ausführungsarbeiten",
+          "Überwachung der Investitionsausführung"
         ],
         "effects": [
-          "stabilizacja skarp i wierzchowiny składowiska",
-          "pokrywa roślinna po 3 miesiącach od wysiewu",
-          "przywrócenie walorów krajobrazowych terenu",
-          "zgodność z wymaganiami środowiskowymi"
+          "Stabilisierung von Böschungen und Deponiekappe",
+          "Vegetationsdecke 3 Monate nach Einsaat",
+          "Wiederherstellung der Landschaftswerte",
+          "Einhaltung der Umweltanforderungen"
         ]
       }
     }

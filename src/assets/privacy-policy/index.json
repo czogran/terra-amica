@@ -6,15 +6,15 @@
     "versions": {
       "pl": {
         "pdf": "klauzula-informacyjna-kontrahenci.pdf",
-        "markdown": "klauzula-informacyjna.md"
+        "markdownFile": "klauzula-informacyjna.md"
       },
       "en": {
         "pdf": "klauzula-informacyjna-kontrahenci.pdf",
-        "markdown": "klauzula-informacyjna.md"
+        "markdownFile": "klauzula-informacyjna.md"
       },
       "de": {
         "pdf": "klauzula-informacyjna-kontrahenci.pdf",
-        "markdown": "klauzula-informacyjna.md"
+        "markdownFile": "klauzula-informacyjna.md"
       }
     }
   },
@@ -25,15 +25,15 @@
     "versions": {
       "pl": {
         "pdf": "monitoring.pdf",
-        "markdown": "monitoring.md"
+        "markdownFile": "monitoring.md"
       },
       "en": {
         "pdf": "monitoring.pdf",
-        "markdown": "monitoring.md"
+        "markdownFile": "monitoring.md"
       },
       "de": {
         "pdf": "monitoring.pdf",
-        "markdown": "monitoring.md"
+        "markdownFile": "monitoring.md"
       }
     }
   }

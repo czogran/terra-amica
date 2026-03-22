@@ -12,15 +12,20 @@ import {
 import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ReferenceItem } from 'src/app/src/state/state-reference';
+import { ReferenceZoomControlsComponent } from './reference-zoom-controls.component';
 
 @Component({
   selector: 'app-reference-popup',
   templateUrl: './reference-popup.component.html',
   styleUrl: './reference-popup.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, TranslatePipe],
+  imports: [NgOptimizedImage, TranslatePipe, ReferenceZoomControlsComponent],
   host: {
-    '(window:mouseup)': 'onImageDragEnd()',
+    tabindex: '-1',
+    role: 'dialog',
+    'aria-modal': 'true',
+    'aria-labelledby': 'reference-popup-title',
+    'aria-describedby': 'reference-popup-caption',
   },
 })
 export class ReferencePopupComponent {

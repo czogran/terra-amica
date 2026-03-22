@@ -2,10 +2,11 @@
   [title]="'menu.privacy-policy' | translate"
   [subtitle]="'privacy-policy.intro' | translate"
 />
-<section class="privacy-policy-section" aria-label="Informacje">
+
+<section class="privacy-policy-section" [attr.aria-label]="'menu.privacy-policy' | translate">
   <div class="d-flex flex-column gap-3">
     @for (document of documentsWithMarkdown(); track document.id) {
-      <article class="card">
+      <article class="card fade-in">
         <div
           class="card-header bg-transparent d-flex align-items-start justify-content-between gap-2"
         >

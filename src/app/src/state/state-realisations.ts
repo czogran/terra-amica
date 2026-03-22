@@ -81,7 +81,7 @@ export const RealisationsState = signalStore(
 
         loadPromise = (async () => {
           try {
-            const res = await fetch('/assets/realisations/index.json');
+            const res = await fetch('./assets/realisations/index.json');
             if (!res.ok) {
               return;
             }

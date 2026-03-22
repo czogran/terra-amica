@@ -1,10 +1,13 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import { marked } from 'marked';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { inject } from '@angular/core';
 
 export type PrivacyLanguage = 'pl' | 'en' | 'de';
 
 export type PrivacyDocumentVersion = {
   pdf: string;
-  markdown: string;
+  markdownFile: string;
 };
 
 export type PrivacyDocument = {
@@ -12,18 +15,18 @@ export type PrivacyDocument = {
   titleKey?: string;
   downloadAriaKey?: string;
   pdf?: string;
-  markdown?: string;
+  markdownFile?: string;
   versions?: Partial<Record<PrivacyLanguage, PrivacyDocumentVersion>>;
 };
 
 export type PrivacyPolicyState = {
   documents: PrivacyDocument[];
-  markdownById: Record<string, string>;
+  markdownHtmlById: Record<string, SafeHtml>;
 };
 
 const privacyPolicyInitialState: PrivacyPolicyState = {
   documents: [],
-  markdownById: {},
+  markdownHtmlById: {},
 };
 
 const defaultTitleKeyById: Record<string, string> = {
@@ -39,7 +42,7 @@ const defaultDownloadAriaKeyById: Record<string, string> = {
 function normalizeDocument(document: PrivacyDocument): PrivacyDocument {
   const fallbackVersion = document.versions?.pl ?? {
     pdf: document.pdf ?? '',
-    markdown: document.markdown ?? '',
+    markdownFile: document.markdownFile ?? '',
   };
 
   return {
@@ -47,46 +50,15 @@ function normalizeDocument(document: PrivacyDocument): PrivacyDocument {
     titleKey: document.titleKey ?? defaultTitleKeyById[document.id] ?? '',
     downloadAriaKey: document.downloadAriaKey ?? defaultDownloadAriaKeyById[document.id] ?? '',
     pdf: document.pdf ?? fallbackVersion.pdf,
-    markdown: document.markdown ?? fallbackVersion.markdown,
+    markdownFile: document.markdownFile ?? fallbackVersion.markdownFile,
   };
 }
 
 export const PrivacyPolicyState = signalStore(
   withState<PrivacyPolicyState>(privacyPolicyInitialState),
   withMethods((store) => ({
-    setPrivacyDocuments(documents: PrivacyDocument[]): void {
-      patchState(store, (state) => ({
-        ...state,
-        documents,
-      }));
-    },
-
-    setPrivacyMarkdown(id: string, markdown: string): void {
-      patchState(store, (state) => ({
-        ...state,
-        markdownById: {
-          ...state.markdownById,
-          [id]: markdown,
-        },
-      }));
-    },
-
-    resolveDocumentVersion(
-      document: PrivacyDocument,
-      language: PrivacyLanguage,
-    ): PrivacyDocumentVersion {
-      const localized = document.versions?.[language];
-      if (localized) {
-        return localized;
-      }
-
-      return {
-        pdf: document.pdf ?? '',
-        markdown: document.markdown ?? '',
-      };
-    },
-
     async loadPrivacyIndexAsset(): Promise<void> {
+      if (store.documents().length > 0) return;
       try {
         const res = await fetch('/assets/privacy-policy/index.json');
         if (!res.ok) return;
@@ -102,36 +74,36 @@ export const PrivacyPolicyState = signalStore(
       }
     },
 
-    async loadPrivacyMarkdownAssets(language: PrivacyLanguage): Promise<void> {
+    async loadPrivacyMarkdownAssets(
+      language: PrivacyLanguage,
+      sanitizer = inject(DomSanitizer),
+    ): Promise<void> {
       const documents = store.documents();
       if (documents.length === 0) return;
-
-      patchState(store, (state) => ({
-        ...state,
-        markdownById: {},
-      }));
-
+      if (Object.keys(store.markdownHtmlById()).length > 0) return;
       await Promise.all(
         documents.map(async (document) => {
           const localized = document.versions?.[language] ?? {
             pdf: document.pdf ?? '',
-            markdown: document.markdown ?? '',
+            markdownFile: document.markdownFile ?? '',
           };
 
-          if (!localized.markdown) {
+          if (!localized.markdownFile) {
             return;
           }
 
           try {
-            const res = await fetch(`/assets/privacy-policy/${localized.markdown}`);
+            const res = await fetch(`/assets/privacy-policy/${localized.markdownFile}`);
             if (!res.ok) return;
 
             const markdown = await res.text();
+            const html = marked.parse(markdown) as string;
+            const safeHtml = sanitizer.bypassSecurityTrustHtml(html);
             patchState(store, (state) => ({
               ...state,
-              markdownById: {
-                ...state.markdownById,
-                [document.id]: markdown,
+              markdownHtmlById: {
+                ...state.markdownHtmlById,
+                [document.id]: safeHtml,
               },
             }));
           } catch (_err: unknown) {

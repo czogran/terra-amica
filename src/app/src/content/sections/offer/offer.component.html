@@ -1,44 +1,28 @@
 <app-section-header [title]="'offer.title' | translate" [subtitle]="'offer.subtitle' | translate" />
 
 <section class="services">
-  <div class="grid">
-    @for (service of services; track service.title) {
-      <div class="card">
-        <div class="icon">{{ service.icon }}</div>
-        <div class="title">{{ service.title }}</div>
-      </div>
-    }
-  </div>
+  @for (service of services(); track service.title) {
+    <div class="card fade-in">
+      <div class="icon bi bi-{{ service.icon }}"></div>
+      <div class="title">{{ service.title }}</div>
+    </div>
+  }
 </section>
 
-<section class="specialization">
-  <h2>{{ 'offer.specialization.title' | translate }}</h2>
-  <p>
-    {{ 'offer.specialization.text' | translate }}
-  </p>
+@for (section of sections(); track section.title) {
+  <section class="offer-section" [attr.aria-label]="section.title">
+    <h2>{{ section.title }}</h2>
 
-  <ul>
-    @for (benefit of benefits; track benefit) {
-      <li> {{ benefit }}</li>
+    @if (section.items?.length) {
+      <ul class="offer-section__item">
+        @for (item of section.items; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
     }
-  </ul>
-</section>
 
-<section class="clients">
-  <h2>{{ 'offer.clients.title' | translate }}</h2>
-  <ul>
-    @for (client of clients; track client) {
-      <li>{{ client }}</li>
+    @if (section.note) {
+      <p class="offer-section__note">{{ section.note }}</p>
     }
-  </ul>
-  <p class="note">{{ 'offer.clients.note' | translate }}</p>
-</section>
-
-<section class="process">
-  <h2>{{ 'offer.process.title' | translate }}</h2>
-  <ol>
-    @for (step of processSteps; track step) {
-      <li>{{ step }}</li>
-    }
-  </ol>
-</section>
+  </section>
+}
