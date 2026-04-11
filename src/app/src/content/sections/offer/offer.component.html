@@ -13,13 +13,11 @@
   <section class="offer-section" [attr.aria-label]="section.title">
     <h2>{{ section.title }}</h2>
 
-    @if (section.items?.length) {
-      <ul class="offer-section__item">
-        @for (item of section.items; track item) {
-          <li>{{ item }}</li>
-        }
-      </ul>
-    }
+    <ul class="offer-section__item">
+      @for (item of section.items; track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
 
     @if (section.note) {
       <p class="offer-section__note">{{ section.note }}</p>

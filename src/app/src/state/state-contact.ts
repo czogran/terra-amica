@@ -1,4 +1,6 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import { computed, inject } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 import { ASSET_URLS } from './state.config';
 
 export type ContactStateValue = {
@@ -20,6 +22,12 @@ const contactInitialState: ContactStateModel = {
 
 export const ContactState = signalStore(
   withState<ContactStateModel>(contactInitialState),
+  withComputed((state, sanitizer = inject(DomSanitizer)) => ({
+    safeGoogleMapsUrl: computed<SafeResourceUrl | null>(() => {
+      const url = state.googleMapsUrl();
+      return url ? sanitizer.bypassSecurityTrustResourceUrl(url) : null;
+    }),
+  })),
   withMethods((store) => ({
     setContactState(data: ContactStateValue): void {
       patchState(store, (state) => ({
