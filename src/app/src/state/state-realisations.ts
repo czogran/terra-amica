@@ -1,6 +1,7 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { inject } from '@angular/core';
 import { TranslationManagerService } from './translation-manager.service';
+import { ASSET_URLS } from './state.config';
 
 export type RealisationLanguage = 'pl' | 'en' | 'de';
 
@@ -81,7 +82,7 @@ export const RealisationsState = signalStore(
 
         loadPromise = (async () => {
           try {
-            const res = await fetch('./assets/realisations/index.json');
+            const res = await fetch(ASSET_URLS.realisationsIndex);
             if (!res.ok) {
               return;
             }

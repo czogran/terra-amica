@@ -1,12 +1,12 @@
-import { Injectable, PLATFORM_ID, inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import { ContactState, ContactStateValue } from './state-contact';
+import { Injectable, inject } from '@angular/core';
+import { ContactState } from './state-contact';
 import { ReferenceItem, ReferenceState } from './state-reference';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { MenuState } from './state-menu';
 import { TranslationManagerService } from './translation-manager.service';
+import { ASSET_URLS } from './state.config';
 
 export type AppState = Readonly<{
   lang: string;
@@ -35,7 +35,6 @@ export type ReferenceRawState = {
 
 @Injectable({ providedIn: 'root' })
 export class StateService {
-  private readonly platformId = inject(PLATFORM_ID);
   private readonly contactState = inject(ContactState);
   private readonly referenceState = inject(ReferenceState);
   private readonly translationManager = inject(TranslationManagerService);
@@ -45,7 +44,7 @@ export class StateService {
   constructor() {
     // Avoid SSR URL parsing errors (Node fetch requires absolute URLs)
     // if (isPlatformBrowser(this.platformId)) {
-    void this.loadContactAsset();
+    void this.contactState.loadContactAsset();
     void this.loadReferencesAsset();
     this.setActiveMenuItemKeyFromRoute();
     this.router.events
@@ -65,21 +64,9 @@ export class StateService {
     this.menuState.setActiveMenuItemKey(activeMenuItemKey);
   }
 
-  private async loadContactAsset(): Promise<void> {
-    try {
-      const res = await fetch('/assets/contact/contact.json');
-      if (!res.ok) return;
-
-      const data = (await res.json()) as ContactStateValue;
-      this.contactState.setContactState(data);
-    } catch (_err: unknown) {
-      // ignore (optional: add a user-facing fallback state)
-    }
-  }
-
   private async loadReferencesAsset(): Promise<void> {
     try {
-      const res = await fetch('/assets/references/index.json');
+      const res = await fetch(ASSET_URLS.referencesIndex);
       if (!res.ok) {
         // this.images.set([]);
         return;

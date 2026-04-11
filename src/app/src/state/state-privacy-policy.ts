@@ -2,6 +2,7 @@ import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { marked } from 'marked';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { inject } from '@angular/core';
+import { ASSET_URLS } from './state.config';
 
 export type PrivacyLanguage = 'pl' | 'en' | 'de';
 
@@ -60,7 +61,7 @@ export const PrivacyPolicyState = signalStore(
     async loadPrivacyIndexAsset(): Promise<void> {
       if (store.documents().length > 0) return;
       try {
-        const res = await fetch('/assets/privacy-policy/index.json');
+        const res = await fetch(ASSET_URLS.privacyPolicyIndex);
         if (!res.ok) return;
 
         const documentsRaw = (await res.json()) as PrivacyDocument[];
@@ -93,7 +94,7 @@ export const PrivacyPolicyState = signalStore(
           }
 
           try {
-            const res = await fetch(`/assets/privacy-policy/${localized.markdownFile}`);
+            const res = await fetch(ASSET_URLS.privacyPolicyFile(localized.markdownFile));
             if (!res.ok) return;
 
             const markdown = await res.text();

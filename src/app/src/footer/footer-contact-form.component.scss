@@ -1,0 +1,24 @@
+:host {
+  display: contents;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.footer-submit-btn {
+  background: var(--bs-primary);
+  color: var(--bs-light);
+  border-radius: var(--bs-border-radius);
+  font-weight: 600;
+  border: none;
+}
+
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  font-weight: 750;
+  background: var(--bs-primary);
+  color: var(--bs-light);
+}

@@ -2,10 +2,12 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { TranslatePipe } from '@ngx-translate/core';
 import { ContactState } from 'state';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { FooterContactFormComponent } from './footer-contact-form.component';
+import { FooterMapComponent } from './footer-map.component';
 
 @Component({
   selector: 'app-footer',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, FooterContactFormComponent, FooterMapComponent],
   template: `
     <footer class="footer text-center py-3 mt-auto position-relative">
       @if (showScrollTop()) {
@@ -40,42 +42,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
             </div>
           </div>
         </div>
-        <form (submit)="onSubmit($event)" class="contact-form flex-fill mx-auto">
-          <div class="mb-2">
-            <input
-              name="email"
-              type="email"
-              class="form-control"
-              [attr.placeholder]="'footer.form.email.placeholder' | translate"
-              required
-            />
-          </div>
-          <div class="mb-2">
-            <textarea
-              name="message"
-              class="form-control"
-              rows="3"
-              [attr.placeholder]="'footer.form.message.placeholder' | translate"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn w-100 footer-submit-btn">Send</button>
-        </form>
+        <app-footer-contact-form />
       </div>
-      <div class="mb-2">
-        <iframe
-          width="100%"
-          height="200"
-          class="footer-map"
-          style="border:0;"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Location on Google Maps"
-          [src]="safeGoogleMapsUrl() ?? ''"
-        >
-        </iframe>
-      </div>
+      <app-footer-map class="mb-2" [mapUrl]="safeGoogleMapsUrl()" />
       <span class="d-block mb-2">{{ 'footer.copyright' | translate }}</span>
     </footer>
   `,
@@ -107,15 +76,5 @@ export class FooterComponent {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  onSubmit(event: Event) {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
-    const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value;
-    // Here you would send the email using a backend or email service
-    alert(`Thank you for your message!\nEmail: ${email}\nMessage: ${message}`);
-    form.reset();
   }
 }

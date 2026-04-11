@@ -1,7 +1,7 @@
 import { computed, inject } from '@angular/core';
 import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 import { TranslationManagerService } from './translation-manager.service';
-import { environment } from './../../../environments/environment';
+import { ASSET_URLS } from './state.config';
 
 export type SupportedLang = 'pl' | 'en' | 'de';
 
@@ -51,7 +51,7 @@ export const OfferState = signalStore(
     async load(): Promise<void> {
       if (store.hasLoadedOffer()) return;
       try {
-        const res = await fetch(environment.href + 'assets/offer/index.json');
+        const res = await fetch(ASSET_URLS.offerIndex);
         if (!res.ok) return;
         const data = (await res.json()) as OfferState;
         patchState(store, (state) => ({
