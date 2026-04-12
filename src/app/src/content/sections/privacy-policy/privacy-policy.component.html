@@ -5,7 +5,7 @@
 
 <section class="privacy-policy-section" [attr.aria-label]="'menu.privacy-policy' | translate">
   <div class="d-flex flex-column gap-3">
-    @for (document of documentsWithMarkdown(); track document.id) {
+    @for (document of documents(); track document.id) {
       <article class="card fade-in">
         <div
           class="card-header bg-transparent d-flex align-items-start justify-content-between gap-2"
@@ -13,7 +13,7 @@
           <h3 class="mb-0">{{ document.titleKey || '' | translate }}</h3>
           <a
             class="btn btn-primary btn-sm ta-download-btn"
-            [href]="'/assets/privacy-policy/' + document.pdf"
+            [attr.href]="document.pdfHref"
             download
             [attr.aria-label]="document.downloadAriaKey || '' | translate"
           >

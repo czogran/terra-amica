@@ -1,24 +1,5 @@
 <header class="px-3 py-2 d-flex align-items-center justify-content-between">
-  <a class="brand-link" href="/" [attr.aria-label]="'app.title' | translate">
-    <span class="brand-logo-wrap" aria-hidden="true">
-      <img
-        class="brand-logo brand-logo--light"
-        ngSrc="assets/logo/terra-amica-logo-light.png"
-        [attr.alt]="'app.title' | translate"
-        width="1024"
-        height="459"
-        priority
-      />
-      <img
-        class="brand-logo brand-logo--dark"
-        ngSrc="assets/logo/terra-amica-logo-dark.png"
-        [attr.alt]="'app.title' | translate"
-        width="1024"
-        height="459"
-        priority
-      />
-    </span>
-  </a>
+  <app-header-logo [href]="currentHref" />
   <div class="d-flex align-items-center gap-3 w-100">
     <app-header-contact class="ms-auto d-none d-lg-flex" />
     <div class="d-lg-none mx-auto position-relative">

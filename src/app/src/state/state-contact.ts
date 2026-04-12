@@ -23,9 +23,9 @@ const contactInitialState: ContactStateModel = {
 export const ContactState = signalStore(
   withState<ContactStateModel>(contactInitialState),
   withComputed((state, sanitizer = inject(DomSanitizer)) => ({
-    safeGoogleMapsUrl: computed<SafeResourceUrl | null>(() => {
+    safeGoogleMapsUrl: computed<SafeResourceUrl>(() => {
       const url = state.googleMapsUrl();
-      return url ? sanitizer.bypassSecurityTrustResourceUrl(url) : null;
+      return sanitizer.bypassSecurityTrustResourceUrl(url ?? '');
     }),
   })),
   withMethods((store) => ({

@@ -8,17 +8,19 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { DOCUMENT, NgOptimizedImage } from '@angular/common';
+import { environment } from 'src/environments/environment';
+import { HeaderLogoComponent } from './header-logo.component';
 
 @Component({
   selector: 'app-header',
-  imports: [HeaderSettingsComponent, HeaderContactComponent, TranslatePipe, NgOptimizedImage],
+  imports: [HeaderSettingsComponent, HeaderContactComponent, HeaderLogoComponent, TranslatePipe],
   styleUrls: ['./header.component.scss'],
   templateUrl: './header.component.html',
   providers: [],
 })
 export class HeaderComponent {
   readonly menuState = inject(MenuState);
-
+  currentHref = environment.href;
   get menuItems(): MenuItem[] {
     return this.menuState.menuItems();
   }
@@ -33,10 +35,6 @@ export class HeaderComponent {
   }
   readonly router = inject(Router);
   readonly translate = inject(TranslateService);
-
-  // isActive(url: string): boolean {
-  //   return this.router.url === url;
-  // }
 
   onNavClick(item: MenuItem): void {
     const lang = this.translate.getCurrentLang();

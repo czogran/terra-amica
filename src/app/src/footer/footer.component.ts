@@ -47,7 +47,7 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
         </div>
         <app-footer-contact-form />
       </div>
-      <app-footer-map class="mb-2" [mapUrl]="contactState.safeGoogleMapsUrl()" />
+      <app-footer-map class="mb-2" />
       <span class="d-block mb-2">{{ 'footer.copyright' | translate }}</span>
     </footer>
   `,

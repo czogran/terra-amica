@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { input } from '@angular/core';
 import { SafeResourceUrl } from '@angular/platform-browser';
+import { ContactState } from '../state/state-contact';
 
 @Component({
   selector: 'app-footer-map',
@@ -13,7 +14,7 @@ import { SafeResourceUrl } from '@angular/platform-browser';
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
       title="Location on Google Maps"
-      [src]="mapUrl() ?? ''"
+      [src]="contactState.safeGoogleMapsUrl()"
     ></iframe>
   `,
   styleUrl: './footer-map.component.scss',
@@ -23,5 +24,5 @@ import { SafeResourceUrl } from '@angular/platform-browser';
   },
 })
 export class FooterMapComponent {
-  mapUrl = input<SafeResourceUrl | null>(null);
+  readonly contactState = inject(ContactState);
 }

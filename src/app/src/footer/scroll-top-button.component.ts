@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '
   template: `
     @if (showScrollTop()) {
       <button
-        class="scroll-top-btn"
+        class="btn btn-primary scroll-top-btn"
         type="button"
         (click)="scrollToTop()"
         aria-label="Scroll to top"

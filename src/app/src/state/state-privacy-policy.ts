@@ -1,8 +1,10 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { marked } from 'marked';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { inject } from '@angular/core';
+import { computed, inject } from '@angular/core';
 import { ASSET_URLS } from './state.config';
+import { TranslationManagerService } from './translation-manager.service';
+import { withComputed } from '@ngrx/signals';
 
 export type PrivacyLanguage = 'pl' | 'en' | 'de';
 
@@ -18,6 +20,11 @@ export type PrivacyDocument = {
   pdf?: string;
   markdownFile?: string;
   versions?: Partial<Record<PrivacyLanguage, PrivacyDocumentVersion>>;
+};
+
+export type PrivacyDocumentViewModel = PrivacyDocument & {
+  pdfHref: string | null;
+  markdownHtml: SafeHtml | null;
 };
 
 export type PrivacyPolicyState = {
@@ -57,7 +64,24 @@ function normalizeDocument(document: PrivacyDocument): PrivacyDocument {
 
 export const PrivacyPolicyState = signalStore(
   withState<PrivacyPolicyState>(privacyPolicyInitialState),
-  withMethods((store) => ({
+  withComputed((state, translationManager = inject(TranslationManagerService)) => ({
+    documentsViewModel: computed<PrivacyDocumentViewModel[]>(() => {
+      const language = translationManager.lang() as PrivacyLanguage;
+      return state.documents().map((document) => {
+        const localized = document.versions?.[language] ?? {
+          pdf: document.pdf ?? '',
+          markdownFile: document.markdownFile ?? '',
+        };
+
+        return {
+          ...document,
+          pdfHref: localized.pdf ? ASSET_URLS.privacyPolicyFile(localized.pdf) : null,
+          markdownHtml: state.markdownHtmlById()?.[document.id] ?? null,
+        };
+      });
+    }),
+  })),
+  withMethods((store, sanitizer = inject(DomSanitizer)) => ({
     async loadPrivacyIndexAsset(): Promise<void> {
       if (store.documents().length > 0) return;
       try {
@@ -75,23 +99,14 @@ export const PrivacyPolicyState = signalStore(
       }
     },
 
-    async loadPrivacyMarkdownAssets(
-      language: PrivacyLanguage,
-      sanitizer = inject(DomSanitizer),
-    ): Promise<void> {
+    async loadPrivacyMarkdownAssets(language: PrivacyLanguage): Promise<void> {
       const documents = store.documents();
-      if (documents.length === 0) return;
-      if (Object.keys(store.markdownHtmlById()).length > 0) return;
       await Promise.all(
         documents.map(async (document) => {
           const localized = document.versions?.[language] ?? {
             pdf: document.pdf ?? '',
             markdownFile: document.markdownFile ?? '',
           };
-
-          if (!localized.markdownFile) {
-            return;
-          }
 
           try {
             const res = await fetch(ASSET_URLS.privacyPolicyFile(localized.markdownFile));
