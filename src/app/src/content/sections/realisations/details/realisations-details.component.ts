@@ -6,13 +6,11 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import { NgComponentOutlet } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import {
   RealisationItem,
-  RealisationLanguage,
   RealisationTranslation,
   RealisationsState,
 } from 'src/app/src/state/state-realisations';
@@ -27,14 +25,13 @@ type RealisationCardViewModel = RealisationItem & {
 
 @Component({
   selector: 'app-realisations-details',
-  standalone: true,
   templateUrl: './realisations-details.component.html',
   styleUrl: './realisations-details.component.scss',
   imports: [
-    NgComponentOutlet,
     TranslatePipe,
     RealisationsDetailsMetaComponent,
     RealisationsDetailsNavigationComponent,
+    RealisationsCarouselComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -43,16 +40,14 @@ export class RealisationsDetailsComponent {
   private readonly route = inject(ActivatedRoute);
   private readonly translationManager = inject(TranslationManagerService);
 
-  protected readonly carouselComponent = RealisationsCarouselComponent;
-
   protected readonly realisationsState = inject(RealisationsState);
   protected readonly selectedSlug = signal<string | null>(null);
 
   protected readonly cards = computed<ReadonlyArray<RealisationCardViewModel>>(() => {
-    const language = this.normalizeLanguage(this.translationManager.lang());
+    const language = this.translationManager.lang();
     return this.realisationsState.realisations().map((item) => ({
       ...item,
-      translation: item.i18n[language] ?? item.i18n.pl,
+      translation: item.i18n[language] ?? item.i18n['pl'],
     }));
   });
 
@@ -101,11 +96,4 @@ export class RealisationsDetailsComponent {
     };
   }
 
-  private normalizeLanguage(lang: string): RealisationLanguage {
-    if (lang === 'en' || lang === 'de') {
-      return lang;
-    }
-
-    return 'pl';
-  }
 }

@@ -8,7 +8,6 @@ import { TranslationManagerService } from '../../state/translation-manager.servi
 
 @Component({
   selector: 'app-language-switcher',
-  standalone: true,
   template: `
     <div class="dropdown">
       <button
@@ -45,10 +44,6 @@ export class LanguageSwitcherComponent {
   readonly menuState = inject(MenuState);
 
   readonly languages = this.translationManager.languagesConfig;
-
-  ngOnInit() {
-    // this.translationManager.initializeLanguageFromRoute();
-  }
 
   selectedLang = () =>
     this.languages.find((l) => l.code === this.translationManager.lang()) ?? this.languages[0];

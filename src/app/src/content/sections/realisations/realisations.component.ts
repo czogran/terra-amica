@@ -1,22 +1,19 @@
+import { NgOptimizedImage } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
-  DestroyRef,
   computed,
-  inject,
-  signal,
+  inject
 } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { NgOptimizedImage } from '@angular/common';
 import { Router } from '@angular/router';
-import { LangChangeEvent, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { MenuState } from 'src/app/src/state/state-menu';
 import {
   RealisationItem,
-  RealisationLanguage,
   RealisationTranslation,
   RealisationsState,
 } from 'src/app/src/state/state-realisations';
-import { MenuState } from 'src/app/src/state/state-menu';
+import { TranslationManagerService } from 'state';
 
 type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
@@ -30,35 +27,26 @@ type RealisationCardViewModel = RealisationItem & {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RealisationsComponent {
-  private readonly destroyRef = inject(DestroyRef);
-  private readonly translate = inject(TranslateService);
   private readonly router = inject(Router);
   private readonly menuState = inject(MenuState);
+  private readonly translationManager = inject(TranslationManagerService);
 
   protected readonly realisationsState = inject(RealisationsState);
-  protected readonly currentLanguage = signal<RealisationLanguage>(this.getCurrentLanguage());
 
   protected readonly realisations = computed(() => this.realisationsState.realisations());
   protected readonly cards = computed<ReadonlyArray<RealisationCardViewModel>>(() =>
     this.realisations().map((item) => ({
       ...item,
-      translation: item.i18n[this.currentLanguage()] ?? item.i18n.pl,
+      translation: item.i18n[this.translationManager.lang()] ?? item.i18n['pl'],
     })),
   );
 
   constructor() {
     void this.realisationsState.loadRealisationsAsset();
-    this.translate.onLangChange
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((event: LangChangeEvent) => {
-        this.currentLanguage.set(this.normalizeLanguage(event.lang));
-      });
   }
 
   protected openDetails(slug: string): void {
-    const currentLang = this.normalizeLanguage(
-      this.translate.getCurrentLang() || this.translate.getDefaultLang() || 'pl',
-    );
+    const currentLang = this.translationManager.lang();
     const realisationsMenuItem = this.menuState
       .menuItems()
       .find((item) => item.key === 'menu.realisations');
@@ -69,19 +57,5 @@ export class RealisationsComponent {
 
   protected assetUrl(path: string): string {
     return `assets/${path}`;
-  }
-
-  private getCurrentLanguage(): RealisationLanguage {
-    return this.normalizeLanguage(
-      this.translate.getCurrentLang() || this.translate.getDefaultLang() || 'pl',
-    );
-  }
-
-  private normalizeLanguage(lang: string): RealisationLanguage {
-    if (lang === 'en' || lang === 'de') {
-      return lang;
-    }
-
-    return 'pl';
   }
 }

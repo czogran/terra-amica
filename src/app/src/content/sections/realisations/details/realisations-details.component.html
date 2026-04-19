@@ -3,9 +3,10 @@
     <div class="realisations-details__hero">
       <div class="realisations-details__image">
         @if (carouselInputs(); as carouselInputs) {
-          <ng-container
-            *ngComponentOutlet="carouselComponent; inputs: carouselInputs"
-          ></ng-container>
+          <app-realisations-carousel
+            [images]="carouselInputs.images"
+            [alt]="carouselInputs.alt"
+          />
         }
       </div>
 

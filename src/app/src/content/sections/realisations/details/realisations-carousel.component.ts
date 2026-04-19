@@ -15,7 +15,6 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-realisations-carousel',
-  standalone: true,
   templateUrl: './realisations-carousel.component.html',
   styleUrl: './realisations-carousel.component.scss',
   imports: [NgOptimizedImage, TranslatePipe],

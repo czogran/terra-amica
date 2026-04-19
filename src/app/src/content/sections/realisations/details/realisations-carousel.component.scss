@@ -4,6 +4,10 @@
   position: relative;
 }
 
+li::marker {
+  font-size: 0;
+}
+
 .realisations-details__carousel-shell:not(.realisations-details__carousel-shell--fullscreen)
   .carousel {
   height: 100%;
@@ -24,11 +28,11 @@
   height: 100vh;
   width: 100vw;
   background: rgba(0, 0, 0, 0.86);
-  animation: realisations-carousel-fullscreen-in 1240ms ease;
 
   .carousel {
     width: 100vw;
     height: 100vh;
+    animation: realisations-carousel-fullscreen-in 1000ms ease;
   }
 }
 
@@ -36,9 +40,6 @@
   position: relative;
   border-radius: var(--bs-border-radius-lg);
   overflow: hidden;
-}
-
-.realisations-details__carousel-shell--fullscreen #realisationsDetailsCarousel {
 }
 
 .carousel-item {
@@ -113,11 +114,9 @@
 @keyframes realisations-carousel-fullscreen-in {
   from {
     opacity: 0;
-    transform: scale(0.97);
   }
 
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }

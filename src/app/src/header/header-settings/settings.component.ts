@@ -4,7 +4,6 @@ import { LanguageSwitcherComponent } from './language-switcher.component';
 
 @Component({
   selector: 'app-header-settings',
-  standalone: true,
   imports: [LanguageSwitcherComponent, ModeSwitcherComponent],
   template: `
     <div class="d-none d-lg-flex align-items-center gap-3">

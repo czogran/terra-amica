@@ -2,8 +2,8 @@ import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { inject } from '@angular/core';
 import { TranslationManagerService } from './translation-manager.service';
 import { ASSET_URLS } from './state.config';
+import { Language } from '@ngx-translate/core';
 
-export type RealisationLanguage = 'pl' | 'en' | 'de';
 
 export type RealisationTranslation = {
   title: string;
@@ -13,7 +13,7 @@ export type RealisationTranslation = {
   effects: string[];
 };
 
-export type RealisationI18n = Record<RealisationLanguage, RealisationTranslation>;
+export type RealisationI18n = Record<Language, RealisationTranslation>;
 
 export type RealisationCategory = string;
 
