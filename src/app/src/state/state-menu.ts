@@ -1,6 +1,8 @@
 import type { Type } from '@angular/core';
+import { computed, inject } from '@angular/core';
+import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 import { Language } from '@ngx-translate/core';
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import { TranslationManagerService } from './translation-manager.service';
 
 export interface MenuItem {
   key: string;
@@ -14,6 +16,10 @@ export interface MenuItem {
     }
   >;
   loadComponent: () => Promise<Type<unknown>>;
+}
+
+export interface MenuItemWithHref extends MenuItem {
+  href: string;
 }
 
 export const MENU_ITEMS: MenuItem[] = [
@@ -109,13 +115,16 @@ const menuInitialState: MenuStoreState = {
 
 export const MenuState = signalStore(
   withState<MenuStoreState>(menuInitialState),
-  withMethods((store) => ({
-    setMenuItems(menuItems: MenuItem[]): void {
-      patchState(store, (state) => ({
-        ...state,
-        menuItems,
+  withComputed((store, translationManager = inject(TranslationManagerService)) => ({
+    menuItemsWithHref: computed<MenuItemWithHref[]>(() => {
+      const lang = translationManager.lang();
+      return store.menuItems().map((item) => ({
+        ...item,
+        href: `/${lang}/${item.urls[lang]?.url ?? ''}`,
       }));
-    },
+    }),
+  })),
+  withMethods((store) => ({
     setActiveMenuItemKey(activeMenuItemKey: string | null): void {
       patchState(store, (state) => ({
         ...state,

@@ -34,3 +34,45 @@
     outline-offset: 3px;
   }
 }
+
+@mixin nav-pill-button() {
+  @include pill-button-base(
+    $background: var(--bs-secondary-bg-subtle),
+    $text-color: var(--bs-heading-color),
+    $border-color: var(--bs-secondary-border-subtle)
+  );
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--bs-box-shadow);
+    background: var(--bs-primary-bg-subtle);
+    border-color: var(--bs-primary-border-subtle);
+  }
+}
+
+@mixin back-pill-button() {
+  @include pill-button-base();
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--bs-box-shadow);
+    background: var(--bs-surface-card);
+    border-color: var(--bs-border-subtle-alt);
+  }
+}
+
+@mixin nav-pill-button-icon($size: 1rem, $font-size: 1.1rem) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $size;
+  font-size: $font-size;
+  line-height: 1;
+  flex: 0 0 $size;
+}
+
+@mixin nav-pill-button-label() {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}

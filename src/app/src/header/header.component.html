@@ -1,3 +1,4 @@
+@let menuItems = menuState.menuItemsWithHref();
 <header class="px-3 py-2 d-flex align-items-center justify-content-between">
   <app-header-logo [href]="currentHref" />
   <div class="d-flex align-items-center gap-3 w-100">
@@ -19,8 +20,9 @@
             <li>
               <a
                 class="dropdown-item"
+                [href]="item.href"
                 [attr.aria-current]="activeMenuItemKey === item.key ? 'page' : null"
-                (click)="onNavClick(item)"
+                (click)="$event.preventDefault(); onNavClick(item)"
                 >{{ item.key | translate }}</a
               >
             </li>
@@ -39,8 +41,9 @@
         <li class="nav-item">
           <a
             class="nav-link"
+            [href]="item.href"
             [attr.aria-current]="activeMenuItemKey === item.key ? 'page' : null"
-            (click)="onNavClick(item)"
+            (click)="$event.preventDefault(); onNavClick(item)"
             >{{ item.key | translate }}</a
           >
         </li>

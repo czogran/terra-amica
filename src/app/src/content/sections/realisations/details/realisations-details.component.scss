@@ -90,12 +90,14 @@
 }
 
 @include bp.media-down(lg) {
-  .realisations-details__hero,
   .realisations-details__content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
+@include bp.media-down(md) {
   .realisations-details__hero {
+    grid-template-columns: 1fr;
     min-height: auto;
   }
 
@@ -105,8 +107,16 @@
 }
 
 @include bp.media-down(sm) {
+  :host {
+    margin: 0.75rem;
+  }
+
   .realisations-details__panel,
   .realisations-details__content {
     padding: 1rem;
+  }
+
+  .realisations-details__content {
+    grid-template-columns: 1fr;
   }
 }

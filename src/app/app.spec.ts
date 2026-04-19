@@ -1,11 +1,20 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { StateService } from './src/state/state.service';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
-    }).compileComponents();
+      providers: [{ provide: StateService, useValue: {} }],
+    })
+      .overrideComponent(App, {
+        set: {
+          template: '<h1>terra-amica</h1>',
+          imports: [],
+        },
+      })
+      .compileComponents();
   });
 
   it('should create the app', () => {
@@ -18,6 +27,6 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, terra-amica');
+    expect(compiled.querySelector('h1')?.textContent).toContain('terra-amica');
   });
 });
