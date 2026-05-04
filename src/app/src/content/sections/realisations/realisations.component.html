@@ -11,8 +11,10 @@
             <img
               [ngSrc]="assetUrl(card.cover)"
               [alt]="card.translation.title"
+              loading="lazy"
               width="800"
               height="450"
+              decoding="async"
             />
           </div>
           <div class="realisations-card-content">
