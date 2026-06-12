@@ -13,6 +13,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import {
   RealisationItem,
+  RealisationPhase,
+  RealisationPhaseTranslation,
   RealisationTranslation,
   RealisationsState,
 } from 'src/app/src/state/state-realisations';
@@ -24,6 +26,10 @@ import { RealisationsDetailsPhasesComponent } from './realisations-details-phase
 
 type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
+};
+
+type RealisationPhaseViewModel = RealisationPhase & {
+  translation: RealisationPhaseTranslation;
 };
 
 @Component({
@@ -62,6 +68,15 @@ export class RealisationsDetailsComponent implements AfterViewInit {
     const slug = this.selectedSlug();
 
     return this.cards().find((item) => item.slug === slug) ?? null;
+  });
+
+  protected readonly phases = computed<ReadonlyArray<RealisationPhaseViewModel>>(() => {
+    const language = this.translationManager.lang();
+
+    return this.realisationsState.phases().map((phase) => ({
+      ...phase,
+      translation: phase.i18n[language] ?? phase.i18n['pl'],
+    }));
   });
 
   constructor() {
@@ -132,7 +147,11 @@ export class RealisationsDetailsComponent implements AfterViewInit {
       return null;
     }
 
-    const phaseCount = 5;
+    const phaseCount = this.phases().length;
+    if (phaseCount === 0) {
+      return null;
+    }
+
     const imagesPerPhase = Math.max(1, Math.ceil(images.length / phaseCount));
     const phaseImages = images.slice(
       (phaseNumber - 1) * imagesPerPhase,
