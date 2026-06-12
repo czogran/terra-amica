@@ -37,6 +37,7 @@
   "realisations.details.carousel.open-fullscreen": "Otwórz zdjęcie na pełnym ekranie",
   "realisations.details.carousel.close-fullscreen": "Zamknij widok pełnoekranowy",
   "realisations.details.carousel.dialog": "Pełnoekranowy podgląd zdjęcia realizacji",
+  "realisations.details.phase-label": "Etap",
   "realisations.details.meta.aria": "Szczegóły realizacji",
   "realisations.details.meta.region": "Region",
   "realisations.details.meta.years": "Lata realizacji",
@@ -80,5 +81,15 @@
   "reference.popup.previous-aria": "Poprzednia referencja",
   "reference.popup.next-aria": "Następna referencja",
   "reference.image.alt": "Obraz referencji",
-  "reference.image.expand-aria": "Powiększ obraz referencji"
+  "reference.image.expand-aria": "Powiększ obraz referencji",
+  "realisations.phases.1.name": "Odspojenie odpadów i uporządkowanie kwatery",
+  "realisations.phases.2.name": "Warstwa wyrównawcza",
+  "realisations.phases.3.name": "Izolacja wierzchowiny",
+  "realisations.phases.4.name": "Warstwa glebotwórcza",
+  "realisations.phases.5.name": "Zakończenie rekultywacji",
+  "realisations.phases.1.description": "Pierwsza faza obejmuje odspojenie odpadów ze składowiska oraz metodyczne uporządkowanie terenu kwatery. Proces ten jest kluczowy dla preparacji powierzchni do następnych etapów rekultywacji.",
+  "realisations.phases.2.description": "Warstwa wyrównawcza stanowi krytyczną warstwę pośredniej, którą rozkładamy po odspojonych odpadach. Warstwa ta wyrównuje nierówności terenu i zapewnia stabilność dla kolejnych warstw.",
+  "realisations.phases.3.description": "Izolacja wierzchowiny ma na celu ochronę powierzchni przed migracji zanieczyszczeń. Warstwa izolacyjna, zwykle tworzona z materiału szczególnie wyselekcjonowanego, zapewnia niezbędną impregnację.",
+  "realisations.phases.4.description": "Warstwa glebotwórcza to warstwa materiału, na której rozwijać się będzie życie roślinne. Warstwa ta zawiera niezbędne substancje odżywcze, które wspierają wzrost roślin i utworzenie warstwy glebowej.",
+  "realisations.phases.5.description": "Ostatnia faza rekultywacji obejmuje finalizację prac, sadzenie roślinności i przywrócenie terenu do użytku zgodnie z planem zagospodarowania. Po tej fazie teren jest gotowy do naturalnego rozwoju ekosystemu."
 }

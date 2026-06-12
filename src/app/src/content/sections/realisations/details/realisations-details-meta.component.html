@@ -3,21 +3,53 @@
   [attr.aria-label]="'realisations.details.meta.aria' | translate"
 >
   <div>
-    <span class="realisations-details__label">{{
-      'realisations.details.meta.region' | translate
-    }}</span>
-    <strong class="realisations-details__value">{{ region() }}</strong>
+    <span class="realisations-details__meta-icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 22s7-5.7 7-12A7 7 0 1 0 5 10c0 6.3 7 12 7 12Z"
+          fill="currentColor"
+        />
+        <circle cx="12" cy="10" r="2.4" fill="white" />
+      </svg>
+    </span>
+    <span>
+      <span class="realisations-details__label">{{
+        'realisations.details.meta.region' | translate
+      }}</span>
+      <strong class="realisations-details__value">{{ region() }}</strong>
+    </span>
   </div>
   <div>
-    <span class="realisations-details__label">{{
-      'realisations.details.meta.years' | translate
-    }}</span>
-    <strong class="realisations-details__value">{{ years() }}</strong>
+    <span class="realisations-details__meta-icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="5" width="16" height="15" rx="2" fill="currentColor" />
+        <path d="M8 3v4M16 3v4M4 10h16" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+        <rect x="7" y="13" width="3" height="3" rx="0.5" fill="white" />
+        <rect x="12" y="13" width="3" height="3" rx="0.5" fill="white" />
+      </svg>
+    </span>
+    <span>
+      <span class="realisations-details__label">{{
+        'realisations.details.meta.years' | translate
+      }}</span>
+      <strong class="realisations-details__value">{{ years() }}</strong>
+    </span>
   </div>
   <div>
-    <span class="realisations-details__label">{{
-      'realisations.details.meta.area' | translate
-    }}</span>
-    <strong class="realisations-details__value">{{ area() }}</strong>
+    <span class="realisations-details__meta-icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M19 4c-5.8.4-10.2 3.2-11.4 7.6C6.8 14.8 8.4 18 12 20c5.3-1.8 8.5-6.9 7-16Z"
+          fill="currentColor"
+        />
+        <path d="M5 20c2.7-5.7 6.2-9.5 11-12" stroke="white" stroke-width="1.7" stroke-linecap="round" />
+      </svg>
+    </span>
+    <span>
+      <span class="realisations-details__label">{{
+        'realisations.details.meta.area' | translate
+      }}</span>
+      <strong class="realisations-details__value">{{ area() }}</strong>
+    </span>
   </div>
 </div>

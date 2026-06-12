@@ -1,18 +1,9 @@
 @if (card(); as card) {
   <article class="realisations-details" aria-labelledby="realisations-details-title">
-    <div class="realisations-details__hero">
-      <div class="realisations-details__image">
-        @if (carouselInputs(); as carouselInputs) {
-          <app-realisations-carousel
-            [images]="carouselInputs.images"
-            [alt]="carouselInputs.alt"
-          />
-        }
-      </div>
+    <header class="realisations-details__panel">
+      <app-realisations-details-navigation [cards]="cards()" [currentSlug]="selectedSlug()" />
 
-      <div class="realisations-details__panel">
-        <app-realisations-details-navigation [cards]="cards()" [currentSlug]="selectedSlug()" />
-
+      <div class="realisations-details__intro">
         <h2 id="realisations-details-title">{{ card.translation.title }}</h2>
         <p class="realisations-details__lead">{{ card.translation.lead }}</p>
 
@@ -22,36 +13,127 @@
           [area]="card.area"
         />
       </div>
-    </div>
+    </header>
 
-    <div class="realisations-details__content">
-      <section
-        class="realisations-details__block"
-        aria-labelledby="realisations-project-description"
-      >
-        <h3 id="realisations-project-description">
-          {{ 'realisations.details.description' | translate }}
-        </h3>
-        <p>{{ card.translation.description }}</p>
-      </section>
+    <div class="realisations-details__hero">
+      <app-realisations-details-phases
+        [activePhase]="activePhase()"
+        (phaseSelected)="goToPhase($event)"
+      />
 
-      <section class="realisations-details__block" aria-labelledby="realisations-project-scope">
-        <h3 id="realisations-project-scope">{{ 'realisations.details.scope' | translate }}</h3>
-        <ul>
-          @for (scopeItem of card.translation.scope; track scopeItem) {
-            <li>{{ scopeItem }}</li>
-          }
-        </ul>
-      </section>
+      <div class="realisations-details__stage">
+        <div class="realisations-details__phases-content">
+          <section
+            id="phase-1"
+            class="realisations-details__phase-section"
+            [class.realisations-details__phase-section--active]="activePhase() === 1"
+          >
+            <div class="realisations-details__phase-copy">
+              <span class="realisations-details__phase-kicker">
+                {{ 'realisations.details.phase-label' | translate }} 1
+              </span>
+              <h3>{{ 'realisations.phases.1.name' | translate }}</h3>
+              <p>{{ 'realisations.phases.1.description' | translate }}</p>
+            </div>
 
-      <section class="realisations-details__block" aria-labelledby="realisations-project-effects">
-        <h3 id="realisations-project-effects">{{ 'realisations.details.effects' | translate }}</h3>
-        <ul>
-          @for (effect of card.translation.effects; track effect) {
-            <li>{{ effect }}</li>
-          }
-        </ul>
-      </section>
+            @if (phaseCarouselInputs(1); as carouselInputs) {
+              <app-realisations-carousel
+                [images]="carouselInputs.images"
+                [alt]="carouselInputs.alt"
+                [isActive]="activePhase() === 1"
+              />
+            }
+          </section>
+
+          <section
+            id="phase-2"
+            class="realisations-details__phase-section"
+            [class.realisations-details__phase-section--active]="activePhase() === 2"
+          >
+            <div class="realisations-details__phase-copy">
+              <span class="realisations-details__phase-kicker">
+                {{ 'realisations.details.phase-label' | translate }} 2
+              </span>
+              <h3>{{ 'realisations.phases.2.name' | translate }}</h3>
+              <p>{{ 'realisations.phases.2.description' | translate }}</p>
+            </div>
+
+            @if (phaseCarouselInputs(2); as carouselInputs) {
+              <app-realisations-carousel
+                [images]="carouselInputs.images"
+                [alt]="carouselInputs.alt"
+                [isActive]="activePhase() === 2"
+              />
+            }
+          </section>
+
+          <section
+            id="phase-3"
+            class="realisations-details__phase-section"
+            [class.realisations-details__phase-section--active]="activePhase() === 3"
+          >
+            <div class="realisations-details__phase-copy">
+              <span class="realisations-details__phase-kicker">
+                {{ 'realisations.details.phase-label' | translate }} 3
+              </span>
+              <h3>{{ 'realisations.phases.3.name' | translate }}</h3>
+              <p>{{ 'realisations.phases.3.description' | translate }}</p>
+            </div>
+
+            @if (phaseCarouselInputs(3); as carouselInputs) {
+              <app-realisations-carousel
+                [images]="carouselInputs.images"
+                [alt]="carouselInputs.alt"
+                [isActive]="activePhase() === 3"
+              />
+            }
+          </section>
+
+          <section
+            id="phase-4"
+            class="realisations-details__phase-section"
+            [class.realisations-details__phase-section--active]="activePhase() === 4"
+          >
+            <div class="realisations-details__phase-copy">
+              <span class="realisations-details__phase-kicker">
+                {{ 'realisations.details.phase-label' | translate }} 4
+              </span>
+              <h3>{{ 'realisations.phases.4.name' | translate }}</h3>
+              <p>{{ 'realisations.phases.4.description' | translate }}</p>
+            </div>
+
+            @if (phaseCarouselInputs(4); as carouselInputs) {
+              <app-realisations-carousel
+                [images]="carouselInputs.images"
+                [alt]="carouselInputs.alt"
+                [isActive]="activePhase() === 4"
+              />
+            }
+          </section>
+
+          <section
+            id="phase-5"
+            class="realisations-details__phase-section"
+            [class.realisations-details__phase-section--active]="activePhase() === 5"
+          >
+            <div class="realisations-details__phase-copy">
+              <span class="realisations-details__phase-kicker">
+                {{ 'realisations.details.phase-label' | translate }} 5
+              </span>
+              <h3>{{ 'realisations.phases.5.name' | translate }}</h3>
+              <p>{{ 'realisations.phases.5.description' | translate }}</p>
+            </div>
+
+            @if (phaseCarouselInputs(5); as carouselInputs) {
+              <app-realisations-carousel
+                [images]="carouselInputs.images"
+                [alt]="carouselInputs.alt"
+                [isActive]="activePhase() === 5"
+              />
+            }
+          </section>
+        </div>
+      </div>
     </div>
   </article>
 }

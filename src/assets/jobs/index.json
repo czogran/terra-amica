@@ -1,1 +1,5 @@
-["job1.json", "job2.json", "job3.json", "job4.json", "job5.json", "job6.json"]
+[
+  "kierownik-skladowiska-odpadow.json",
+  "koordynator-prac-rekultywacyjnych.json",
+  "specjalista-od-spedycji.json"
+]

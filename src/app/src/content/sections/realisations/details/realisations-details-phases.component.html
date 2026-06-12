@@ -1,0 +1,162 @@
+<nav class="realisations-details__phases" aria-label="Fazy rekultywacji">
+  <ol>
+    <li
+      class="realisations-details__phase"
+      [class.realisations-details__phase--active]="activePhase() === 1"
+    >
+      <button
+        type="button"
+        class="realisations-details__phase-btn"
+        (click)="selectPhase(1)"
+        [attr.aria-current]="activePhase() === 1 ? 'step' : null"
+      >
+        <div class="realisations-details__phase-circle">1</div>
+        <div class="realisations-details__phase-content">
+          <svg
+            class="realisations-details__phase-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect x="2" y="7" width="14" height="8" rx="1" fill="currentColor" />
+            <rect x="16" y="9" width="6" height="6" rx="1" fill="currentColor" />
+            <circle cx="7" cy="18" r="2" fill="currentColor" />
+            <circle cx="19" cy="18" r="2" fill="currentColor" />
+          </svg>
+          <span class="realisations-details__phase-name">{{
+            'realisations.phases.1.name' | translate
+          }}</span>
+        </div>
+      </button>
+    </li>
+    <li
+      class="realisations-details__phase"
+      [class.realisations-details__phase--active]="activePhase() === 2"
+    >
+      <button
+        type="button"
+        class="realisations-details__phase-btn"
+        (click)="selectPhase(2)"
+        [attr.aria-current]="activePhase() === 2 ? 'step' : null"
+      >
+        <div class="realisations-details__phase-circle">2</div>
+        <div class="realisations-details__phase-content">
+          <svg
+            class="realisations-details__phase-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="3" rx="1" fill="currentColor" />
+            <rect x="6" y="10" width="12" height="3" rx="1" fill="currentColor" />
+            <rect x="9" y="15" width="6" height="3" rx="1" fill="currentColor" />
+          </svg>
+          <span class="realisations-details__phase-name">{{
+            'realisations.phases.2.name' | translate
+          }}</span>
+        </div>
+      </button>
+    </li>
+    <li
+      class="realisations-details__phase"
+      [class.realisations-details__phase--active]="activePhase() === 3"
+    >
+      <button
+        type="button"
+        class="realisations-details__phase-btn"
+        (click)="selectPhase(3)"
+        [attr.aria-current]="activePhase() === 3 ? 'step' : null"
+      >
+        <div class="realisations-details__phase-circle">3</div>
+        <div class="realisations-details__phase-content">
+          <svg
+            class="realisations-details__phase-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M12 2L4 5v6c0 5 4 9 8 11 4-2 8-6 8-11V5l-8-3z" fill="currentColor" />
+          </svg>
+          <span class="realisations-details__phase-name">{{
+            'realisations.phases.3.name' | translate
+          }}</span>
+        </div>
+      </button>
+    </li>
+    <li
+      class="realisations-details__phase"
+      [class.realisations-details__phase--active]="activePhase() === 4"
+    >
+      <button
+        type="button"
+        class="realisations-details__phase-btn"
+        (click)="selectPhase(4)"
+        [attr.aria-current]="activePhase() === 4 ? 'step' : null"
+      >
+        <div class="realisations-details__phase-circle">4</div>
+        <div class="realisations-details__phase-content">
+          <svg
+            class="realisations-details__phase-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M12 2s4 4 4 7-4 6-4 6-4-3-4-6 4-7 4-7z" fill="currentColor" />
+            <circle cx="12" cy="20" r="2" fill="currentColor" />
+          </svg>
+          <span class="realisations-details__phase-name">{{
+            'realisations.phases.4.name' | translate
+          }}</span>
+        </div>
+      </button>
+    </li>
+    <li
+      class="realisations-details__phase"
+      [class.realisations-details__phase--active]="activePhase() === 5"
+    >
+      <button
+        type="button"
+        class="realisations-details__phase-btn"
+        (click)="selectPhase(5)"
+        [attr.aria-current]="activePhase() === 5 ? 'step' : null"
+      >
+        <div class="realisations-details__phase-circle">5</div>
+        <div class="realisations-details__phase-content">
+          <svg
+            class="realisations-details__phase-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M6 3v18"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M6 7c4-2 6 2 10 0v10c-4 2-6-2-10 0" fill="currentColor" />
+          </svg>
+          <span class="realisations-details__phase-name">{{
+            'realisations.phases.5.name' | translate
+          }}</span>
+        </div>
+      </button>
+    </li>
+  </ol>
+</nav>

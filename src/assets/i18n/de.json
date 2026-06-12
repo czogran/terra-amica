@@ -30,6 +30,7 @@
   "realisations.details.carousel.open-fullscreen": "Bild im Vollbild öffnen",
   "realisations.details.carousel.close-fullscreen": "Vollbildansicht schließen",
   "realisations.details.carousel.dialog": "Vollbildvorschau des Bildes der Realisierung",
+  "realisations.details.phase-label": "Etappe",
   "realisations.details.meta.aria": "Projektangaben",
   "realisations.details.meta.region": "Region",
   "realisations.details.meta.years": "Realisierungsjahre",
@@ -57,5 +58,15 @@
   "reference.popup.previous-aria": "Vorherige Referenz",
   "reference.popup.next-aria": "Nächste Referenz",
   "reference.image.alt": "Referenzbild",
-  "reference.image.expand-aria": "Referenzbild vergrößern"
+  "reference.image.expand-aria": "Referenzbild vergrößern",
+  "realisations.phases.1.name": "Abfallseparation und Flächenorganisation",
+  "realisations.phases.2.name": "Ausgleichsschicht",
+  "realisations.phases.3.name": "Oberflächenisolation",
+  "realisations.phases.4.name": "Bodenschicht",
+  "realisations.phases.5.name": "Abschluss der Rekultivierung",
+  "realisations.phases.1.description": "Die erste Phase umfasst die Abfallseparation von der Deponie und die systematische Flächenorganisation. Dieser Prozess ist entscheidend für die Vorbereitung der Oberfläche für nachfolgende Rekultivierungsphasen.",
+  "realisations.phases.2.description": "Die Ausgleichsschicht ist eine kritische Zwischenschicht, die über den separierten Abfällen verlegt wird. Diese Schicht ebnet Geländeunebenheiten aus und gewährleistet die Stabilität für nachfolgende Schichten.",
+  "realisations.phases.3.description": "Die Oberflächenisolation dient dem Schutz vor Schadstoffverlagerung. Die Isolationsschicht aus speziell ausgewähltem Material bietet notwendigen Schutz und Abdichtung.",
+  "realisations.phases.4.description": "Die Bodenschicht ist das Material, auf dem Pflanzenleben gedeihen wird. Diese Schicht enthält wesentliche Nährstoffe, die das Pflanzenwachstum und die Bodenbildung unterstützen.",
+  "realisations.phases.5.description": "Die letzte Rekultivierungsphase umfasst die Fertigstellung, Bepflanzung und Wiederherstellung des Geländes gemäß Nutzungsplan. Nach dieser Phase ist das Gelände für die natürliche Ökosystemsentwicklung bereit."
 }

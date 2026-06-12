@@ -37,6 +37,7 @@
   "realisations.details.carousel.open-fullscreen": "Open image in fullscreen",
   "realisations.details.carousel.close-fullscreen": "Close fullscreen view",
   "realisations.details.carousel.dialog": "Fullscreen preview of the realisation image",
+  "realisations.details.phase-label": "Stage",
   "realisations.details.meta.aria": "Realisation details",
   "realisations.details.meta.region": "Region",
   "realisations.details.meta.years": "Implementation years",
@@ -80,5 +81,15 @@
   "nav.home": "Home",
   "nav.settings": "Settings",
   "user.greeting": "Hello, {{name}}",
-  "error.network": "Network error. Please try again."
+  "error.network": "Network error. Please try again.",
+  "realisations.phases.1.name": "Waste separation and area organization",
+  "realisations.phases.2.name": "Leveling layer",
+  "realisations.phases.3.name": "Top soil isolation",
+  "realisations.phases.4.name": "Soil forming layer",
+  "realisations.phases.5.name": "Reclamation completion",
+  "realisations.phases.1.description": "The first phase includes waste separation from the landfill and systematic area organization. This process is crucial for preparing the surface for subsequent reclamation stages.",
+  "realisations.phases.2.description": "The leveling layer is a critical intermediate layer laid over separated waste. This layer levels terrain irregularities and ensures stability for subsequent layers.",
+  "realisations.phases.3.description": "Top soil isolation aims to protect the surface from contaminant migration. The isolation layer, typically created from specially selected material, provides necessary protection and sealing.",
+  "realisations.phases.4.description": "The soil forming layer is material on which plant life will develop. This layer contains essential nutrients that support plant growth and the formation of the soil layer.",
+  "realisations.phases.5.description": "The final reclamation phase includes completion of works, planting vegetation, and restoration of the area for use according to the development plan. After this phase, the terrain is ready for natural ecosystem development."
 }
