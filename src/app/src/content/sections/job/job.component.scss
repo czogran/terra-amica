@@ -1,41 +1,51 @@
 @use '../../../design-system/breakpoints' as bp;
 
 .job-section {
-  padding: 2rem;
+  padding: 3rem 2rem;
+}
+
+.job-card-row {
+  max-width: 1800px;
 }
 
 .job-tile {
-  max-width: 350px;
-  min-width: 220px;
+  --bs-card-bg: var(--bs-surface-card);
+  --bs-card-border-color: var(--bs-border-color);
+
   width: 100%;
-  min-height: 120px;
+  min-height: 175px;
   cursor: pointer;
-  transition: box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+  box-shadow: var(--bs-box-shadow-sm);
   display: flex;
   align-items: stretch;
   flex-direction: column;
 }
 .job-tile:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--bs-box-shadow);
+  transform: translateY(-2px);
 }
 
 .job-tile .card-body {
   flex: 1 1 auto;
-  padding: 0.75rem 1rem;
+  padding: 1.5rem 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .job-tile .card-title {
-  font-size: 1.1rem;
+  color: var(--bs-primary);
+  font-size: 1.35rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .job-tile .card-text {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   margin-bottom: 0;
   overflow: hidden;
   max-height: 3.5em;
@@ -76,7 +86,6 @@
 
 @include bp.media-down(xs) {
   .job-tile {
-    max-width: 100%;
     min-height: 100px;
     height: auto;
     margin-left: 0;
@@ -90,7 +99,6 @@
 
 @include bp.media-between(sm, md) {
   .job-tile {
-    max-width: 95%;
     min-height: 110px;
     height: 120px;
   }
@@ -98,8 +106,7 @@
 
 @include bp.media-up(lg) {
   .job-tile {
-    max-width: 350px;
-    min-height: 120px;
-    height: 140px;
+    min-height: 175px;
+    height: 195px;
   }
 }

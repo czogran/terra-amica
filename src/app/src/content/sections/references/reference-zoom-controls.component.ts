@@ -12,7 +12,7 @@ import { input, output } from '@angular/core';
   template: `
     <button
       type="button"
-      class="btn btn-sm btn-outline-secondary"
+      class="btn btn-sm btn-primary"
       (click)="zoomOutRequested.emit()"
       [disabled]="zoomLevel() === minZoom()"
       aria-label="Zoom out"
@@ -22,7 +22,7 @@ import { input, output } from '@angular/core';
     <span class="reference-zoom-level">{{ zoomLevel() }}%</span>
     <button
       type="button"
-      class="btn btn-sm btn-outline-secondary"
+      class="btn btn-sm btn-primary"
       (click)="zoomInRequested.emit()"
       [disabled]="zoomLevel() === maxZoom()"
       aria-label="Zoom in"
@@ -31,7 +31,7 @@ import { input, output } from '@angular/core';
     </button>
     <button
       type="button"
-      class="btn btn-sm btn-outline-secondary"
+      class="btn btn-sm btn-primary"
       (click)="resetRequested.emit()"
       [disabled]="zoomLevel() === minZoom()"
       [attr.aria-label]="'reference.zoom.reset' | translate"

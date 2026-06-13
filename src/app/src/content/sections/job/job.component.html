@@ -1,22 +1,26 @@
 <app-section-header [title]="'menu.jobs' | translate" [subtitle]="'job.intro' | translate" />
 <section class="job-section">
-  <div class="d-flex flex-wrap gap-4 align-items-start mt-3">
+  <div class="job-card-row row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-3 mx-auto">
     @if (loading()) {
-      <div class="job-tile card h-100 flex-grow-1 flex-shrink-1 skeleton-tile">
-        <div class="card-body">
-          <div class="skeleton skeleton-title mb-2"></div>
-          <div class="skeleton skeleton-text mb-1"></div>
-          <div class="skeleton skeleton-text"></div>
+      <div class="col">
+        <div class="job-tile card h-100 skeleton-tile">
+          <div class="card-body">
+            <div class="skeleton skeleton-title mb-2"></div>
+            <div class="skeleton skeleton-text mb-1"></div>
+            <div class="skeleton skeleton-text"></div>
+          </div>
         </div>
       </div>
     } @else {
       @for (job of jobs(); track job.title) {
-        <div class="job-tile card h-100 flex-grow-1 flex-shrink-1 fade-in" (click)="openJob(job)">
-          <div class="card-body">
-            <h5 class="card-title">{{ job.title }}</h5>
-            <p class="card-text text-truncate">
-              {{ job.description }}
-            </p>
+        <div class="col">
+          <div class="job-tile card h-100 fade-in" (click)="openJob(job)">
+            <div class="card-body">
+              <h5 class="card-title text-primary">{{ job.title }}</h5>
+              <p class="card-text text-truncate">
+                {{ job.description }}
+              </p>
+            </div>
           </div>
         </div>
       }

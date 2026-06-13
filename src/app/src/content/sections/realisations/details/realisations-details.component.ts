@@ -72,8 +72,26 @@ export class RealisationsDetailsComponent implements AfterViewInit {
 
   protected readonly phases = computed<ReadonlyArray<RealisationPhaseViewModel>>(() => {
     const language = this.translationManager.lang();
+    const realisation = this.card();
 
-    return this.realisationsState.phases().map((phase) => ({
+    if (!realisation) {
+      return [];
+    }
+
+    const phases = realisation.phases ?? [
+      {
+        number: 1,
+        icon: 'flag' as const,
+        images: realisation.images.length > 0 ? realisation.images : [realisation.cover],
+        i18n: {
+          pl: { name: realisation.translation.title, description: realisation.translation.description },
+          en: { name: realisation.translation.title, description: realisation.translation.description },
+          de: { name: realisation.translation.title, description: realisation.translation.description },
+        },
+      },
+    ];
+
+    return phases.map((phase) => ({
       ...phase,
       translation: phase.i18n[language] ?? phase.i18n['pl'],
     }));
@@ -142,24 +160,14 @@ export class RealisationsDetailsComponent implements AfterViewInit {
       return null;
     }
 
-    const images = this.imagePaths();
+    const phase = this.phases().find((item) => item.number === phaseNumber);
+    const images = phase?.images.map((image) => this.assetUrl(image)) ?? this.imagePaths();
     if (images.length === 0) {
       return null;
     }
 
-    const phaseCount = this.phases().length;
-    if (phaseCount === 0) {
-      return null;
-    }
-
-    const imagesPerPhase = Math.max(1, Math.ceil(images.length / phaseCount));
-    const phaseImages = images.slice(
-      (phaseNumber - 1) * imagesPerPhase,
-      phaseNumber * imagesPerPhase,
-    );
-
     return {
-      images: phaseImages.length > 0 ? phaseImages : [images[(phaseNumber - 1) % images.length]],
+      images,
       alt: `${realisation.translation.title} - ${phaseNumber}`,
     };
   }

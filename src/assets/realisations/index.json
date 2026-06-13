@@ -202,168 +202,202 @@
     }
   },
   {
-    "id": "09-projekt-najnowszy-2025",
-    "slug": "rekultywacja-2025",
-    "region": "Polska",
-    "years": "2024–2025",
-    "area": "—",
-    "category": "reclamation",
-    "cover": "realisations/09-projekt-najnowszy-2025/1.jpg",
-    "images": [
-      "realisations/09-projekt-najnowszy-2025/1.jpg",
-      "realisations/09-projekt-najnowszy-2025/3.jpg",
-      "realisations/09-projekt-najnowszy-2025/4.jpg",
-      "realisations/09-projekt-najnowszy-2025/5.jpg",
-      "realisations/09-projekt-najnowszy-2025/6.jpg",
-      "realisations/09-projekt-najnowszy-2025/7.jpg",
-      "realisations/09-projekt-najnowszy-2025/8.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – 2025",
-        "lead": "Najnowsza zakończona realizacja rekultywacji składowiska odpadów.",
-        "description": "Najnowszy projekt rekultywacyjny zakończony w 2025 roku. Prace obejmowały pełny zakres działań od formowania kwatery, przez warstwy techniczne i glebotwórcze, po obsiew trawami.",
-        "scope": [
-          "kompleksowe prace rekultywacyjne",
-          "warstwy techniczne i glebotwórcze",
-          "obsiew trawami i nasadzenia"
-        ],
-        "effects": [
-          "skutecznie zrekultywowane składowisko",
-          "przygotowanie terenu do dalszego zagospodarowania"
-        ]
-      },
-      "en": {
-        "title": "Landfill reclamation – 2025",
-        "lead": "The latest completed landfill reclamation project.",
-        "description": "The latest reclamation project completed in 2025. Works included full scope from cell formation through technical and soil-forming layers to grass seeding.",
-        "scope": [
-          "comprehensive reclamation works",
-          "technical and soil-forming layers",
-          "grass seeding and planting"
-        ],
-        "effects": ["successfully reclaimed landfill", "site prepared for further development"]
-      },
-      "de": {
-        "title": "Deponierekultivierung – 2025",
-        "lead": "Das jüngste abgeschlossene Deponierekultivierungsprojekt.",
-        "description": "Das jüngste Rekultivierungsprojekt wurde 2025 abgeschlossen. Die Arbeiten umfassten den vollständigen Umfang von Zellformung über technische und bodenbildende Schichten bis zur Einsaat.",
-        "scope": [
-          "umfassende Rekultivierungsarbeiten",
-          "technische und bodenbildende Schichten",
-          "Einsaat und Bepflanzung"
-        ],
-        "effects": ["erfolgreich rekultivierte Deponie", "Gelände für weitere Nutzung vorbereitet"]
-      }
-    }
-  },
-  {
-    "id": "07-projekt-swidnik",
-    "slug": "rekultywacja-lodzkie-swidnik",
-    "region": "Łódzkie",
-    "years": "2023–2024",
-    "area": "—",
-    "category": "reclamation",
-    "cover": "realisations/07-projekt-swidnik/9.3.jpg",
-    "images": [
-      "realisations/07-projekt-swidnik/9.3.jpg",
-      "realisations/07-projekt-swidnik/9.4.jpg",
-      "realisations/07-projekt-swidnik/9.5.jpg",
-      "realisations/07-projekt-swidnik/9.6.jpg",
-      "realisations/07-projekt-swidnik/10.2.jpg",
-      "realisations/07-projekt-swidnik/10.3.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Łódzkie (II)",
-        "lead": "Rekultywacja składowiska odpadów – kolejna realizacja w województwie łódzkim.",
-        "description": "Prace obejmowały kompleksową rekultywację kwatery składowiskowej wraz z pracami wykończeniowymi.",
-        "scope": ["formowanie okrywy rekultywacyjnej", "prace wykończeniowe", "odbiór etapów"],
-        "effects": ["gotowość do użytkowania terenu", "czytelna dokumentacja powykonawcza"]
-      },
-      "en": {
-        "title": "Landfill reclamation – Łódzkie (II)",
-        "lead": "Landfill reclamation – another project in Łódź Voivodeship.",
-        "description": "Works included comprehensive reclamation of the landfill cell with finishing works.",
-        "scope": ["reclamation cover shaping", "finishing works", "stage acceptance"],
-        "effects": ["readiness for site use", "clear as-built documentation"]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Łódzkie (II)",
-        "lead": "Deponierekultivierung – ein weiteres Projekt in der Woiwodschaft Łódź.",
-        "description": "Die Arbeiten umfassten die umfassende Rekultivierung der Deponiezelle einschließlich Ausführungsarbeiten.",
-        "scope": [
-          "Formung der Rekultivierungsdecke",
-          "Ausführungsarbeiten",
-          "Abnahme der Bauabschnitte"
-        ],
-        "effects": ["nutzungsbereites Gelände", "klare Bestandsdokumentation"]
-      }
-    }
-  },
-  {
-    "id": "08-projekt-lukowskie",
-    "slug": "rekultywacja-lukowskie",
-    "region": "Lubelskie",
-    "years": "2023–2024",
-    "area": "—",
-    "category": "reclamation",
-    "cover": "realisations/08-projekt-lukowskie/11.1_01.jpg",
-    "images": [
-      "realisations/08-projekt-lukowskie/11.1_01.jpg",
-      "realisations/08-projekt-lukowskie/11.4_01.jpg",
-      "realisations/08-projekt-lukowskie/11.5_01.jpg",
-      "realisations/08-projekt-lukowskie/11.6.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Łukowskie",
-        "lead": "Rekultywacja składowiska odpadów w powiecie łukowskim.",
-        "description": "Prace rekultywacyjne na terenie składowiska komunalnego z formowaniem kwatery i pokrywą roślinną.",
-        "scope": ["prace przygotowawcze", "formowanie kwatery", "obsiew trawami i nasadzenia"],
-        "effects": ["teren zrekultywowany", "pokrywa roślinna zabezpieczająca obiekt"]
-      },
-      "en": {
-        "title": "Landfill reclamation – Łukowskie",
-        "lead": "Landfill reclamation in Łuków County.",
-        "description": "Reclamation works at a municipal landfill including cell shaping and vegetation cover.",
-        "scope": ["preparatory works", "cell shaping", "grass seeding and planting"],
-        "effects": ["reclaimed area", "vegetation cover securing the site"]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Łukowskie",
-        "lead": "Deponierekultivierung im Kreis Łuków.",
-        "description": "Rekultivierungsarbeiten auf einem kommunalen Deponiegelände mit Zellformung und Vegetationsdecke.",
-        "scope": ["Vorbereitende Arbeiten", "Formung der Zelle", "Einsaat und Bepflanzung"],
-        "effects": ["rekultiviertes Gelände", "Vegetationsdecke sichert das Objekt"]
-      }
-    }
-  },
-  {
     "id": "04-powiat-parczewski-2022",
     "slug": "rekultywacja-powiat-parczewski-2022",
     "region": "Lubelskie",
     "years": "2022–2024",
     "area": "ok. 1,5 ha",
     "category": "reclamation",
-    "cover": "realisations/04-powiat-parczewski-2022/4.1.jpg",
+    "cover": "realisations/05-projekt-parczewski-3/7.1.jpg",
     "images": [
-      "realisations/04-powiat-parczewski-2022/2.2.jpg",
-      "realisations/04-powiat-parczewski-2022/2.3.jpg",
-      "realisations/04-powiat-parczewski-2022/2.6_01.jpg",
-      "realisations/04-powiat-parczewski-2022/2.7_01.jpg",
-      "realisations/04-powiat-parczewski-2022/3.1.jpg",
-      "realisations/04-powiat-parczewski-2022/3.2.jpg",
-      "realisations/04-powiat-parczewski-2022/4.1.jpg",
-      "realisations/04-powiat-parczewski-2022/4.2.jpg",
-      "realisations/04-powiat-parczewski-2022/4.3.jpg",
-      "realisations/04-powiat-parczewski-2022/4.4.jpg",
-      "realisations/04-powiat-parczewski-2022/5.1.jpg",
-      "realisations/04-powiat-parczewski-2022/5.3.jpg",
-      "realisations/04-powiat-parczewski-2022/5.8.jpg",
-      "realisations/04-powiat-parczewski-2022/5.10.jpg",
-      "realisations/04-powiat-parczewski-2022/6.1_01.jpg",
-      "realisations/04-powiat-parczewski-2022/6.2_01.jpg"
+      "realisations/05-projekt-parczewski-3/7.1.jpg",
+      "realisations/05-projekt-parczewski-3/7.2.jpg",
+      "realisations/05-projekt-parczewski-3/7.3.jpg",
+      "realisations/05-projekt-parczewski-3/7.5.jpg",
+      "realisations/06-projekt-radomsko/8.1.jpg",
+      "realisations/06-projekt-radomsko/8.2.jpg",
+      "realisations/07-projekt-swidnik/9.3.jpg",
+      "realisations/07-projekt-swidnik/9.4.jpg",
+      "realisations/07-projekt-swidnik/9.5.jpg",
+      "realisations/07-projekt-swidnik/9.6.jpg",
+      "realisations/07-projekt-swidnik/10.2.jpg",
+      "realisations/07-projekt-swidnik/10.3.jpg",
+      "realisations/08-projekt-lukowskie/11.1_01.jpg",
+      "realisations/08-projekt-lukowskie/11.4_01.jpg",
+      "realisations/08-projekt-lukowskie/11.5_01.jpg",
+      "realisations/08-projekt-lukowskie/11.6.jpg",
+      "realisations/09-projekt-najnowszy-2025/1.jpg",
+      "realisations/09-projekt-najnowszy-2025/4.jpg",
+      "realisations/09-projekt-najnowszy-2025/3.jpg",
+      "realisations/09-projekt-najnowszy-2025/5.jpg",
+      "realisations/09-projekt-najnowszy-2025/6.jpg",
+      "realisations/09-projekt-najnowszy-2025/7.jpg",
+      "realisations/09-projekt-najnowszy-2025/8.jpg"
+    ],
+    "phases": [
+      {
+        "number": 1,
+        "icon": "truck",
+        "images": [
+          "realisations/05-projekt-parczewski-3/7.1.jpg",
+          "realisations/05-projekt-parczewski-3/7.2.jpg",
+          "realisations/05-projekt-parczewski-3/7.3.jpg",
+          "realisations/05-projekt-parczewski-3/7.5.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Kwatera przed rekultywacją",
+            "description": "Zdjęcia kwatery przed rozpoczęciem rekultywacji."
+          },
+          "en": {
+            "name": "Cell before reclamation",
+            "description": "Photos of the cell before reclamation started."
+          },
+          "de": {
+            "name": "Zelle vor der Rekultivierung",
+            "description": "Fotos der Zelle vor Beginn der Rekultivierung."
+          }
+        }
+      },
+      {
+        "number": 2,
+        "icon": "truck",
+        "images": [
+          "realisations/06-projekt-radomsko/8.1.jpg",
+          "realisations/06-projekt-radomsko/8.2.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Odspajanie odpadów i formowanie kwatery pod rekultywację",
+            "description": "Zdjęcia z odspajania odpadów i formowania kwatery pod rekultywację."
+          },
+          "en": {
+            "name": "Waste separation and cell shaping for reclamation",
+            "description": "Photos from waste separation and cell shaping for reclamation."
+          },
+          "de": {
+            "name": "Abfallauflockerung und Formung der Zelle zur Rekultivierung",
+            "description": "Fotos von der Abfallauflockerung und Formung der Zelle zur Rekultivierung."
+          }
+        }
+      },
+      {
+        "number": 3,
+        "icon": "layers",
+        "images": [
+          "realisations/07-projekt-swidnik/9.3.jpg",
+          "realisations/07-projekt-swidnik/9.4.jpg",
+          "realisations/07-projekt-swidnik/9.5.jpg",
+          "realisations/07-projekt-swidnik/9.6.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Warstwa techniczna",
+            "description": "Zdjęcia z wykonywania warstwy technicznej."
+          },
+          "en": {
+            "name": "Technical layer installation",
+            "description": "Photos from technical layer installation."
+          },
+          "de": {
+            "name": "Anlage der technischen Schicht",
+            "description": "Fotos von der Anlage der technischen Schicht."
+          }
+        }
+      },
+      {
+        "number": 4,
+        "icon": "shield",
+        "images": [
+          "realisations/07-projekt-swidnik/10.2.jpg",
+          "realisations/07-projekt-swidnik/10.3.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Izolacja kwatery",
+            "description": "Zdjęcia z izolacji kwatery."
+          },
+          "en": {
+            "name": "Cell isolation",
+            "description": "Photos from landfill cell isolation."
+          },
+          "de": {
+            "name": "Isolierung der Zelle",
+            "description": "Fotos von der Isolierung der Deponiezelle."
+          }
+        }
+      },
+      {
+        "number": 5,
+        "icon": "sprout",
+        "images": [
+          "realisations/08-projekt-lukowskie/11.1_01.jpg",
+          "realisations/08-projekt-lukowskie/11.4_01.jpg",
+          "realisations/08-projekt-lukowskie/11.5_01.jpg",
+          "realisations/08-projekt-lukowskie/11.6.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Warstwa glebotwórcza",
+            "description": "Zdjęcia z wykonywania warstwy glebotwórczej."
+          },
+          "en": {
+            "name": "Soil-forming layer",
+            "description": "Photos from soil-forming layer installation."
+          },
+          "de": {
+            "name": "Bodenbildende Schicht",
+            "description": "Fotos von der Anlage der bodenbildenden Schicht."
+          }
+        }
+      },
+      {
+        "number": 6,
+        "icon": "flag",
+        "images": [
+          "realisations/09-projekt-najnowszy-2025/1.jpg",
+          "realisations/09-projekt-najnowszy-2025/4.jpg",
+          "realisations/09-projekt-najnowszy-2025/3.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Końcowe formowanie wierzchowiny",
+            "description": "Zdjęcia z końcowego formowania wierzchowiny."
+          },
+          "en": {
+            "name": "Final cap shaping",
+            "description": "Photos from final cap shaping."
+          },
+          "de": {
+            "name": "Abschlussformung der Deckschicht",
+            "description": "Fotos von der abschließenden Formung der Deckschicht."
+          }
+        }
+      },
+      {
+        "number": 7,
+        "icon": "sprout",
+        "images": [
+          "realisations/09-projekt-najnowszy-2025/5.jpg",
+          "realisations/09-projekt-najnowszy-2025/6.jpg",
+          "realisations/09-projekt-najnowszy-2025/7.jpg",
+          "realisations/09-projekt-najnowszy-2025/8.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Obsiew trawami i nasadzenia",
+            "description": "Zdjęcia z obsiewu trawami i wykonanych nasadzeń."
+          },
+          "en": {
+            "name": "Grass seeding and planting",
+            "description": "Photos from grass seeding and planting works."
+          },
+          "de": {
+            "name": "Einsaat und Bepflanzung",
+            "description": "Fotos von der Raseneinsaat und den Pflanzarbeiten."
+          }
+        }
+      }
     ],
     "i18n": {
       "pl": {
@@ -432,14 +466,158 @@
     "years": "2022–2023",
     "area": "ok. 0,9 ha",
     "category": "reclamation",
-    "cover": "realisations/03-powiat-radomski/1.1.jpg",
+    "cover": "realisations/02-powiat-parczewski-2021/3.jpg",
     "images": [
-      "realisations/03-powiat-radomski/1.1.jpg",
-      "realisations/03-powiat-radomski/1.2.jpg",
+      "realisations/02-powiat-parczewski-2021/3.jpg",
+      "realisations/02-powiat-parczewski-2021/4.jpg",
+      "realisations/02-powiat-parczewski-2021/5.jpg",
+      "realisations/02-powiat-parczewski-2021/6.jpg",
+      "realisations/02-powiat-parczewski-2021/7.jpg",
+      "realisations/02-powiat-parczewski-2021/9.jpg",
+      "realisations/02-powiat-parczewski-2021/8.jpg",
+      "realisations/02-powiat-parczewski-2021/10.jpg",
+      "realisations/02-powiat-parczewski-2021/11.jpg",
+      "realisations/02-powiat-parczewski-2021/13.jpg",
+      "realisations/04-powiat-parczewski-2022/4.1.jpg",
+      "realisations/04-powiat-parczewski-2022/4.2.jpg",
+      "realisations/04-powiat-parczewski-2022/4.3.jpg",
+      "realisations/04-powiat-parczewski-2022/4.4.jpg",
+      "realisations/04-powiat-parczewski-2022/5.1.jpg",
+      "realisations/04-powiat-parczewski-2022/5.3.jpg",
+      "realisations/04-powiat-parczewski-2022/5.8.jpg",
+      "realisations/04-powiat-parczewski-2022/5.10.jpg",
+      "realisations/04-powiat-parczewski-2022/6.1_01.jpg",
+      "realisations/04-powiat-parczewski-2022/6.2_01.jpg",
       "realisations/03-powiat-radomski/20240129_082506.jpg",
       "realisations/03-powiat-radomski/20240129_083128.jpg",
       "realisations/03-powiat-radomski/20240129_083626.jpg",
       "realisations/03-powiat-radomski/20240129_083709_01.jpg"
+    ],
+    "phases": [
+      {
+        "number": 1,
+        "icon": "truck",
+        "images": [
+          "realisations/02-powiat-parczewski-2021/3.jpg",
+          "realisations/02-powiat-parczewski-2021/4.jpg",
+          "realisations/02-powiat-parczewski-2021/5.jpg",
+          "realisations/02-powiat-parczewski-2021/6.jpg",
+          "realisations/02-powiat-parczewski-2021/7.jpg",
+          "realisations/02-powiat-parczewski-2021/9.jpg",
+          "realisations/02-powiat-parczewski-2021/8.jpg",
+          "realisations/02-powiat-parczewski-2021/10.jpg",
+          "realisations/02-powiat-parczewski-2021/11.jpg",
+          "realisations/02-powiat-parczewski-2021/13.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko w trakcie formowania kwater",
+            "description": "Zdjęcia składowiska w trakcie formowania kwater."
+          },
+          "en": {
+            "name": "Landfill during cell shaping",
+            "description": "Photos of the landfill during cell shaping."
+          },
+          "de": {
+            "name": "Deponie während der Zellenformung",
+            "description": "Fotos der Deponie während der Zellenformung."
+          }
+        }
+      },
+      {
+        "number": 2,
+        "icon": "layers",
+        "images": [
+          "realisations/04-powiat-parczewski-2022/4.1.jpg",
+          "realisations/04-powiat-parczewski-2022/4.2.jpg",
+          "realisations/04-powiat-parczewski-2022/4.3.jpg",
+          "realisations/04-powiat-parczewski-2022/4.4.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonywanie warstwy technicznej",
+            "description": "Zdjęcia z wykonywania warstwy technicznej."
+          },
+          "en": {
+            "name": "Technical layer installation",
+            "description": "Photos from technical layer installation."
+          },
+          "de": {
+            "name": "Anlage der technischen Schicht",
+            "description": "Fotos von der Anlage der technischen Schicht."
+          }
+        }
+      },
+      {
+        "number": 3,
+        "icon": "sprout",
+        "images": [
+          "realisations/04-powiat-parczewski-2022/5.1.jpg",
+          "realisations/04-powiat-parczewski-2022/5.3.jpg",
+          "realisations/04-powiat-parczewski-2022/5.8.jpg",
+          "realisations/04-powiat-parczewski-2022/5.10.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonywanie warstwy glebotwórczej",
+            "description": "Zdjęcia z wykonywania warstwy glebotwórczej."
+          },
+          "en": {
+            "name": "Soil-forming layer installation",
+            "description": "Photos from soil-forming layer installation."
+          },
+          "de": {
+            "name": "Anlage der bodenbildenden Schicht",
+            "description": "Fotos von der Anlage der bodenbildenden Schicht."
+          }
+        }
+      },
+      {
+        "number": 4,
+        "icon": "flag",
+        "images": [
+          "realisations/04-powiat-parczewski-2022/6.1_01.jpg",
+          "realisations/04-powiat-parczewski-2022/6.2_01.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Końcowe formowanie okrywy rekultywacyjnej",
+            "description": "Zdjęcia z końcowego formowania okrywy rekultywacyjnej."
+          },
+          "en": {
+            "name": "Final reclamation cover shaping",
+            "description": "Photos from final reclamation cover shaping."
+          },
+          "de": {
+            "name": "Abschlussformung der Rekultivierungsdecke",
+            "description": "Fotos von der abschließenden Formung der Rekultivierungsdecke."
+          }
+        }
+      },
+      {
+        "number": 5,
+        "icon": "flag",
+        "images": [
+          "realisations/03-powiat-radomski/20240129_082506.jpg",
+          "realisations/03-powiat-radomski/20240129_083128.jpg",
+          "realisations/03-powiat-radomski/20240129_083626.jpg",
+          "realisations/03-powiat-radomski/20240129_083709_01.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Kwatera po rekultywacji, styczeń 2024",
+            "description": "Zdjęcia kwatery po zakończeniu rekultywacji."
+          },
+          "en": {
+            "name": "Cell after reclamation, January 2024",
+            "description": "Photos of the cell after reclamation completion."
+          },
+          "de": {
+            "name": "Zelle nach der Rekultivierung, Januar 2024",
+            "description": "Fotos der Zelle nach Abschluss der Rekultivierung."
+          }
+        }
+      }
     ],
     "i18n": {
       "pl": {
@@ -499,80 +677,6 @@
     }
   },
   {
-    "id": "05-projekt-parczewski-3",
-    "slug": "rekultywacja-lubelskie-3",
-    "region": "Lubelskie",
-    "years": "2022–2023",
-    "area": "—",
-    "category": "reclamation",
-    "cover": "realisations/05-projekt-parczewski-3/7.1.jpg",
-    "images": [
-      "realisations/05-projekt-parczewski-3/7.1.jpg",
-      "realisations/05-projekt-parczewski-3/7.2.jpg",
-      "realisations/05-projekt-parczewski-3/7.3.jpg",
-      "realisations/05-projekt-parczewski-3/7.5.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Lubelskie",
-        "lead": "Kolejna zakończona rekultywacja składowiska w województwie lubelskim.",
-        "description": "Prace rekultywacyjne obejmujące formowanie i zabezpieczenie kwatery składowiska odpadów komunalnych.",
-        "scope": ["formowanie kwatery", "prace rekultywacyjne", "nadzór realizacyjny"],
-        "effects": ["prawidłowe ukształtowanie kwatery", "zabezpieczenie środowiskowe terenu"]
-      },
-      "en": {
-        "title": "Landfill reclamation – Lubelskie",
-        "lead": "Another completed landfill reclamation in Lublin Voivodeship.",
-        "description": "Reclamation works including formation and securing of the municipal landfill cell.",
-        "scope": ["cell formation", "reclamation works", "execution supervision"],
-        "effects": ["proper cell shaping", "environmental protection of the area"]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Lublin",
-        "lead": "Eine weitere abgeschlossene Deponierekultivierung in der Woiwodschaft Lublin.",
-        "description": "Rekultivierungsarbeiten einschließlich Formung und Sicherung der kommunalen Deponiezelle.",
-        "scope": ["Formung der Zelle", "Rekultivierungsarbeiten", "Ausführungsüberwachung"],
-        "effects": ["korrekte Zellformung", "Umweltschutz des Gebiets"]
-      }
-    }
-  },
-  {
-    "id": "06-projekt-radomsko",
-    "slug": "rekultywacja-lodzkie-radomsko",
-    "region": "Łódzkie",
-    "years": "2022–2023",
-    "area": "—",
-    "category": "reclamation",
-    "cover": "realisations/06-projekt-radomsko/8.1.jpg",
-    "images": [
-      "realisations/06-projekt-radomsko/8.1.jpg",
-      "realisations/06-projekt-radomsko/8.2.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Łódzkie",
-        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim.",
-        "description": "Zakończona rekultywacja składowiska komunalnego z wysiewem traw i monitoringiem porekultywacyjnym.",
-        "scope": ["prace ziemne i modelujące", "okrywa rekultywacyjna", "obsiew trawami"],
-        "effects": ["stabilizacja składowiska", "pokrywa roślinna"]
-      },
-      "en": {
-        "title": "Landfill reclamation – Łódzkie",
-        "lead": "Landfill reclamation in Łódź Voivodeship.",
-        "description": "Completed municipal landfill reclamation with grass seeding and post-reclamation monitoring.",
-        "scope": ["earthworks and modeling", "reclamation cover", "grass seeding"],
-        "effects": ["landfill stabilization", "vegetation cover"]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Łódzkie",
-        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź.",
-        "description": "Abgeschlossene Rekultivierung einer kommunalen Deponie mit Einsaat und Nachsorgemonitoring.",
-        "scope": ["Erdarbeiten und Modellierung", "Rekultivierungsdecke", "Einsaat"],
-        "effects": ["Stabilisierung der Deponie", "Vegetationsdecke"]
-      }
-    }
-  },
-  {
     "id": "02-powiat-parczewski-2021",
     "slug": "rekultywacja-powiat-parczewski-2021",
     "region": "Lubelskie",
@@ -591,13 +695,134 @@
       "realisations/02-powiat-parczewski-2021/6.jpg",
       "realisations/02-powiat-parczewski-2021/7.jpg",
       "realisations/02-powiat-parczewski-2021/8.jpg",
-      "realisations/02-powiat-parczewski-2021/9.jpg",
-      "realisations/02-powiat-parczewski-2021/10.jpg",
-      "realisations/02-powiat-parczewski-2021/11.jpg",
-      "realisations/02-powiat-parczewski-2021/13.jpg",
-      "realisations/02-powiat-parczewski-2021/Obraz3_2.jpg",
-      "realisations/02-powiat-parczewski-2021/skalowane2.jpg",
-      "realisations/02-powiat-parczewski-2021/skalowanie2_2.jpg"
+      "realisations/03-powiat-radomski/1.1.jpg",
+      "realisations/03-powiat-radomski/1.2.jpg",
+      "realisations/04-powiat-parczewski-2022/2.3.jpg",
+      "realisations/04-powiat-parczewski-2022/2.2.jpg",
+      "realisations/04-powiat-parczewski-2022/2.6_01.jpg",
+      "realisations/04-powiat-parczewski-2022/2.7_01.jpg",
+      "realisations/04-powiat-parczewski-2022/3.1.jpg",
+      "realisations/04-powiat-parczewski-2022/3.2.jpg"
+    ],
+    "phases": [
+      {
+        "number": 1,
+        "icon": "truck",
+        "images": [
+          "realisations/02-powiat-parczewski-2021/1.jpg",
+          "realisations/02-powiat-parczewski-2021/2.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko przed rekultywacją, luty 2021",
+            "description": "Zdjęcia składowiska przed rozpoczęciem rekultywacji."
+          },
+          "en": {
+            "name": "Landfill before reclamation, February 2021",
+            "description": "Photos of the landfill before reclamation started."
+          },
+          "de": {
+            "name": "Deponie vor der Rekultivierung, Februar 2021",
+            "description": "Fotos der Deponie vor Beginn der Rekultivierung."
+          }
+        }
+      },
+      {
+        "number": 2,
+        "icon": "layers",
+        "images": [
+          "realisations/02-powiat-parczewski-2021/3.jpg",
+          "realisations/02-powiat-parczewski-2021/3-1.jpg",
+          "realisations/02-powiat-parczewski-2021/4.jpg",
+          "realisations/02-powiat-parczewski-2021/4-1.jpg",
+          "realisations/02-powiat-parczewski-2021/5.jpg",
+          "realisations/02-powiat-parczewski-2021/6.jpg",
+          "realisations/02-powiat-parczewski-2021/7.jpg",
+          "realisations/02-powiat-parczewski-2021/8.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko w trakcie rekultywacji",
+            "description": "Zdjęcia składowiska w trakcie prac rekultywacyjnych."
+          },
+          "en": {
+            "name": "Landfill during reclamation",
+            "description": "Photos of the landfill during reclamation works."
+          },
+          "de": {
+            "name": "Deponie während der Rekultivierung",
+            "description": "Fotos der Deponie während der Rekultivierungsarbeiten."
+          }
+        }
+      },
+      {
+        "number": 3,
+        "icon": "flag",
+        "images": [
+          "realisations/03-powiat-radomski/1.1.jpg",
+          "realisations/03-powiat-radomski/1.2.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Końcowe formowanie okrywy rekultywacyjnej",
+            "description": "Zdjęcia z końcowego formowania okrywy rekultywacyjnej."
+          },
+          "en": {
+            "name": "Final reclamation cover shaping",
+            "description": "Photos from final reclamation cover shaping."
+          },
+          "de": {
+            "name": "Abschlussformung der Rekultivierungsdecke",
+            "description": "Fotos von der abschließenden Formung der Rekultivierungsdecke."
+          }
+        }
+      },
+      {
+        "number": 4,
+        "icon": "sprout",
+        "images": [
+          "realisations/04-powiat-parczewski-2022/2.3.jpg",
+          "realisations/04-powiat-parczewski-2022/2.2.jpg",
+          "realisations/04-powiat-parczewski-2022/2.6_01.jpg",
+          "realisations/04-powiat-parczewski-2022/2.7_01.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Obsiew trawami i nasadzenie drzew",
+            "description": "Zdjęcia z obsiewu trawami i nasadzenia drzew."
+          },
+          "en": {
+            "name": "Grass seeding and tree planting",
+            "description": "Photos from grass seeding and tree planting."
+          },
+          "de": {
+            "name": "Raseneinsaat und Baumpflanzung",
+            "description": "Fotos von der Raseneinsaat und Baumpflanzung."
+          }
+        }
+      },
+      {
+        "number": 5,
+        "icon": "flag",
+        "images": [
+          "realisations/04-powiat-parczewski-2022/3.1.jpg",
+          "realisations/04-powiat-parczewski-2022/3.2.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Kwatera po trzech miesiącach od obsiewu i nasadzeń",
+            "description": "Zdjęcia kwatery po trzech miesiącach od obsiewu i nasadzeń."
+          },
+          "en": {
+            "name": "Cell three months after seeding and planting",
+            "description": "Photos of the cell three months after seeding and planting."
+          },
+          "de": {
+            "name": "Zelle drei Monate nach Einsaat und Pflanzung",
+            "description": "Fotos der Zelle drei Monate nach Einsaat und Pflanzung."
+          }
+        }
+      }
     ],
     "i18n": {
       "pl": {
@@ -671,8 +896,58 @@
       "realisations/01-powiat-ostrowski/20220222_154209.jpg",
       "realisations/01-powiat-ostrowski/Obraz1_2-1.jpg",
       "realisations/01-powiat-ostrowski/Obraz2.jpg",
-      "realisations/01-powiat-ostrowski/Obraz4.jpg",
-      "realisations/01-powiat-ostrowski/Obraz5.jpg"
+      "realisations/02-powiat-parczewski-2021/Obraz3_2.jpg",
+      "realisations/02-powiat-parczewski-2021/skalowane2.jpg"
+    ],
+    "phases": [
+      {
+        "number": 1,
+        "icon": "layers",
+        "images": [
+          "realisations/01-powiat-ostrowski/20220218_114037.jpg",
+          "realisations/01-powiat-ostrowski/20220222_083716.jpg",
+          "realisations/01-powiat-ostrowski/20220222_152922.jpg",
+          "realisations/01-powiat-ostrowski/20220222_154209.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko w trakcie prac wykończeniowych, luty 2022",
+            "description": "Zdjęcia składowiska w trakcie prac wykończeniowych."
+          },
+          "en": {
+            "name": "Landfill during finishing works, February 2022",
+            "description": "Photos of the landfill during finishing works."
+          },
+          "de": {
+            "name": "Deponie während der Abschlussarbeiten, Februar 2022",
+            "description": "Fotos der Deponie während der Abschlussarbeiten."
+          }
+        }
+      },
+      {
+        "number": 2,
+        "icon": "flag",
+        "images": [
+          "realisations/01-powiat-ostrowski/Obraz2.jpg",
+          "realisations/01-powiat-ostrowski/Obraz1_2-1.jpg",
+          "realisations/02-powiat-parczewski-2021/Obraz3_2.jpg",
+          "realisations/02-powiat-parczewski-2021/skalowane2.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko trzy miesiące od wysiewu traw",
+            "description": "Zdjęcia składowiska trzy miesiące po wysiewie traw."
+          },
+          "en": {
+            "name": "Landfill three months after grass seeding",
+            "description": "Photos of the landfill three months after grass seeding."
+          },
+          "de": {
+            "name": "Deponie drei Monate nach der Raseneinsaat",
+            "description": "Fotos der Deponie drei Monate nach der Raseneinsaat."
+          }
+        }
+      }
     ],
     "i18n": {
       "pl": {

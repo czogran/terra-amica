@@ -27,6 +27,7 @@ export type RealisationPhaseTranslation = {
 export type RealisationPhase = {
   number: number;
   icon: RealisationPhaseIcon;
+  images: string[];
   i18n: Record<Language, RealisationPhaseTranslation>;
 };
 
@@ -39,19 +40,18 @@ export type RealisationItem = {
   category: RealisationCategory;
   cover: string;
   images: string[];
+  phases?: RealisationPhase[];
   i18n: RealisationI18n;
 };
 
 export type RealisationsState = {
   realisations: RealisationItem[];
-  phases: RealisationPhase[];
   selectedRealisationId: string | null;
   hasLoadedRealisations: boolean;
 };
 
 const realisationsInitialState: RealisationsState = {
   realisations: [],
-  phases: [],
   selectedRealisationId: null,
   hasLoadedRealisations: false,
 };
@@ -102,17 +102,10 @@ export const RealisationsState = signalStore(
               return;
             }
 
-            const phasesRes = await fetch(ASSET_URLS.realisationsPhases);
-            if (!phasesRes.ok) {
-              return;
-            }
-
             const data = (await res.json()) as RealisationItem[];
-            const phases = (await phasesRes.json()) as RealisationPhase[];
             patchState(store, (state) => ({
               ...state,
               realisations: data,
-              phases,
               hasLoadedRealisations: true,
             }));
             translationManager.registerRealisationsTranslations(data);
