@@ -1,10 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  inject
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { MenuState } from 'src/app/src/state/state-menu';
@@ -25,8 +20,8 @@ type RealisationMapMarker = {
   title: string;
   location: string;
   region: string;
-  x: number;
-  y: number;
+  longitude: number;
+  latitude: number;
 };
 
 @Component({
@@ -54,9 +49,7 @@ export class RealisationsComponent {
   protected readonly mapMarkers = computed<ReadonlyArray<RealisationMapMarker>>(() =>
     this.cards()
       .map((card) => {
-        const position = card.mapPosition;
-
-        if (!position) {
+        if (card.longitude == null || card.latitude == null) {
           return null;
         }
 
@@ -66,7 +59,8 @@ export class RealisationsComponent {
           title: card.translation.title,
           location: this.locationFromTitle(card.translation.title),
           region: card.region,
-          ...position,
+          longitude: card.longitude,
+          latitude: card.latitude,
         };
       })
       .filter((marker): marker is RealisationMapMarker => marker !== null),
@@ -88,6 +82,28 @@ export class RealisationsComponent {
 
   protected assetUrl(path: string): string {
     return `assets/${path}`;
+  }
+
+  decimalToDegMin(decimalDegrees: number) {
+    const degrees = Math.trunc(decimalDegrees);
+    const minutes = Math.abs((decimalDegrees - degrees) * 60);
+
+    return degrees * 60 + minutes;
+  }
+
+  protected mapX(longitude: number): number {
+    return (
+      ((this.decimalToDegMin(longitude) - this.decimalToDegMin(14.07)) /
+        this.decimalToDegMin(10.02)) *
+      100
+    );
+  }
+
+  protected mapY(latitude: number): number {
+    return (
+      ((this.decimalToDegMin(latitude) - this.decimalToDegMin(49)) / this.decimalToDegMin(5.5)) *
+      100
+    );
   }
 
   private locationFromTitle(title: string): string {

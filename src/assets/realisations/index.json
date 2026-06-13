@@ -3,23 +3,21 @@
     "id": "04-powiat-parczewski-2022",
     "slug": "rekultywacja-powiat-parczewski-2022",
     "region": "Lubelskie",
-    "mapPosition": {
-      "x": 87,
-      "y": 44
-    },
+    "longitude": 22.875,
+    "latitude": 51.559,
     "years": "2022–2024",
     "area": "ok. 1,5 ha",
     "category": "reclamation",
-    "cover": "realisations/03-powiat-radomski/7.1.jpg",
+    "cover": "realisations/powiat-parczewski-2022/7.1.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "realisations/03-powiat-radomski/7.1.jpg",
-          "realisations/03-powiat-radomski/7.2.jpg",
-          "realisations/03-powiat-radomski/7.3.jpg",
-          "realisations/03-powiat-radomski/7.5.jpg"
+          "realisations/powiat-parczewski-2022/7.1.jpg",
+          "realisations/powiat-parczewski-2022/7.2.jpg",
+          "realisations/powiat-parczewski-2022/7.3.jpg",
+          "realisations/powiat-parczewski-2022/7.5.jpg"
         ],
         "i18n": {
           "pl": {
@@ -40,8 +38,8 @@
         "number": 2,
         "icon": "truck",
         "images": [
-          "realisations/03-powiat-radomski/8.1.jpg",
-          "realisations/03-powiat-radomski/8.2.jpg"
+          "realisations/powiat-parczewski-2022/8.1.jpg",
+          "realisations/powiat-parczewski-2022/8.2.jpg"
         ],
         "i18n": {
           "pl": {
@@ -62,10 +60,10 @@
         "number": 3,
         "icon": "layers",
         "images": [
-          "realisations/03-powiat-radomski/9.3.jpg",
-          "realisations/03-powiat-radomski/9.4.jpg",
-          "realisations/03-powiat-radomski/9.5.jpg",
-          "realisations/03-powiat-radomski/9.6.jpg"
+          "realisations/powiat-parczewski-2022/9.3.jpg",
+          "realisations/powiat-parczewski-2022/9.4.jpg",
+          "realisations/powiat-parczewski-2022/9.5.jpg",
+          "realisations/powiat-parczewski-2022/9.6.jpg"
         ],
         "i18n": {
           "pl": {
@@ -86,8 +84,8 @@
         "number": 4,
         "icon": "shield",
         "images": [
-          "realisations/03-powiat-radomski/10.2.jpg",
-          "realisations/03-powiat-radomski/10.3.jpg"
+          "realisations/powiat-parczewski-2022/10.2.jpg",
+          "realisations/powiat-parczewski-2022/10.3.jpg"
         ],
         "i18n": {
           "pl": {
@@ -108,10 +106,10 @@
         "number": 5,
         "icon": "sprout",
         "images": [
-          "realisations/03-powiat-radomski/11.1_01.jpg",
-          "realisations/03-powiat-radomski/11.4_01.jpg",
-          "realisations/03-powiat-radomski/11.5_01.jpg",
-          "realisations/03-powiat-radomski/11.6.jpg"
+          "realisations/powiat-parczewski-2022/11.1_01.jpg",
+          "realisations/powiat-parczewski-2022/11.4_01.jpg",
+          "realisations/powiat-parczewski-2022/11.5_01.jpg",
+          "realisations/powiat-parczewski-2022/11.6.jpg"
         ],
         "i18n": {
           "pl": {
@@ -132,9 +130,9 @@
         "number": 6,
         "icon": "flag",
         "images": [
-          "realisations/03-powiat-radomski/1.jpg",
-          "realisations/03-powiat-radomski/4.jpg",
-          "realisations/03-powiat-radomski/3.jpg"
+          "realisations/powiat-parczewski-2022/1.jpg",
+          "realisations/powiat-parczewski-2022/4.jpg",
+          "realisations/powiat-parczewski-2022/3.jpg"
         ],
         "i18n": {
           "pl": {
@@ -155,10 +153,10 @@
         "number": 7,
         "icon": "sprout",
         "images": [
-          "realisations/03-powiat-radomski/5.jpg",
-          "realisations/03-powiat-radomski/6.jpg",
-          "realisations/03-powiat-radomski/7.jpg",
-          "realisations/03-powiat-radomski/8.jpg"
+          "realisations/powiat-parczewski-2022/5.jpg",
+          "realisations/powiat-parczewski-2022/6.jpg",
+          "realisations/powiat-parczewski-2022/7.jpg",
+          "realisations/powiat-parczewski-2022/8.jpg"
         ],
         "i18n": {
           "pl": {
@@ -195,32 +193,30 @@
     }
   },
   {
-    "id": "03-powiat-radomski",
+    "id": "powiat-radomski",
     "slug": "rekultywacja-powiat-radomski",
     "region": "Mazowieckie",
-    "mapPosition": {
-      "x": 58,
-      "y": 62
-    },
+    "longitude": 21.147,
+    "latitude": 51.403,
     "years": "2022–2023",
     "area": "ok. 0,9 ha",
     "category": "reclamation",
-    "cover": "realisations/02-powiat-parczewski-2021/3.jpg",
+    "cover": "realisations/powiat-radomski/3.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "realisations/02-powiat-parczewski-2021/3.jpg",
-          "realisations/02-powiat-parczewski-2021/4.jpg",
-          "realisations/02-powiat-parczewski-2021/5.jpg",
-          "realisations/02-powiat-parczewski-2021/6.jpg",
-          "realisations/02-powiat-parczewski-2021/7.jpg",
-          "realisations/02-powiat-parczewski-2021/9.jpg",
-          "realisations/02-powiat-parczewski-2021/8.jpg",
-          "realisations/02-powiat-parczewski-2021/10.jpg",
-          "realisations/02-powiat-parczewski-2021/11.jpg",
-          "realisations/02-powiat-parczewski-2021/13.jpg"
+          "realisations/powiat-radomski/3.jpg",
+          "realisations/powiat-radomski/4.jpg",
+          "realisations/powiat-radomski/5.jpg",
+          "realisations/powiat-radomski/6.jpg",
+          "realisations/powiat-radomski/7.jpg",
+          "realisations/powiat-radomski/9.jpg",
+          "realisations/powiat-radomski/8.jpg",
+          "realisations/powiat-radomski/10.jpg",
+          "realisations/powiat-radomski/11.jpg",
+          "realisations/powiat-radomski/13.jpg"
         ],
         "i18n": {
           "pl": {
@@ -241,10 +237,10 @@
         "number": 2,
         "icon": "layers",
         "images": [
-          "realisations/03-powiat-radomski/4.1.jpg",
-          "realisations/03-powiat-radomski/4.2.jpg",
-          "realisations/03-powiat-radomski/4.3.jpg",
-          "realisations/03-powiat-radomski/4.4.jpg"
+          "realisations/powiat-radomski/4.1.jpg",
+          "realisations/powiat-radomski/4.2.jpg",
+          "realisations/powiat-radomski/4.3.jpg",
+          "realisations/powiat-radomski/4.4.jpg"
         ],
         "i18n": {
           "pl": {
@@ -265,10 +261,10 @@
         "number": 3,
         "icon": "sprout",
         "images": [
-          "realisations/03-powiat-radomski/5.1.jpg",
-          "realisations/03-powiat-radomski/5.3.jpg",
-          "realisations/03-powiat-radomski/5.8.jpg",
-          "realisations/03-powiat-radomski/5.10.jpg"
+          "realisations/powiat-radomski/5.1.jpg",
+          "realisations/powiat-radomski/5.3.jpg",
+          "realisations/powiat-radomski/5.8.jpg",
+          "realisations/powiat-radomski/5.10.jpg"
         ],
         "i18n": {
           "pl": {
@@ -289,8 +285,8 @@
         "number": 4,
         "icon": "flag",
         "images": [
-          "realisations/03-powiat-radomski/6.1_01.jpg",
-          "realisations/03-powiat-radomski/6.2_01.jpg"
+          "realisations/powiat-radomski/6.1_01.jpg",
+          "realisations/powiat-radomski/6.2_01.jpg"
         ],
         "i18n": {
           "pl": {
@@ -311,10 +307,10 @@
         "number": 5,
         "icon": "flag",
         "images": [
-          "realisations/03-powiat-radomski/20240129_082506.jpg",
-          "realisations/03-powiat-radomski/20240129_083128.jpg",
-          "realisations/03-powiat-radomski/20240129_083626.jpg",
-          "realisations/03-powiat-radomski/20240129_083709_01.jpg"
+          "realisations/powiat-radomski/20240129_082506.jpg",
+          "realisations/powiat-radomski/20240129_083128.jpg",
+          "realisations/powiat-radomski/20240129_083626.jpg",
+          "realisations/powiat-radomski/20240129_083709_01.jpg"
         ],
         "i18n": {
           "pl": {
@@ -354,21 +350,19 @@
     "id": "02-powiat-parczewski-2021",
     "slug": "rekultywacja-powiat-parczewski-2021",
     "region": "Lubelskie",
-    "mapPosition": {
-      "x": 74,
-      "y": 72
-    },
+    "longitude": 22.875,
+    "latitude": 51.659,
     "years": "2021–2023",
     "area": "ok. 1,2 ha",
     "category": "reclamation",
-    "cover": "realisations/02-powiat-parczewski-2021/5.jpg",
+    "cover": "realisations/powiat-parczewski-2021/3.1.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "realisations/02-powiat-parczewski-2021/before-reclamation-2021-02-1.png",
-          "realisations/02-powiat-parczewski-2021/before-reclamation-2021-02-2.png"
+          "realisations/powiat-parczewski-2021/before-reclamation-2021-02-1.png",
+          "realisations/powiat-parczewski-2021/before-reclamation-2021-02-2.png"
         ],
         "i18n": {
           "pl": {
@@ -389,14 +383,14 @@
         "number": 2,
         "icon": "layers",
         "images": [
-          "realisations/02-powiat-parczewski-2021/during-reclamation-1.png",
-          "realisations/02-powiat-parczewski-2021/during-reclamation-2.png",
-          "realisations/01-powiat-ostrowski/Obraz4.jpg",
-          "realisations/01-powiat-ostrowski/Obraz5.jpg",
-          "realisations/02-powiat-parczewski-2021/1.jpg",
-          "realisations/02-powiat-parczewski-2021/2.jpg",
-          "realisations/02-powiat-parczewski-2021/3-1.jpg",
-          "realisations/02-powiat-parczewski-2021/4-1.jpg"
+          "realisations/powiat-parczewski-2021/during-reclamation-1.png",
+          "realisations/powiat-parczewski-2021/during-reclamation-2.png",
+          "realisations/powiat-parczewski-2021/Obraz4.jpg",
+          "realisations/powiat-parczewski-2021/Obraz5.jpg",
+          "realisations/powiat-parczewski-2021/1.jpg",
+          "realisations/powiat-parczewski-2021/2.jpg",
+          "realisations/powiat-parczewski-2021/3-1.jpg",
+          "realisations/powiat-parczewski-2021/4-1.jpg"
         ],
         "i18n": {
           "pl": {
@@ -417,8 +411,8 @@
         "number": 3,
         "icon": "flag",
         "images": [
-          "realisations/03-powiat-radomski/1.1.jpg",
-          "realisations/03-powiat-radomski/1.2.jpg"
+          "realisations/powiat-parczewski-2021/1.1.jpg",
+          "realisations/powiat-parczewski-2021/1.2.jpg"
         ],
         "i18n": {
           "pl": {
@@ -439,10 +433,10 @@
         "number": 4,
         "icon": "sprout",
         "images": [
-          "realisations/03-powiat-radomski/2.3.jpg",
-          "realisations/03-powiat-radomski/2.2.jpg",
-          "realisations/03-powiat-radomski/2.6_01.jpg",
-          "realisations/03-powiat-radomski/2.7_01.jpg"
+          "realisations/powiat-parczewski-2021/2.3.jpg",
+          "realisations/powiat-parczewski-2021/2.2.jpg",
+          "realisations/powiat-parczewski-2021/2.6_01.jpg",
+          "realisations/powiat-parczewski-2021/2.7_01.jpg"
         ],
         "i18n": {
           "pl": {
@@ -463,8 +457,8 @@
         "number": 5,
         "icon": "flag",
         "images": [
-          "realisations/03-powiat-radomski/3.1.jpg",
-          "realisations/03-powiat-radomski/3.2.jpg"
+          "realisations/powiat-parczewski-2021/3.1.jpg",
+          "realisations/powiat-parczewski-2021/3.2.jpg"
         ],
         "i18n": {
           "pl": {
@@ -504,10 +498,8 @@
     "id": "01-powiat-ostrowski",
     "slug": "rekultywacja-powiat-ostrowski",
     "region": "Mazowieckie",
-    "mapPosition": {
-      "x": 65,
-      "y": 48
-    },
+    "longitude": 21.34,
+    "latitude": 52.35,
     "years": "2021–2022",
     "area": "ok. 0,6 ha",
     "category": "reclamation",

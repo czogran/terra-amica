@@ -35,10 +35,8 @@ export type RealisationItem = {
   id: string;
   slug: string;
   region: string;
-  mapPosition?: {
-    x: number;
-    y: number;
-  };
+  longitude?: number;
+  latitude?: number;
   years: string;
   area: string;
   category: RealisationCategory;
