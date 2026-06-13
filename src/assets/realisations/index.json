@@ -4,22 +4,22 @@
     "slug": "rekultywacja-powiat-parczewski-2022",
     "region": "Lubelskie",
     "mapPosition": {
-      "x": 72,
-      "y": 70
+      "x": 87,
+      "y": 44
     },
     "years": "2022–2024",
     "area": "ok. 1,5 ha",
     "category": "reclamation",
-    "cover": "realisations/05-projekt-parczewski-3/7.1.jpg",
+    "cover": "realisations/03-powiat-radomski/7.1.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "realisations/05-projekt-parczewski-3/7.1.jpg",
-          "realisations/05-projekt-parczewski-3/7.2.jpg",
-          "realisations/05-projekt-parczewski-3/7.3.jpg",
-          "realisations/05-projekt-parczewski-3/7.5.jpg"
+          "realisations/03-powiat-radomski/7.1.jpg",
+          "realisations/03-powiat-radomski/7.2.jpg",
+          "realisations/03-powiat-radomski/7.3.jpg",
+          "realisations/03-powiat-radomski/7.5.jpg"
         ],
         "i18n": {
           "pl": {
@@ -40,8 +40,8 @@
         "number": 2,
         "icon": "truck",
         "images": [
-          "realisations/06-projekt-radomsko/8.1.jpg",
-          "realisations/06-projekt-radomsko/8.2.jpg"
+          "realisations/03-powiat-radomski/8.1.jpg",
+          "realisations/03-powiat-radomski/8.2.jpg"
         ],
         "i18n": {
           "pl": {
@@ -62,10 +62,10 @@
         "number": 3,
         "icon": "layers",
         "images": [
-          "realisations/07-projekt-swidnik/9.3.jpg",
-          "realisations/07-projekt-swidnik/9.4.jpg",
-          "realisations/07-projekt-swidnik/9.5.jpg",
-          "realisations/07-projekt-swidnik/9.6.jpg"
+          "realisations/03-powiat-radomski/9.3.jpg",
+          "realisations/03-powiat-radomski/9.4.jpg",
+          "realisations/03-powiat-radomski/9.5.jpg",
+          "realisations/03-powiat-radomski/9.6.jpg"
         ],
         "i18n": {
           "pl": {
@@ -86,8 +86,8 @@
         "number": 4,
         "icon": "shield",
         "images": [
-          "realisations/07-projekt-swidnik/10.2.jpg",
-          "realisations/07-projekt-swidnik/10.3.jpg"
+          "realisations/03-powiat-radomski/10.2.jpg",
+          "realisations/03-powiat-radomski/10.3.jpg"
         ],
         "i18n": {
           "pl": {
@@ -108,10 +108,10 @@
         "number": 5,
         "icon": "sprout",
         "images": [
-          "realisations/08-projekt-lukowskie/11.1_01.jpg",
-          "realisations/08-projekt-lukowskie/11.4_01.jpg",
-          "realisations/08-projekt-lukowskie/11.5_01.jpg",
-          "realisations/08-projekt-lukowskie/11.6.jpg"
+          "realisations/03-powiat-radomski/11.1_01.jpg",
+          "realisations/03-powiat-radomski/11.4_01.jpg",
+          "realisations/03-powiat-radomski/11.5_01.jpg",
+          "realisations/03-powiat-radomski/11.6.jpg"
         ],
         "i18n": {
           "pl": {
@@ -132,9 +132,9 @@
         "number": 6,
         "icon": "flag",
         "images": [
-          "realisations/09-projekt-najnowszy-2025/1.jpg",
-          "realisations/09-projekt-najnowszy-2025/4.jpg",
-          "realisations/09-projekt-najnowszy-2025/3.jpg"
+          "realisations/03-powiat-radomski/1.jpg",
+          "realisations/03-powiat-radomski/4.jpg",
+          "realisations/03-powiat-radomski/3.jpg"
         ],
         "i18n": {
           "pl": {
@@ -155,10 +155,10 @@
         "number": 7,
         "icon": "sprout",
         "images": [
-          "realisations/09-projekt-najnowszy-2025/5.jpg",
-          "realisations/09-projekt-najnowszy-2025/6.jpg",
-          "realisations/09-projekt-najnowszy-2025/7.jpg",
-          "realisations/09-projekt-najnowszy-2025/8.jpg"
+          "realisations/03-powiat-radomski/5.jpg",
+          "realisations/03-powiat-radomski/6.jpg",
+          "realisations/03-powiat-radomski/7.jpg",
+          "realisations/03-powiat-radomski/8.jpg"
         ],
         "i18n": {
           "pl": {
@@ -241,10 +241,10 @@
         "number": 2,
         "icon": "layers",
         "images": [
-          "realisations/04-powiat-parczewski-2022/4.1.jpg",
-          "realisations/04-powiat-parczewski-2022/4.2.jpg",
-          "realisations/04-powiat-parczewski-2022/4.3.jpg",
-          "realisations/04-powiat-parczewski-2022/4.4.jpg"
+          "realisations/03-powiat-radomski/4.1.jpg",
+          "realisations/03-powiat-radomski/4.2.jpg",
+          "realisations/03-powiat-radomski/4.3.jpg",
+          "realisations/03-powiat-radomski/4.4.jpg"
         ],
         "i18n": {
           "pl": {
@@ -265,10 +265,10 @@
         "number": 3,
         "icon": "sprout",
         "images": [
-          "realisations/04-powiat-parczewski-2022/5.1.jpg",
-          "realisations/04-powiat-parczewski-2022/5.3.jpg",
-          "realisations/04-powiat-parczewski-2022/5.8.jpg",
-          "realisations/04-powiat-parczewski-2022/5.10.jpg"
+          "realisations/03-powiat-radomski/5.1.jpg",
+          "realisations/03-powiat-radomski/5.3.jpg",
+          "realisations/03-powiat-radomski/5.8.jpg",
+          "realisations/03-powiat-radomski/5.10.jpg"
         ],
         "i18n": {
           "pl": {
@@ -289,8 +289,8 @@
         "number": 4,
         "icon": "flag",
         "images": [
-          "realisations/04-powiat-parczewski-2022/6.1_01.jpg",
-          "realisations/04-powiat-parczewski-2022/6.2_01.jpg"
+          "realisations/03-powiat-radomski/6.1_01.jpg",
+          "realisations/03-powiat-radomski/6.2_01.jpg"
         ],
         "i18n": {
           "pl": {
@@ -439,10 +439,10 @@
         "number": 4,
         "icon": "sprout",
         "images": [
-          "realisations/04-powiat-parczewski-2022/2.3.jpg",
-          "realisations/04-powiat-parczewski-2022/2.2.jpg",
-          "realisations/04-powiat-parczewski-2022/2.6_01.jpg",
-          "realisations/04-powiat-parczewski-2022/2.7_01.jpg"
+          "realisations/03-powiat-radomski/2.3.jpg",
+          "realisations/03-powiat-radomski/2.2.jpg",
+          "realisations/03-powiat-radomski/2.6_01.jpg",
+          "realisations/03-powiat-radomski/2.7_01.jpg"
         ],
         "i18n": {
           "pl": {
@@ -463,8 +463,8 @@
         "number": 5,
         "icon": "flag",
         "images": [
-          "realisations/04-powiat-parczewski-2022/3.1.jpg",
-          "realisations/04-powiat-parczewski-2022/3.2.jpg"
+          "realisations/03-powiat-radomski/3.1.jpg",
+          "realisations/03-powiat-radomski/3.2.jpg"
         ],
         "i18n": {
           "pl": {
@@ -516,9 +516,7 @@
       {
         "number": 1,
         "icon": "truck",
-        "images": [
-          "realisations/01-powiat-ostrowski/before-reclamation-2021-02.png"
-        ],
+        "images": ["realisations/01-powiat-ostrowski/before-reclamation-2021-02.png"],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, luty 2021",
@@ -537,9 +535,7 @@
       {
         "number": 2,
         "icon": "truck",
-        "images": [
-          "realisations/01-powiat-ostrowski/before-reclamation-2021-09.png"
-        ],
+        "images": ["realisations/01-powiat-ostrowski/before-reclamation-2021-09.png"],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, wrzesień 2021",

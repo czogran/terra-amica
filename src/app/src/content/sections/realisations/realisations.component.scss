@@ -30,7 +30,7 @@
   font-weight: 700;
   line-height: 1;
   box-shadow: var(--bs-box-shadow-sm);
-  transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
   transition:
     border-color 160ms ease,
     box-shadow 160ms ease,
@@ -41,7 +41,7 @@
 .realisations-map-marker:focus-visible {
   border-color: var(--bs-primary);
   box-shadow: var(--bs-box-shadow);
-  transform: translate(-50%, -50%) scale(1.04);
+  // transform: translate(-50%, -50%) scale(1.04);
 }
 
 .realisations-map-marker:focus-visible {

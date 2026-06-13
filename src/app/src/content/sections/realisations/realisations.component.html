@@ -11,7 +11,7 @@
             type="button"
             class="realisations-map-marker"
             [style.left.%]="marker.x"
-            [style.top.%]="marker.y"
+            [style.bottom.%]="marker.y"
             [attr.aria-label]="marker.title + ' - ' + marker.region"
             [attr.title]="marker.title"
             (click)="openDetails(marker.slug)"
