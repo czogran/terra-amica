@@ -4,6 +4,25 @@
     class="realisations-grid"
     [attr.aria-label]="'realisations.list.aria-label' | translate"
   >
+    <li class="realisations-map-item fade-in" aria-label="Mapa lokalizacji realizacji w Polsce">
+      <div class="realisations-map">
+        @for (marker of mapMarkers(); track marker.id) {
+          <button
+            type="button"
+            class="realisations-map-marker"
+            [style.left.%]="marker.x"
+            [style.top.%]="marker.y"
+            [attr.aria-label]="marker.title + ' - ' + marker.region"
+            [attr.title]="marker.title"
+            (click)="openDetails(marker.slug)"
+          >
+            <span class="realisations-map-marker-dot"></span>
+            <span class="realisations-map-marker-label">{{ marker.location }}</span>
+          </button>
+        }
+      </div>
+    </li>
+
     @for (card of cards(); track card.id) {
       <li class="realisations-item fade-in">
         <article class="realisations-card" aria-label="{{ card.translation.title }}">

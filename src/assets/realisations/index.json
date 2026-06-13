@@ -1,210 +1,9 @@
 [
   {
-    "id": "10-powiat-policki",
-    "slug": "rekultywacja-powiat-policki",
-    "region": "Zachodniopomorskie",
-    "years": "2024–2027",
-    "area": "ok. 4,4 ha",
-    "category": "reclamation",
-    "status": "in-progress",
-    "cover": "realisations/10-powiat-policki/9.jpg",
-    "images": [
-      "realisations/10-powiat-policki/20230731_184224.jpg",
-      "realisations/10-powiat-policki/20230801_120134.jpg",
-      "realisations/10-powiat-policki/20240123_155156.jpg",
-      "realisations/10-powiat-policki/20240123_155234.jpg",
-      "realisations/10-powiat-policki/20240123_155349.jpg",
-      "realisations/10-powiat-policki/20240123_155429.jpg",
-      "realisations/10-powiat-policki/9.jpg",
-      "realisations/10-powiat-policki/10.jpg",
-      "realisations/10-powiat-policki/11.jpg",
-      "realisations/10-powiat-policki/12.jpg",
-      "realisations/10-powiat-policki/17.jpg",
-      "realisations/10-powiat-policki/18.jpg",
-      "realisations/10-powiat-policki/19.jpg",
-      "realisations/10-powiat-policki/20.jpg",
-      "realisations/10-powiat-policki/21.jpg",
-      "realisations/10-powiat-policki/22.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Powiat Policki",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie polickim w województwie zachodniopomorskim. Planowane zakończenie: czerwiec 2027.",
-        "description": "Projekt obejmuje rekultywację jednego z większych składowisk w regionie zachodniopomorskim o powierzchni ok. 4,4 ha. Prace rozpoczęto w 2024 roku. W toku są roboty kształtujące kwaterę, budowa studni odgazowujących oraz wykonanie wielowarstwowej okrywy rekultywacyjnej. Planowane zakończenie prac: czerwiec 2027.",
-        "scope": [
-          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
-          "odspajanie odpadów i formowanie wierzchowiny",
-          "wykonanie studni odgazowujących",
-          "wykonanie okrywy rekultywacyjnej"
-        ],
-        "effects": [
-          "postępująca stabilizacja bryły składowiska",
-          "ograniczenie emisji biogazu przez studnie odgazowujące",
-          "przygotowanie terenu pod finalną warstwę glebotwórczą"
-        ]
-      },
-      "en": {
-        "title": "Landfill reclamation – Policki County",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Policki County, West Pomeranian Voivodeship. Planned completion: June 2027.",
-        "description": "The project includes reclamation of one of the larger landfills in the West Pomeranian region covering approx. 4.4 ha. Works began in 2024. In progress: cell shaping, construction of gas extraction wells, and installation of a multi-layer reclamation cover. Planned completion: June 2027.",
-        "scope": [
-          "pre-reclamation cell condition documentation",
-          "waste decompaction and cap shaping",
-          "construction of gas extraction wells",
-          "installation of reclamation cover"
-        ],
-        "effects": [
-          "ongoing stabilization of the landfill body",
-          "reduction of biogas emission through gas extraction wells",
-          "preparation of the site for the final soil-forming layer"
-        ]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Kreis Policki",
-        "lead": "Rekultivierung einer Deponie für nicht gefährliche und neutral sichere Abfälle im Kreis Policki, Woiwodschaft Westpommern. Geplantes Ende: Juni 2027.",
-        "description": "Das Projekt umfasst die Rekultivierung einer der größten Deponien in der Region Westpommern mit einer Fläche von ca. 4,4 ha. Die Arbeiten begannen 2024. In Ausführung: Formung der Ablagerungszelle, Bau von Gasabsaugbrunnen und Anlage einer mehrschichtigen Rekultivierungsdecke. Geplantes Ende: Juni 2027.",
-        "scope": [
-          "Bestandsdokumentation der Zelle vor der Rekultivierung",
-          "Abfallauflockerung und Formung der Deckschicht",
-          "Bau von Gasabsaugbrunnen",
-          "Anlage der Rekultivierungsdecke"
-        ],
-        "effects": [
-          "fortschreitende Stabilisierung des Deponiekörpers",
-          "Reduzierung der Biogasemissionen durch Gasabsaugbrunnen",
-          "Vorbereitung des Geländes für die finale bodenbildende Schicht"
-        ]
-      }
-    }
-  },
-  {
-    "id": "11-powiat-wieruszowski",
-    "slug": "rekultywacja-powiat-wieruszowski",
-    "region": "Łódź",
-    "years": "2025–2026",
-    "area": "ok. 1,0 ha",
-    "category": "reclamation",
-    "status": "in-progress",
-    "cover": "realisations/11-powiat-wieruszowski/31.jpg",
-    "images": [
-      "realisations/11-powiat-wieruszowski/31.jpg",
-      "realisations/11-powiat-wieruszowski/32.jpg",
-      "realisations/11-powiat-wieruszowski/33.jpg",
-      "realisations/11-powiat-wieruszowski/34.jpg",
-      "realisations/11-powiat-wieruszowski/35.jpg",
-      "realisations/11-powiat-wieruszowski/36.jpg",
-      "realisations/11-powiat-wieruszowski/37.jpg",
-      "realisations/11-powiat-wieruszowski/38.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie wieruszowskim w województwie łódzkim. Planowane zakończenie: grudzień 2026.",
-        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,0 ha w powiecie wieruszowskim. Prace rozpoczęto w 2025 roku i obejmują wykonanie warstwy wyrównawczej, izolację wierzchowiny oraz warstwy glebotwórczej. Planowane zakończenie: grudzień 2026.",
-        "scope": [
-          "kwatera przed rekultywacją – dokumentacja stanu wyjściowego",
-          "warstwa wyrównawcza",
-          "izolacja wierzchowiny",
-          "warstwa glebotwórcza"
-        ],
-        "effects": [
-          "przywrócenie walorów krajobrazowych terenu",
-          "uszczelnienie wierzchowiny składowiska",
-          "przygotowanie podłoża pod obsiew trawami"
-        ]
-      },
-      "en": {
-        "title": "Landfill reclamation – Wieruszowski County",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Wieruszowski County, Łódź Voivodeship. Planned completion: December 2026.",
-        "description": "The reclamation project covers approx. 1.0 ha landfill in Wieruszowski County. Works started in 2025 and include leveling layer installation, cap isolation, and soil-forming layer construction. Planned completion: December 2026.",
-        "scope": [
-          "pre-reclamation cell condition documentation",
-          "leveling layer",
-          "cap isolation",
-          "soil-forming layer"
-        ],
-        "effects": [
-          "restoration of landscape values",
-          "sealing of the landfill cap",
-          "preparation of substrate for grass seeding"
-        ]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Kreis Wieruszowski",
-        "lead": "Rekultivierung einer Deponie für nicht gefährliche und neutral sichere Abfälle im Kreis Wieruszowski, Woiwodschaft Łódź. Geplantes Ende: Dezember 2026.",
-        "description": "Das Rekultivierungsprojekt umfasst eine ca. 1,0 ha große Deponie im Kreis Wieruszowski. Die Arbeiten begannen 2025 und beinhalten die Anlage einer Ausgleichsschicht, Kappenisolierung und den Aufbau einer bodenbildenden Schicht. Geplantes Ende: Dezember 2026.",
-        "scope": [
-          "Bestandsdokumentation der Zelle vor der Rekultivierung",
-          "Ausgleichsschicht",
-          "Kappenisolierung",
-          "bodenbildende Schicht"
-        ],
-        "effects": [
-          "Wiederherstellung der Landschaftswerte",
-          "Versiegelung der Deponiekappe",
-          "Vorbereitung des Untergrunds für Rasenansaat"
-        ]
-      }
-    }
-  },
-  {
-    "id": "12-powiat-losicki",
-    "slug": "rekultywacja-powiat-losicki",
-    "region": "Mazowieckie",
-    "years": "2025",
-    "area": "ok. 1,6 ha",
-    "category": "reclamation",
-    "status": "in-progress",
-    "cover": "realisations/12-powiat-losicki/39.jpg",
-    "images": [
-      "realisations/12-powiat-losicki/39.jpg",
-      "realisations/12-powiat-losicki/40.jpg",
-      "realisations/12-powiat-losicki/41.jpg",
-      "realisations/12-powiat-losicki/42.jpg",
-      "realisations/12-powiat-losicki/43.jpg",
-      "realisations/12-powiat-losicki/44.jpg",
-      "realisations/12-powiat-losicki/45.jpg"
-    ],
-    "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – Powiat Łosicki",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie łosickim w województwie mazowieckim.",
-        "description": "Projekt rekultywacji składowiska o powierzchni ok. 1,6 ha w powiecie łosickim. Prace obejmują odspojenie odpadów i kształtowanie kwatery oraz wykonanie okrywy rekultywacyjnej.",
-        "scope": ["odspojenie odpadów i kształtowanie kwatery", "wykonanie okrywy rekultywacyjnej"],
-        "effects": [
-          "ukształtowanie bryły składowiska",
-          "przygotowanie terenu pod warstwę glebotwórczą i obsiew"
-        ]
-      },
-      "en": {
-        "title": "Landfill reclamation – Łosicki County",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Łosicki County, Masovian Voivodeship.",
-        "description": "The reclamation project covers approx. 1.6 ha landfill in Łosicki County. Works include waste decompaction, cell shaping, and reclamation cover installation.",
-        "scope": ["waste decompaction and cell shaping", "reclamation cover installation"],
-        "effects": [
-          "shaping of the landfill body",
-          "preparation of the site for soil-forming layer and seeding"
-        ]
-      },
-      "de": {
-        "title": "Deponierekultivierung – Kreis Łosicki",
-        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Łosicki, Woiwodschaft Masowien.",
-        "description": "Das Rekultivierungsprojekt umfasst eine ca. 1,6 ha große Deponie im Kreis Łosicki. Die Arbeiten umfassen Abfallauflockerung, Formung der Ablagerungszelle und die Anlage einer Rekultivierungsdecke.",
-        "scope": [
-          "Abfallauflockerung und Formung der Ablagerungszelle",
-          "Anlage der Rekultivierungsdecke"
-        ],
-        "effects": [
-          "Formung des Deponiekörpers",
-          "Vorbereitung des Geländes für die bodenbildende Schicht und Einsaat"
-        ]
-      }
-    }
-  },
-  {
     "id": "04-powiat-parczewski-2022",
     "slug": "rekultywacja-powiat-parczewski-2022",
     "region": "Lubelskie",
+    "mapPosition": { "x": 72, "y": 70 },
     "years": "2022–2024",
     "area": "ok. 1,5 ha",
     "category": "reclamation",
@@ -463,6 +262,7 @@
     "id": "03-powiat-radomski",
     "slug": "rekultywacja-powiat-radomski",
     "region": "Mazowieckie",
+    "mapPosition": { "x": 58, "y": 62 },
     "years": "2022–2023",
     "area": "ok. 0,9 ha",
     "category": "reclamation",
@@ -680,21 +480,22 @@
     "id": "02-powiat-parczewski-2021",
     "slug": "rekultywacja-powiat-parczewski-2021",
     "region": "Lubelskie",
+    "mapPosition": { "x": 74, "y": 72 },
     "years": "2021–2023",
     "area": "ok. 1,2 ha",
     "category": "reclamation",
     "cover": "realisations/02-powiat-parczewski-2021/5.jpg",
     "images": [
+      "realisations/02-powiat-parczewski-2021/before-reclamation-2021-02-1.png",
+      "realisations/02-powiat-parczewski-2021/before-reclamation-2021-02-2.png",
+      "realisations/02-powiat-parczewski-2021/during-reclamation-1.png",
+      "realisations/02-powiat-parczewski-2021/during-reclamation-2.png",
+      "realisations/01-powiat-ostrowski/Obraz4.jpg",
+      "realisations/01-powiat-ostrowski/Obraz5.jpg",
       "realisations/02-powiat-parczewski-2021/1.jpg",
       "realisations/02-powiat-parczewski-2021/2.jpg",
-      "realisations/02-powiat-parczewski-2021/3.jpg",
       "realisations/02-powiat-parczewski-2021/3-1.jpg",
-      "realisations/02-powiat-parczewski-2021/4.jpg",
       "realisations/02-powiat-parczewski-2021/4-1.jpg",
-      "realisations/02-powiat-parczewski-2021/5.jpg",
-      "realisations/02-powiat-parczewski-2021/6.jpg",
-      "realisations/02-powiat-parczewski-2021/7.jpg",
-      "realisations/02-powiat-parczewski-2021/8.jpg",
       "realisations/03-powiat-radomski/1.1.jpg",
       "realisations/03-powiat-radomski/1.2.jpg",
       "realisations/04-powiat-parczewski-2022/2.3.jpg",
@@ -709,8 +510,8 @@
         "number": 1,
         "icon": "truck",
         "images": [
-          "realisations/02-powiat-parczewski-2021/1.jpg",
-          "realisations/02-powiat-parczewski-2021/2.jpg"
+          "realisations/02-powiat-parczewski-2021/before-reclamation-2021-02-1.png",
+          "realisations/02-powiat-parczewski-2021/before-reclamation-2021-02-2.png"
         ],
         "i18n": {
           "pl": {
@@ -731,14 +532,14 @@
         "number": 2,
         "icon": "layers",
         "images": [
-          "realisations/02-powiat-parczewski-2021/3.jpg",
+          "realisations/02-powiat-parczewski-2021/during-reclamation-1.png",
+          "realisations/02-powiat-parczewski-2021/during-reclamation-2.png",
+          "realisations/01-powiat-ostrowski/Obraz4.jpg",
+          "realisations/01-powiat-ostrowski/Obraz5.jpg",
+          "realisations/02-powiat-parczewski-2021/1.jpg",
+          "realisations/02-powiat-parczewski-2021/2.jpg",
           "realisations/02-powiat-parczewski-2021/3-1.jpg",
-          "realisations/02-powiat-parczewski-2021/4.jpg",
-          "realisations/02-powiat-parczewski-2021/4-1.jpg",
-          "realisations/02-powiat-parczewski-2021/5.jpg",
-          "realisations/02-powiat-parczewski-2021/6.jpg",
-          "realisations/02-powiat-parczewski-2021/7.jpg",
-          "realisations/02-powiat-parczewski-2021/8.jpg"
+          "realisations/02-powiat-parczewski-2021/4-1.jpg"
         ],
         "i18n": {
           "pl": {
@@ -885,11 +686,18 @@
     "id": "01-powiat-ostrowski",
     "slug": "rekultywacja-powiat-ostrowski",
     "region": "Mazowieckie",
+    "mapPosition": { "x": 65, "y": 48 },
     "years": "2021–2022",
     "area": "ok. 0,6 ha",
     "category": "reclamation",
     "cover": "realisations/01-powiat-ostrowski/20220222_152922.jpg",
     "images": [
+      "realisations/01-powiat-ostrowski/before-reclamation-2021-02.png",
+      "realisations/01-powiat-ostrowski/before-reclamation-2021-09.png",
+      "realisations/01-powiat-ostrowski/before-seeding-2021-12-1.png",
+      "realisations/01-powiat-ostrowski/before-seeding-2021-12-2.png",
+      "realisations/01-powiat-ostrowski/before-seeding-2021-12-3.png",
+      "realisations/02-powiat-parczewski-2021/skalowanie2_2.jpg",
       "realisations/01-powiat-ostrowski/20220218_114037.jpg",
       "realisations/01-powiat-ostrowski/20220222_083716.jpg",
       "realisations/01-powiat-ostrowski/20220222_152922.jpg",
@@ -902,6 +710,68 @@
     "phases": [
       {
         "number": 1,
+        "icon": "truck",
+        "images": ["realisations/01-powiat-ostrowski/before-reclamation-2021-02.png"],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko przed rekultywacją, luty 2021",
+            "description": "Zdjęcia składowiska przed rozpoczęciem rekultywacji."
+          },
+          "en": {
+            "name": "Landfill before reclamation, February 2021",
+            "description": "Photos of the landfill before reclamation started."
+          },
+          "de": {
+            "name": "Deponie vor der Rekultivierung, Februar 2021",
+            "description": "Fotos der Deponie vor Beginn der Rekultivierung."
+          }
+        }
+      },
+      {
+        "number": 2,
+        "icon": "truck",
+        "images": ["realisations/01-powiat-ostrowski/before-reclamation-2021-09.png"],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko przed rekultywacją, wrzesień 2021",
+            "description": "Zdjęcia składowiska przed rozpoczęciem rekultywacji."
+          },
+          "en": {
+            "name": "Landfill before reclamation, September 2021",
+            "description": "Photos of the landfill before reclamation started."
+          },
+          "de": {
+            "name": "Deponie vor der Rekultivierung, September 2021",
+            "description": "Fotos der Deponie vor Beginn der Rekultivierung."
+          }
+        }
+      },
+      {
+        "number": 3,
+        "icon": "sprout",
+        "images": [
+          "realisations/01-powiat-ostrowski/before-seeding-2021-12-1.png",
+          "realisations/01-powiat-ostrowski/before-seeding-2021-12-2.png",
+          "realisations/01-powiat-ostrowski/before-seeding-2021-12-3.png",
+          "realisations/02-powiat-parczewski-2021/skalowanie2_2.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Składowisko przed wysiewem traw, grudzień 2021",
+            "description": "Zdjęcia składowiska przed wysiewem traw."
+          },
+          "en": {
+            "name": "Landfill before grass seeding, December 2021",
+            "description": "Photos of the landfill before grass seeding."
+          },
+          "de": {
+            "name": "Deponie vor der Raseneinsaat, Dezember 2021",
+            "description": "Fotos der Deponie vor der Raseneinsaat."
+          }
+        }
+      },
+      {
+        "number": 4,
         "icon": "layers",
         "images": [
           "realisations/01-powiat-ostrowski/20220218_114037.jpg",
@@ -925,7 +795,7 @@
         }
       },
       {
-        "number": 2,
+        "number": 5,
         "icon": "flag",
         "images": [
           "realisations/01-powiat-ostrowski/Obraz2.jpg",

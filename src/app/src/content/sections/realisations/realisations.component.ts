@@ -19,6 +19,16 @@ type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
 };
 
+type RealisationMapMarker = {
+  id: string;
+  slug: string;
+  title: string;
+  location: string;
+  region: string;
+  x: number;
+  y: number;
+};
+
 @Component({
   selector: 'app-realisations',
   templateUrl: './realisations.component.html',
@@ -41,6 +51,27 @@ export class RealisationsComponent {
     })),
   );
 
+  protected readonly mapMarkers = computed<ReadonlyArray<RealisationMapMarker>>(() =>
+    this.cards()
+      .map((card) => {
+        const position = card.mapPosition;
+
+        if (!position) {
+          return null;
+        }
+
+        return {
+          id: card.id,
+          slug: card.slug,
+          title: card.translation.title,
+          location: this.locationFromTitle(card.translation.title),
+          region: card.region,
+          ...position,
+        };
+      })
+      .filter((marker): marker is RealisationMapMarker => marker !== null),
+  );
+
   constructor() {
     void this.realisationsState.loadRealisationsAsset();
   }
@@ -57,5 +88,9 @@ export class RealisationsComponent {
 
   protected assetUrl(path: string): string {
     return `assets/${path}`;
+  }
+
+  private locationFromTitle(title: string): string {
+    return title.split(/\s+[–-]\s+/).at(-1) ?? title;
   }
 }

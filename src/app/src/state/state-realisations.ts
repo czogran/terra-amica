@@ -35,6 +35,10 @@ export type RealisationItem = {
   id: string;
   slug: string;
   region: string;
+  mapPosition?: {
+    x: number;
+    y: number;
+  };
   years: string;
   area: string;
   category: RealisationCategory;
