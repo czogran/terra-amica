@@ -495,6 +495,128 @@
     }
   },
   {
+    "id": "powiat-wieruszowski",
+    "slug": "rekultywacja-skladowiska-powiat-wieruszowski",
+    "region": "Łódzkie",
+    "longitude": 18.45,
+    "latitude": 51.4,
+    "years": "2025–2026",
+    "area": "ok. 1,0 ha",
+    "category": "reclamation",
+    "cover": "realisations/powiat-wieruszowski/23-1024x768.jpg",
+    "phases": [
+      {
+        "number": 1,
+        "icon": "truck",
+        "images": [
+          "realisations/powiat-wieruszowski/23-1024x768.jpg",
+          "realisations/powiat-wieruszowski/24-1024x768.jpg",
+          "realisations/powiat-wieruszowski/26-1024x768.jpg",
+          "realisations/powiat-wieruszowski/20240123_155349-1024x768.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Kwatera przed rekultywacją",
+            "description": "Zdjęcia kwatery przed rozpoczęciem rekultywacji."
+          },
+          "en": {
+            "name": "Cell before reclamation",
+            "description": "Photos of the cell before reclamation started."
+          },
+          "de": {
+            "name": "Zelle vor der Rekultivierung",
+            "description": "Fotos der Zelle vor Beginn der Rekultivierung."
+          }
+        }
+      },
+      {
+        "number": 2,
+        "icon": "layers",
+        "images": [
+          "realisations/powiat-wieruszowski/31-1024x473.jpg",
+          "realisations/powiat-wieruszowski/32-1024x473.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonanie warstwy wyrównawczej",
+            "description": "Zdjęcia z wykonywania warstwy wyrównawczej."
+          },
+          "en": {
+            "name": "Leveling layer installation",
+            "description": "Photos from leveling layer installation."
+          },
+          "de": {
+            "name": "Anlage der Ausgleichsschicht",
+            "description": "Fotos von der Anlage der Ausgleichsschicht."
+          }
+        }
+      },
+      {
+        "number": 3,
+        "icon": "shield",
+        "images": [
+          "realisations/powiat-wieruszowski/33-1024x473.jpg",
+          "realisations/powiat-wieruszowski/34-1024x473.jpg",
+          "realisations/powiat-wieruszowski/36-1024x473.jpg",
+          "realisations/powiat-wieruszowski/35-1024x473.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonanie izolacji wierzchowiny",
+            "description": "Zdjęcia z wykonywania izolacji wierzchowiny."
+          },
+          "en": {
+            "name": "Cap isolation installation",
+            "description": "Photos from cap isolation installation."
+          },
+          "de": {
+            "name": "Anlage der Deckschichtisolierung",
+            "description": "Fotos von der Anlage der Deckschichtisolierung."
+          }
+        }
+      },
+      {
+        "number": 4,
+        "icon": "sprout",
+        "images": [
+          "realisations/powiat-wieruszowski/37-1024x473.jpg",
+          "realisations/powiat-wieruszowski/38-1024x473.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonanie warstwy glebotwórczej",
+            "description": "Zdjęcia z wykonywania warstwy glebotwórczej."
+          },
+          "en": {
+            "name": "Soil-forming layer installation",
+            "description": "Photos from soil-forming layer installation."
+          },
+          "de": {
+            "name": "Anlage der bodenbildenden Schicht",
+            "description": "Fotos von der Anlage der bodenbildenden Schicht."
+          }
+        }
+      }
+    ],
+    "i18n": {
+      "pl": {
+        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
+        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim w powiecie wieruszowskim.",
+        "description": "Realizacja rekultywacji składowiska odpadów rozpoczęta w 2025 roku. Planowany termin zakończenia grudzień 2026. Kwatera do rekultywacji o powierzchni około 1,0 ha."
+      },
+      "en": {
+        "title": "Landfill reclamation – Wieruszów County",
+        "lead": "Reclamation of a waste landfill in Łódź Voivodeship, Wieruszów County.",
+        "description": "Landfill reclamation project started in 2025. Planned completion December 2026. Cell area approximately 1.0 ha."
+      },
+      "de": {
+        "title": "Deponierekultivierung – Kreis Wieruszów",
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź, Kreis Wieruszów.",
+        "description": "Das Rekultivierungsprojekt begann 2025. Geplanter Abschluss Dezember 2026. Zellfläche ca. 1,0 ha."
+      }
+    }
+  },
+  {
     "id": "01-powiat-ostrowski",
     "slug": "rekultywacja-powiat-ostrowski",
     "region": "Mazowieckie",
