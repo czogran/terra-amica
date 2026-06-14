@@ -11,9 +11,7 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import {
-  RealisationsState,
-} from 'src/app/src/state/state-realisations';
+import { REALISATIONS_STATE_TOKEN } from '../realisations.component';
 import { TranslationManagerService } from 'src/app/src/state/translation-manager.service';
 import { RealisationsCarouselComponent } from './realisations-carousel.component';
 import { RealisationsDetailsMetaComponent } from './realisations-details-meta.component';
@@ -48,7 +46,7 @@ export class RealisationsDetailsComponent implements AfterViewInit {
   private readonly router = inject(Router);
   private readonly translationManager = inject(TranslationManagerService);
 
-  protected readonly realisationsState = inject(RealisationsState);
+  protected readonly realisationsState = inject(REALISATIONS_STATE_TOKEN);
   protected readonly selectedSlug = signal<string | null>(null);
   protected readonly activePhase = signal<number>(1);
   private phaseObserver: IntersectionObserver | null = null;

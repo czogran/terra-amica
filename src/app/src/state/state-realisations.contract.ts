@@ -1,5 +1,5 @@
-import { Signal } from '@angular/core';
 import { Language } from '@ngx-translate/core';
+import type { createRealisationsState } from './state-realisations.factory';
 
 export type RealisationTranslation = {
   title: string;
@@ -48,14 +48,4 @@ export type RealisationItem = {
   i18n: RealisationI18n;
 };
 
-export interface RealisationsStateContract {
-  realisations: Signal<RealisationItem[]>;
-  selectedRealisationId: Signal<string | null>;
-  hasLoadedRealisations: Signal<boolean>;
-  setRealisationsState: (data: RealisationItem[]) => void;
-  setSelectedRealisation: (id: string | null) => void;
-  clearSelectedRealisation: () => void;
-  loadRealisationsAsset: () => Promise<void>;
-  mapX(longitude: number): number;
-  mapY(latitude: number): number;
-}
+export type RealisationsStateContract = InstanceType<ReturnType<typeof createRealisationsState>>;

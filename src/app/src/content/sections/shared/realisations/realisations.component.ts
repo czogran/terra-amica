@@ -19,6 +19,22 @@ export const REALISATIONS_STATE_TOKEN = new InjectionToken<RealisationsStateCont
   'REALISATIONS_STATE',
 );
 
+export type RealisationsNavigationConfig = {
+  menuKey: string;
+  defaultPath: string;
+};
+
+const DEFAULT_REALISATIONS_NAVIGATION_CONFIG: RealisationsNavigationConfig = {
+  menuKey: 'menu.realisations',
+  defaultPath: 'realisations',
+};
+
+export const REALISATIONS_NAVIGATION_CONFIG_TOKEN =
+  new InjectionToken<RealisationsNavigationConfig>('REALISATIONS_NAVIGATION_CONFIG', {
+    providedIn: 'root',
+    factory: () => DEFAULT_REALISATIONS_NAVIGATION_CONFIG,
+  });
+
 type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
 };
@@ -46,6 +62,7 @@ export class RealisationsComponent {
   private readonly router = inject(Router);
   private readonly menuState = inject(MenuState);
   private readonly translationManager = inject(TranslationManagerService);
+  private readonly navigationConfig = inject(REALISATIONS_NAVIGATION_CONFIG_TOKEN);
 
   protected readonly realisationsState =
     inject<RealisationsStateContract>(REALISATIONS_STATE_TOKEN);
@@ -64,14 +81,6 @@ export class RealisationsComponent {
         if (card.longitude == null || card.latitude == null) {
           return null;
         }
-        console.log(
-          'this.realisationsState.mapX(card.longitude)',
-          this.realisationsState.mapX(card.longitude),
-        );
-        console.log(
-          'this.realisationsState.mapY(card.latitude)',
-          this.realisationsState.mapY(card.latitude),
-        );
         return {
           id: card.id,
           slug: card.slug,
@@ -95,8 +104,9 @@ export class RealisationsComponent {
     const currentLang = this.translationManager.lang();
     const realisationsMenuItem = this.menuState
       .menuItems()
-      .find((item) => item.key === this.getMenuKey());
-    const listPath = realisationsMenuItem?.urls[currentLang]?.url ?? this.getDefaultPath();
+      .find((item) => item.key === this.navigationConfig.menuKey);
+    const listPath =
+      realisationsMenuItem?.urls[currentLang]?.url ?? this.navigationConfig.defaultPath;
 
     void this.router.navigate(['/', currentLang, listPath, slug]);
   }
@@ -109,11 +119,4 @@ export class RealisationsComponent {
     return title.split(/\s+[–-]\s+/).at(-1) ?? title;
   }
 
-  protected getMenuKey(): string {
-    return 'menu.realisations';
-  }
-
-  protected getDefaultPath(): string {
-    return 'realisations';
-  }
 }

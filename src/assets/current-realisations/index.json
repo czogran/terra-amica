@@ -3,8 +3,8 @@
     "id": "powiat-policki",
     "slug": "rekultywacja-skladowiska-powiat-policki",
     "region": "Zachodniopomorskie",
-    "longitude": 14.47,
-    "latitude": 53.5,
+    "longitude": 14.85,
+    "latitude": 53.1,
     "years": "2024–2027",
     "area": "ok. 4,4 ha",
     "category": "reclamation",
@@ -105,6 +105,36 @@
             "description": "Fotos von der Anlage der Rekultivierungsdecke."
           }
         }
+      },
+      {
+        "number": 5,
+        "icon": "layers",
+        "images": [
+          "current-realisations/powiat-policki/2_police_01.jpg",
+          "current-realisations/powiat-policki/2_police_02.jpg",
+          "current-realisations/powiat-policki/2_police_03.jpg",
+          "current-realisations/powiat-policki/2_police_04.jpg",
+          "current-realisations/powiat-policki/2_police_05.jpg",
+          "current-realisations/powiat-policki/2_police_06.jpg",
+          "current-realisations/powiat-policki/2_police_07.jpg",
+          "current-realisations/powiat-policki/2_police_08.jpg",
+          "current-realisations/powiat-policki/2_police_09.jpg",
+          "current-realisations/powiat-policki/2_police_10.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonywanie okrywy rekultywacyjnej",
+            "description": "Zdjęcia z wykonywania okrywy rekultywacyjnej."
+          },
+          "en": {
+            "name": "Reclamation cover installation",
+            "description": "Photos from reclamation cover installation."
+          },
+          "de": {
+            "name": "Anlage der Rekultivierungsdecke",
+            "description": "Fotos von der Anlage der Rekultivierungsdecke."
+          }
+        }
       }
     ],
     "i18n": {
@@ -129,8 +159,8 @@
     "id": "powiat-wieruszowski",
     "slug": "rekultywacja-skladowiska-powiat-wieruszowski",
     "region": "Łódzkie",
-    "longitude": 18.15,
-    "latitude": 51.3,
+    "longitude": 18.45,
+    "latitude": 51.4,
     "years": "2025–2026",
     "area": "ok. 1,0 ha",
     "category": "reclamation",
@@ -251,8 +281,8 @@
     "id": "powiat-losicki",
     "slug": "rekultywacja-skladowiska-powiat-losicki",
     "region": "Mazowieckie",
-    "longitude": 22.72,
-    "latitude": 52.22,
+    "longitude": 22.42,
+    "latitude": 51.9,
     "years": "2025–",
     "area": "ok. 1,6 ha",
     "category": "reclamation",
@@ -294,6 +324,31 @@
         "i18n": {
           "pl": {
             "name": "Wykonanie okrywy rekultywacyjnej",
+            "description": "Zdjęcia z wykonywania okrywy rekultywacyjnej."
+          },
+          "en": {
+            "name": "Reclamation cover installation",
+            "description": "Photos from reclamation cover installation."
+          },
+          "de": {
+            "name": "Anlage der Rekultivierungsdecke",
+            "description": "Fotos von der Anlage der Rekultivierungsdecke."
+          }
+        }
+      },
+      {
+        "number": 3,
+        "icon": "layers",
+        "images": [
+          "current-realisations/powiat-losicki/1_łosice_01.jpg",
+          "current-realisations/powiat-losicki/1_łosice_02.jpg",
+          "current-realisations/powiat-losicki/1_łosice_03.jpg",
+          "current-realisations/powiat-losicki/1_łosice_04.jpg",
+          "current-realisations/powiat-losicki/1_łosice_05.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Wykonywanie okrywy rekultywacyjnej",
             "description": "Zdjęcia z wykonywania okrywy rekultywacyjnej."
           },
           "en": {
