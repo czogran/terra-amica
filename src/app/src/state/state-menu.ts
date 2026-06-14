@@ -46,11 +46,11 @@ export const MENU_ITEMS: MenuItem[] = [
       import('../content/sections/offer/offer.component').then((m) => m.OfferComponent),
   },
   {
-    key: 'menu.realisations',
+    key: 'menu.past-realisations',
     urls: {
-      pl: { url: 'realizacje', title: 'Realizacje' },
-      en: { url: 'realisations', title: 'Realisations' },
-      de: { url: 'realisierungen', title: 'Realisierungen' },
+      pl: { url: 'realizacje-zakonczone', title: 'Realizacje zakończone' },
+      en: { url: 'past-realisations', title: 'Past realisations' },
+      de: { url: 'abgeschlossene-realisierungen', title: 'Abgeschlossene Realisierungen' },
     },
     loadComponent: () =>
       import('../content/sections/past-realisations/past-realisations.component').then(

@@ -14,7 +14,7 @@ import {
     { provide: REALISATIONS_STATE_TOKEN, useExisting: RealisationsState },
     {
       provide: REALISATIONS_NAVIGATION_CONFIG_TOKEN,
-      useValue: { menuKey: 'menu.realisations', defaultPath: 'realisations' },
+      useValue: { menuKey: 'menu.past-realisations', defaultPath: 'past-realisations' },
     },
   ],
 })

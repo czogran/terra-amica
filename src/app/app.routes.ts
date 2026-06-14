@@ -5,7 +5,7 @@ import { LANGUAGES } from './src/state/translation-manager.service';
 const generateRoutes = (): Route[] =>
   MENU_ITEMS.reduce((acc, item) => {
     Object.entries(item.urls).forEach(([lang, data]) => {
-      if (item.key === 'menu.realisations' || item.key === 'menu.current-realisations') {
+      if (item.key === 'menu.past-realisations' || item.key === 'menu.current-realisations') {
         acc.push({
           path: `${lang}/${data.url}`,
           title: data.title,

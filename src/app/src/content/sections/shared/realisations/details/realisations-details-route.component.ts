@@ -13,8 +13,8 @@ type RealisationsRouteHeader = {
 };
 
 const REALISATIONS_ROUTE_HEADERS: Record<string, RealisationsRouteHeader> = {
-  'menu.realisations': {
-    titleKey: 'menu.realisations',
+  'menu.past-realisations': {
+    titleKey: 'menu.past-realisations',
     subtitleKey: 'realisations.intro',
   },
   'menu.current-realisations': {
@@ -23,7 +23,7 @@ const REALISATIONS_ROUTE_HEADERS: Record<string, RealisationsRouteHeader> = {
   },
 };
 
-const DEFAULT_HEADER = REALISATIONS_ROUTE_HEADERS['menu.realisations'];
+const DEFAULT_HEADER = REALISATIONS_ROUTE_HEADERS['menu.past-realisations'];
 
 function realisationsStateFactory(): RealisationsStateContract {
   const route = inject(ActivatedRoute);

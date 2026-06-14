@@ -25,8 +25,8 @@ export type RealisationsNavigationConfig = {
 };
 
 const DEFAULT_REALISATIONS_NAVIGATION_CONFIG: RealisationsNavigationConfig = {
-  menuKey: 'menu.realisations',
-  defaultPath: 'realisations',
+  menuKey: 'menu.past-realisations',
+  defaultPath: 'past-realisations',
 };
 
 export const REALISATIONS_NAVIGATION_CONFIG_TOKEN =
