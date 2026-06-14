@@ -12,10 +12,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import {
-  RealisationItem,
-  RealisationPhase,
-  RealisationPhaseTranslation,
-  RealisationTranslation,
   RealisationsState,
 } from 'src/app/src/state/state-realisations';
 import { TranslationManagerService } from 'src/app/src/state/translation-manager.service';
@@ -23,6 +19,7 @@ import { RealisationsCarouselComponent } from './realisations-carousel.component
 import { RealisationsDetailsMetaComponent } from './realisations-details-meta.component';
 import { RealisationsDetailsNavigationComponent } from './realisations-details-navigation.component';
 import { RealisationsDetailsPhasesComponent } from './realisations-details-phases.component';
+import { RealisationItem, RealisationPhase, RealisationPhaseTranslation, RealisationTranslation } from 'src/app/src/state/state-realisations.contract';
 
 type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
@@ -78,18 +75,7 @@ export class RealisationsDetailsComponent implements AfterViewInit {
       return [];
     }
 
-    const phases = realisation.phases ?? [
-      {
-        number: 1,
-        icon: 'flag' as const,
-        images: realisation.images.length > 0 ? realisation.images : [realisation.cover],
-        i18n: {
-          pl: { name: realisation.translation.title, description: realisation.translation.description },
-          en: { name: realisation.translation.title, description: realisation.translation.description },
-          de: { name: realisation.translation.title, description: realisation.translation.description },
-        },
-      },
-    ];
+    const phases = realisation.phases ?? [];
 
     return phases.map((phase) => ({
       ...phase,
@@ -133,7 +119,7 @@ export class RealisationsDetailsComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    setTimeout(() => this.observePhaseSections());
+    // setTimeout(() => this.observePhaseSections());
   }
 
   assetUrl(path: string): string {
@@ -177,7 +163,7 @@ export class RealisationsDetailsComponent implements AfterViewInit {
       return;
     }
 
-    const element = document.getElementById(`phase-${phaseNumber}`);
+    const element = document?.getElementById(`phase-${phaseNumber}`);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }

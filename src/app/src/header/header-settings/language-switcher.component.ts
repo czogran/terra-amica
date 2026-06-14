@@ -94,6 +94,7 @@ export class LanguageSwitcherComponent {
     const queryString = query.toString();
     const fragment = tree.fragment ? `#${tree.fragment}` : '';
     const targetUrl = `/${nextSegments.join('/')}${queryString ? `?${queryString}` : ''}${fragment}`;
+    console.log("targetUrl", targetUrl)
 
     this.location.replaceState(targetUrl);
     this.titleService.setTitle(urlConfig.title || 'Company website');

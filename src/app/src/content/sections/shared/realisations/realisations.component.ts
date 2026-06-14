@@ -1,14 +1,23 @@
 import { NgOptimizedImage } from '@angular/common';
-import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  inject,
+  InjectionToken,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { MenuState } from 'src/app/src/state/state-menu';
+import { TranslationManagerService } from 'src/app/src/state/translation-manager.service';
 import {
   RealisationItem,
   RealisationTranslation,
-  RealisationsState,
-} from 'src/app/src/state/state-realisations';
-import { TranslationManagerService } from 'state';
+  RealisationsStateContract,
+} from 'src/app/src/state/state-realisations.contract';
+export const REALISATIONS_STATE_TOKEN = new InjectionToken<RealisationsStateContract>(
+  'REALISATIONS_STATE',
+);
 
 type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
@@ -22,6 +31,8 @@ type RealisationMapMarker = {
   region: string;
   longitude: number;
   latitude: number;
+  mapX: number;
+  mapY: number;
 };
 
 @Component({
@@ -36,7 +47,8 @@ export class RealisationsComponent {
   private readonly menuState = inject(MenuState);
   private readonly translationManager = inject(TranslationManagerService);
 
-  protected readonly realisationsState = inject(RealisationsState);
+  protected readonly realisationsState =
+    inject<RealisationsStateContract>(REALISATIONS_STATE_TOKEN);
 
   protected readonly realisations = computed(() => this.realisationsState.realisations());
   protected readonly cards = computed<ReadonlyArray<RealisationCardViewModel>>(() =>
@@ -52,7 +64,14 @@ export class RealisationsComponent {
         if (card.longitude == null || card.latitude == null) {
           return null;
         }
-
+        console.log(
+          'this.realisationsState.mapX(card.longitude)',
+          this.realisationsState.mapX(card.longitude),
+        );
+        console.log(
+          'this.realisationsState.mapY(card.latitude)',
+          this.realisationsState.mapY(card.latitude),
+        );
         return {
           id: card.id,
           slug: card.slug,
@@ -61,6 +80,8 @@ export class RealisationsComponent {
           region: card.region,
           longitude: card.longitude,
           latitude: card.latitude,
+          mapX: this.realisationsState.mapX(card.longitude),
+          mapY: this.realisationsState.mapY(card.latitude),
         };
       })
       .filter((marker): marker is RealisationMapMarker => marker !== null),
@@ -74,8 +95,8 @@ export class RealisationsComponent {
     const currentLang = this.translationManager.lang();
     const realisationsMenuItem = this.menuState
       .menuItems()
-      .find((item) => item.key === 'menu.realisations');
-    const listPath = realisationsMenuItem?.urls[currentLang]?.url ?? 'realisations';
+      .find((item) => item.key === this.getMenuKey());
+    const listPath = realisationsMenuItem?.urls[currentLang]?.url ?? this.getDefaultPath();
 
     void this.router.navigate(['/', currentLang, listPath, slug]);
   }
@@ -84,29 +105,15 @@ export class RealisationsComponent {
     return `assets/${path}`;
   }
 
-  decimalToDegMin(decimalDegrees: number) {
-    const degrees = Math.trunc(decimalDegrees);
-    const minutes = Math.abs((decimalDegrees - degrees) * 60);
-
-    return degrees * 60 + minutes;
-  }
-
-  protected mapX(longitude: number): number {
-    return (
-      ((this.decimalToDegMin(longitude) - this.decimalToDegMin(14.07)) /
-        this.decimalToDegMin(10.02)) *
-      100
-    );
-  }
-
-  protected mapY(latitude: number): number {
-    return (
-      ((this.decimalToDegMin(latitude) - this.decimalToDegMin(49)) / this.decimalToDegMin(5.5)) *
-      100
-    );
-  }
-
   private locationFromTitle(title: string): string {
     return title.split(/\s+[–-]\s+/).at(-1) ?? title;
+  }
+
+  protected getMenuKey(): string {
+    return 'menu.realisations';
+  }
+
+  protected getDefaultPath(): string {
+    return 'realisations';
   }
 }

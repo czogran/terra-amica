@@ -10,8 +10,8 @@
           <button
             type="button"
             class="realisations-map-marker"
-            [style.left.%]="mapX(marker.longitude)"
-            [style.bottom.%]="mapY(marker.latitude)"
+            [style.left.%]="marker.mapX"
+            [style.bottom.%]="marker.mapY"
             [attr.aria-label]="marker.title + ' - ' + marker.region"
             [attr.title]="marker.title"
             (click)="openDetails(marker.slug)"

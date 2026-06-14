@@ -105,6 +105,21 @@ export class TranslationManagerService {
     });
   }
 
+  registerCurrentRealisationsTranslations(entries: RealisationTranslationEntry[]): void {
+    entries.forEach((entry) => {
+      Object.entries(entry.i18n).forEach(([lang, translation]) => {
+        const language = lang as Language;
+        this.addDynamicTranslation(language, `currentRealisations.${entry.id}.title`, translation.title);
+        this.addDynamicTranslation(language, `currentRealisations.${entry.id}.lead`, translation.lead);
+        this.addDynamicTranslation(
+          language,
+          `currentRealisations.${entry.id}.description`,
+          translation.description,
+        );
+      });
+    });
+  }
+
   async setLanguage(newLanguage: Language): Promise<void> {
     this.lang.set(newLanguage);
     await firstValueFrom(this.translate.use(newLanguage));

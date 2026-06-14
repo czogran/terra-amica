@@ -43,7 +43,7 @@ function mapY(latitude: number): number {
   );
 }
 
-export const RealisationsState = signalStore(
+export const CurrentRealisationsState = signalStore(
   withState<RealisationsStateType>(realisationsInitialState),
   withMethods((store) => {
     let loadPromise: Promise<void> | null = null;
@@ -84,7 +84,7 @@ export const RealisationsState = signalStore(
 
         loadPromise = (async () => {
           try {
-            const res = await fetch(ASSET_URLS.realisationsIndex);
+            const res = await fetch(ASSET_URLS.currentRealisationsIndex);
             if (!res.ok) {
               return;
             }
@@ -95,7 +95,7 @@ export const RealisationsState = signalStore(
               realisations: data,
               hasLoadedRealisations: true,
             }));
-            translationManager.registerRealisationsTranslations(data);
+            translationManager.registerCurrentRealisationsTranslations(data);
           } catch (_err: unknown) {
           } finally {
             loadPromise = null;

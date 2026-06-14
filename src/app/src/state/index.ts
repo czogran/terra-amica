@@ -1,5 +1,6 @@
 import e from 'express';
 import { ContactState } from './state-contact';
+import { CurrentRealisationsState } from './state-current-realisations';
 import { MenuState } from './state-menu';
 import { OfferState } from './state-offer';
 import { PrivacyPolicyState } from './state-privacy-policy';
@@ -12,12 +13,14 @@ export const STATE_PROVIDERS = [
   StateService,
   ReferenceState,
   RealisationsState,
+  CurrentRealisationsState,
   MenuState,
   PrivacyPolicyState,
   OfferState
 ];
 
 export * from './state-contact';
+export * from './state-current-realisations';
 export * from './state-reference';
 export * from './state-realisations';
 export * from './state-privacy-policy';

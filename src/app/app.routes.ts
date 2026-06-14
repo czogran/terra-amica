@@ -5,12 +5,12 @@ import { LANGUAGES } from './src/state/translation-manager.service';
 const generateRoutes = (): Route[] =>
   MENU_ITEMS.reduce((acc, item) => {
     Object.entries(item.urls).forEach(([lang, data]) => {
-      if (item.key === 'menu.realisations') {
+      if (item.key === 'menu.realisations' || item.key === 'menu.current-realisations') {
         acc.push({
           path: `${lang}/${data.url}`,
           title: data.title,
           loadComponent: () =>
-            import('./src/content/sections/realisations/details/realisations-details-route.component').then(
+            import('./src/content/sections/shared/realisations/details/realisations-details-route.component').then(
               (m) => m.RealisationsDetailsRouteComponent,
             ),
           data: { key: item.key, lang },
@@ -25,7 +25,7 @@ const generateRoutes = (): Route[] =>
               path: ':slug',
               title: data.title,
               loadComponent: () =>
-                import('./src/content/sections/realisations/details/realisations-details.component').then(
+                import('./src/content/sections/shared/realisations/details/realisations-details.component').then(
                   (m) => m.RealisationsDetailsComponent,
                 ),
               data: { key: item.key, lang },

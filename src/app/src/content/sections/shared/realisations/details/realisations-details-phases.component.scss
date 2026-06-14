@@ -1,6 +1,6 @@
 :host {
   position: sticky;
-  top: 1rem;
+  top: 9rem;
   z-index: 5;
   display: block;
   align-self: start;
@@ -111,7 +111,11 @@
 
 .realisations-details__phase--active .realisations-details__phase-btn {
   border-color: rgba(var(--bs-success-rgb), 0.12);
-  background: linear-gradient(90deg, rgba(var(--bs-success-rgb), 0.12), rgba(var(--bs-success-rgb), 0.03));
+  background: linear-gradient(
+    90deg,
+    rgba(var(--bs-success-rgb), 0.12),
+    rgba(var(--bs-success-rgb), 0.03)
+  );
   box-shadow: 0 0.7rem 1.4rem rgba(var(--bs-success-rgb), 0.12);
   transform: translateX(0.2rem);
 }

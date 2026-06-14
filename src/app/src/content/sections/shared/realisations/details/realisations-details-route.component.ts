@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SectionHeaderComponent } from '../../shared/section-header.component';
 import { TranslatePipe } from '@ngx-translate/core';
+import { SectionHeaderComponent } from '../../section-header.component';
 
 @Component({
   selector: 'app-realisations-details-route',

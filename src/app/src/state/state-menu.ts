@@ -53,8 +53,20 @@ export const MENU_ITEMS: MenuItem[] = [
       de: { url: 'realisierungen', title: 'Realisierungen' },
     },
     loadComponent: () =>
-      import('../content/sections/realisations/realisations.component').then(
-        (m) => m.RealisationsComponent,
+      import('../content/sections/past-realisations/past-realisations.component').then(
+        (m) => m.PastRealisationsComponent,
+      ),
+  },
+  {
+    key: 'menu.current-realisations',
+    urls: {
+      pl: { url: 'obecne-realizacje', title: 'Obecne realizacje' },
+      en: { url: 'current-realisations', title: 'Current realisations' },
+      de: { url: 'aktuelle-realisierungen', title: 'Aktuelle Realisierungen' },
+    },
+    loadComponent: () =>
+      import('../content/sections/current-realisations/current-realisations.component').then(
+        (m) => m.CurrentRealisationsComponent,
       ),
   },
   {

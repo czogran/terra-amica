@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
-import { RealisationPhaseIcon, RealisationPhaseTranslation } from 'src/app/src/state/state-realisations';
+import { RealisationPhaseIcon, RealisationPhaseTranslation } from 'src/app/src/state/state-realisations.contract';
 
 export type RealisationPhaseViewModel = {
   number: number;
