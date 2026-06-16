@@ -22,7 +22,7 @@ export const appConfig: ApplicationConfig = {
       routes,
       withRouterConfig({}),
       withViewTransitions(),
-      withInMemoryScrolling({ scrollPositionRestoration: 'enabled' }),
+      withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' }),
     ),
     provideClientHydration(withEventReplay()),
     provideAnimations(),
