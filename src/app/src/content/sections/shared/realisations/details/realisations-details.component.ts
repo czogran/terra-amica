@@ -17,7 +17,12 @@ import { RealisationsCarouselComponent } from './realisations-carousel.component
 import { RealisationsDetailsMetaComponent } from './realisations-details-meta.component';
 import { RealisationsDetailsNavigationComponent } from './realisations-details-navigation.component';
 import { RealisationsDetailsPhasesComponent } from './realisations-details-phases.component';
-import { RealisationItem, RealisationPhase, RealisationPhaseTranslation, RealisationTranslation } from 'src/app/src/state/state-realisations.contract';
+import type {
+  RealisationItem,
+  RealisationPhase,
+  RealisationPhaseTranslation,
+  RealisationTranslation,
+} from 'src/app/src/state/state-realisations.contract';
 
 type RealisationCardViewModel = RealisationItem & {
   translation: RealisationTranslation;
@@ -120,41 +125,42 @@ export class RealisationsDetailsComponent implements AfterViewInit {
     // setTimeout(() => this.observePhaseSections());
   }
 
-  assetUrl(path: string): string {
-    return `assets/${path}`;
-  }
-
   imagePaths(): string[] {
     const realisation = this.card();
     if (!realisation) {
       return [];
     }
 
-    const images = realisation.images;
+    const images = realisation.images ?? [];
     if (images.length > 0) {
-      return images.map((image) => this.assetUrl(image));
+      return images;
     }
 
-    return [this.assetUrl(realisation.cover)];
+    return [realisation.cover];
   }
 
-  phaseCarouselInputs(phaseNumber: number): { images: string[]; alt: string } | null {
+  protected readonly phaseCarouselInputs = computed(() => {
     const realisation = this.card();
-    if (!realisation) {
-      return null;
-    }
+    const imagePaths = this.imagePaths();
 
-    const phase = this.phases().find((item) => item.number === phaseNumber);
-    const images = phase?.images.map((image) => this.assetUrl(image)) ?? this.imagePaths();
-    if (images.length === 0) {
-      return null;
-    }
+    return (phaseNumber: number): { directory: string; images: string[]; alt: string } | null => {
+      if (!realisation) {
+        return null;
+      }
 
-    return {
-      images,
-      alt: `${realisation.translation.title} - ${phaseNumber}`,
+      const phase = this.phases().find((item) => item.number === phaseNumber);
+      const images = phase?.images ?? imagePaths;
+      if (images.length === 0) {
+        return null;
+      }
+
+      return {
+        directory: realisation.directory,
+        images,
+        alt: `${realisation.translation.title} - ${phaseNumber}`,
+      };
     };
-  }
+  });
 
   scrollToPhase(phaseNumber: number): void {
     if (typeof document === 'undefined') {

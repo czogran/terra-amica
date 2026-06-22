@@ -8,18 +8,18 @@
     "years": "2024–2027",
     "area": "ok. 4,4 ha",
     "category": "reclamation",
-    "cover": "current-realisations/powiat-policki/20240123_155429-1024x768.jpg",
+    "cover": "20240123_155429-1024x768.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "current-realisations/powiat-policki/20240123_155429-1024x768.jpg",
-          "current-realisations/powiat-policki/20240123_155156-1024x768.jpg",
-          "current-realisations/powiat-policki/20240123_155234-1024x768.jpg",
-          "current-realisations/powiat-policki/20240123_155349-1024x768.jpg",
-          "current-realisations/powiat-policki/20230801_120134-1024x768.jpg",
-          "current-realisations/powiat-policki/20230731_184224-1024x768.jpg"
+          "20240123_155429-1024x768.jpg",
+          "20240123_155156-1024x768.jpg",
+          "20240123_155234-1024x768.jpg",
+          "20240123_155349-1024x768.jpg",
+          "20230801_120134-1024x768.jpg",
+          "20230731_184224-1024x768.jpg"
         ],
         "i18n": {
           "pl": {
@@ -39,12 +39,7 @@
       {
         "number": 2,
         "icon": "truck",
-        "images": [
-          "current-realisations/powiat-policki/9-1024x768.jpg",
-          "current-realisations/powiat-policki/10-1024x768.jpg",
-          "current-realisations/powiat-policki/11-1024x768.jpg",
-          "current-realisations/powiat-policki/12-1024x768.jpg"
-        ],
+        "images": ["9-1024x768.jpg", "10-1024x768.jpg", "11-1024x768.jpg", "12-1024x768.jpg"],
         "i18n": {
           "pl": {
             "name": "Odspajanie odpadów i formowanie wierzchowiny",
@@ -63,10 +58,7 @@
       {
         "number": 3,
         "icon": "shield",
-        "images": [
-          "current-realisations/powiat-policki/17-1024x768.jpg",
-          "current-realisations/powiat-policki/18-1024x768.jpg"
-        ],
+        "images": ["17-1024x768.jpg", "18-1024x768.jpg"],
         "i18n": {
           "pl": {
             "name": "Wykonanie studni odgazowujących",
@@ -85,12 +77,7 @@
       {
         "number": 4,
         "icon": "layers",
-        "images": [
-          "current-realisations/powiat-policki/19-1024x768.jpg",
-          "current-realisations/powiat-policki/20-1024x768.jpg",
-          "current-realisations/powiat-policki/21-1024x768.jpg",
-          "current-realisations/powiat-policki/22-1024x768.jpg"
-        ],
+        "images": ["19-1024x768.jpg", "20-1024x768.jpg", "21-1024x768.jpg", "22-1024x768.jpg"],
         "i18n": {
           "pl": {
             "name": "Wykonanie okrywy rekultywacyjnej",
@@ -110,16 +97,16 @@
         "number": 5,
         "icon": "layers",
         "images": [
-          "current-realisations/powiat-policki/2_police_01.jpg",
-          "current-realisations/powiat-policki/2_police_02.jpg",
-          "current-realisations/powiat-policki/2_police_03.jpg",
-          "current-realisations/powiat-policki/2_police_04.jpg",
-          "current-realisations/powiat-policki/2_police_05.jpg",
-          "current-realisations/powiat-policki/2_police_06.jpg",
-          "current-realisations/powiat-policki/2_police_07.jpg",
-          "current-realisations/powiat-policki/2_police_08.jpg",
-          "current-realisations/powiat-policki/2_police_09.jpg",
-          "current-realisations/powiat-policki/2_police_10.jpg"
+          "2_police_01.jpg",
+          "2_police_02.jpg",
+          "2_police_03.jpg",
+          "2_police_04.jpg",
+          "2_police_05.jpg",
+          "2_police_06.jpg",
+          "2_police_07.jpg",
+          "2_police_08.jpg",
+          "2_police_09.jpg",
+          "2_police_10.jpg"
         ],
         "i18n": {
           "pl": {
@@ -153,9 +140,9 @@
         "lead": "Rekultivierung einer Deponie in der Woiwodschaft Westpommern, Kreis Police.",
         "description": "Das Rekultivierungsprojekt begann 2024. Geplanter Abschluss Juni 2027. Zellfläche ca. 4,4 ha."
       }
-    }
+    },
+    "directory": "current-realisations/powiat-policki"
   },
-
   {
     "id": "powiat-losicki",
     "slug": "rekultywacja-skladowiska-powiat-losicki",
@@ -165,17 +152,12 @@
     "years": "2025–",
     "area": "ok. 1,6 ha",
     "category": "reclamation",
-    "cover": "current-realisations/powiat-losicki/39-1024x473.jpg",
+    "cover": "39-1024x473.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
-        "images": [
-          "current-realisations/powiat-losicki/39-1024x473.jpg",
-          "current-realisations/powiat-losicki/40-1024x473.jpg",
-          "current-realisations/powiat-losicki/41-1024x473.jpg",
-          "current-realisations/powiat-losicki/42-1024x473.jpg"
-        ],
+        "images": ["39-1024x473.jpg", "40-1024x473.jpg", "41-1024x473.jpg", "42-1024x473.jpg"],
         "i18n": {
           "pl": {
             "name": "Odspojenie odpadów i kształtowanie kwatery",
@@ -194,12 +176,7 @@
       {
         "number": 2,
         "icon": "layers",
-        "images": [
-          "current-realisations/powiat-losicki/43-1024x473.jpg",
-          "current-realisations/powiat-losicki/44-1024x473.jpg",
-          "current-realisations/powiat-losicki/45-1024x473.jpg",
-          "current-realisations/powiat-losicki/46-1024x473.jpg"
-        ],
+        "images": ["43-1024x473.jpg", "44-1024x473.jpg", "45-1024x473.jpg", "46-1024x473.jpg"],
         "i18n": {
           "pl": {
             "name": "Wykonanie okrywy rekultywacyjnej",
@@ -219,11 +196,11 @@
         "number": 3,
         "icon": "layers",
         "images": [
-          "current-realisations/powiat-losicki/1_łosice_01.jpg",
-          "current-realisations/powiat-losicki/1_łosice_02.jpg",
-          "current-realisations/powiat-losicki/1_łosice_03.jpg",
-          "current-realisations/powiat-losicki/1_łosice_04.jpg",
-          "current-realisations/powiat-losicki/1_łosice_05.jpg"
+          "1_łosice_01.jpg",
+          "1_łosice_02.jpg",
+          "1_łosice_03.jpg",
+          "1_łosice_04.jpg",
+          "1_łosice_05.jpg"
         ],
         "i18n": {
           "pl": {
@@ -257,7 +234,8 @@
         "lead": "Rekultivierung einer Deponie in der Woiwodschaft Masowien, Kreis Łosice.",
         "description": "Das Rekultivierungsprojekt begann 2025. Deponiefläche ca. 1,6 ha."
       }
-    }
+    },
+    "directory": "current-realisations/powiat-losicki"
   },
   {
     "id": "powiat-losicki-stara-kornica",
@@ -268,16 +246,16 @@
     "years": "2026–2027",
     "area": "ok. 1,1 ha",
     "category": "reclamation",
-    "cover": "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_01.jpg",
+    "cover": "3_stara kornica_01.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_01.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_02.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_03.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_04.jpg"
+          "3_stara kornica_01.jpg",
+          "3_stara kornica_02.jpg",
+          "3_stara kornica_03.jpg",
+          "3_stara kornica_04.jpg"
         ],
         "i18n": {
           "pl": {
@@ -298,13 +276,13 @@
         "number": 2,
         "icon": "truck",
         "images": [
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_05.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_06.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_08.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_09.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_10.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_11.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_12.jpg"
+          "3_stara kornica_05.jpg",
+          "3_stara kornica_06.jpg",
+          "3_stara kornica_08.jpg",
+          "3_stara kornica_09.jpg",
+          "3_stara kornica_10.jpg",
+          "3_stara kornica_11.jpg",
+          "3_stara kornica_12.jpg"
         ],
         "i18n": {
           "pl": {
@@ -324,10 +302,7 @@
       {
         "number": 3,
         "icon": "layers",
-        "images": [
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_13.jpg",
-          "current-realisations/powiat-losicki-stara-kornica/3_stara kornica_14.jpg"
-        ],
+        "images": ["3_stara kornica_13.jpg", "3_stara kornica_14.jpg"],
         "i18n": {
           "pl": {
             "name": "Wykonywanie okrywy rekultywacyjnej",
@@ -360,6 +335,7 @@
         "lead": "Rekultivierung einer Deponie in der Woiwodschaft Masowien, Kreis Łosice – Stara Kornica.",
         "description": "Das Rekultivierungsprojekt begann 2026. Geplanter Abschluss 2027. Deponiefläche ca. 1,1 ha."
       }
-    }
+    },
+    "directory": "current-realisations/powiat-losicki-stara-kornica"
   }
 ]

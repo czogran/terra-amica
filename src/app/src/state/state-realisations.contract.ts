@@ -13,7 +13,7 @@ export type RealisationI18n = Record<Language, RealisationTranslation>;
 
 export type RealisationCategory = string;
 
-export type RealisationPhaseIcon = 'truck' | 'layers' | 'shield' | 'sprout' | 'flag';
+export type RealisationPhaseIcon = string;
 
 export type RealisationPhaseTranslation = {
   name: string;
@@ -42,6 +42,7 @@ export type RealisationItem = {
   years: string;
   area: string;
   category: RealisationCategory;
+  directory: string;
   cover: string;
   images: string[];
   phases?: RealisationPhase[];

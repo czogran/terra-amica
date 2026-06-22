@@ -28,7 +28,7 @@
         <article class="realisations-card" aria-label="{{ card.translation.title }}">
           <div class="realisations-card-thumb">
             <img
-              [ngSrc]="assetUrl(card.cover)"
+              [ngSrc]="assetUrl(card.directory, card.cover)"
               [alt]="card.translation.title"
               loading="lazy"
               width="800"

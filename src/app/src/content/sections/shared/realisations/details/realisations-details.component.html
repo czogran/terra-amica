@@ -38,8 +38,9 @@
                 <p>{{ phase.translation.description }}</p>
               </div>
 
-              @if (phaseCarouselInputs(phase.number); as carouselInputs) {
+              @if (phaseCarouselInputs()(phase.number); as carouselInputs) {
                 <app-realisations-carousel
+                  [directory]="carouselInputs.directory"
                   [images]="carouselInputs.images"
                   [alt]="carouselInputs.alt"
                   [isActive]="activePhase() === phase.number"

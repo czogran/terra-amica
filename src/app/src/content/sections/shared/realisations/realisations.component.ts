@@ -111,8 +111,8 @@ export class RealisationsComponent {
     void this.router.navigate(['/', currentLang, listPath, slug]);
   }
 
-  protected assetUrl(path: string): string {
-    return `assets/${path}`;
+  protected assetUrl(directory: string, path: string): string {
+    return `assets/${directory}/compressed/${path}`;
   }
 
   private locationFromTitle(title: string): string {

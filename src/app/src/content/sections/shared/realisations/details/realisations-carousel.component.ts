@@ -28,12 +28,6 @@ export class RealisationsCarouselComponent implements AfterViewInit, OnDestroy {
 
   constructor() {
     effect(() => {
-      // Reset to first image when images input changes
-      this.images();
-      this.activeIndex.set(0);
-    });
-
-    effect(() => {
       this.isActive();
       setTimeout(() => this.syncCarouselActivity());
     });
@@ -46,6 +40,7 @@ export class RealisationsCarouselComponent implements AfterViewInit, OnDestroy {
   @ViewChild('carouselEl')
   carouselEl?: ElementRef<HTMLElement>;
 
+  directory = input.required<string>();
   images = input.required<ReadonlyArray<string>>();
   alt = input.required<string>();
   isActive = input(true);
@@ -117,21 +112,29 @@ export class RealisationsCarouselComponent implements AfterViewInit, OnDestroy {
   goTo(index: number): void {
     this.activeIndex.set(index);
 
-    if (!this.carouselEl) {
-      return;
-    }
+    // if (!this.carouselEl) {
+    //   return;
+    // }
 
-    const bs = (window as any).bootstrap;
-    try {
-      const inst =
-        bs?.Carousel?.getInstance(this.carouselEl.nativeElement) ??
-        new bs.Carousel(this.carouselEl.nativeElement);
-      if (inst && typeof inst.to === 'function') {
-        inst.to(index);
-      }
-    } catch (e) {
-      // ignore if bootstrap not available or call fails
-    }
+    // const bs = (window as any).bootstrap;
+    // try {
+    //   const inst =
+    //     bs?.Carousel?.getInstance(this.carouselEl.nativeElement) ??
+    //     new bs.Carousel(this.carouselEl.nativeElement);
+    //   if (inst && typeof inst.to === 'function') {
+    //     inst.to(index);
+    //   }
+    // } catch (e) {
+    //   // ignore if bootstrap not available or call fails
+    // }
+  }
+
+  protected compressedImage(image: string): string {
+    return `assets/${this.directory()}/compressed/${image}`;
+  }
+
+  protected originalImage(image: string): string {
+    return `assets/${this.directory()}/original/${image}`;
   }
 
   private clearCloseAnimationTimer(): void {
