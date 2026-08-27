@@ -98,7 +98,8 @@
           "2_police_06.jpg",
           "2_police_07.jpg",
           "2_police_08.jpg",
-          "2_police_09.jpg"
+          "2_police_09.jpg",
+          "2_police_10.jpg"
         ],
         "i18n": {
           "pl": {
@@ -177,7 +178,12 @@
           "43-1024x473.jpg",
           "44-1024x473.jpg",
           "45-1024x473.jpg",
-          "46-1024x473.jpg"
+          "46-1024x473.jpg",
+          "1_łosice_01.jpg",
+          "1_łosice_02.jpg",
+          "1_łosice_03.jpg",
+          "1_łosice_04.jpg",
+          "1_łosice_05.jpg"
         ],
         "i18n": {
           "pl": {
@@ -306,7 +312,9 @@
         "icon": "layers",
         "images": [
           "3_stara kornica_13.jpg",
-          "3_stara kornica_14.jpg"
+          "3_stara kornica_14.jpg",
+          "3_stara kornica_15.jpg",
+          "3_stara kornica_16.jpg"
         ],
         "i18n": {
           "pl": {
@@ -352,12 +360,17 @@
     "years": "2025–2026",
     "area": "ok. 1,0 ha",
     "category": "reclamation",
-    "cover": "4_lubnice_12.jpg",
+    "cover": "4_łubnice_12.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
-        "images": [],
+        "images": [
+          "23-2048x1536.jpg",
+          "24-2048x1536.jpg",
+          "26-2048x1536.jpg",
+          "20240123_155349.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Kwatera przed rekultywacją",
@@ -375,27 +388,11 @@
       },
       {
         "number": 2,
-        "icon": "truck",
-        "images": [],
-        "i18n": {
-          "pl": {
-            "name": "Odspajanie odpadów i formowanie wierzchowiny",
-            "description": "Zdjęcia z odspajania odpadów i formowania wierzchowiny."
-          },
-          "en": {
-            "name": "Waste separation and cap forming",
-            "description": "Photos from waste separation and cap forming works."
-          },
-          "de": {
-            "name": "Abfallauflockerung und Formung der Deckschicht",
-            "description": "Fotos von der Abfallauflockerung und Formung der Deckschicht."
-          }
-        }
-      },
-      {
-        "number": 3,
         "icon": "layers",
-        "images": [],
+        "images": [
+          "31.jpg",
+          "32.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonanie warstwy wyrównawczej/technicznej",
@@ -412,9 +409,14 @@
         }
       },
       {
-        "number": 4,
+        "number": 3,
         "icon": "shield",
-        "images": [],
+        "images": [
+          "33.jpg",
+          "34.jpg",
+          "36.jpg",
+          "35.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonanie izolacji wierzchowiny",
@@ -431,13 +433,15 @@
         }
       },
       {
-        "number": 5,
+        "number": 4,
         "icon": "layers",
         "images": [
-          "4_lubnice_01.jpg",
-          "4_lubnice_02.jpg",
-          "4_lubnice_03.jpg",
-          "4_lubnice_04.jpg"
+          "4_łubnice_01.jpg",
+          "4_łubnice_02.jpg",
+          "4_łubnice_03.jpg",
+          "4_łubnice_04.jpg",
+          "37.jpg",
+          "38.jpg"
         ],
         "i18n": {
           "pl": {
@@ -455,12 +459,12 @@
         }
       },
       {
-        "number": 6,
+        "number": 5,
         "icon": "flower2",
         "images": [
-          "4_lubnice_05.jpg",
-          "4_lubnice_06.jpg",
-          "4_lubnice_07.jpg"
+          "4_łubnice_05.jpg",
+          "4_łubnice_06.jpg",
+          "4_łubnice_07.jpg"
         ],
         "i18n": {
           "pl": {
@@ -478,14 +482,14 @@
         }
       },
       {
-        "number": 7,
+        "number": 6,
         "icon": "flower2",
         "images": [
-          "4_lubnice_08.jpg",
-          "4_lubnice_09.jpg",
-          "4_lubnice_10.jpg",
-          "4_lubnice_11.jpg",
-          "4_lubnice_12.jpg"
+          "4_łubnice_08.jpg",
+          "4_łubnice_09.jpg",
+          "4_łubnice_10.jpg",
+          "4_łubnice_11.jpg",
+          "4_łubnice_12.jpg"
         ],
         "i18n": {
           "pl": {

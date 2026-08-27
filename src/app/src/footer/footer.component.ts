@@ -9,7 +9,6 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
   selector: 'app-footer',
   imports: [
     TranslatePipe,
-    FooterContactFormComponent,
     FooterMapComponent,
     ScrollTopButtonComponent,
   ],
