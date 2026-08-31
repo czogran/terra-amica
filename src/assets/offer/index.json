@@ -8,7 +8,7 @@
       },
       {
         "icon": "tree",
-        "title": "Rekultywacja składowisk odpadów",
+        "title": "Rekultywacja składowisk odpadów innych niż niebezpieczne i obojętne",
         "description": "Przywracanie terenów składowisk do stanu przyjaznego środowisku."
       },
       {
@@ -20,11 +20,6 @@
         "icon": "file-earmark-text",
         "title": "Analizy dokumentacji i audyty środowiskowe",
         "description": "Szczegółowe analizy i audyty dokumentacji środowiskowej."
-      },
-      {
-        "icon": "person-workspace",
-        "title": "Inwestor zastępczy",
-        "description": "Reprezentowanie inwestora w procesie realizacji inwestycji."
       },
       {
         "icon": "building",
@@ -45,7 +40,11 @@
       },
       {
         "title": "Dla kogo",
-        "items": ["gmin", "przedsiębiorstw komunalnych", "właścicieli zamkniętych składowisk"],
+        "items": [
+          "gmin",
+          "przedsiębiorstw komunalnych",
+          "właścicieli zamkniętych składowisk"
+        ],
         "note": "Rekultywacje realizujemy także jako inwestor zastępczy."
       },
       {
@@ -69,7 +68,7 @@
       },
       {
         "icon": "tree",
-        "title": "Landfill reclamation",
+        "title": "Landfill reclamation for non-hazardous and inert waste",
         "description": "Restoring landfill areas to an environmentally friendly state."
       },
       {
@@ -81,11 +80,6 @@
         "icon": "file-earmark-text",
         "title": "Documentation analysis and environmental audits",
         "description": "Detailed analysis and audits of environmental documentation."
-      },
-      {
-        "icon": "person-workspace",
-        "title": "Substitute investor",
-        "description": "Representing the investor in the investment implementation process."
       },
       {
         "icon": "building",
@@ -106,7 +100,11 @@
       },
       {
         "title": "For whom",
-        "items": ["municipalities", "municipal enterprises", "owners of closed landfills"],
+        "items": [
+          "municipalities",
+          "municipal enterprises",
+          "owners of closed landfills"
+        ],
         "note": "We also carry out reclamation as a substitute investor at the owner's expense."
       },
       {
@@ -130,7 +128,7 @@
       },
       {
         "icon": "tree",
-        "title": "Deponierekultivierung",
+        "title": "Deponierekultivierung für nicht gefährliche und inerte Abfälle",
         "description": "Wiederherstellung von Deponieflächen in einen umweltfreundlichen Zustand."
       },
       {
@@ -142,11 +140,6 @@
         "icon": "file-earmark-text",
         "title": "Dokumentationsanalyse und Umweltaudits",
         "description": "Detaillierte Analyse und Audits von Umweltdokumentationen."
-      },
-      {
-        "icon": "person-workspace",
-        "title": "Stellvertretender Investor",
-        "description": "Vertretung des Investors im Investitionsprozess."
       },
       {
         "icon": "building",
@@ -167,7 +160,11 @@
       },
       {
         "title": "Für wen",
-        "items": ["Gemeinden", "kommunale Unternehmen", "Eigentümer geschlossener Deponien"],
+        "items": [
+          "Gemeinden",
+          "kommunale Unternehmen",
+          "Eigentümer geschlossener Deponien"
+        ],
         "note": "Wir führen Rekultivierungen auch als stellvertretender Investor auf Kosten des Eigentümers durch."
       },
       {
