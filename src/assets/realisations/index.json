@@ -622,7 +622,7 @@
       {
         "number": 1,
         "icon": "truck",
-        "images": "before-reclamation-2021-02.png",
+        "images": ["before-reclamation-2021-02.png"],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, luty 2021",
@@ -641,7 +641,7 @@
       {
         "number": 2,
         "icon": "truck",
-        "images": "before-reclamation-2021-09.png",
+        "images": ["before-reclamation-2021-09.png"],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, wrzesień 2021",
