@@ -10,7 +10,6 @@
 .brand-logo-wrap {
   position: relative;
   display: inline-flex;
-  border-radius: 0.75rem;
   overflow: hidden;
   isolation: isolate;
   animation: logo-float 4s ease-in-out infinite;
@@ -19,12 +18,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      110deg,
-      transparent 35%,
-      rgba(255, 255, 255, 0.38) 50%,
-      transparent 65%
-    );
+    background: linear-gradient(110deg,
+        transparent 35%,
+        rgba(255, 255, 255, 0.38) 50%,
+        transparent 65%);
     transform: translateX(-120%);
     animation: none;
     transition: opacity 0.25s ease;
@@ -85,10 +82,12 @@
 }
 
 @keyframes logo-float {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-2px);
   }
@@ -100,15 +99,18 @@
     transform: translateY(0.8rem) scale(0.72) rotate(-8deg);
     filter: blur(14px) brightness(1.25) saturate(0.55);
   }
+
   45% {
     opacity: 1;
     transform: translateY(-0.18rem) scale(1.06) rotate(1.5deg);
     filter: blur(1.5px) brightness(1.08) saturate(1.08);
   }
+
   70% {
     transform: translateY(0.08rem) scale(0.985) rotate(-0.7deg);
     filter: blur(0.3px) brightness(1.02) saturate(1.02);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) scale(1) rotate(0deg);
@@ -120,16 +122,19 @@
   0% {
     transform: translateX(-120%);
   }
+
   100% {
     transform: translateX(120%);
   }
 }
 
 @keyframes logo-glow {
+
   0%,
   100% {
     opacity: 0.35;
   }
+
   50% {
     opacity: 0.75;
   }

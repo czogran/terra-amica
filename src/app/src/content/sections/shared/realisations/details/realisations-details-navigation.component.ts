@@ -9,7 +9,6 @@ type NavigationCard = {
 
 @Component({
   selector: 'app-realisations-details-navigation',
-  standalone: true,
   templateUrl: './realisations-details-navigation.component.html',
   styleUrl: './realisations-details-navigation.component.scss',
   imports: [TranslatePipe],
