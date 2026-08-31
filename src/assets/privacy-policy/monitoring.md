@@ -6,7 +6,7 @@ Zgodnie z art. 13 i 14 rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016
 
 Administratorem Pani/Pana danych osobowych jest:
 
-**TERRAA AMICA SPÓŁKA Z O.O.**  
+**TERRA AMICA SPÓŁKA Z O.O.**  
 ul. Starost Kosa 4  
 07-410 Ostrołęka  
 NIP: 7582371116  

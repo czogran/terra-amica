@@ -41,11 +41,6 @@
     color: var(--bs-body-color);
   }
 
-  &__note {
-    margin-top: 10px;
-    font-style: italic;
-    color: var(--bs-secondary);
-  }
   // Checkmark and other icons in lists
   li {
     &::before {

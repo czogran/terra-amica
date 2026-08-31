@@ -119,19 +119,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Policki",
-        "lead": "Rekultywacja składowiska odpadów w województwie zachodniopomorskim w powiecie polickim.",
-        "description": "Realizacja rekultywacji składowiska odpadów rozpoczęta w 2024 roku. Planowane zakończenie czerwiec 2027. Powierzchnia kwatery do rekultywacji około 4,4 ha."
+        "title": "Rekultywacja składowiska – powiat policki",
+        "lead": "Rekultywacja składowiska odpadów w województwie zachodniopomorskim w powiecie polickim."
       },
       "en": {
         "title": "Landfill reclamation – Police County",
-        "lead": "Reclamation of a waste landfill in West Pomeranian Voivodeship, Police County.",
-        "description": "Landfill reclamation project started in 2024. Planned completion June 2027. Cell area approximately 4.4 ha."
+        "lead": "Reclamation of a waste landfill in West Pomeranian Voivodeship, Police County."
       },
       "de": {
         "title": "Deponierekultivierung – Kreis Police",
-        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Westpommern, Kreis Police.",
-        "description": "Das Rekultivierungsprojekt begann 2024. Geplanter Abschluss Juni 2027. Zellfläche ca. 4,4 ha."
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Westpommern, Kreis Police."
       }
     },
     "directory": "current-realisations/powiat-policki"
@@ -228,19 +225,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Łosicki",
-        "lead": "Rekultywacja składowiska odpadów w województwie mazowieckim w powiecie łosickim.",
-        "description": "Realizacja rekultywacji składowiska odpadów rozpoczęta w 2025 roku. Składowisko o powierzchni około 1,6 ha."
+        "title": "Rekultywacja składowiska – powiat łosicki",
+        "lead": "Rekultywacja składowiska odpadów w województwie mazowieckim w powiecie łosickim."
       },
       "en": {
         "title": "Landfill reclamation – Łosice County",
-        "lead": "Reclamation of a waste landfill in Masovian Voivodeship, Łosice County.",
-        "description": "Landfill reclamation project started in 2025. Landfill area approximately 1.6 ha."
+        "lead": "Reclamation of a waste landfill in Masovian Voivodeship, Łosice County."
       },
       "de": {
         "title": "Deponierekultivierung – Kreis Łosice",
-        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Masowien, Kreis Łosice.",
-        "description": "Das Rekultivierungsprojekt begann 2025. Deponiefläche ca. 1,6 ha."
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Masowien, Kreis Łosice."
       }
     },
     "directory": "current-realisations/powiat-losicki"
@@ -335,18 +329,15 @@
     "i18n": {
       "pl": {
         "title": "Rekultywacja składowiska – Stara Kornica",
-        "lead": "Rekultywacja składowiska odpadów w województwie mazowieckim w powiecie łosickim – Stara Kornica.",
-        "description": "Realizacja rekultywacji składowiska odpadów rozpoczęta w 2026 roku. Planowane zakończenie 2027 rok. Składowisko o powierzchni około 1,1 ha."
+        "lead": "Rekultywacja składowiska odpadów w województwie mazowieckim w powiecie łosickim – Stara Kornica."
       },
       "en": {
         "title": "Landfill reclamation – Stara Kornica",
-        "lead": "Reclamation of a waste landfill in Masovian Voivodeship, Łosice County – Stara Kornica.",
-        "description": "Landfill reclamation project started in 2026. Planned completion 2027. Landfill area approximately 1.1 ha."
+        "lead": "Reclamation of a waste landfill in Masovian Voivodeship, Łosice County – Stara Kornica."
       },
       "de": {
         "title": "Deponierekultivierung – Stara Kornica",
-        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Masowien, Kreis Łosice – Stara Kornica.",
-        "description": "Das Rekultivierungsprojekt begann 2026. Geplanter Abschluss 2027. Deponiefläche ca. 1,1 ha."
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Masowien, Kreis Łosice – Stara Kornica."
       }
     },
     "directory": "current-realisations/powiat-losicki-stara-kornica"
@@ -510,18 +501,15 @@
     "i18n": {
       "pl": {
         "title": "Rekultywacja składowiska – Łubnice",
-        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim w powiecie wieruszowskim.",
-        "description": "Realizacja rekultywacji składowiska odpadów rozpoczęta w 2025 roku. Zakończona w kwietniu 2026. Powierzchnia kwatery do rekultywacji około 1,0 ha."
+        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim w powiecie wieruszowskim."
       },
       "en": {
         "title": "Landfill reclamation – Łubnice",
-        "lead": "Reclamation of a waste landfill in Łódź Voivodeship, Wieruszów County.",
-        "description": "Landfill reclamation project started in 2025. Completed in April 2026. Cell area approximately 1.0 ha."
+        "lead": "Reclamation of a waste landfill in Łódź Voivodeship, Wieruszów County."
       },
       "de": {
         "title": "Deponierekultivierung – Łubnice",
-        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź, Kreis Wieruszów.",
-        "description": "Das Rekultivierungsprojekt begann 2025. Abgeschlossen im April 2026. Zellfläche ca. 1,0 ha."
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź, Kreis Wieruszów."
       }
     },
     "directory": "current-realisations/lubienice"

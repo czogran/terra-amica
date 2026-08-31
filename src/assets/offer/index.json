@@ -29,31 +29,39 @@
     ],
     "sections": [
       {
-        "title": "Rekultywacja składowisk odpadów",
-        "text": "Specjalizujemy się w rekultywacji składowisk odpadów innych niż niebezpieczne i obojętne, wykorzystując rozwiązania bezpieczne dla środowiska oraz umożliwiające odzysk odpadów.",
+        "title": "Rekultywacja składowisk odpadów innych niż niebezpieczne i obojętne",
         "items": [
-          "odzysk odpadów",
-          "ochrona środowiska",
-          "obniżenie kosztów gospodarki odpadami",
-          "zapobieganie przepełnieniu składowisk"
+          "przejęcie składowiska w zarządanie",
+          "uzyskanie wszystkich decyzji administracyjnych",
+          "wykonanie kompletnych prac rekultywacyjnych",
+          "odzysjanie odpadów w procesach R3 i R5",
+          "optymalizacja kosztów zamkniecia i rekultywacji dla właścieciela",
+          "obniżenie kosztów gospodarki odpadami"
+        ]
+      },
+          {
+        "title": "Rekultywacja terenów zdegradowanych",
+        "items": [
+          "uzyskanie administracyjnych",
+          "wykonanie kompletnych prac rekultywacyjnych",
+          "odzysjanie odpadów w procesie R5",
+          "optymalizacja kosztów rekultywacji wyrobisk pokoplanych"
         ]
       },
       {
         "title": "Dla kogo",
         "items": [
-          "gmin",
-          "przedsiębiorstw komunalnych",
-          "właścicieli zamkniętych składowisk"
-        ],
-        "note": "Rekultywacje realizujemy także jako inwestor zastępczy."
+          "gminy",
+          "przedsiębiorstwa komunalne",
+          "właściciele prywatni"
+        ]
       },
       {
         "title": "Proces realizacji inwestycji",
         "items": [
-          "koncepcja i analizy",
-          "decyzje administracyjne",
+          "opracowanie koncepcji i analiz",
+          "uzyskanie decyzji administracyjnych",
           "realizacja inwestycji",
-          "pozwolenie na użytkowanie",
           "uruchomienie instalacji"
         ]
       }
@@ -89,13 +97,23 @@
     ],
     "sections": [
       {
-        "title": "Landfill reclamation",
-        "text": "We specialize in the reclamation of landfills for non-hazardous and inert waste, using environmentally safe solutions and enabling waste recovery.",
+        "title": "Landfill reclamation for non-hazardous and inert waste",
         "items": [
-          "waste recovery",
-          "environmental protection",
-          "cost reduction in waste management",
-          "preventing landfill overflow"
+          "taking over landfill management",
+          "obtaining all administrative decisions",
+          "carrying out complete reclamation works",
+          "waste recovery through R3 and R5 processes",
+          "optimising closure and reclamation costs for the owner",
+          "reducing waste management costs"
+        ]
+      },
+      {
+        "title": "Degraded land reclamation",
+        "items": [
+          "obtaining administrative decisions",
+          "carrying out complete reclamation works",
+          "waste recovery through R5 process",
+          "optimising reclamation costs of post-mining excavations"
         ]
       },
       {
@@ -103,17 +121,15 @@
         "items": [
           "municipalities",
           "municipal enterprises",
-          "owners of closed landfills"
-        ],
-        "note": "We also carry out reclamation as a substitute investor at the owner's expense."
+          "private owners"
+        ]
       },
       {
         "title": "Investment implementation process",
         "items": [
-          "concept and analysis",
-          "administrative decisions",
+          "concept and analysis development",
+          "obtaining administrative decisions",
           "investment implementation",
-          "occupancy permit",
           "facility launch"
         ]
       }
@@ -149,13 +165,23 @@
     ],
     "sections": [
       {
-        "title": "Deponierekultivierung",
-        "text": "Wir sind auf die Rekultivierung von Deponien für nicht gefährliche und inerte Abfälle spezialisiert und verwenden umweltfreundliche Lösungen, die eine Abfallverwertung ermöglichen.",
+        "title": "Deponierekultivierung für nicht gefährliche und inerte Abfälle",
         "items": [
-          "Abfallverwertung",
-          "Umweltschutz",
-          "Kostensenkung in der Abfallwirtschaft",
-          "Vermeidung von Deponieüberfüllung"
+          "Übernahme der Deponieverwaltung",
+          "Erlangung aller Verwaltungsentscheidungen",
+          "Durchführung vollständiger Rekultivierungsarbeiten",
+          "Abfallverwertung in R3- und R5-Prozessen",
+          "Optimierung der Schließungs- und Rekultivierungskosten für den Eigentümer",
+          "Senkung der Abfallwirtschaftskosten"
+        ]
+      },
+      {
+        "title": "Rekultivierung degradierter Flächen",
+        "items": [
+          "Erlangung von Verwaltungsentscheidungen",
+          "Durchführung vollständiger Rekultivierungsarbeiten",
+          "Abfallverwertung im R5-Prozess",
+          "Optimierung der Rekultivierungskosten für Bergbauaufschlüsse"
         ]
       },
       {
@@ -163,17 +189,15 @@
         "items": [
           "Gemeinden",
           "kommunale Unternehmen",
-          "Eigentümer geschlossener Deponien"
-        ],
-        "note": "Wir führen Rekultivierungen auch als stellvertretender Investor auf Kosten des Eigentümers durch."
+          "Privateigentümer"
+        ]
       },
       {
         "title": "Ablauf der Investitionsumsetzung",
         "items": [
-          "Konzept und Analyse",
-          "Verwaltungsentscheidungen",
+          "Konzept- und Analyseerstellung",
+          "Erlangung von Verwaltungsentscheidungen",
           "Investitionsumsetzung",
-          "Nutzungsgenehmigung",
           "Inbetriebnahme der Anlage"
         ]
       }

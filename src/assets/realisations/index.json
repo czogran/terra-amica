@@ -13,7 +13,12 @@
       {
         "number": 1,
         "icon": "truck",
-        "images": ["7.1.jpg", "7.2.jpg", "7.3.jpg", "7.5.jpg"],
+        "images": [
+          "7.1.jpg",
+          "7.2.jpg",
+          "7.3.jpg",
+          "7.5.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Kwatera przed rekultywacją",
@@ -32,7 +37,10 @@
       {
         "number": 2,
         "icon": "truck",
-        "images": ["8.1.jpg", "8.2.jpg"],
+        "images": [
+          "8.1.jpg",
+          "8.2.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Odspajanie odpadów i formowanie kwatery pod rekultywację",
@@ -51,7 +59,12 @@
       {
         "number": 3,
         "icon": "layers",
-        "images": ["9.3.jpg", "9.4.jpg", "9.5.jpg", "9.6.jpg"],
+        "images": [
+          "9.3.jpg",
+          "9.4.jpg",
+          "9.5.jpg",
+          "9.6.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Warstwa techniczna",
@@ -70,7 +83,10 @@
       {
         "number": 4,
         "icon": "shield-check",
-        "images": ["10.2.jpg", "10.3.jpg"],
+        "images": [
+          "10.2.jpg",
+          "10.3.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Izolacja kwatery",
@@ -89,7 +105,12 @@
       {
         "number": 5,
         "icon": "flower2",
-        "images": ["11.1_01.jpg", "11.4_01.jpg", "11.5_01.jpg", "11.6.jpg"],
+        "images": [
+          "11.1_01.jpg",
+          "11.4_01.jpg",
+          "11.5_01.jpg",
+          "11.6.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Warstwa glebotwórcza",
@@ -108,7 +129,11 @@
       {
         "number": 6,
         "icon": "flag",
-        "images": ["1.jpg", "4.jpg", "3.jpg"],
+        "images": [
+          "1.jpg",
+          "4.jpg",
+          "3.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Końcowe formowanie wierzchowiny",
@@ -127,7 +152,12 @@
       {
         "number": 7,
         "icon": "flower2",
-        "images": ["5.jpg", "6.jpg", "7.jpg", "8.jpg"],
+        "images": [
+          "5.jpg",
+          "6.jpg",
+          "7.jpg",
+          "8.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Obsiew trawami i nasadzenia",
@@ -146,19 +176,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Parczewski (II etap)",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji.",
-        "description": "Projekt obejmował kompleksowe prace rekultywacyjne na kwaterze o powierzchni 1,5 ha. Przeprowadzono odspajanie odpadów, formowanie kwatery, ułożenie warstwy technicznej i izolacyjnej, warstwy glebotwórczej, końcowe kształtowanie wierzchowiny oraz obsiew trawami i nasadzenia."
+        "title": "Rekultywacja składowiska – powiat parczewski (gmina Dębowa Kłoda)",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji."
       },
       "en": {
-        "title": "Landfill reclamation – Parczewski County (phase II)",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Parczewski County – second phase of the investment.",
-        "description": "The project included comprehensive reclamation works on a 1.5 ha cell. Waste separation, cell shaping, technical and isolation layer installation, soil-forming layer, final cover shaping, and grass seeding and planting were performed."
+        "title": "Landfill reclamation – parczewski county (Dębowa Kłoda Municipality)",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Parczewski County – second phase of the investment."
       },
       "de": {
-        "title": "Deponierekultivierung – Kreis Parczewski (Phase II)",
-        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Parczewski – zweite Phase der Investition.",
-        "description": "Das Projekt umfasste umfassende Rekultivierungsarbeiten auf einer 1,5 ha großen Zelle. Abfallauflockerung, Formung der Zelle, Anlage technischer und Isolationsschichten, bodenbildende Schicht, Abschlussformung der Deckschicht sowie Einsaat und Bepflanzung wurden durchgeführt."
+        "title": "Deponierekultivierung – kreis parczewski (Gemeinde Dębowa Kłoda)",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Parczewski – zweite Phase der Investition."
       }
     },
     "directory": "realisations/powiat-parczewski-2022"
@@ -207,7 +234,12 @@
       {
         "number": 2,
         "icon": "layers",
-        "images": ["4.1.jpg", "4.2.jpg", "4.3.jpg", "4.4.jpg"],
+        "images": [
+          "4.1.jpg",
+          "4.2.jpg",
+          "4.3.jpg",
+          "4.4.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonywanie warstwy technicznej",
@@ -226,7 +258,12 @@
       {
         "number": 3,
         "icon": "flower2",
-        "images": ["5.1.jpg", "5.3.jpg", "5.8.jpg", "5.10.jpg"],
+        "images": [
+          "5.1.jpg",
+          "5.3.jpg",
+          "5.8.jpg",
+          "5.10.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonywanie warstwy glebotwórczej",
@@ -245,7 +282,10 @@
       {
         "number": 4,
         "icon": "flag",
-        "images": ["6.1_01.jpg", "6.2_01.jpg"],
+        "images": [
+          "6.1_01.jpg",
+          "6.2_01.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Końcowe formowanie okrywy rekultywacyjnej",
@@ -288,19 +328,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Radomski",
-        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim.",
-        "description": "Prace obejmowały formowanie kwatery, wykonanie warstwy technicznej i glebotwórczej oraz końcowe ukształtowanie okrywy rekultywacyjnej. Zdjęcia z odbioru wykonane w styczniu 2024."
+        "title": "Rekultywacja składowiska – powiat radomski",
+        "lead": "Rekultywacja składowiska odpadów w powiecie radomskim w województwie mazowieckim."
       },
       "en": {
-        "title": "Landfill reclamation – Radomski County",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Radom County, Masovian Voivodeship.",
-        "description": "Works included cell shaping, technical and soil-forming layer installation, and final reclamation cover shaping. Acceptance photos taken in January 2024."
+        "title": "Landfill reclamation – radomski county",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Radom County, Masovian Voivodeship."
       },
       "de": {
-        "title": "Deponierekultivierung – Kreis Radom",
-        "lead": "Rekultivierung einer Deponie im Kreis Radom, Woiwodschaft Masowien.",
-        "description": "Die Arbeiten umfassten Formung der Zelle, Anlage technischer und bodenbildender Schichten sowie die abschließende Gestaltung der Rekultivierungsdecke. Abnahmefotos aus Januar 2024."
+        "title": "Deponierekultivierung – kreis Radom",
+        "lead": "Rekultivierung einer Deponie im Kreis Radom, Woiwodschaft Masowien."
       }
     },
     "directory": "realisations/powiat-radomski"
@@ -319,7 +356,10 @@
       {
         "number": 1,
         "icon": "truck",
-        "images": ["before-reclamation-2021-02-1.png", "before-reclamation-2021-02-2.png"],
+        "images": [
+          "before-reclamation-2021-02-1.png",
+          "before-reclamation-2021-02-2.png"
+        ],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, luty 2021",
@@ -366,7 +406,10 @@
       {
         "number": 3,
         "icon": "flag",
-        "images": ["1.1.jpg", "1.2.jpg"],
+        "images": [
+          "1.1.jpg",
+          "1.2.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Końcowe formowanie okrywy rekultywacyjnej",
@@ -385,7 +428,12 @@
       {
         "number": 4,
         "icon": "flower2",
-        "images": ["2.3.jpg", "2.2.jpg", "2.6_01.jpg", "2.7_01.jpg"],
+        "images": [
+          "2.3.jpg",
+          "2.2.jpg",
+          "2.6_01.jpg",
+          "2.7_01.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Obsiew trawami i nasadzenie drzew",
@@ -404,7 +452,10 @@
       {
         "number": 5,
         "icon": "flag",
-        "images": ["3.1.jpg", "3.2.jpg"],
+        "images": [
+          "3.1.jpg",
+          "3.2.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Kwatera po trzech miesiącach od obsiewu i nasadzeń",
@@ -423,19 +474,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Parczewski",
-        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim.",
-        "description": "Zakończona rekultywacja składowiska obejmująca końcowe formowanie okrywy rekultywacyjnej, obsiew trawami i nasadzenie drzew oraz monitoring stanu kwatery po trzech miesiącach od obsiewu i nasadzeń."
+        "title": "Rekultywacja składowiska – powiat parczewski (miasto Parczew)",
+        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim."
       },
       "en": {
-        "title": "Landfill reclamation – Parczewski County",
-        "lead": "Landfill reclamation in Parczewski County, Lublin Voivodeship.",
-        "description": "Completed reclamation covering final cover shaping, grass seeding and tree planting, with cell monitoring three months after seeding and planting."
+        "title": "Landfill reclamation – parczewski county (Parczew city)",
+        "lead": "Landfill reclamation in Parczewski County, Lublin Voivodeship."
       },
       "de": {
-        "title": "Deponierekultivierung – Kreis Parczewski",
-        "lead": "Rekultivierung einer Deponie im Kreis Parczewski, Woiwodschaft Lublin.",
-        "description": "Abgeschlossene Rekultivierung mit abschließender Formung der Rekultivierungsdecke, Einsaat, Baumpflanzung und Monitoring des Zellzustands drei Monate nach Einsaat und Pflanzung."
+        "title": "Deponierekultivierung – kreis parczewski (Parczew stadt)",
+        "lead": "Rekultivierung einer Deponie im Kreis Parczewski, Woiwodschaft Lublin."
       }
     },
     "directory": "realisations/powiat-parczewski-2021"
@@ -478,7 +526,10 @@
       {
         "number": 2,
         "icon": "layers",
-        "images": ["31-1024x473.jpg", "32-1024x473.jpg"],
+        "images": [
+          "31-1024x473.jpg",
+          "32-1024x473.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonanie warstwy wyrównawczej",
@@ -497,7 +548,12 @@
       {
         "number": 3,
         "icon": "shield-check",
-        "images": ["33-1024x473.jpg", "34-1024x473.jpg", "36-1024x473.jpg", "35-1024x473.jpg"],
+        "images": [
+          "33-1024x473.jpg",
+          "34-1024x473.jpg",
+          "36-1024x473.jpg",
+          "35-1024x473.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonanie izolacji wierzchowiny",
@@ -516,7 +572,10 @@
       {
         "number": 4,
         "icon": "flower2",
-        "images": ["37-1024x473.jpg", "38-1024x473.jpg"],
+        "images": [
+          "37-1024x473.jpg",
+          "38-1024x473.jpg"
+        ],
         "i18n": {
           "pl": {
             "name": "Wykonanie warstwy glebotwórczej",
@@ -535,19 +594,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Wieruszowski",
-        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim w powiecie wieruszowskim.",
-        "description": "Realizacja rekultywacji składowiska odpadów rozpoczęta w 2025 roku. Planowany termin zakończenia grudzień 2026. Kwatera do rekultywacji o powierzchni około 1,0 ha."
+        "title": "Rekultywacja składowiska – powiat wieruszowski",
+        "lead": "Rekultywacja składowiska odpadów w województwie łódzkim w powiecie wieruszowskim."
       },
       "en": {
-        "title": "Landfill reclamation – Wieruszów County",
-        "lead": "Reclamation of a waste landfill in Łódź Voivodeship, Wieruszów County.",
-        "description": "Landfill reclamation project started in 2025. Planned completion December 2026. Cell area approximately 1.0 ha."
+        "title": "Landfill reclamation – wieruszów county",
+        "lead": "Reclamation of a waste landfill in Łódź Voivodeship, wieruszów county."
       },
       "de": {
-        "title": "Deponierekultivierung – Kreis Wieruszów",
-        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź, Kreis Wieruszów.",
-        "description": "Das Rekultivierungsprojekt begann 2025. Geplanter Abschluss Dezember 2026. Zellfläche ca. 1,0 ha."
+        "title": "Deponierekultivierung – kreis wieruszów",
+        "lead": "Rekultivierung einer Deponie in der Woiwodschaft Łódź, Kreis Wieruszów."
       }
     },
     "directory": "realisations/powiat-wieruszowski"
@@ -652,7 +708,12 @@
       {
         "number": 5,
         "icon": "flag",
-        "images": ["Obraz2.jpg", "Obraz1_2-1.jpg", "Obraz3_2.png", "skalowane3.png"],
+        "images": [
+          "Obraz2.jpg",
+          "Obraz1_2-1.jpg",
+          "Obraz3_2.png",
+          "skalowane3.png"
+        ],
         "i18n": {
           "pl": {
             "name": "Składowisko trzy miesiące od wysiewu traw",
@@ -671,19 +732,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – Powiat Ostrowski",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim.",
-        "description": "Spółka zakończyła rekultywację składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim. Prace obejmowały etapowanie prac rekultywacyjnych od stanu przed rekultywacją w lutym 2021, przez prace wykończeniowe w lutym 2022, po wysiew traw i ostateczne ukształtowanie terenu."
+        "title": "Rekultywacja składowiska – powiat ostrowski",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie ostrowskim w województwie mazowieckim."
       },
       "en": {
-        "title": "Landfill reclamation – Ostrowski County",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Ostrowski County, Masovian Voivodeship.",
-        "description": "The company completed reclamation of the non-hazardous and inert waste landfill in Ostrowski County. Works included phased reclamation from pre-reclamation state in February 2021 through finishing works in February 2022, to grass seeding and final terrain shaping."
+        "title": "Landfill reclamation – ostrowski county",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in ostrowski county, Masovian Voivodeship."
       },
       "de": {
-        "title": "Deponierekultivierung – Kreis Ostrowski",
-        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Ostrowski, Woiwodschaft Masowien.",
-        "description": "Das Unternehmen schloss die Rekultivierung der Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Ostrowski ab. Die Arbeiten umfassten die Phasierung der Rekultivierungsarbeiten vom Zustand vor der Rekultivierung im Februar 2021 über die Ausführungsarbeiten im Februar 2022 bis zur Einsaat und der endgültigen Geländegestaltung."
+        "title": "Deponierekultivierung – kreis ostrowski",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im kreis ostrowski, Woiwodschaft Masowien."
       }
     },
     "directory": "realisations/01-powiat-ostrowski"
