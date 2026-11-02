@@ -175,17 +175,17 @@
       }
     ],
     "i18n": {
-      "pl": {
-        "title": "Rekultywacja składowiska – powiat parczewski (gmina Dębowa Kłoda)",
-        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji."
+   "pl": {
+        "title": "Rekultywacja składowiska – powiat parczewski (miasto Parczew)",
+        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim."
       },
       "en": {
-        "title": "Landfill reclamation – parczewski county (Dębowa Kłoda Municipality)",
-        "lead": "Reclamation of a non-hazardous and inert waste landfill in Parczewski County – second phase of the investment."
+        "title": "Landfill reclamation – parczewski county (Parczew city)",
+        "lead": "Landfill reclamation in Parczewski County, Lublin Voivodeship."
       },
       "de": {
-        "title": "Deponierekultivierung – kreis parczewski (Gemeinde Dębowa Kłoda)",
-        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Parczewski – zweite Phase der Investition."
+        "title": "Deponierekultivierung – kreis parczewski (Parczew stadt)",
+        "lead": "Rekultivierung einer Deponie im Kreis Parczewski, Woiwodschaft Lublin."
       }
     },
     "directory": "realisations/powiat-parczewski-2022"
@@ -474,16 +474,16 @@
     ],
     "i18n": {
       "pl": {
-        "title": "Rekultywacja składowiska – powiat parczewski (miasto Parczew)",
-        "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim."
+        "title": "Rekultywacja składowiska – powiat parczewski (gmina Dębowa Kłoda)",
+        "lead": "Rekultywacja składowiska odpadów innych niż niebezpieczne i obojętne w powiecie parczewskim – drugi etap inwestycji."
       },
       "en": {
-        "title": "Landfill reclamation – parczewski county (Parczew city)",
-        "lead": "Landfill reclamation in Parczewski County, Lublin Voivodeship."
+        "title": "Landfill reclamation – parczewski county (Dębowa Kłoda Municipality)",
+        "lead": "Reclamation of a non-hazardous and inert waste landfill in Parczewski County – second phase of the investment."
       },
       "de": {
-        "title": "Deponierekultivierung – kreis parczewski (Parczew stadt)",
-        "lead": "Rekultivierung einer Deponie im Kreis Parczewski, Woiwodschaft Lublin."
+        "title": "Deponierekultivierung – kreis parczewski (Gemeinde Dębowa Kłoda)",
+        "lead": "Rekultivierung einer Deponie für nicht gefährliche und inert sichere Abfälle im Kreis Parczewski – zweite Phase der Investition."
       }
     },
     "directory": "realisations/powiat-parczewski-2021"
@@ -622,7 +622,9 @@
       {
         "number": 1,
         "icon": "truck",
-        "images": ["before-reclamation-2021-02.png"],
+        "images": [
+          "before-reclamation-2021-02.png"
+        ],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, luty 2021",
@@ -641,7 +643,9 @@
       {
         "number": 2,
         "icon": "truck",
-        "images": ["before-reclamation-2021-09.png"],
+        "images": [
+          "before-reclamation-2021-09.png"
+        ],
         "i18n": {
           "pl": {
             "name": "Składowisko przed rekultywacją, wrzesień 2021",
