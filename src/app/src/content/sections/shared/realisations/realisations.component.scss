@@ -7,10 +7,8 @@
 }
 
 .realisations-map {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin-inline: auto;
+  position: absolute;
+  inset: 0;
   background: url('./pl.svg') center / contain no-repeat;
 }
 
@@ -66,12 +64,14 @@
 }
 
 .realisations-map-item {
-  align-self: stretch;
+  position: relative;
+  align-self: start;
   display: flex;
   grid-column: 3 / span 4;
   grid-row: span 2;
   list-style: none;
   min-width: 0;
+  aspect-ratio: 909 / 861.3;
 }
 
 .realisations-grid {
@@ -241,11 +241,6 @@
     grid-column: 1 / -1;
     grid-row: span 1;
   }
-
-  .realisations-map {
-    aspect-ratio: 1000 / 947;
-    height: auto;
-  }
 }
 
 @media (max-width: (bp.breakpoint(md) - 128px)) {
@@ -261,10 +256,6 @@
     grid-column: auto;
     grid-row: auto;
     order: -1;
-  }
-
-  .realisations-map {
-    min-height: 18rem;
   }
 
   .realisations-map-marker {

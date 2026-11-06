@@ -3,7 +3,7 @@
     "id": "04-powiat-parczewski-2022",
     "slug": "rekultywacja-powiat-parczewski-2022",
     "region": "Lubelskie",
-    "longitude": 22.875,
+    "longitude": 23.0035,
     "latitude": 51.559,
     "years": "2022–2024",
     "area": "ok. 1,5 ha",
@@ -175,7 +175,7 @@
       }
     ],
     "i18n": {
-   "pl": {
+      "pl": {
         "title": "Rekultywacja składowiska – powiat parczewski (miasto Parczew)",
         "lead": "Rekultywacja składowiska odpadów w powiecie parczewskim w województwie lubelskim."
       },
@@ -194,8 +194,8 @@
     "id": "powiat-radomski",
     "slug": "rekultywacja-powiat-radomski",
     "region": "Mazowieckie",
-    "longitude": 21.147,
-    "latitude": 51.403,
+    "longitude": 21.1931,
+    "latitude": 51.00,
     "years": "2022–2023",
     "area": "ok. 0,9 ha",
     "category": "reclamation",
@@ -346,8 +346,8 @@
     "id": "02-powiat-parczewski-2021",
     "slug": "rekultywacja-powiat-parczewski-2021",
     "region": "Lubelskie",
-    "longitude": 22.875,
-    "latitude": 51.659,
+    "longitude": 23.0035,
+    "latitude": 51.409,
     "years": "2021–2023",
     "area": "ok. 1,2 ha",
     "category": "reclamation",
@@ -492,21 +492,21 @@
     "id": "powiat-wieruszowski",
     "slug": "rekultywacja-skladowiska-powiat-wieruszowski",
     "region": "Łódzkie",
-    "longitude": 18.45,
-    "latitude": 51.4,
+    "longitude": 18.2,
+    "latitude": 50.94,
     "years": "2025–2026",
     "area": "ok. 1,0 ha",
     "category": "reclamation",
-    "cover": "23-1024x768.jpg",
+    "cover": "4_łubnice_12.jpg",
     "phases": [
       {
         "number": 1,
         "icon": "truck",
         "images": [
-          "23-1024x768.jpg",
-          "24-1024x768.jpg",
-          "26-1024x768.jpg",
-          "20240123_155349-1024x768.jpg"
+          "23-2048x1536.jpg",
+          "24-2048x1536.jpg",
+          "26-2048x1536.jpg",
+          "20240123_155349.jpg"
         ],
         "i18n": {
           "pl": {
@@ -527,32 +527,32 @@
         "number": 2,
         "icon": "layers",
         "images": [
-          "31-1024x473.jpg",
-          "32-1024x473.jpg"
+          "31.jpg",
+          "32.jpg"
         ],
         "i18n": {
           "pl": {
-            "name": "Wykonanie warstwy wyrównawczej",
-            "description": "Zdjęcia z wykonywania warstwy wyrównawczej."
+            "name": "Wykonanie warstwy wyrównawczej/technicznej",
+            "description": "Zdjęcia z wykonywania warstwy wyrównawczej/technicznej."
           },
           "en": {
-            "name": "Leveling layer installation",
-            "description": "Photos from leveling layer installation."
+            "name": "Leveling/technical layer installation",
+            "description": "Photos from the leveling/technical layer installation."
           },
           "de": {
-            "name": "Anlage der Ausgleichsschicht",
-            "description": "Fotos von der Anlage der Ausgleichsschicht."
+            "name": "Herstellung der Ausgleichs-/Technikschicht",
+            "description": "Fotos von der Herstellung der Ausgleichs-/Technikschicht."
           }
         }
       },
       {
         "number": 3,
-        "icon": "shield-check",
+        "icon": "shield",
         "images": [
-          "33-1024x473.jpg",
-          "34-1024x473.jpg",
-          "36-1024x473.jpg",
-          "35-1024x473.jpg"
+          "33.jpg",
+          "34.jpg",
+          "36.jpg",
+          "35.jpg"
         ],
         "i18n": {
           "pl": {
@@ -560,34 +560,86 @@
             "description": "Zdjęcia z wykonywania izolacji wierzchowiny."
           },
           "en": {
-            "name": "Cap isolation installation",
-            "description": "Photos from cap isolation installation."
+            "name": "Cap insulation installation",
+            "description": "Photos from the cap insulation installation."
           },
           "de": {
-            "name": "Anlage der Deckschichtisolierung",
-            "description": "Fotos von der Anlage der Deckschichtisolierung."
+            "name": "Herstellung der Deckschichtisolierung",
+            "description": "Fotos von der Herstellung der Deckschichtisolierung."
           }
         }
       },
       {
         "number": 4,
-        "icon": "flower2",
+        "icon": "layers",
         "images": [
-          "37-1024x473.jpg",
-          "38-1024x473.jpg"
+          "4_łubnice_01.jpg",
+          "4_łubnice_02.jpg",
+          "4_łubnice_03.jpg",
+          "4_łubnice_04.jpg",
+          "37.jpg",
+          "38.jpg"
         ],
         "i18n": {
           "pl": {
-            "name": "Wykonanie warstwy glebotwórczej",
+            "name": "Wykonywanie warstwy glebotwórczej",
             "description": "Zdjęcia z wykonywania warstwy glebotwórczej."
           },
           "en": {
-            "name": "Soil-forming layer installation",
-            "description": "Photos from soil-forming layer installation."
+            "name": "Topsoil layer installation",
+            "description": "Photos from the topsoil layer installation."
           },
           "de": {
-            "name": "Anlage der bodenbildenden Schicht",
-            "description": "Fotos von der Anlage der bodenbildenden Schicht."
+            "name": "Aufbringung der Mutterbodenschicht",
+            "description": "Fotos von der Aufbringung der Mutterbodenschicht."
+          }
+        }
+      },
+      {
+        "number": 5,
+        "icon": "flower2",
+        "images": [
+          "4_łubnice_05.jpg",
+          "4_łubnice_06.jpg",
+          "4_łubnice_07.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Prace wykończeniowe, obsiew trawami, nasadzenia",
+            "description": "Zdjęcia z prac wykończeniowych, obsiewu trawami i nasadzeń."
+          },
+          "en": {
+            "name": "Finishing works, grass seeding, plantings",
+            "description": "Photos from finishing works, grass seeding and plantings."
+          },
+          "de": {
+            "name": "Abschlussarbeiten, Grasansaat, Bepflanzung",
+            "description": "Fotos von den Abschlussarbeiten, der Grasansaat und der Bepflanzung."
+          }
+        }
+      },
+      {
+        "number": 6,
+        "icon": "flower2",
+        "images": [
+          "4_łubnice_08.jpg",
+          "4_łubnice_09.jpg",
+          "4_łubnice_10.jpg",
+          "4_łubnice_11.jpg",
+          "4_łubnice_12.jpg"
+        ],
+        "i18n": {
+          "pl": {
+            "name": "Prace wykończeniowe, obsiew trawami, nasadzenia",
+            "description": "Zdjęcia z prac wykończeniowych, obsiewu trawami i nasadzeń."
+          },
+          "en": {
+            "name": "Finishing works, grass seeding, plantings",
+            "description": "Photos from finishing works, grass seeding and plantings."
+          },
+          "de": {
+            "name": "Abschlussarbeiten, Grasansaat, Bepflanzung",
+            "description": "Fotos von den Abschlussarbeiten, der Grasansaat und der Bepflanzung."
           }
         }
       }
@@ -612,8 +664,8 @@
     "id": "01-powiat-ostrowski",
     "slug": "rekultywacja-powiat-ostrowski",
     "region": "Mazowieckie",
-    "longitude": 21.34,
-    "latitude": 52.35,
+    "longitude": 22.0097,
+    "latitude": 52.32,
     "years": "2021–2022",
     "area": "ok. 0,6 ha",
     "category": "reclamation",

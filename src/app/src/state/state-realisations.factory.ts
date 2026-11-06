@@ -15,13 +15,14 @@ const realisationsInitialState: RealisationsStateType = {
 function decimalToDegMin(decimalDegrees: number): number {
   const degrees = Math.trunc(decimalDegrees);
   const minutes = Math.abs((decimalDegrees - degrees) * 60);
+  console.log(`decimalToDegMin(${decimalDegrees}) = ${degrees} degrees, ${minutes} minutes`);
   return degrees * 60 + minutes;
 }
 
 const POLAND_LONGITUDE = 10.02;
-const WESTERMOST_POLAND_LONGITUDE = 14.07;
+const WESTERMOST_POLAND_LONGITUDE = 14.124562;
 const POLAND_LATITUDE = 5.5;
-const SOUTHERMOST_POLAND_LATITUDE = 49;
+const SOUTHERMOST_POLAND_LATITUDE = 49.002063;
 
 function mapX(longitude: number): number {
   return (
