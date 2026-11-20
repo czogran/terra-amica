@@ -32,10 +32,13 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npx ng build --base-href /terra-amica/
+        run: npx ng build --base-href /
 
       - name: Copy index.html to 404.html for client-side routing
         run: cp dist/terra-amica/index.html dist/terra-amica/404.html
+
+      - name: Add CNAME for custom domain
+        run: echo "pawel-rawicki.pl" > dist/terra-amica/CNAME
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
