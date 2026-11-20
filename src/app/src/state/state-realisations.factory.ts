@@ -15,7 +15,6 @@ const realisationsInitialState: RealisationsStateType = {
 function decimalToDegMin(decimalDegrees: number): number {
   const degrees = Math.trunc(decimalDegrees);
   const minutes = Math.abs((decimalDegrees - degrees) * 60);
-  console.log(`decimalToDegMin(${decimalDegrees}) = ${degrees} degrees, ${minutes} minutes`);
   return degrees * 60 + minutes;
 }
 

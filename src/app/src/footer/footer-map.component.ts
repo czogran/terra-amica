@@ -1,27 +1,29 @@
+import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { input } from '@angular/core';
-import { SafeResourceUrl } from '@angular/platform-browser';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ContactState } from '../state/state-contact';
 
 @Component({
   selector: 'app-footer-map',
+  imports: [NgOptimizedImage, TranslatePipe],
   template: `
-    <iframe
-      width="100%"
-      height="200"
-      class="footer-map"
-      loading="lazy"
-      allowfullscreen
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Location on Google Maps"
-      [src]="contactState.safeGoogleMapsUrl()"
-    ></iframe>
+    <a
+      class="footer-map-link"
+      [href]="contactState.googleMapsUrl()"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        ngSrc="assets/contact/google-map.png"
+        width="1920"
+        height="600"
+        class="footer-map"
+        [alt]="'footer.map.alt' | translate"
+      />
+    </a>
   `,
   styleUrl: './footer-map.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: {
-    class: '',
-  },
 })
 export class FooterMapComponent {
   readonly contactState = inject(ContactState);

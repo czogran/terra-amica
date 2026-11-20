@@ -1,5 +1,22 @@
+:host {
+  display: block;
+}
+
+.footer-map-link {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+
+  &:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: -2px;
+  }
+}
+
 .footer-map {
-  border: 0;
+  display: block;
   width: 100%;
   height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
