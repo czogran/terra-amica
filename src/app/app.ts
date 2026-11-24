@@ -1,9 +1,12 @@
-import { Component, signal, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, effect, inject, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { filter, take } from 'rxjs';
 import { HeaderComponent } from './src/header/header.component';
 import { FooterComponent } from './src/footer/footer.component';
+import { InitialLoaderService } from './src/initial-loader.service';
 import { StateService } from './src/state/state.service';
-import { SpinnerComponent } from "./src/content/sections/shared/spinner.component";
+import { TranslationManagerService } from './src/state/translation-manager.service';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +17,55 @@ import { SpinnerComponent } from "./src/content/sections/shared/spinner.componen
 export class App {
   protected readonly title = signal('terra-amica');
   service = inject(StateService);
+
+  private readonly router = inject(Router);
+  private readonly translationManager = inject(TranslationManagerService);
+  private readonly initialLoader = inject(InitialLoaderService);
+
+  private navigationReady = false;
+  private translationsReady = false;
+  private loaderFinished = false;
+
+  constructor() {
+    this.navigationReady = this.router.navigated;
+    this.translationsReady = this.translationManager.translationsReady();
+
+    this.router.events
+      .pipe(
+        filter((event) => event instanceof NavigationEnd),
+        take(1),
+        takeUntilDestroyed(),
+      )
+      .subscribe(() => {
+        this.navigationReady = true;
+        this.finishInitialLoadWhenReady();
+      });
+
+    effect(() => {
+      this.translationsReady = this.translationManager.translationsReady();
+      this.finishInitialLoadWhenReady();
+    });
+
+    this.finishInitialLoadWhenReady();
+  }
+
+  /**
+   * The bootstrap loader is released once translations and the initial route
+   * are available. Images are intentionally not part of this check.
+   */
+  private finishInitialLoadWhenReady(): void {
+    if (this.loaderFinished || !this.navigationReady || !this.translationsReady) {
+      return;
+    }
+
+    this.loaderFinished = true;
+
+    const finish = () => this.initialLoader.markReady();
+
+    if (typeof requestAnimationFrame === 'function') {
+      requestAnimationFrame(() => requestAnimationFrame(finish));
+    } else {
+      setTimeout(finish, 0);
+    }
+  }
 }

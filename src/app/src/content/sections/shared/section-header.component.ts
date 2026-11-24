@@ -25,7 +25,7 @@ import { Component, input } from '@angular/core';
     </section>
     -->
 
-    <section class="hero">
+    <section class="section-header">
       <h2>{{ title() }}</h2>
       <div class="title-divider mx-auto mb-3"></div>
       <p>{{ subtitle() }}</p>

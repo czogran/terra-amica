@@ -45,6 +45,8 @@ export class TranslationManagerService {
   readonly lang = signal<Language>(
     (this.translate.getCurrentLang() || this.translate.getDefaultLang() || 'pl') as Language,
   );
+  /** True once the initial language bundle has been applied. */
+  readonly translationsReady = signal(false);
 
   constructor() {
     this.initializeLanguageFromRoute();
@@ -58,7 +60,11 @@ export class TranslationManagerService {
       )
       .subscribe(async (data) => {
         this.lang.set((data.state.root.firstChild?.data['lang'] || this.lang()) as Language);
-        await this.setLanguage(this.lang());
+        try {
+          await this.setLanguage(this.lang());
+        } finally {
+          this.translationsReady.set(true);
+        }
       });
   }
 

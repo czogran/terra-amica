@@ -3,23 +3,25 @@
   <app-header-logo [href]="currentHref" />
   <div class="d-flex align-items-center gap-3 w-100">
     <app-header-contact class="ms-auto d-none d-lg-flex" />
-    <div class="d-lg-none mx-auto position-relative">
-      <div class="dropdown">
-        <button
-          class="btn btn-link p-0"
-          type="button"
-          id="menuDropdown"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-          [attr.aria-label]="'header.menu.aria-label' | translate"
-        >
-          <i class="bi bi-list menu-icon" aria-hidden="true"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+    <div class="d-lg-none mx-auto">
+      <button
+        class="btn btn-link p-0"
+        type="button"
+        id="menuDropdown"
+        aria-haspopup="true"
+        aria-controls="mobileMenu"
+        [attr.aria-expanded]="mobileMenuOpen()"
+        [attr.aria-label]="'header.menu.aria-label' | translate"
+        (click)="toggleMobileMenu()"
+      >
+        <i class="bi bi-list menu-icon" aria-hidden="true"></i>
+      </button>
+      @if (mobileMenuOpen()) {
+        <ul id="mobileMenu" class="dropdown-menu show mobile-menu" aria-labelledby="menuDropdown">
           @for (item of menuItems; track item.key) {
             <li>
               <a
-                class="dropdown-item"
+                class="dropdown-item mobile-menu__item"
                 [href]="item.href"
                 [attr.aria-current]="activeMenuItemKey === item.key ? 'page' : null"
                 (click)="$event.preventDefault(); onNavClick(item)"
@@ -28,7 +30,7 @@
             </li>
           }
         </ul>
-      </div>
+      }
     </div>
     <app-header-settings class="ms-1" />
   </div>
@@ -51,3 +53,5 @@
     </ul>
   </div>
 </nav>
+
+<app-route-progress-bar />
