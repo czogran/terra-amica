@@ -8,18 +8,11 @@ export type SupportedLang = 'pl' | 'en' | 'de';
 export interface OfferServiceItem {
   icon: string;
   title: string;
-  description: string;
-}
-
-export interface OfferSectionItem {
-  title: string;
-  items: string[];
-  note?: string;
 }
 
 export interface OfferItem {
   services: OfferServiceItem[];
-  sections: OfferSectionItem[];
+  paragraphs: string[];
 }
 
 interface OfferState {
@@ -30,9 +23,9 @@ interface OfferState {
 }
 
 const initialState: OfferState = {
-  pl: { services: [], sections: [] },
-  en: { services: [], sections: [] },
-  de: { services: [], sections: [] },
+  pl: { services: [], paragraphs: [] },
+  en: { services: [], paragraphs: [] },
+  de: { services: [], paragraphs: [] },
   hasLoadedOffer: false,
 };
 

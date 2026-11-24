@@ -14,7 +14,7 @@ export class OfferComponent {
   private readonly offerState = inject(OfferState);
 
   services = computed(() => this.offerState.currentOffer().services);
-  sections = computed(() => this.offerState.currentOffer().sections);
+  paragraphs = computed(() => this.offerState.currentOffer().paragraphs);
 
   constructor() {
     this.offerState.load();

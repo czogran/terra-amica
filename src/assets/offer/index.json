@@ -3,204 +3,102 @@
     "services": [
       {
         "icon": "recycle",
-        "title": "Przetwarzanie odpadów",
-        "description": "Kompleksowe przetwarzanie i recykling odpadów zgodnie z normami środowiskowymi."
+        "title": "Przetwarzanie odpadów"
       },
       {
         "icon": "tree",
-        "title": "Rekultywacja składowisk odpadów innych niż niebezpieczne i obojętne",
-        "description": "Przywracanie terenów składowisk do stanu przyjaznego środowisku."
+        "title": "Rekultywacje składowisk odpadów"
       },
       {
         "icon": "globe2",
-        "title": "Rekultywacja terenów zdegradowanych",
-        "description": "Odbudowa i zagospodarowanie terenów zdegradowanych przez działalność człowieka."
+        "title": "Rekultywacje terenów zdegradowanych"
       },
       {
         "icon": "file-earmark-text",
-        "title": "Analizy dokumentacji i audyty środowiskowe",
-        "description": "Szczegółowe analizy i audyty dokumentacji środowiskowej."
+        "title": "Analizy dokumentacji technicznej i formalnej wraz z audytem dla składowisk odpadów"
       },
       {
         "icon": "building",
-        "title": "Procedury i decyzje środowiskowe",
-        "description": "Wsparcie w uzyskiwaniu decyzji i pozwoleń środowiskowych."
+        "title": "Prowadzenie inwestycji w formie inwestora zastępczego"
+      },
+      {
+        "icon": "clipboard-check",
+        "title": "Doradztwo formalne i przeprowadzanie procedur związanych z uzyskiwaniem decyzji administracyjnych środowiskowych, zezwoleń na przetwarzanie odpadów, pozwoleń na budowę w gospodarowaniu odpadami"
       }
     ],
-    "sections": [
-      {
-        "title": "Rekultywacja składowisk odpadów innych niż niebezpieczne i obojętne",
-        "items": [
-          "przejęcie składowiska w zarządanie",
-          "uzyskanie wszystkich decyzji administracyjnych",
-          "wykonanie kompletnych prac rekultywacyjnych",
-          "odzysjanie odpadów w procesach R3 i R5",
-          "optymalizacja kosztów zamkniecia i rekultywacji dla właścieciela",
-          "obniżenie kosztów gospodarki odpadami"
-        ]
-      },
-          {
-        "title": "Rekultywacja terenów zdegradowanych",
-        "items": [
-          "uzyskanie administracyjnych",
-          "wykonanie kompletnych prac rekultywacyjnych",
-          "odzysjanie odpadów w procesie R5",
-          "optymalizacja kosztów rekultywacji wyrobisk pokoplanych"
-        ]
-      },
-      {
-        "title": "Dla kogo",
-        "items": [
-          "gminy",
-          "przedsiębiorstwa komunalne",
-          "właściciele prywatni"
-        ]
-      },
-      {
-        "title": "Proces realizacji inwestycji",
-        "items": [
-          "opracowanie koncepcji i analiz",
-          "uzyskanie decyzji administracyjnych",
-          "realizacja inwestycji",
-          "uruchomienie instalacji"
-        ]
-      }
+    "paragraphs": [
+      "Specjalizujemy się w rekultywacjach składowisk innych niż niebezpieczne i obojętne. Prowadzimy rekultywacje składowisk przy wykorzystaniu odpadów dopuszczonych w przepisach w sposób pozwalający na prawidłowy odzysk odpadów oraz chroniący środowisko naturalne. Rekultywacje składowisk odpadów przy wykorzystaniu dopuszczonych przepisami odpadów są bezpieczne dla środowiska, zapobiegają zużywaniu pełnowartościowych materiałów budowlanych, pozwalają na obniżenie kosztów funkcjonowania gospodarki odpadami oraz zapobiegają zapełnianiu eksploatowanych składowisk odpadów.",
+      "Ofertę rekultywacji składowisk odpadów kierujemy głównie do gmin lub przedsiębiorstw komunalnych, które mają w zarządzaniu zamknięte i nieeksploatowane składowiska odpadów innych niż niebezpieczne i obojętne. Obecnie nie ma wsparcia finansowego dla rekultywacji składowisk ze strony państwa i zarządzający muszą samodzielnie je ponosić. Jednocześnie urzędy marszałkowskie narzucają terminy rekultywacji i w przypadku uchylania się zarządzającego od wykonania prac rekultywacyjnych wykonają rekultywację zastępczo na koszt właściciela.",
+      "Współpraca z naszą firmą pozwala właścicielom nieeksploatowanych składowisk na przeniesienie wszystkich ryzyk i kosztów na nas. Zapewniamy kompleksową obsługę w tym zakresie, począwszy od decyzji administracyjnych, przejęcia składowiska w zarządzanie i wykonanie prac rekultywacyjnych. Właściciel składowiska nie ponosi kosztów i nie angażuje własnych pracowników.",
+      "Posiadamy kadrę oraz doświadczenie w prowadzeniu inwestycji od przygotowania koncepcji, uzyskania decyzji administracyjnych po realizację, pozwolenie na użytkowanie i uruchomienie instalacji przetwarzania odpadów."
     ]
   },
   "en": {
     "services": [
       {
         "icon": "recycle",
-        "title": "Waste processing",
-        "description": "Comprehensive waste processing and recycling in accordance with environmental standards."
+        "title": "Waste processing"
       },
       {
         "icon": "tree",
-        "title": "Landfill reclamation for non-hazardous and inert waste",
-        "description": "Restoring landfill areas to an environmentally friendly state."
+        "title": "Landfill reclamation"
       },
       {
         "icon": "globe2",
-        "title": "Degraded land reclamation",
-        "description": "Restoration and development of land degraded by human activity."
+        "title": "Degraded land reclamation"
       },
       {
         "icon": "file-earmark-text",
-        "title": "Documentation analysis and environmental audits",
-        "description": "Detailed analysis and audits of environmental documentation."
+        "title": "Analysis of technical and formal documentation along with audits for landfills"
       },
       {
         "icon": "building",
-        "title": "Environmental procedures and decisions",
-        "description": "Support in obtaining environmental decisions and permits."
+        "title": "Conducting investments as a substitute investor"
+      },
+      {
+        "icon": "clipboard-check",
+        "title": "Formal consulting and conducting procedures related to obtaining environmental administrative decisions, waste processing permits and construction permits in waste management"
       }
     ],
-    "sections": [
-      {
-        "title": "Landfill reclamation for non-hazardous and inert waste",
-        "items": [
-          "taking over landfill management",
-          "obtaining all administrative decisions",
-          "carrying out complete reclamation works",
-          "waste recovery through R3 and R5 processes",
-          "optimising closure and reclamation costs for the owner",
-          "reducing waste management costs"
-        ]
-      },
-      {
-        "title": "Degraded land reclamation",
-        "items": [
-          "obtaining administrative decisions",
-          "carrying out complete reclamation works",
-          "waste recovery through R5 process",
-          "optimising reclamation costs of post-mining excavations"
-        ]
-      },
-      {
-        "title": "For whom",
-        "items": [
-          "municipalities",
-          "municipal enterprises",
-          "private owners"
-        ]
-      },
-      {
-        "title": "Investment implementation process",
-        "items": [
-          "concept and analysis development",
-          "obtaining administrative decisions",
-          "investment implementation",
-          "facility launch"
-        ]
-      }
+    "paragraphs": [
+      "We specialize in the reclamation of landfills for non-hazardous and inert waste. We carry out landfill reclamation using waste permitted by regulations in a way that ensures proper waste recovery and protects the natural environment. Landfill reclamation using waste permitted by regulations is environmentally safe, prevents the consumption of full-value construction materials, reduces the costs of operating waste management and prevents the filling of operating landfills.",
+      "We direct our landfill reclamation offer mainly to municipalities and municipal enterprises that manage closed and inactive landfills for non-hazardous and inert waste. Currently, there is no state financial support for landfill reclamation and managers must bear the costs themselves. At the same time, marshal offices impose reclamation deadlines and, if the manager evades the reclamation works, they will carry out the reclamation on the owner's behalf at the owner's expense.",
+      "Cooperation with our company allows owners of inactive landfills to transfer all risks and costs to us. We provide comprehensive support in this area, from administrative decisions, taking over the landfill management, to the execution of reclamation works. The landfill owner bears no costs and does not engage their own employees.",
+      "We have the staff and experience in conducting investments from concept preparation, obtaining administrative decisions, through implementation, permit to use and commissioning of waste processing installations."
     ]
   },
   "de": {
     "services": [
       {
         "icon": "recycle",
-        "title": "Abfallverarbeitung",
-        "description": "Umfassende Verarbeitung und Recycling von Abfällen gemäß Umweltstandards."
+        "title": "Abfallverarbeitung"
       },
       {
         "icon": "tree",
-        "title": "Deponierekultivierung für nicht gefährliche und inerte Abfälle",
-        "description": "Wiederherstellung von Deponieflächen in einen umweltfreundlichen Zustand."
+        "title": "Rekultivierung von Deponien"
       },
       {
         "icon": "globe2",
-        "title": "Rekultivierung degradierter Flächen",
-        "description": "Wiederherstellung und Entwicklung von durch menschliche Aktivitäten degradierten Flächen."
+        "title": "Rekultivierung degradierter Flächen"
       },
       {
         "icon": "file-earmark-text",
-        "title": "Dokumentationsanalyse und Umweltaudits",
-        "description": "Detaillierte Analyse und Audits von Umweltdokumentationen."
+        "title": "Analyse der technischen und formalen Dokumentation einschließlich Audits für Deponien"
       },
       {
         "icon": "building",
-        "title": "Umweltverfahren und -entscheidungen",
-        "description": "Unterstützung bei der Erlangung von Umweltentscheidungen und -genehmigungen."
+        "title": "Durchführung von Investitionen als Ersatzinvestor"
+      },
+      {
+        "icon": "clipboard-check",
+        "title": "Formale Beratung und Durchführung von Verfahren im Zusammenhang mit der Erlangung umweltrechtlicher Verwaltungsentscheidungen, Genehmigungen zur Abfallverarbeitung und Baugenehmigungen in der Abfallwirtschaft"
       }
     ],
-    "sections": [
-      {
-        "title": "Deponierekultivierung für nicht gefährliche und inerte Abfälle",
-        "items": [
-          "Übernahme der Deponieverwaltung",
-          "Erlangung aller Verwaltungsentscheidungen",
-          "Durchführung vollständiger Rekultivierungsarbeiten",
-          "Abfallverwertung in R3- und R5-Prozessen",
-          "Optimierung der Schließungs- und Rekultivierungskosten für den Eigentümer",
-          "Senkung der Abfallwirtschaftskosten"
-        ]
-      },
-      {
-        "title": "Rekultivierung degradierter Flächen",
-        "items": [
-          "Erlangung von Verwaltungsentscheidungen",
-          "Durchführung vollständiger Rekultivierungsarbeiten",
-          "Abfallverwertung im R5-Prozess",
-          "Optimierung der Rekultivierungskosten für Bergbauaufschlüsse"
-        ]
-      },
-      {
-        "title": "Für wen",
-        "items": [
-          "Gemeinden",
-          "kommunale Unternehmen",
-          "Privateigentümer"
-        ]
-      },
-      {
-        "title": "Ablauf der Investitionsumsetzung",
-        "items": [
-          "Konzept- und Analyseerstellung",
-          "Erlangung von Verwaltungsentscheidungen",
-          "Investitionsumsetzung",
-          "Inbetriebnahme der Anlage"
-        ]
-      }
+    "paragraphs": [
+      "Wir sind auf die Rekultivierung von Deponien für nicht gefährliche und inerte Abfälle spezialisiert. Wir führen Deponierekultivierungen unter Verwendung gesetzlich zugelassener Abfälle so durch, dass eine ordnungsgemäße Abfallverwertung gewährleistet und die natürliche Umwelt geschützt wird. Die Rekultivierung von Deponien mit gesetzlich zugelassenen Abfällen ist umweltfreundlich, verhindert den Verbrauch von vollwertigen Baumaterialien, senkt die Kosten des Abfallwirtschaftsbetriebs und beugt der Verfüllung betriebener Deponien vor.",
+      "Unser Angebot zur Deponierekultivierung richtet sich vor allem an Gemeinden und kommunale Unternehmen, die geschlossene und stillgelegte Deponien für nicht gefährliche und inerte Abfälle verwalten. Derzeit gibt es keine staatliche finanzielle Förderung für die Deponierekultivierung und die Verwalter müssen die Kosten selbst tragen. Gleichzeitig setzen die Marschallämter Fristen für die Rekultivierung und falls sich der Verwalter der Durchführung der Rekultivierungsarbeiten entzieht, führen sie die Rekultivierung ersatzweise auf Kosten des Eigentümers durch.",
+      "Die Zusammenarbeit mit unserem Unternehmen ermöglicht Eigentümern stillgelegter Deponien, alle Risiken und Kosten auf uns zu übertragen. Wir bieten in diesem Bereich eine umfassende Betreuung – von Verwaltungsentscheidungen über die Übernahme der Deponieverwaltung bis hin zur Durchführung der Rekultivierungsarbeiten. Der Deponieeigentümer trägt keine Kosten und setzt keine eigenen Mitarbeiter ein.",
+      "Wir verfügen über Fachpersonal und Erfahrung in der Durchführung von Investitionen – von der Erstellung des Konzepts und der Erlangung von Verwaltungsentscheidungen über die Realisierung bis hin zur Nutzungsgenehmigung und Inbetriebnahme von Abfallverarbeitungsanlagen."
     ]
   }
 }

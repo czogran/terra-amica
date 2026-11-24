@@ -2,20 +2,22 @@
 
 <section class="services">
   @for (service of services(); track service.title) {
-    <div class="card fade-in">
-      <div class="icon bi bi-{{ service.icon }}"></div>
-      <div class="title">{{ service.title }}</div>
+    <div class="card fade-in" tabindex="0">
+      <div class="card__inner">
+        <div class="card__face card__front">
+          <div class="icon bi bi-{{ service.icon }}" aria-hidden="true"></div>
+          <div class="title">{{ service.title }}</div>
+        </div>
+        <div class="card__face card__back" aria-hidden="true">
+          <p class="title">{{ service.title }}</p>
+        </div>
+      </div>
     </div>
   }
 </section>
 
-@for (section of sections(); track section.title) {
-  <section class="offer-section" [attr.aria-label]="section.title">
-    <h2>{{ section.title }}</h2>
-    <ul class="offer-section__item">
-      @for (item of section.items; track item) {
-        <li>{{ item }}</li>
-      }
-    </ul>
-  </section>
-}
+<section class="offer-content">
+  @for (paragraph of paragraphs(); track paragraph) {
+    <p>{{ paragraph }}</p>
+  }
+</section>
