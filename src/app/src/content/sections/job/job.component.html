@@ -1,36 +1,58 @@
 <app-section-header [title]="'menu.jobs' | translate" [subtitle]="'job.intro' | translate" />
 <section class="job-section">
-  <div class="job-card-row row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-3 mx-auto">
+  <div class="job-grid">
     @if (loading()) {
-      <div class="col">
-        <div class="job-tile card h-100 skeleton-tile">
-          <div class="card-body">
-            <div class="skeleton skeleton-title mb-2"></div>
-            <div class="skeleton skeleton-text mb-1"></div>
-            <div class="skeleton skeleton-text"></div>
+      @for (placeholder of [1, 2, 3]; track placeholder) {
+        <div class="job-card job-card--skeleton" aria-hidden="true">
+          <div class="job-card__face job-card__face--front">
+            <span class="job-card__top">
+              <span class="skeleton skeleton-icon"></span>
+            </span>
+            <span class="skeleton skeleton-title"></span>
+            <span class="skeleton skeleton-text"></span>
+            <span class="skeleton skeleton-text skeleton-text--short"></span>
           </div>
         </div>
-      </div>
+      }
     } @else {
       @for (job of jobs(); track job.title) {
-        <div class="col">
-          <div class="job-tile card h-100 fade-in" (click)="openJob(job)">
-            <div class="card-body">
-              <h5 class="card-title text-primary">{{ job.title }}</h5>
-              <p class="card-text text-truncate">
-                {{ job.description }}
-              </p>
-            </div>
-          </div>
-        </div>
+        <article class="job-card fade-in" tabindex="0">
+          <span class="job-card__inner">
+            <span class="job-card__face job-card__face--front">
+              <span class="job-card__top">
+                <span class="job-card__icon" aria-hidden="true">
+                  <i class="bi bi-briefcase"></i>
+                </span>
+              </span>
+              <span class="job-card__title">{{ job.title }}</span>
+              <span class="job-card__preview">{{ job.description }}</span>
+            </span>
+
+            <span class="job-card__face job-card__face--back">
+              <span class="job-card__back-title">{{ job.title }}</span>
+              <span class="job-card__back-text">{{ job.description }}</span>
+              @if (contactState.email(); as email) {
+                <a class="job-card__email" [href]="'mailto:' + email">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                  <span>{{ 'job.apply-email' | translate }}</span>
+                  <span>{{ email }}</span>
+                </a>
+              }
+            </span>
+          </span>
+        </article>
       }
     }
   </div>
 
-  @if (selectedJob(); as job) {
-    <app-job-modal [job]="job" (close)="closeJob()"></app-job-modal>
-  }
-  <footer class="text-center mt-4">
-    <h5>{{ 'job.invite' | translate }}</h5>
+  <footer class="job-invite">
+    <h5 class="job-invite__title">{{ 'job.invite' | translate }}</h5>
+    @if (contactState.email(); as email) {
+      <a class="job-invite__email" [href]="'mailto:' + email">
+        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+        <span>{{ 'job.apply-email' | translate }}</span>
+        <span>{{ email }}</span>
+      </a>
+    }
   </footer>
 </section>

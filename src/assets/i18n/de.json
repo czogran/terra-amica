@@ -39,7 +39,7 @@
   "realisations.details.meta.years": "Realisierungsjahre",
   "realisations.details.meta.area": "Fläche",
   "research.intro": "Wir entwickeln Lösungen für Abfallwirtschaft und Rekultivierung.",
-  "research.highlight": "Wir führen außerdem ein innovatives Forschungsprojekt zum Recycling gemischter überkörniger Fraktionen, sogenanntem pre-RDF, bzw. zu alternativem Brennstoff RDF aufbereiteten Abfällen durch. Das Zielprodukt nach der RDF-Aufbereitung sind WPC-Verbundstoffe in verschiedenen Handelsformen oder als Granulat. Das Projekt wurde von PARP gefördert und befindet sich in der abschließenden Testphase.",
+  "research.highlight": "Wir führen außerdem ein innovatives Forschungsprojekt zum Recycling gemischter überkörniger Fraktionen, sogenanntem pre-RDF, bzw. zu alternativem Brennstoff RDF aufbereiteten Abfällen durch. Die Zielprodukte nach der RDF-Aufbereitung sind WPC-Verbundstoffe in verschiedenen Handelsformen oder als Granulat. Das Projekt wurde von PARP gefördert und befindet sich in der abschließenden Testphase.",
   "research.paragraph2": "Derzeit ist die einzige rationale Nutzung leichter überkörniger Fraktionen wie RDF oder pre-RDF deren Verbrennung in Müllverbrennungsanlagen oder Zementwerken. Das Projekt wurde mit positivem Ergebnis abgeschlossen und es wurden WPC-Verbundstoffe mit Parametern erzielt, die einen wirtschaftlichen Einsatz ermöglichen.",
   "research.captionRdf": "Leichte Fraktion, alternativer Brennstoff RDF vor der Verarbeitung",
   "research.captionWpc": "Zu WPC-Verbundstoff verarbeitete Abfälle",
@@ -76,5 +76,14 @@
   "realisations.phases.2.description": "Die Ausgleichsschicht ist eine kritische Zwischenschicht, die über den separierten Abfällen verlegt wird. Diese Schicht ebnet Geländeunebenheiten aus und gewährleistet die Stabilität für nachfolgende Schichten.",
   "realisations.phases.3.description": "Die Oberflächenisolation dient dem Schutz vor Schadstoffverlagerung. Die Isolationsschicht aus speziell ausgewähltem Material bietet notwendigen Schutz und Abdichtung.",
   "realisations.phases.4.description": "Die Bodenschicht ist das Material, auf dem Pflanzenleben gedeihen wird. Diese Schicht enthält wesentliche Nährstoffe, die das Pflanzenwachstum und die Bodenbildung unterstützen.",
-  "realisations.phases.5.description": "Die letzte Rekultivierungsphase umfasst die Fertigstellung, Bepflanzung und Wiederherstellung des Geländes gemäß Nutzungsplan. Nach dieser Phase ist das Gelände für die natürliche Ökosystemsentwicklung bereit."
+  "realisations.phases.5.description": "Die letzte Rekultivierungsphase umfasst die Fertigstellung, Bepflanzung und Wiederherstellung des Geländes gemäß Nutzungsplan. Nach dieser Phase ist das Gelände für die natürliche Entwicklung des Ökosystems bereit.",
+  "job.intro": "Als dynamisch wachsendes Unternehmen suchen wir Personen, die ihre berufliche Entwicklung gemeinsam mit uns vorantreiben möchten. Derzeit suchen wir Mitarbeiterinnen und Mitarbeiter für die Woiwodschaften Masowien und Lublin für folgende Positionen:",
+  "job.invite": "Wir laden auch Personen, die an einer Zusammenarbeit interessiert sind, herzlich zur Bewerbung ein.",
+  "job.apply-email": "Bewerben:",
+  "privacy.download-pdf": "PDF herunterladen",
+  "privacy-policy.intro": "Erfahren Sie, wie wir Ihre Daten schützen und Ihre Privatsphäre wahren.",
+  "privacy.contractors.title": "Informationen für Vertragspartner",
+  "privacy.contractors.download-aria": "PDF herunterladen: Informationen für Vertragspartner",
+  "privacy.monitoring.title": "Informationen zur Videoüberwachung",
+  "privacy.monitoring.download-aria": "PDF herunterladen: Informationen zur Videoüberwachung"
 }

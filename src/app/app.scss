@@ -4,3 +4,8 @@
   display: flex;
   flex-direction: column;
 }
+
+// All routed sections share the realisations surface colour.
+.app-content {
+  background: var(--bs-surface-subtle);
+}

@@ -5,15 +5,15 @@
     "downloadAriaKey": "privacy.contractors.download-aria",
     "versions": {
       "pl": {
-        "pdf": "Klauzula_RODO_TERRAA_AMICA_Full.pdf",
+        "pdf": "Klauzula_RODO_TERRA_AMICA_Full.pdf",
         "markdownFile": "klauzula-informacyjna.md"
       },
       "en": {
-        "pdf": "Klauzula_RODO_TERRAA_AMICA_Full.pdf",
+        "pdf": "Klauzula_RODO_TERRA_AMICA_Full.pdf",
         "markdownFile": "klauzula-informacyjna.md"
       },
       "de": {
-        "pdf": "Klauzula_RODO_TERRAA_AMICA_Full.pdf",
+        "pdf": "Klauzula_RODO_TERRA_AMICA_Full.pdf",
         "markdownFile": "klauzula-informacyjna.md"
       }
     }
@@ -24,15 +24,15 @@
     "downloadAriaKey": "privacy.monitoring.download-aria",
     "versions": {
       "pl": {
-        "pdf": "Klauzula_Monitoring_Wizyjny.pdf",
+        "pdf": "Klauzula_Monitoring_Wizyjna.pdf",
         "markdownFile": "monitoring.md"
       },
       "en": {
-        "pdf": "Klauzula_Monitoring_Wizyjny.pdf",
+        "pdf": "Klauzula_Monitoring_Wizyjna.pdf",
         "markdownFile": "monitoring.md"
       },
       "de": {
-        "pdf": "Klauzula_Monitoring_Wizyjny.pdf",
+        "pdf": "Klauzula_Monitoring_Wizyjna.pdf",
         "markdownFile": "monitoring.md"
       }
     }
