@@ -13,13 +13,19 @@ import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ReferenceItem } from 'src/app/src/state/state-reference';
 import { ReferenceZoomControlsComponent } from './reference-zoom-controls.component';
+import { ImageSkeletonDirective } from '../shared/image-skeleton.directive';
 
 @Component({
   selector: 'app-reference-popup',
   templateUrl: './reference-popup.component.html',
   styleUrl: './reference-popup.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, TranslatePipe, ReferenceZoomControlsComponent],
+  imports: [
+    NgOptimizedImage,
+    TranslatePipe,
+    ReferenceZoomControlsComponent,
+    ImageSkeletonDirective,
+  ],
   host: {
     tabindex: '-1',
     role: 'dialog',

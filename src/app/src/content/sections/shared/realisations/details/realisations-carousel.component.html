@@ -29,6 +29,7 @@
       @for (image of images(); track image; let i = $index) {
         <div class="carousel-item h-100" [class.active]="i === activeIndex()">
           <img
+            appImageSkeleton
             [ngSrc]="isFullscreenOpen() ? originalImage(image) : compressedImage(image)"
             [alt]="alt()"
             width="1600"
@@ -91,7 +92,13 @@
         role="listitem"
         [attr.aria-label]="'Slide ' + (i + 1)"
       >
-        <img [ngSrc]="compressedImage(image)" [alt]="alt()" width="200" height="112" />
+        <img
+          appImageSkeleton
+          [ngSrc]="compressedImage(image)"
+          [alt]="alt()"
+          width="200"
+          height="112"
+        />
       </button>
     }
   </div>

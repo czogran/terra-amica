@@ -9,6 +9,7 @@
 .realisations-map {
   position: absolute;
   inset: 0;
+  overflow: hidden;
   background: url('./pl.svg') center / contain no-repeat;
 }
 
@@ -19,7 +20,7 @@
   align-items: center;
   gap: 0.35rem;
   padding: 0.25rem 0.55rem 0.25rem 0.35rem;
-  border: 1px solid rgb(var(--bs-primary-rgb) / 0.24);
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.24);
   border-radius: 999px;
   background: var(--bs-surface-subtle);
   color: var(--bs-primary);
@@ -33,6 +34,11 @@
     border-color 160ms ease,
     box-shadow 160ms ease,
     transform 160ms ease;
+}
+
+.realisations-map-marker--east {
+  flex-direction: row-reverse;
+  padding: 0.25rem 0.35rem 0.25rem 0.55rem;
 }
 
 .realisations-map-marker:hover,
@@ -53,7 +59,7 @@
   border: 2px solid var(--bs-surface-card);
   border-radius: 50%;
   background: var(--bs-primary);
-  box-shadow: 0 0 0 3px rgb(var(--bs-primary-rgb) / 0.2);
+  box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb), 0.2);
 }
 
 .realisations-map-marker-label {
@@ -113,8 +119,8 @@
     pointer-events: none;
     background: linear-gradient(
       130deg,
-      rgb(var(--bs-surface-overlay-rgb) / 0.16) 0%,
-      rgb(var(--bs-success-rgb) / 0.08) 35%,
+      rgba(var(--bs-surface-overlay-rgb), 0.16) 0%,
+      rgba(var(--bs-success-rgb), 0.08) 35%,
       transparent 65%
     );
     opacity: 0;

@@ -10,7 +10,9 @@
           <button
             type="button"
             class="realisations-map-marker"
-            [style.left.%]="marker.mapX"
+            [class.realisations-map-marker--east]="marker.isEast"
+            [style.left.%]="marker.isEast ? null : marker.mapX"
+            [style.right]="marker.eastStyle"
             [style.bottom.%]="marker.mapY"
             [attr.aria-label]="marker.title + ' - ' + marker.region"
             [attr.title]="marker.title"
@@ -23,14 +25,16 @@
       </div>
     </li>
 
-    @for (card of cards(); track card.id) {
+    @for (card of cards(); track card.id; let i = $index) {
       <li class="realisations-item fade-in">
         <article class="realisations-card" aria-label="{{ card.translation.title }}">
           <div class="realisations-card-thumb">
             <img
+              appImageSkeleton
               [ngSrc]="assetUrl(card.directory, card.cover)"
               [alt]="card.translation.title"
-              loading="lazy"
+              [priority]="i === 0"
+              [attr.loading]="i === 0 ? null : 'lazy'"
               width="800"
               height="450"
               decoding="async"

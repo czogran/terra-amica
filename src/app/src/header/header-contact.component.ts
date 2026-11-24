@@ -12,7 +12,16 @@ import { ContactState } from 'state';
       <i class="bi bi-geo-alt-fill contact-icon text-primary icon-lg"></i>
       <div>
         <div class="fw-bold">{{ 'address' | translate }}</div>
-        <div>{{ contactState.address() }}</div>
+        <div>
+          <a
+            [href]="contactState.googleMapsUrl()"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-decoration-none"
+          >
+            {{ contactState.address() }}
+          </a>
+        </div>
       </div>
     </div>
     <div class="small d-flex align-items-center gap-1">
@@ -23,7 +32,7 @@ import { ContactState } from 'state';
           @let mail = contactState.email();
           <a
             href="mailto:{{ mail }}"
-            class="text-decoration-underline"
+            class="text-decoration-none"
             aria-label="Email {{ mail }}"
           >
             {{ mail }}

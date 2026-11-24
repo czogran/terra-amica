@@ -14,6 +14,7 @@
         (click)="openPopup(reference)"
       >
         <img
+          appImageSkeleton
           [ngSrc]="'assets/references/' + reference.files[0]"
           class="card-img-top reference-card-image"
           [attr.alt]="'reference.image.alt' | translate"

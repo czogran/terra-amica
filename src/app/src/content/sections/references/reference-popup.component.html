@@ -51,6 +51,7 @@
     >
       @for (file of reference().files; track file) {
         <img
+          appImageSkeleton
           [ngSrc]="'assets/references/' + file"
           [attr.alt]="'reference.image.alt' | translate"
           width="595"

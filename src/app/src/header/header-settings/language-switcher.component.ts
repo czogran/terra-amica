@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
 import { Language } from '@ngx-translate/core';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
@@ -9,32 +9,63 @@ import { TranslationManagerService } from '../../state/translation-manager.servi
 @Component({
   selector: 'app-language-switcher',
   template: `
-    <div class="dropdown">
-      <button
-        class="btn btn-sm dropdown-toggle d-flex align-items-center gap-1"
-        type="button"
-        id="langDropdown"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        <span class="fi" [class]="selectedLang().flag"></span>
-        <span class="d-none d-md-inline">{{ selectedLang().label }}</span>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="langDropdown">
-        @for (l of languages; track l.code) {
-          <li>
-            <button
-              class="dropdown-item d-flex align-items-center gap-2"
-              type="button"
-              (click)="setLang(l.code)"
-            >
-              <span class="fi" [class]="l.flag"></span> {{ l.label }}
-            </button>
-          </li>
+    @if (inline()) {
+      <div class="language-switcher-inline">
+        <button
+          type="button"
+          class="language-switcher-inline__toggle"
+          [attr.aria-expanded]="isExpanded()"
+          (click)="toggleExpanded()"
+        >
+          <span class="fi" [class]="selectedLang().flag"></span>
+          <span>{{ selectedLang().label }}</span>
+          <span class="language-switcher-inline__chevron" aria-hidden="true">▾</span>
+        </button>
+        @if (isExpanded()) {
+          <div class="language-switcher-inline__options">
+            @for (l of languages; track l.code) {
+              <button
+                type="button"
+                class="language-switcher-inline__option"
+                [class.language-switcher-inline__option--active]="l.code === translationManager.lang()"
+                (click)="selectInlineLanguage(l.code)"
+              >
+                <span class="fi" [class]="l.flag"></span>
+                <span>{{ l.label }}</span>
+              </button>
+            }
+          </div>
         }
-      </ul>
-    </div>
+      </div>
+    } @else {
+      <div class="dropdown">
+        <button
+          class="btn btn-sm dropdown-toggle d-flex align-items-center gap-1"
+          type="button"
+          id="langDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="fi" [class]="selectedLang().flag"></span>
+          <span class="d-none d-md-inline">{{ selectedLang().label }}</span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="langDropdown">
+          @for (l of languages; track l.code) {
+            <li>
+              <button
+                class="dropdown-item d-flex align-items-center gap-2"
+                type="button"
+                (click)="setLang(l.code)"
+              >
+                <span class="fi" [class]="l.flag"></span> {{ l.label }}
+              </button>
+            </li>
+          }
+        </ul>
+      </div>
+    }
   `,
+  styleUrl: './language-switcher.component.scss',
 })
 export class LanguageSwitcherComponent {
   private readonly location = inject(Location);
@@ -43,10 +74,23 @@ export class LanguageSwitcherComponent {
   readonly translationManager = inject(TranslationManagerService);
   readonly menuState = inject(MenuState);
 
+  /** Renders the options inline (expanded in place) instead of as a nested dropdown. */
+  readonly inline = input(false);
+  readonly isExpanded = signal(false);
+
   readonly languages = this.translationManager.languagesConfig;
 
   selectedLang = () =>
     this.languages.find((l) => l.code === this.translationManager.lang()) ?? this.languages[0];
+
+  toggleExpanded(): void {
+    this.isExpanded.update((expanded) => !expanded);
+  }
+
+  selectInlineLanguage(lang: Language): void {
+    this.isExpanded.set(false);
+    void this.setLang(lang);
+  }
 
   async setLang(lang: Language): Promise<void> {
     const currentLang = this.translationManager.lang();

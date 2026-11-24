@@ -13,7 +13,7 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
     ScrollTopButtonComponent,
   ],
   template: `
-    <footer class="footer text-center py-3 mt-auto position-relative">
+    <footer class="footer text-center pt-3 pb-2 mt-auto position-relative">
       <app-scroll-top-button />
       <div
         class="contact-section d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-4 text-start"
@@ -24,7 +24,16 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
             <i class="bi bi-geo-alt-fill contact-icon"></i>
             <div>
               <div class="fw-bold">{{ 'address' | translate }}</div>
-              <div>{{ contactState.address() }}</div>
+              <div>
+                <a
+                  [href]="contactState.googleMapsUrl()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                >
+                  {{ contactState.address() }}
+                </a>
+              </div>
             </div>
           </div>
           <div class="d-flex align-items-center gap-2">
@@ -35,7 +44,7 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
                 @let mail = contactState.email();
                 <a
                   href="mailto:{{ mail }}"
-                  class="text-decoration-underline"
+                  class="text-decoration-none"
                   aria-label="Email {{ mail }}"
                 >
                   {{ mail }}
@@ -47,7 +56,7 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
         <!-- <app-footer-contact-form /> -->
       </div>
       <app-footer-map class="mb-2" />
-      <span class="d-block mb-2">{{ 'footer.copyright' | translate }}</span>
+      <span class="footer-copyright d-block">{{ 'footer.copyright' | translate }}</span>
     </footer>
   `,
   styleUrls: ['./footer.component.scss'],

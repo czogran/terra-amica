@@ -2,10 +2,11 @@ import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ContactState } from '../state/state-contact';
+import { ImageSkeletonDirective } from '../content/sections/shared/image-skeleton.directive';
 
 @Component({
   selector: 'app-footer-map',
-  imports: [NgOptimizedImage, TranslatePipe],
+  imports: [NgOptimizedImage, TranslatePipe, ImageSkeletonDirective],
   template: `
     <a
       class="footer-map-link"
@@ -14,6 +15,7 @@ import { ContactState } from '../state/state-contact';
       rel="noopener noreferrer"
     >
       <img
+        appImageSkeleton
         ngSrc="assets/contact/google-map.png"
         width="1920"
         height="600"

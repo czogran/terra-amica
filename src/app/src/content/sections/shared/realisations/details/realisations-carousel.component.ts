@@ -12,12 +12,13 @@ import {
 } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
+import { ImageSkeletonDirective } from '../../image-skeleton.directive';
 
 @Component({
   selector: 'app-realisations-carousel',
   templateUrl: './realisations-carousel.component.html',
   styleUrl: './realisations-carousel.component.scss',
-  imports: [NgOptimizedImage, TranslatePipe],
+  imports: [NgOptimizedImage, TranslatePipe, ImageSkeletonDirective],
   host: {
     '(window:keydown.escape)': 'closeFullscreen()',
   },

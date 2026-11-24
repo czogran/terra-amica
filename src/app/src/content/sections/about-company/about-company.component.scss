@@ -35,8 +35,8 @@
 /* Text */
 
 .about-text {
-  font-size: 1.15rem;
-  line-height: 1.9;
+  font-size: 1.1rem;
+  line-height: 1.65;
   color: var(--bs-body-color);
 }
 
@@ -44,14 +44,22 @@
 
 .feature-card {
   display: flex;
-  gap: 18px;
-  align-items: flex-start;
+  gap: 14px;
+  align-items: center;
   background: var(--bs-bg-subtle);
-  padding: 22px;
-  border-radius: var(--bs-border-radius-xl);
-  margin-bottom: 18px;
+  padding: 16px 18px;
+  border-radius: var(--bs-border-radius-lg);
   box-shadow: var(--bs-box-shadow);
   transition: all 0.3s ease;
+
+  & + & {
+    margin-top: 12px;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
 }
 
 .feature-card:hover {
@@ -60,15 +68,16 @@
 }
 
 .icon-circle {
-  min-width: 52px;
-  height: 52px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--bs-primary), var(--bs-success));
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--bs-light-bg-subtle);
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .icon-circle.light {

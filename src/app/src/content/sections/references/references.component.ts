@@ -4,13 +4,20 @@ import { SectionHeaderComponent } from '../shared/section-header.component';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ReferenceItem, ReferenceState } from 'src/app/src/state/state-reference';
 import { ReferencePopupComponent } from './reference-popup.component';
+import { ImageSkeletonDirective } from '../shared/image-skeleton.directive';
 
 @Component({
   selector: 'app-references',
   templateUrl: './references.component.html',
   styleUrls: ['./references.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, SectionHeaderComponent, TranslatePipe, ReferencePopupComponent],
+  imports: [
+    NgOptimizedImage,
+    SectionHeaderComponent,
+    TranslatePipe,
+    ReferencePopupComponent,
+    ImageSkeletonDirective,
+  ],
   host: { class: 'app-references' },
 })
 export class ReferencesComponent {

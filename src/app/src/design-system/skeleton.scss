@@ -1,0 +1,92 @@
+/* Loading skeleton for images. Applied by ImageSkeletonDirective. */
+
+@keyframes image-skeleton-shimmer {
+  0% {
+    background-position: 120% 0;
+  }
+
+  100% {
+    background-position: -120% 0;
+  }
+}
+
+@keyframes image-skeleton-sweep {
+  0% {
+    transform: translateX(-110%);
+  }
+
+  100% {
+    transform: translateX(110%);
+  }
+}
+
+@mixin image-skeleton-base {
+  background-color: rgba(var(--bs-primary-rgb), 0.08);
+  background-image: linear-gradient(
+    115deg,
+    rgba(var(--bs-primary-rgb), 0.14) 0%,
+    rgba(var(--bs-secondary-rgb), 0.18) 35%,
+    rgba(var(--bs-success-rgb), 0.16) 60%,
+    rgba(var(--bs-primary-rgb), 0.12) 100%
+  );
+}
+
+/* Fallback drawn by the image itself (also covers server-rendered markup). */
+img.image-skeleton {
+  @include image-skeleton-base;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: image-skeleton-shimmer 1.5s linear infinite;
+}
+
+/* Overlay layer above the image, faded out once the bitmap is loaded. */
+.image-skeleton-host {
+  position: relative;
+}
+
+.image-skeleton-overlay {
+  @include image-skeleton-base;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 400ms ease;
+  will-change: opacity;
+}
+
+.image-skeleton-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 8%,
+    rgba(var(--bs-secondary-rgb), 0.45) 30%,
+    rgba(var(--bs-info-rgb), 0.42) 48%,
+    rgba(var(--bs-success-rgb), 0.4) 66%,
+    transparent 92%
+  );
+  transform: translateX(-110%);
+  animation: image-skeleton-sweep 1.5s linear infinite;
+  will-change: transform;
+}
+
+.image-skeleton-overlay--hidden {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img.image-skeleton {
+    animation-duration: 3.5s;
+  }
+
+  .image-skeleton-overlay {
+    transition-duration: 700ms;
+  }
+
+  .image-skeleton-overlay::after {
+    animation-duration: 3.5s;
+  }
+}

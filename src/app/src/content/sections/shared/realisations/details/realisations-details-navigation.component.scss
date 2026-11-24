@@ -25,23 +25,47 @@
   @include buttons.nav-pill-button-label();
 }
 
-@include bp.media-down(sm) {
+.realisations-details__back-icon {
+  display: none;
+}
+
+@include bp.media-down(md) {
   :host {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    gap: 1rem;
   }
 
   .realisations-details__nav,
   .realisations-details__back {
-    flex: 1 1 auto;
-    min-width: 0;
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    min-width: 2.5rem;
     min-height: 2.5rem;
-    padding-inline: 0.75rem;
-    font-size: 0.85rem;
-    gap: 0.45rem;
+    padding: 0;
+    gap: 0;
+    border-radius: 50%;
   }
 
   .realisations-details__nav-icon {
-    @include buttons.nav-pill-button-icon(0.85rem, 1rem);
+    @include buttons.nav-pill-button-icon(1rem, 1.15rem);
+  }
+
+  .realisations-details__back-icon {
+    display: inline-flex;
+  }
+
+  /* Keep the label available to assistive tech while showing icon-only buttons. */
+  .realisations-details__nav-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
   }
 }
