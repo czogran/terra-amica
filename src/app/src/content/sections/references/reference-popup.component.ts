@@ -31,6 +31,8 @@ import { ImageSkeletonDirective } from '../shared/image-skeleton.directive';
     'aria-modal': 'true',
     'aria-labelledby': 'reference-popup-title',
     'aria-describedby': 'reference-popup-caption',
+    '(mousedown)': 'onBackdropMouseDown($event)',
+    '(document:keydown.escape)': 'requestClose()',
   },
 })
 export class ReferencePopupComponent {
@@ -108,6 +110,16 @@ export class ReferencePopupComponent {
 
   resetZoom(): void {
     this.zoomLevel.set(this.minZoom);
+  }
+
+  requestClose(): void {
+    this.close.emit();
+  }
+
+  onBackdropMouseDown(event: MouseEvent): void {
+    if (event.target === event.currentTarget) {
+      this.requestClose();
+    }
   }
 
   onImageDragStart(event: MouseEvent): void {
