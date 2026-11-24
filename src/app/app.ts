@@ -4,7 +4,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { filter, take } from 'rxjs';
 import { HeaderComponent } from './src/header/header.component';
 import { FooterComponent } from './src/footer/footer.component';
-import { InitialLoaderService } from './src/initial-loader.service';
+import { releaseBootstrapLoader } from './bootstrap-loader/bootstrap-loader';
 import { StateService } from './src/state/state.service';
 import { TranslationManagerService } from './src/state/translation-manager.service';
 
@@ -20,7 +20,6 @@ export class App {
 
   private readonly router = inject(Router);
   private readonly translationManager = inject(TranslationManagerService);
-  private readonly initialLoader = inject(InitialLoaderService);
 
   private navigationReady = false;
   private translationsReady = false;
@@ -60,7 +59,7 @@ export class App {
 
     this.loaderFinished = true;
 
-    const finish = () => this.initialLoader.markReady();
+    const finish = () => releaseBootstrapLoader();
 
     if (typeof requestAnimationFrame === 'function') {
       requestAnimationFrame(() => requestAnimationFrame(finish));

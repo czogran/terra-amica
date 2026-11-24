@@ -2,6 +2,7 @@
 @use './app/src/design-system/typography.scss';
 @use './app/src/design-system/animations.scss';
 @use './app/src/design-system/skeleton.scss';
+@use './app/bootstrap-loader/bootstrap-loader.scss';
 
 html {
   scrollbar-gutter: stable;
@@ -10,6 +11,13 @@ html {
 // @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 /* Add any additional global styles below */
+
+// Keyboard focus keeps a visible ring; clicking with a pointer must not leave
+// a border/outline on the pressed control.
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
 
 // Typography styles for headings and paragraphs
 h1,

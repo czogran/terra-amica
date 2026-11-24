@@ -1,11 +1,12 @@
+import { mountBootstrapLoader } from './app/bootstrap-loader/bootstrap-loader';
+
 /**
- * The first paint is handled entirely by the inline loader in index.html, so
- * this entry point only orchestrates the download of the actual application.
- *
- * Keeping the app module behind dynamic imports keeps the initial `main`
- * bundle tiny; the platform, root component and application config are
- * fetched as the next step while the loader is already on screen.
+ * The loader is mounted first so the brand animation is ready before the
+ * application downloads start. The bootstrap itself stays behind dynamic
+ * imports, keeping the initial `main` bundle tiny.
  */
+mountBootstrapLoader();
+
 async function bootstrap(): Promise<void> {
   const [{ bootstrapApplication }, { App }, { appConfig }] = await Promise.all([
     import('@angular/platform-browser'),
