@@ -13,7 +13,7 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
     ScrollTopButtonComponent,
   ],
   template: `
-    <footer class="footer text-center pt-3 pb-2 mt-auto position-relative">
+    <footer class="footer text-center pb-2 mt-auto position-relative">
       <app-scroll-top-button />
       <div
         class="contact-section d-flex flex-column flex-md-row justify-content-center align-items-stretch gap-4 text-start"

@@ -45,8 +45,7 @@
     box-shadow 180ms ease,
     border-color 180ms ease;
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     transform: translateY(-3px);
     border-color: var(--bs-dark-border-subtle);
     box-shadow: var(--bs-box-shadow-lg);

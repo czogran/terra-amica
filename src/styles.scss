@@ -12,11 +12,15 @@ html {
 
 /* Add any additional global styles below */
 
-// Keyboard focus keeps a visible ring; clicking with a pointer must not leave
-// a border/outline on the pressed control.
-button:focus:not(:focus-visible),
-a:focus:not(:focus-visible) {
-  outline: none;
+// Clicked or focused controls must not show a border/ring.
+button:focus,
+button:focus-visible,
+button:active,
+[role='button']:focus,
+[role='button']:focus-visible,
+[role='button']:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 // Typography styles for headings and paragraphs

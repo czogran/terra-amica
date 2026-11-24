@@ -127,8 +127,7 @@
     transition: opacity 180ms ease;
   }
 
-  &:hover,
-  &:focus-within {
+  &:hover {
     transform: translateY(-3px);
     border-color: var(--bs-dark-border-subtle);
     box-shadow: var(--bs-box-shadow-lg);

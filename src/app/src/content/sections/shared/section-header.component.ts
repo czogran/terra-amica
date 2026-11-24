@@ -1,36 +1,18 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-section-header',
   styleUrl: './section-header.component.scss',
   template: `
-    <!-- 
-     <section class="realizacje-section position-relative overflow-hidden">
-      <div class="eco-shapes">
-        <span class="shape shape-leaf"></span>
-        <span class="shape shape-circle"></span>
-        <span class="shape shape-leaf small"></span>
-        <span class="shape shape-circle large"></span>
-        <span class="shape shape-leaf"></span>
-      </div>
-
-      <div class="container text-center py-5 position-relative z-2">
-        <h2 class="section-title">Realizacje</h2>
-        <div class="title-divider mx-auto"></div>
-        <p class="section-subtitle mt-3">
-          Poznaj nasze wybrane realizacje i projekty, które z sukcesem zrealizowaliśmy dla naszych
-          klientów.
-        </p>
-      </div> 
-    </section>
-    -->
-
     <section class="section-header">
-      <h2>{{ title() }}</h2>
-      <div class="title-divider mx-auto mb-3"></div>
-      <p>{{ subtitle() }}</p>
+      <div class="section-header__inner">
+        <h2 class="section-header__title">{{ title() }}</h2>
+        <span class="section-header__divider" aria-hidden="true"></span>
+        <p class="section-header__subtitle">{{ subtitle() }}</p>
+      </div>
     </section>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SectionHeaderComponent {
   title = input<string>();
