@@ -5,16 +5,6 @@ import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { MenuState } from './state-menu';
 
-export type AppState = Readonly<{
-  lang: string;
-  isMenuOpen: boolean;
-}>;
-
-const INITIAL_STATE: AppState = {
-  lang: 'pl',
-  isMenuOpen: false,
-};
-
 @Injectable({ providedIn: 'root' })
 export class StateService {
   private readonly contactState = inject(ContactState);

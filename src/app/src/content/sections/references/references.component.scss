@@ -49,15 +49,6 @@
     transform: translateY(-3px);
     border-color: var(--bs-dark-border-subtle);
     box-shadow: var(--bs-box-shadow-lg);
-
-    &::after {
-      opacity: 1;
-    }
-
-    .realisations-card-thumb img {
-      transform: scale(1.03);
-      filter: saturate(1.06) brightness(1.03);
-    }
   }
 }
 

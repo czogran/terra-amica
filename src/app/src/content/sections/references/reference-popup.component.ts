@@ -1,5 +1,4 @@
 import {
-  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   ElementRef,
@@ -55,12 +54,13 @@ export class ReferencePopupComponent {
   private dragTargetScrollTop = 0;
   private dragAnimationFrameId: number | null = null;
 
-  private readonly updateOverflowEffect = effect(() => {
-    this.reference();
-    this.zoomLevel.set(this.minZoom);
-    this.isImageDragging.set(false);
-    // queueMicrotask(() => this.updateCaptionOverflow());
-  });
+  constructor() {
+    effect(() => {
+      this.reference();
+      this.zoomLevel.set(this.minZoom);
+      this.isImageDragging.set(false);
+    });
+  }
 
   private mutationObserver?: MutationObserver;
 

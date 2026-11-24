@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { SectionHeaderComponent } from '../shared/section-header.component';
 import { PrivacyLanguage, PrivacyPolicyState } from '../../../state/state-privacy-policy';

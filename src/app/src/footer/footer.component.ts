@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ContactState } from 'state';
-import { FooterContactFormComponent } from './footer-contact-form.component';
 import { FooterMapComponent } from './footer-map.component';
 import { ScrollTopButtonComponent } from './scroll-top-button.component';
 
@@ -53,7 +52,6 @@ import { ScrollTopButtonComponent } from './scroll-top-button.component';
             </div>
           </div>
         </div>
-        <!-- <app-footer-contact-form /> -->
       </div>
       <app-footer-map class="mb-2" />
       <span class="footer-copyright d-block">{{ 'footer.copyright' | translate }}</span>

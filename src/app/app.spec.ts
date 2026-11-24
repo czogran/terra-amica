@@ -1,4 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { Subject } from 'rxjs';
 import { App } from './app';
 import { StateService } from './src/state/state.service';
 
@@ -6,7 +9,17 @@ describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
-      providers: [{ provide: StateService, useValue: {} }],
+      providers: [
+        { provide: StateService, useValue: {} },
+        { provide: Router, useValue: { navigated: true, events: new Subject() } },
+        {
+          provide: TranslateService,
+          useValue: {
+            getCurrentLang: () => 'pl',
+            getDefaultLang: () => 'pl',
+          },
+        },
+      ],
     })
       .overrideComponent(App, {
         set: {

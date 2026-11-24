@@ -1,5 +1,4 @@
 import { Component, computed, inject } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { SectionHeaderComponent } from '../shared/section-header.component';

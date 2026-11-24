@@ -1,5 +1,5 @@
 import { Component, signal, computed, inject } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-mode-switcher',
