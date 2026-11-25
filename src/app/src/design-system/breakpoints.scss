@@ -1,4 +1,5 @@
 @use "sass:list";
+@use "sass:map";
 
 $breakpoint-xs: 0;
 $breakpoint-sm: 576px;
@@ -17,22 +18,22 @@ $breakpoints: (
 );
 
 @function breakpoint($name) {
-  @if not map-has-key($breakpoints, $name) {
+  @if not map.has-key($breakpoints, $name) {
     @error "Unknown breakpoint `#{$name}`.";
   }
 
-  @return map-get($breakpoints, $name);
+  @return map.get($breakpoints, $name);
 }
 
 @function breakpoint-next($name) {
-  $keys: map-keys($breakpoints);
-  $index: index($keys, $name);
+  $keys: map.keys($breakpoints);
+  $index: list.index($keys, $name);
 
-  @if $index ==null {
+  @if $index == null {
     @error "Unknown breakpoint `#{$name}`.";
   }
 
-  @if $index ==length($keys) {
+  @if $index == list.length($keys) {
     @return null;
   }
 

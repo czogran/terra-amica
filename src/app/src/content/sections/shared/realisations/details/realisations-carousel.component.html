@@ -30,6 +30,7 @@
         <div class="carousel-item h-100" [class.active]="i === activeIndex()">
           <img
             appImageSkeleton
+            [skeletonOnSourceChange]="isFullscreenOpen()"
             [ngSrc]="isFullscreenOpen() ? originalImage(image) : compressedImage(image)"
             [alt]="alt()"
             width="1600"

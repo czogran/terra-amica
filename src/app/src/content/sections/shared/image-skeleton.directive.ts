@@ -6,6 +6,7 @@ import {
   OnDestroy,
   PLATFORM_ID,
   inject,
+  input,
   signal,
 } from '@angular/core';
 
@@ -30,6 +31,10 @@ export class ImageSkeletonDirective implements AfterViewInit, OnDestroy {
   private readonly image = inject<ElementRef<HTMLImageElement>>(ElementRef);
   private readonly document = inject(DOCUMENT);
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
+
+  /** Whether a `src`/`srcset` change should show the skeleton again. */
+  readonly skeletonOnSourceChange = input(true);
+
   protected readonly loaded = signal(false);
 
   private overlay: HTMLElement | null = null;
@@ -66,6 +71,15 @@ export class ImageSkeletonDirective implements AfterViewInit, OnDestroy {
           mutation.oldValue !== image.getAttribute(mutation.attributeName ?? ''),
       );
       if (sourceChanged) {
+        if (!this.skeletonOnSourceChange()) {
+          // The source is a previously displayed variant (e.g. leaving
+          // carousel fullscreen); keep the image visible without a skeleton.
+          this.loaded.set(true);
+          this.clearRemoveAndHideTimers();
+          this.removeOverlay();
+          return;
+        }
+
         this.reset();
       }
     });
